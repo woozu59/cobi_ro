@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <title>swiper</title><!--swiper 홈페이지 들어가서 get start눌러서 cdn주소 찾기-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/swiper.css">
+    <!--swiper cdn 주소 적고 내 css 파일 만들어서 링크걸고 슬라이드 사이즈 잡기-->
+</head>
+
+
+
+<body>
+    <h1> swiper </h1>
+    <div class="swiper basic2"><!--슬라이드 만들시 큰 틀안에 wrapper로 감싼 후에 슬라이드 섹션 집어넣기-->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide sec1">01</div>
+            <div class="swiper-slide sec2">02</div>
+            <div class="swiper-slide sec3">custom</div>
+            <div class="swiper-slide sec4">04</div>
+            <div class="swiper-slide sec5">05</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div><!--네비게이션 슬라이드바 -->
+        <div class="swiper-pagination"></div><!--하단 넘어가는 동그란 버튼 표시 / 관련 js를 사용할때는 div로 관련 class명을 작성해야함-->
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/JS/swiper.js"></script>
+    <!--js는 맨마지막에 넣는데 이것도 cdn넣고 밑에 내 js파일 링크걸기-->
+</body>

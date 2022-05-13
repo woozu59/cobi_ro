@@ -1,0 +1,187 @@
+@charset "utf-8";
+/*모바일css는 최대한 간결하게 작성할것
+width만 최대한의 %로 작성하고 margin이나 패딩은 간결하게 px로 작성
+모바일의 크기에 맞게 폰트크기도 수정*/
+.flexbox1{
+    height: auto;
+    flex-direction: column;
+}
+
+body{
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+}
+
+.sec1{
+    height: auto;
+    width: 100%;
+    padding :20%;
+}    
+
+.sec1 .inner1{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.sec1 .inner1 h1{
+    margin-bottom: 15%;
+}
+
+.sec1 .inner1 h2{
+    margin-bottom: 15%;
+}
+
+.sec1 .inner1 p{
+    margin-bottom: 15%;
+}
+
+.sec1 .inner1 .linkbox{
+    height: 4%;
+    width: 40%;
+    padding-top: 2%;
+    font-size: 13px;
+
+}
+
+.sec2 {
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+}
+
+.left{
+    width: 100%;
+    height: auto;
+}
+
+
+.sec2 .flexbox2 h2{
+    width: 90%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.sec2 .flexbox2 .img{
+    width: 90%;
+    top: 0;
+    right: 0;
+    margin-bottom: 20%;
+    background-size: cover;
+}
+
+.sec2 .right{
+    width: 100%;
+    height: auto;
+}
+
+.sec2 .right .inner2{
+    width:100%;
+    height: auto;
+    padding: 12%;
+    margin: 10% 0;
+}
+
+.sec2 .inner2 .vct{
+    margin: 5% 0;
+    font-size: 18px;
+}
+.sec2 .inner2 h6{
+    margin-top: 9%;
+}
+
+.sec3{
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+}
+
+.sec3 .left{
+    position: relative;
+    padding: 5%;
+}
+.sec3 .left p{
+    left: 15%;
+    width: 80%;
+    top: 62px;
+}
+
+#bed {
+    width: 90%;
+    height: 420px;
+    left: 10%;
+}
+
+.sec3 .left .linkbox2{
+    height: 5%;
+    width: 26%;
+    padding: 2%;
+    left: 61%;
+    top: -77px;
+    font-size: 13px;
+    
+}
+
+.sec3 .right{
+    width: 100%;
+    height: auto;
+    
+
+}
+
+
+#sofa {
+    width: 80%;
+    height: 490px;
+    position: relative;
+    top: 16%;
+}
+.sec3 .right h2{
+    margin: 4% 0 0 4%;
+    
+}
+.sec3 .right p{
+    width: 90%;
+    font-weight: bold;
+    font-size: 16px;
+    top: 50px;
+}
+
+
+.sec3 .right .linkbox{
+    height: 5%;
+    width: 26%;
+    padding: 2%;
+    font-size: 13px;
+    top: -70px;
+    left: 39%;
+
+}
+.sec4{
+    width: 100%;
+    height: auto;
+    
+}
+
+.sec4 .inner3{
+    padding: 22%;
+}
+
+.sec4 .inner3 h2{
+    margin-bottom: 20%;
+}
+
+.sec4 .inner3 p{
+    margin: 0;
+    padding: 0;
+}
+
+.sec4 .inner3 .linkbox{
+    height: 4%;
+    width: 40%;
+    font-size: 13px;
+    padding: 3%;
+    margin-top: 50%;
+}

@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid skyblue;
+}
+/*큰 틀에서부터 세세한 작은 조정 순으로 css짜기*/
+.flexbox1{
+    display: flex;
+    height: 510px;
+    width: 350px;
+    flex-direction: column;
+    text-align: left;
+}
+.flexbox2{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 510px;
+    justify-content: center;
+    margin: -230px 0 0 0;
+    
+}
+body{
+    min-width: 1200px;
+    height: auto;
+    font-family: "Noto Sans kr" Sans-serif; 
+}  /*글씨는 html문서안에 글자 영역의 설정을 안해서 설정이 안됨*/
+
+
+
+.sec1{
+    width: auto;
+    height: 350px;
+    margin: 30px;
+    padding: 15px;
+}    
+.sec1 .inner{
+    text-align: left;
+}
+
+
+.sec1 .inner h1, h3{padding: 25px;}
+.sec1 .inner .p1, .p2{padding: 0 0 0 25px;}
+
+
+
+
+
+.sec2{
+    width: 100%; height: 680px;
+    
+}
+.sec2 .inner{
+    width: auto;
+    height: 680px;
+}
+
+.sec2 .bg{
+    height: 350px;
+    width: 100%;
+    background-color: pink;
+    background-image: url(/img/mountain.jpg);
+    background-position: 50% 50%;  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec2 .inner .bg h3 {
+    padding: 32px 216px 32px 218px;
+    text-align: left;}
+
+
+
+.sec2 div h3 strong{ 
+    color:white;
+}
+
+
+
+
+.sec2 .group2{
+    margin: 50px 0 0 0;
+}
+
+.sec2 .group3{
+    margin: 27px 0 0 0;
+}
+
+
+
+
+.title{
+    font-size: 25px; font-weight: bold;
+    margin: 10px;
+}
+
+.midtitle{
+    font-size: 18px; margin: 10px;
+}
+
+.explain{
+    margin: 10px;
+}
+
+img{ width: 350px; height: 230px;}
+

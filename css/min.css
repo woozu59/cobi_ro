@@ -1,0 +1,45 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;
+ border: 1px solid aquamarine;}
+
+.inner{
+    width:1180px;
+    height:1100px;
+    margin: 0 auto;
+}
+
+ .flexbox1{display: flex;    
+    flex-direction: row;
+    justify-content: space-around;}
+
+.flexbox2{display: flex;
+          flex-direction: column;
+          padding: 68px 0 0 40px;}         
+
+.ENJOY {margin:0 auto; padding: 18px; width: 1143px; height: 340px;}
+.COSY {margin:0 auto; padding: 18px; width: 1143px; height: 340px;}
+.HEALTHY {margin: 0 auto; padding: 18px; width: 1143px; height: 340px;}
+
+.ENJOY img{vertical-align:middle; width: 600px; height: 340px;}
+
+.title { font-size: 16px; font-weight:bold; color: skyblue;
+        text-align: left; width: 540px; height: 25px;}
+.flexbox1 .flexbox2 h1{ font-weight: bold; text-align: left; width:540px; height: 73px;}
+.content{ width: 540px; height: 73px;}
+
+.COSY img{vertical-align:middle; width: 600px; height: 340px;}
+
+.HEALTHY img{vertical-align: middle; width: 600px; height: 340px;}
+
+
+
+/*max-width가 1179이하일때 변경할 요소가 변경됨*/
+/*변경할 요소를 복사붙여 한뒤 복사하지 않을 요소는 지우고 변경할 요소만 남기기
+피그마를 통해서 미디어 화면크기를 측정한뒤 max-width나 min-width를 설정하기*/
+/*@media all and (max-width: 1199px){
+    .title { font-size: 20px; color: green;
+    }
+}*/
+/*짧은 내용으로 변경할 시 맨밑에 작성하는게 낫다*/    
+
+

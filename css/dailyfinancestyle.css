@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.body{min-width: 744px; width: 100%; height: auto;}
+
+.flexbox{ width: 100%; height: auto; margin: 0 auto;}
+
+.inner{ width:80%; margin: 0 auto;}
+.inner .logo{ width: 176px; height: 65px; margin: 0 auto; padding: 58px;}
+.inner > h1{margin: 0 auto; font-size:20px; padding: 20px;}
+
+.inner > h1 > i::before{width: 24px; height: 24px; left: 21%; top: 14%; font-size: 0.8em;}
+.inner > h1 > i::after{width: 24px; height: 24px; right: 21%; top: 14%; font-size: 0.8em;}
+
+.inner .box{width:33%; height:auto; padding: 1%;}
+.inner .box .title{font-size: 30px; font-weight: 600;}
+.inner .box .content{height: auto; font-size: 14px;}
+.inner .box .date{font-size: 11px;}
+.inner .box button{ height: auto; font-size: 10px;}
+
+.inner .box.b01{width: 100%; height: auto; padding: 5%;}
+.inner .box.b03{ margin: 0 0 20px; font-size: 30px;}
+.inner .box.b05{ width: 50%;}
+.inner .box.b06{ width: 50%; margin-right: 0; padding: 0;}
+.inner .box.b07{ width: 50%; position: relative; right: -50%;}
+.inner .box.b08{ width: 50%; position: relative; left: -50%;}
+.inner .box.b09{ margin: 0;}
+.inner .box.b11{ margin: 0; font-size: 30px;}

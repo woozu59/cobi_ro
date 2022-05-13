@@ -1,0 +1,179 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+		/* Material Icons Outlined*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid aquamarine;
+}
+
+body{
+    min-width: 1280px;
+}
+
+a{
+    text-decoration: none;
+}
+ .inner{
+    margin: 0 auto;
+    width: 1300px;
+
+}
+/*header start*/
+header .top{
+    width: 100%;
+    height: 56px;
+    background: #0D2E3B;
+    display: flex;
+}
+
+header .top .left{
+    margin: 0 0 0 0;
+    padding: 5px;
+}
+header .top .right{
+    margin: 0 0 0 33%;
+}
+
+header .top a{
+    border-right: 1px solid #ADA7A7;
+    color: #ADA7A7;
+    padding: 12px;
+
+}
+
+header .midtop{
+    width: 100%;
+    height: 93px;
+    background: white;
+}
+
+.midtop .inner{
+    display: flex;
+    
+}
+
+.midtop .logo{
+    background-image:url("/img/duru/durunubi_logo_new.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    display: block;
+    text-indent:-115px;
+    overflow: hidden;
+    width: 145px;
+    height: 49px;
+}
+
+.midtop .nav{
+    display: flex;
+    margin: 0 0 0 37%;
+}
+
+.midtop .nav .gnb{
+    color: #666666;
+    display: flex;
+}
+
+.midtop .nav .gnb li{
+    list-style: none;
+}
+/*li 아이콘없애기*/
+/*menu아이콘 search아이콘 불러오고 글씨 숨기기*/
+
+.sec1{
+    width: 100%;
+    height: 673px;
+    background: linear-gradient(to bottom right, rgba(29, 80, 130, 1), rgba(29, 111, 125, 1), rgba(48, 139, 118, 1), rgba(107, 173, 103, 1))
+}
+.sec1 .inner{
+    display: flex;
+    padding: 30px 0;
+
+}
+.sec1 .inner .left{
+    width: 830px;
+    height: 626px;
+}/*아래 슬라이드 넣으면 flex-column으로 지정*/
+.sec1 .inner .left img{
+    width: 830px;
+    height: 500px;
+}
+
+
+.sec1 .inner .right{
+    width: 320px;
+    height: 626px;
+    margin: 0 0 0 150px;
+}
+.sec1 .inner .right .tabbt{
+    width: 100%;
+    height: 52px;
+    border-radius: 7px;
+    display: flex;
+    margin: 0 0 10px 0;
+}
+.sec1 .right .tabbt >button{
+    width: 50%;
+    height: 100%;
+    font-size: 25px;
+    background-color: #558B03;
+    color: #C4C4C4;
+    border: none;
+    cursor: pointer;
+}
+
+.sec1 .right .tabbt > button.on{
+    background-color: #22C935;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+/*글자 옆 아이콘 지정 시 content 코드를 작성하고 inline으로 된 요소를
+inline-block으로 display를 변경한 후 bg로 지정해주고 설정값을 다 정해줘야 아이콘이 표시됨*/ 
+.sec1 .right .tabbt > button:first-child::before{
+    background-image: url(/img/duru/walk.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 50% 50%;
+    width: 19px; height: 29px;
+    display: inline-block;
+    content:"";
+    margin: 0 10px 0 0;
+}
+
+.sec1 .right .tabbt > button:last-child::before{
+    content:"";
+    display: inline-block;
+    background: url(/img/duru/bicycle.svg) no-repeat 50% 50% / contain;
+    width: 34px; height: 20px;
+    margin: 0 10px 0 0;
+}
+
+.sec1 .right .tabcon h1{
+    width: 100%;
+    height: 83px;
+    margin: 0 0 10px 0;
+}
+
+.sec1 .right .tabcon h1 span{
+    width: 50%;
+    height: 100%;
+}
+
+.sec1 .right .tabcon > .tab{
+    display: none;
+    flex-wrap: row wrap;
+    justify-content: center;
+    color : #ffff;
+}
+.sec1 .right .tabcon > .tab.on{
+    display: flex;
+}
+
+.sec1 .right .tabcon .tab h2{
+    flex: 1 1 100%;
+    height: 60px;
+    
+}

@@ -1,0 +1,79 @@
+<!doctype charset="utf-8">
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maxium=initial-scale=1">
+    <title>hyundaLC</title>
+    <link rel="stylesheet" type="text/css" href="/css/hyundaLC.css">
+    <link rel="stylesheet" type="text/css" media="all and (max0width: 1024px)" href="/css/hyundaLCtstyle.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="/css/hyundaLCmb.css">
+<!--기기 마다 링크달시 pc 태블릿 모바일 순으로 max-width 작성-->
+</head>
+
+
+<body >
+    <div class="sec1">
+        <div class="inner1">
+          <h1>CRECENDO</h1>
+          <h2>Premium Flooring Collection</h2>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page
+             when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page
+             when looking at its layout.
+          </p>
+          <p class="linkbox"><a href="#">Learn more</a></p>    
+        </div><!--클릭해야 되는 버튼은 button태그이용할것 
+        <button type="submit" formaction="#"이런식으로 상황에 맞게 작성-->
+    </div>
+    <div class="sec2 flexbox1">
+        <div class="left flexbox2"><!--이미지파일 css로 첨부 flexbox로 지정 및 이름 변경-->
+            <h2>PRODUCT</h2>
+            <div class="img"></div>  
+        </div>
+        <div class="right"><!--마진을 사용해서 하지 않고 flex를 사용해서 right-end로 설정
+         이미지가 오른쪽영역으로 들어갈수있게끔 z-index선언 선언할시 우선순위로 설정해야 밑으로 안들어감-->
+            <div class="inner2">
+                <h2>VCT</h2>
+                <P class="vct">highly recommended as a cost
+                    effective flooring
+                </P>
+                <p>There are many variations of passages of Lorem
+                    Ipsum available. but the majority have suffered
+                    alteration in some form, by injected humour, or 
+                    randomised words which don’t look even
+                    slightly believable.
+                </p>
+                <h6>VCT Products</h6>    
+            </div>    
+        </div>
+    </div>
+    <div class="sec3 flexbox1">
+        <div class="left">
+            
+            <p>
+                Techinical information
+            </p>
+            <div id="bed"></div>
+            <p class="linkbox2"><a href="#"><span>Performance</span> Data</a></p>
+        </div>
+        <div class="right">
+            
+            <h2>CUSTOMER</h2>
+            <p>Contact us</p>
+            <div id="sofa"></div>
+            
+            <p class="linkbox"><a href="#">Learn more</a></p>
+        </div><!--버튼margin으로 줄이는방법도 있지만 position으로 설정하는 방법이 더 간단하고 크기가 줄어들더라도 알아서 패딩영역에 맞춰서 작아짐-->
+    </div>
+    <div class="sec4">
+        <div class="inner3">
+           <h2>Company Profile</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page
+               when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page
+               when looking at its layout.
+            </p>
+            <p class="linkbox"><a href="#">Learn more</a></p>
+        </div>    
+    </div>
+</body>
+</html>

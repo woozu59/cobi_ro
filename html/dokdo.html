@@ -1,0 +1,343 @@
+<!doctype charset="utf-8">
+<html lang="ko"></html>
+
+<head><!--모바일, 태블릿 css만들때 뷰포트 선언문 작성하기-->
+    <meta charset="utf-8">
+    <title>dokdo mofa</title>
+    <link rel="stylesheet" type="text/css" href="/css/dokdo.css">
+</head>
+
+<body>
+    <header><!--header 시작--><!--모바일 css작성시 display none처리해서 안보이게 설정 / 피그마로 만든 nav에서 영어버튼은 뺄 예정-->
+        <div class="top">
+            <div class="left">
+                <h6>
+                    독도는 역사적, 지리적, 국제법적으로 명백한 우리 고유의 영토입니다.
+                </h6>
+            </div>
+            <div class="right">
+                <button id="english"><a href="#">ENGLISH</a></button>
+                <input type="search" class="search" >
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <a href="#">searchicon</a>
+                
+            </div>
+        </div>
+    </header>
+    <header class="header2">
+        <nav class="top">
+            <div class="inner">
+                <div class="foregin">
+                  <a href="#" class="logo">외교부 독도</a>
+                  <p>독도</p><!--로고이미지 추가하고 독도 단어추가해서 연결하기 -->
+                </div>  
+                <div class="nav">
+                    <ul class="menu"><!--html 완성후 nav 채워넣기-->
+                        <li><a href="#">독도에 대한 우리입장</a></li>
+                        <li><a href="#">민원실</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+    </header>
+    <!--sec1 시작-->
+    <section class="sec1"><!--사진 or 동영상 저장 해서 위치시키기-->
+        <div class="dokdo">독도로고</div><!--로고 위치고정 및 bg에 고정-->
+    </section>
+    <!--sec2 시작-->
+    <section class="sec2">
+        <div class="inner  content"><!--content의 방향이 row로 떨어지게 설정-->
+            <div class="left">
+                <div class="title"><!--title 아래 언더바 생성하기-->
+                    <h2>독도는 지금</h2>
+                </div>
+                <div>기상예보 구축</div><!--추후에 기상청에서 독도 현재 날씨정보 불러오기-->
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h2>독도 입도 안내</h2>
+                </div>
+                <div class="guide"><!--아코디언 메뉴로 만들어서 넘치는 메뉴는 스크롤 생성-->
+                    <details>
+                        <summary>입도절차</summary><!--1번 메뉴  / 펼치기 아이콘 안넣어도 됨 앞에 자동으로 붙음-->
+                        <img src="/img/dokdo/step.jpg" alt="입도절차안내">
+                    </details>
+                    <details>
+                    <summary>여객선정보</summary><!--2번 메뉴-->
+                        <table><!--여객선 정보 관련 표작성-->
+                            <thead>
+                                <tr>
+                                    <th>선사</th>
+                                    <th>연락처</th>
+                                    <th>선명</th>
+                                    <th>소요시간<br>(편도)</th>
+                                    <th>승선인원</th>
+                                    <th>선착장</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>대저해운</td>
+                                    <td>1889-8114</td>
+                                    <td>엘도라도호</td>
+                                    <td>1시간 30분</td>
+                                    <td>426명</td>
+                                    <td>저동항</td>
+                                </tr>
+                                <tr>
+                                    <td>JH페리</td>
+                                    <td>054-791-9605</td>
+                                    <td>씨플라워호</td>
+                                    <td>1시간 30분</td>
+                                    <td>443명</td>
+                                    <td>저동항</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">씨스포빌</td>
+                                    <td>054-791-9330</td>
+                                    <td>씨스타3호</td>
+                                    <td>1시간 30분</td>
+                                    <td>507명</td>
+                                    <td rowspan="3">저동항</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">033-653-8670</td>
+                                    <td>씨스타5호</td>
+                                    <td>1시간 30분</td>
+                                    <td>438명</td>
+                                </tr>
+                                <tr>
+                                    <td>씨스타11호</td>
+                                    <td>1시간 30분</td>
+                                    <td>449명</td>
+                                </tr>
+                                <tr>
+                                    <td>정도산업</td>
+                                    <td>054-791-9801</td>
+                                    <td>씨스타1호</td>
+                                    <td>1시간 30분</td>
+                                    <td>442명</td>
+                                    <td>사동항</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                            <div>2022년 1월기준</div>    
+                    </details>
+                    <details>
+                        <summary>유의사항</summary><!--3번 메뉴-->
+                        <div class="note">
+                            <img src="/img/dokdo/dokdo.jpg" alt="독도 입도 유의사항">
+                            <ul>
+                                <li>독도는 울릉도를 거쳐야 오실 수 있습니다.</li>
+                                <li>선박 운행시간, 요금, 선착장 등은 변동 될 수 있으니 각 선사를 통하여 미리 확인바랍니다.</li>
+                                <li>독도 입도는 기상 여건, 선박 사정에 따라 제한될 수 있으며, 독도 입도시 동도 선착장에 한해 관람이 가능합니다.</li>
+                                <li>관광 목적이 아닌 행사, 집회, 취재, 학술조사, 숙박, 체류 등의 특수목적의 경우 울릉군에 입도 신청을 하여 허가를 받은 후 가능합니다.</li>
+                                <li>자세한 내용은 '독도입도종합안내 사이트'를 참고바랍니다.</li>
+                            </ul>    
+                        </div>
+                    </details>
+                    <details>
+                        <summary>독도입도종합안내 바로가기</summary><!--4번 메뉴-->
+                        <div>
+                        <button type="submit" formaction="http://www.ulleung.go.kr/ko/page.htm?mnu_uid=1649">독도입도종합안내 바로가기</button>
+                            <!--버튼 클릭하여 독도입도안내 사이트로 이동하기-->
+                        </div>
+                    </details>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--sec3 시작-->
+    <section class="sec3">
+        <div class="inner">
+            <div class="title">
+                <h2>독도 둘러보기</h2>
+            </div>
+            <div class="cardgroup"><!--flex로 rowspan으로 떨어지게 하기-->
+                <div class="card">
+                    <div class="cardti">
+                        <h4>동도</h4>
+                    </div>
+                    <img src="/img/dokdo/동도.jpg" alt="동도 이미지">
+                    <div class="inform"><!--정보가 이미지 위로 겹쳐올라오게 설정, 상자의 컬러가 반투명으로 들어오도록 설정-->
+                        <p>높이 98.6m, 둘레 2.8km 면적 73,297m² 7필지. 서도에 비해 높이가 낮고 면적이 좁지만, 둘레가 크고 완만해 필지가 많은 편이다.
+                            날씨가 좋으면 울릉도 동쪽 해안에서 육안으로 이 섬을 볼 수 있다.<!--블랙 반투명-->
+                        </p>
+                        <p class="source">[출처] 위키백과</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardti">
+                        <h4>서도</h4>
+                    </div>
+                    <img src="/img/dokdo/서도.jpg" alt="서도 이미지">
+                    <div class="inform">
+                        <p>높이 168.5m, 둘레 2.6km, 면적 88,740m² 5필지, 동도에 비해 높이가 높고 면적이 넓지만, 경사가 급한 편이라 필지가 적은 편이다.
+                        </p><!--화이트 반투명-->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardti">
+                        <h4>괭이갈매기</h4>
+                    </div>
+                    <img src="/img/dokdo/어미괭이갈매기와 유조 (Larus crassirostris).jpg" alt="괭이갈매기 이미지">
+                    <div class="inform">
+                        <p>괭이갈매기의 한국 번식지로는  난도, 홍도, 독도가 있다.
+                            독도는 철새 이동경로의 중간 피난처 및 휴식처로 우리나라 생물의 기원과 분포를 연구할 수 있어 섬 생물지리학적(island biogeography)으로 중요하다.
+                        </p><!--블랙 반투명-->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardti">
+                        <h4>섬기린초</h4>
+                    </div>
+                    <img src="/img/dokdo/섬기린초 (Sedum takesimense).jpg" alt="섬기린초 이미지">
+                    <div class="inform">
+                        <p>한국 토종의 야상화로 동해의 두 한국 섬 울릉도와 독도에서 자란다.
+                            뿔을 가진 상상의 동물 기린의 모습과 닮아 섬기린초라는 이름을 갖게 되었다. 섬기린초는 7월에 돌틈에 햇볕이 드는 곳에서노란색 꽃을 피운다.
+                        </p><!--화이트 반투명-->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardti">
+                        <h4>파랑돔</h4>
+                    </div>
+                    <img src="/img/dokdo/파랑돔 (Pomacentrus coelestis).jpg" alt="파랑돔 이미지">
+                    <div class="inform">
+                        <p>몸길이 5~8㎝이다. 몸은 파란색이고 배와 뒷지느러미, 꼬리지느러미는 노란색을 띤다.
+                            울릉군 주변 해수온이 15℃ 이상으로 올라가는 6~10월 말에 집단적으로 서식한다. 특히 한류와 난류가 교차하는 독도에서 많이 관찰된다.
+                        </p><!--블랙 반투명-->
+                        <p class="source">[출처] 한국학중앙연구원 - 향토문화전자대전</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardti">
+                        <h4>섬패랭이꽃</h4>
+                    </div>
+                    <img src="/img/dokdo/섬패랭이꽃 (Dianthus littorosus Makino ex Nakai).jpg" alt="섬패랭이꽃 이미지">
+                    <div class="inform">
+                        <p>섬패랭이 꽃은 울릉도지역과 부근인 독도에서 난다.
+                            꽃잎이 덜 갈라진다. 
+                            잎은 마주나기, 선상 피침형, 끝이 뾰족하며, 아랫부분은 합쳐져 마디를 둘러싸고, 길이는 10cm내외이다.
+                        </p><!--화이트 반투명-->
+                        <p class="source">[출처] (재)독도재단</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--sec4 시작-->
+    <section class="sec4">
+        <div class="inner">
+            <div class="title">
+                <h2>독도가 우리영토인 근거</h2>
+            </div>
+            <div class="slide"><!--슬라이드/ sec3에 첨부된 사진 외교부에서 가져온 사진인지 확인하기-->
+                <div class="slidecontent">
+                    <div class="slidecard"><!--card사이즈 키워서 글자들 밑으로 떨어지지 않게 하기-->
+                        <div class="slideinner">
+                            <div class="year">500년</div>
+                            <img class="img" src="/img/dokdo/삼국사기.jpg" alt="삼국사기 이미지">
+                            <p class="source">삼국사기</p>
+                            <p class="copy">우산국 복속<br>
+                                신라 이찬(伊飡) 이사부(異斯夫)가 우산국을 정벌하여 신라가 우산국을 복속합니다. 이로써 울릉도와 독도는 우리 역사와 함께하기 시작합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slidecard">
+                        <!--두번째 슬라이드-->
+                        <div class="slideinner">
+                            <div class="year">1454년</div>
+                            <img class="img" src="/img/dokdo//세종실록 지리지.jpg" alt="세종실록 지리지 이미지">
+                            <p class="source">세종실록 지리지</p>
+                            <p class="copy">『세종실록』「지리지」<br>
+                                조선 초기 관찬서인 『세종실록』「지리지」(1454년)는 울릉도와 독도가 강원도 울진현에 속한 두 섬이라고 기록하고 있습니다.
+                                특히 “우산(독도) 무릉(울릉도)… 두 섬은 서로 멀리 떨어져 있지 않아 날씨가 맑으면 바라볼 수 있다.”라고 기록하고 있는데, 울릉도에서 날씨가 맑은 날
+                                육안으로 보이는 섬은 독도가 유일합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slidecard">
+                        <!--세번째 슬라이드-->
+                        <div class="slideinner">
+                            <div class="year">1693년</div>
+                            <img class="img" src="/img/dokdo/울릉도.jpg" alt="울릉도 이미지">
+                            <p class="source">울릉도 전경 [출처] 위키백과</p>
+                            <p class="copy">울릉도 수토제도 시행결정<br>
+                                안용복 사건으로 인해 일본과 울릉도 영유권에 대한 분쟁(울릉도 쟁계)이 발생하자, 조선 정부는 삼척청사 장한상(張漢相)을 울릉도에 파견하여 울릉도의 현황을
+                                조사합니다.
+                                그 이후 영의정 남구만의 건의에 따라 2년 걸러 한 번씩 관원을 울릉도에 파견하여 수토*를 하기로 결정합니다.
+                                <span>*수토 : 무엇을 알아내거나 찾기 위해서 조사하거나 살핌.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slidecard">
+                        <!--네번째 슬라이드-->
+                        <div class="slideinner">
+                            <div class="year">1696년</div>
+                            <img class="img" src="/img/dokdo//도해금지령.jpg" alt="도해금지령 이미지">
+                            <p class="copy">1월. 다케시마(울릉도) 도해금지령<br>
+                                일본 막부는 돗토리번을 통해 울릉도와 독도가 일본령이 아님을 확인하고 다케시마(울릉도) 도해금지령을 내렸습니다 (1696년 1월 28일).
+                                이후 조선과의 외교문서를 통해 울릉도가 조선령임을 공식 확인하였습니다.(1699년)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slidecard">
+                        <!--다섯번째 슬라이드-->
+                        <div class="slideinner">
+                            <div class="year">1770년</div>
+                            <img class="img" src="/img/dokdo/동국문헌비고.jpg" alt="동국문헌비고 이미지">
+                            <p class="copy">『동국문헌비고』「여지고」<br>
+                                국왕 영조의 명에 의해 조선의 문물제도를 기록한 관찬서입니다.
+                                이 책에는 “우산도(독도)와 울릉도… 두 섬으로 하나가 바로 우산이다...「여지지」에 이르기를, 울릉과 우산은 모두 우산국의 땅인데, 우산은 일본이 말하는
+                                송도(松島)다.”라고 하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slidecard">
+                        <!--여섯번째 슬라이드-->
+                        <div class="slideinner">
+                            <div class="year">1877년</div>
+                            <img class="img" src="/img/dokdo/태정관지령.jpg" alt="태정관지령 이미지">
+                            <p class="copy">「태정관(太政官)지령」<br>
+                                1877년 3월 일본 최고 행정기구인 태정관이 내무성에 울릉도와 독도가 일본령이 아니라고 내린 지령입니다.
+                                태정관은 17세기 에도 막부와 조선 정부 간 교섭(울릉도쟁계) 결과 울릉도와 독도가 일본 소속이 아님이 확인되었다고 판단하고,
+                                "다케시마(울릉도) 외 일도(一嶋, 독도)의 건에 대해 본방(本邦, 일본)과는 관계가 없음을 명심할 것"이라는 지시를 내무성에 내렸던 것입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slidecard">
+                        <!--일곱번째 슬라이드-->
+                        <div class="slideinner">
+                            <div class="year">1946년</div>
+                            <img class="img" src="/img/dokdo/연합국최고사령관 각서.jpg" alt="연합국최고사령관각서 이미지">
+                            <p class="copy">1월 29일. 연합국최고사령관<br>
+                                각서(SCAPIN) 제677호<br>
+                                제2차 세계대전 종전 후 일본의 통치 행정범위에서 독도를 제외시킨 각서입니다.
+                                연합국 최고사령관은 일본의 영역에서 “울릉도, 리앙쿠르암(독도)과 제주도는 제외된다.”라고 규정하였습니다.
+                                6월 22일. 연합국최고사령관 각서(SCAPIN) 제1033호 연합국 최고사령관이 SCAPIN 제677호에 이어 일본의 선박 및 국민이 독도 또는 독도 주변
+                                12해리 이내에 접근하는 것을 금지한 각서입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div><!--슬라이드 아이콘-->
+            <div class="swiper-button-prev"></div>  
+        </div>    
+    </section>
+    <footer>
+        <div class="inner">
+            <a href="#" class="logo">외교부</a>
+            <address>
+                <span>(03172) 서울시 종로구 사직로8길 60 전화: 02-2100-2114 팩스: 02-2100-7999</span>
+                <span>본 홈페이지의 모든 권리는 외교부에 귀속됩니다. COPYRIGHT (c) 2013MOFA ALL RIGHTS RESERVED.</span>
+            </address>
+            <div class="snsicon">
+                <a href="#" class="sns1">페이스북</a>
+                <a href="#" class="sns2">트위터</a>
+                <a href="#" class="sns3">유튜브</a>
+            </div>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,387 @@
+<!doctype charset="utf-8">
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>durunobi</title>
+    <link rel="stylesheet" type="text/css" href="/css/durunobi.css">
+</head>
+
+<body><!--컨텐츠 flex로 column으로 떨어지게 설정-->
+    <header>
+        <div class="top"><!--flex로 row로 나열되게 설정-->
+            <div class="left">
+                <a href="#">즐겨찾기</a>
+                <a href="#">도움말</a>
+                <a href="#">앱다운받기</a>
+                <a href="#">빅앱다운받기</a>
+            </div>
+            <div class="right"><!--flex로 row로 나열되게 설정-->
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+                <a href="#">고객지원</a>
+                <a href="#" class="sns">페이스북</a>
+                <a href="#" class="sns">유튜브</a>
+                <a href="#" class="sns">인스타그램</a>
+            </div>
+        </div>
+        <nav class="midtop">
+            <div class="inner"><!--flex로 row로 나열되게 설정-->
+                <a href="#" class="logo">두루누비 로고</a>
+                <div class="nav">
+                    <ul class="gnb"><!--전체적인 화면모습만 우선 짜놓고 완성이 된 후 nav세세하게 짜기-->
+                      <li><a href="#">걷기여행</a></li>
+                      <li><a href="#">자전거여행</a></li>
+                      <li><a href="#">여행후기</a></li>
+                      <li><a href="#">여행안내</a></li>
+                      <li><a href="#">해파랑길</a></li>
+                      <li><a href="#">남파랑길</a></li>
+                      <li><a href="#">DMZ 평화의 길</a></li>
+                      <li><a href="#">걷기여행</a></li>
+                    </ul><!--메뉴모양 돋보기 모양 아이콘 갖고오기-->
+                    <span class="material-symbols-outlined" role="button"> menu</span> 
+                    <span class="material-symbols-outlined" role="button">search</span>
+                </div>
+            </div>  
+        </nav>
+    </header>
+    <!--상단 슬라이드영역-->
+    <section class="sec1">
+        <div class="inner"><!--flex로 row로 나열되게 설정-->
+            <div class="left">
+                <img src="/img/duru/codiv_banner.png" alt="코로나 방역수칙">
+                <!--슬라이드 클릭영역 나중에 position으로 작성-->
+            </div>
+            <div class="right">
+                <div class=tabbt>
+                    <button id="tab01" class="on">걷기길</button>
+                    <button id="tab02">자전거길</button>
+                </div><!--걷기길 자전거길 button id로 설정하여 만들어야함-->
+                <div class="tabcon">
+                    <div data-id="tab01" class="tab on">
+                        <h2>
+                            <span>전체</span>
+                            <span>2188개</span>
+                        </h2>
+                        <section>
+                            <option>난이도</option>
+                            <option>보통</option>
+                            <option>쉬움</option>
+                            <option>어려움</option>
+                        </section>
+                        <section>
+                            <option>거리</option>
+                            <option>5km미만</option>
+                            <option>5~10km미만</option>
+                            <option>10km초과</option>
+                        </section>
+                        <section>
+                            <option>소요시간</option>
+                            <option>2시간미만</option>
+                            <option>2~4시간</option>
+                            <option>4시간초과</option>
+                        </section>
+                    </div>
+                    <div>지도구축</div>    
+                    <a href="#">걷기 길 상세검색<span class="#"><!--아이콘적용--></span></a>
+                
+                    <div data-id="tab02" class="tab">
+                        <h2>
+                          <span>전체</span>
+                          <span>68개</span>
+                        </h2>
+                        <section>
+                          <option>난이도</option>
+                          <option>보통</option>
+                          <option>쉬움</option>
+                          <option>어려움</option>
+                        </section>
+                        <section>
+                           <option>거리</option>
+                           <option>5km미만</option>
+                           <option>5~10km미만</option>
+                           <option>10km초과</option>
+                        </section>
+                        <section>
+                           <option>소요시간</option>
+                           <option>2시간미만</option>
+                           <option>2~4시간</option>
+                           <option>4시간초과</option>
+                        </section>
+                    </div>   
+                </div> 
+                <div>지도구축</div>    
+                <a href="#">자전거 길 상세검색<span class="#"><!--아이콘적용--></span></a>
+            </div>
+        </div>
+    </section>
+        <!--메인 아이콘 메뉴영역-->
+    <section class="sec2">
+        <div class="inner">
+            <a href="#">두루누비란?</a>
+            <a href="#">이벤트</a>
+            <a href="#">여행후기</a>
+            <a href="#">자주묻는질문</a>
+            <a href="#">홈페이지이용가이드</a>
+            <a href="#">앱다운로드</a>
+        </div>
+    </section>    
+    <!--이달의 추천길 영역-->
+    <section class="sec3">
+        <div class="inner">
+            <h2>이 달의 추천길<span>알고 걷는 즐거움이 있는 추천길을 찾아가보세요.</span></h2>
+            <h3>
+                #역사와 함께 하는 길
+                <a href="#"><i class="#">역사와 함께 하는 길 더보기</i></a>
+                <!--더보기 플러스모양아이콘 넣기-->
+            </h3>
+            <div class="cardgp">
+                <!--카드마다 클릭해서 들어가야 하니까 카드마다 a태그붙이기-->
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>보통</span>
+                    </div>
+                    <span class="roadtype">[비순환형]</span>
+                    <h5>석굴암-불국서길</h5>
+                    <span class="roadlocat"># 경북 경주시</span>
+                </a>
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>보통</span>
+                    </div>
+                    <span class="roadtype">[비순환형]</span>
+                    <h5>해파랑길 8코스</h5>
+                    <span class="roadlocat"># 울산 북구</span>
+                </a>
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>쉬움</span>
+                    </div>
+                    <span class="roadtype">[순환형]</span>
+                    <h5>남지 개비리길</h5>
+                    <span class="roadlocat"># 경남 창녕군</span>
+                </a>
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>보통</span>
+                    </div>
+                    <span class="roadtype">[순환형]</span>
+                    <h5>부여 사비길</h5>
+                    <span class="roadlocat"># 충남 부여군</span>
+                </a>
+            </div>    
+        </div>
+    </section>
+    <!--해파랑길 남파랑길 영역-->
+    <section class="sec4">
+        <div class="inner">
+            <div class="tabbox"><!--탭 버튼 누르는 코드 찾아서 적용하기-->
+                <h2 id="tab03" class="on">해파랑길</h2>
+                <h2 id="tab04">남파랑길</h2>
+                <a href="#" data-id="tab03" class="on">해파랑 구간 더보기</a>
+                <a href="#" data-id="tab03">남파랑 구간 더보기</a>
+            </div>
+            <div class="tabcon"><!--flex로 row로 나열되게 설정-->
+                <div class="haeblue" data-id="tab03">
+                    <a href="#">
+                        <span class="roadlocat">해파랑길 4코스</span>
+                        <p>
+                            임랑해변에서 진하해변까지는 부산과 울산의 경계를 넘어 한반도에서 가장 먼저 일출을 볼 수 있는 간절곶이 이 구간에 있다. 해송숲과 나사리, 송정리를 지나는 해안풍경은 자연 그대로의 맛을 느끼게 한다. 부산과 울산 경계의 숲길도 썩 쓸만하다.
+                        </p>
+                    </a>
+                    <a href="#">
+                        <span class="roadlocat">해파랑길 3코스</span>
+                        <p>
+                            대변항에서 월전까지는 해안도로가 생기기 전에 걸어 다녔던 옛길을 걷는다. 옛길은 산길이지만, 매우 부드러워 걷는데 별다른 무리가 없다. 죽성에서는 국수당, 황학대, 죽성교회 등 이야깃거리가 많다. 일광해변부터 이어지는 이천항, 이동항, 동백항, 신평항, 칠암항, 문중항, 임랑항 등에는 횟집이 즐비하다. 갈매기와 등대를 벗 삼아 호젓하게 걸을 수 있는 코스다.
+                        </p>
+                    </a>
+                    <a href="#">
+                        <span class="roadlocat">해파랑길 2코스</span>
+                        <p>
+                            해운대의 삼포라 불리는 미포, 청사포, 구덕포를 거쳐 대변항에 이르는 코스다. 삼포 중 미포~청사포 구간은 특히 ‘문텐로드’라고 한다. 달맞이공원 어울마당으로 가는 오솔길 갈림길에서 직진하면 청사포 방향으로 이어진다. 구덕포는 철길 굴다리를 통과하면 나오고, 송정해변까지는 해안도로를 따른다. 
+                        </p>
+                    </a>
+                    <a href="#">
+                        <span class="roadlocat">해파랑길 10코스</span>
+                        <p>
+                            울산 정자항을 출발하여 강동해변, 신명해변, 시도간 경계를 지나 경주 관성해수욕장, 수렴리해변, 나아해변까지 이르는 10코스는 지속적으로 이어지는 몽돌해변과 강동화암, 읍천해안 주상절리가 절묘하게 어우러진 해안장관의 절정을 이루는 코스이다. 특히 양남면 하서항부터 읍천항 벽화마을까지 1.7km가량 조성된 &lt;양남 주상절리 파도소리길&gt;은 일반 주상절리와는 확연히 다른 누워있는 주상절리, 부채꼴 주상절리 등 독특한 자연자원을 만날 수 있어 그 가치가 뚜렷하며 자연이 수놓은 장관을 감상할 수 있는 최고의 여정으로 손색이 없다. 또한 파도소리길을 벗어나자마자 등장하는 그림 있는 마을 읍천항 갤러리의 이색적인 풍경은 눈길을 붙잡으며, 정자 대게, 참가자미 등의 지역해산물을 풍족히 만날 수 있는 다양한 먹거리 볼거리가 산재한다.
+                        </p>
+                    </a>
+                    <a href="#">
+                        <span class="roadlocat">해파랑길 1코스</span>
+                        <p>
+                            갈맷길 3-1구간, 3-2구간과 중첩되는 구간으로서 해파랑길 시종점인 오륙도 해맞이 공원에서부터 부산 중구 부산대교까지 이어지는 구간이다.  신선이 노닐던 신선대 및 부산항의 역동적인 파노라마을 만끽할 수 있는 구간이며 세계에서 하나뿐인 UN기념공원 및 부산박물관, 영화 “친구”로 유명한 부산 일대의 명소를 함께 체험할 수 있다.  아름다운 해안경관과 우리나라 제1의 항구도시 부산의 매력을 느낄 수 있는 구간이다.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--인기태그 글 영역-->
+    <section class="sec5">
+        <div class="inner"><!--컨텐츠들 flex로 row방향으로 지정-->
+            <div class="populartag">
+                <h2>걷기 인기태그</h2>
+                <div class="tagbox">
+                   <a href="#">#단체</a>
+                   <a href="#">#역사</a>
+                   <a href="#">#기차</a>
+                   <a href="#">#산</a>
+                   <a href="#">#봄꽃</a>
+                </div>
+                <h2>자전거 인기태그</h2>
+                <div class="tagbox">
+                   <a href="#">#비순환형</a>
+                   <a href="#">#버스</a>
+                   <a href="#">#가을단풍</a>
+                   <a href="#">#순환형</a>
+                   <a href="#">#지하철</a>
+                </div>
+            </div>
+            <div class="popularrank">
+                <h2>인기 걷기길</h2>
+                <ul class="road">
+                    <li>
+                        <a href="#">
+                           <span>1</span>
+                           <span>위</span>
+                           <span>해파랑길 1코스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           <span>2</span>
+                           <span>위</span>
+                           <span>서울둘레길 5코스 관악산코스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           <span>3</span>
+                           <span>위</span>
+                           <span>해파랑길 2코스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                          <span>4</span>
+                          <span>위</span>
+                          <span>서울둘레길 3코스 고덕·일자산코스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                          <span>5</span>
+                          <span>위</span>
+                          <span>서울둘레길 8코스 북한산코스</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="/img/duru/banner_img01.png" alt="동반여행가이드"></a>
+            </div>
+        </div>
+    </section> 
+    <section class="sec06">
+        <div class="left">
+            <div class="halfinner">
+                <h2>
+                    <span>이벤트·행사</span>
+                    <a href="#"><i class="#"><span>이벤트 행사 더보기</span></i></a>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>2022 JTBC 트레일 코리아</span>
+                            <span>2022-02-23</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>한국관광공사가 추천하는 걷기여행길 E-Book 댓글 이벤트</span>
+                            <span>2021-12-08</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>템플스테이 걷기여행 SNS 콘텐츠 공모전</span>
+                            <span>2021-11-11</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>경기 둘레길 개통기념 이벤트</span>
+                            <span>2021-10-21</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="halfinner">
+                <h2>
+                    <span>공지사항</span>
+                    <a href="#"><i class="#"><span>이벤트 행사 더보기</span></i>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>해파랑길&남파랑길 완보 인증 및 발급방법 안내</span>
+                            <span>2022-11-24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>한국인을 위한 걷기 가이드라인(만 18세-64세)</span>
+                            <span>2021-10-25</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>해파랑길 21코스 일부구간 통행제한 안내</span>
+                            <span>2021-04-22</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>[등록안내] 경상남도 밀양시, 밀양강 자전거길</span>
+                            <span>2021-04-09</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="copyright">
+                <a href="#">위치기반서비스 이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">회원약관</a>
+                <a href="#">두루누비소개</a>
+            </div>
+            <select>
+                <option>패밀리사이트 바로가기</option>
+                <option>페이스북 바로가기</option>
+                <option>유튜브 바로가기</option>
+                <option>인스타그램 바로가기</option>
+            </select>
+        </div>
+    </footer>
+    <footer>
+        <div class="inner">
+            <address>
+                <span>(26464) 강원도 원주시 세계로 10 (반곡동) 한국관광공사</span>
+                <span>사업자등록번호 : 202-81-50707 통신판매업신고 : 제2009-서울중구-1234호</span>
+                <span>Copyright by KTO. ALL RIGHTS RESERVED.</span>
+            </address>
+        </div>
+    </footer>
+
+</body>
+</html>

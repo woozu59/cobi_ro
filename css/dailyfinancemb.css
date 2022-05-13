@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.body{
+   min-width: 320px;/*모바일 최소기준이 320px*/ 
+   width: 100%; height: auto; font-family: 'Noto Sans KR', sans-serif;
+}
+
+.flexbox{width: 100%; height: auto;}
+
+.inner{ width:100%; margin: 0 auto;}
+.inner .logo{ width: 89; height: 34; margin: 0 auto; padding: 35px;}
+.inner > h1{ margin: 0 auto; font-size: 14px; padding: 7%}
+
+/*아이콘 숨기는 법*/
+
+.inner > h1 > i::before{width: 10px; height: 14px; left: 3%; top: 10%; font-size: 0.8em;}
+.inner > h1 > i::after{width: 10px; height: 14px; right: 3%; top: 10%; font-size: 0.8em;}
+
+.inner .box{width:100%; height:auto; padding: 8%;}
+.inner .box .title{font-size: 21px;}
+.inner .box .content{height: auto; font-size: 15px;}
+.inner .box .date{font-size: 10px;}
+.inner .box button{ height: auto; font-size: 12px;}
+
+
+.inner .box.b01{ order: 0;}
+.inner .box.b02{ order: -1;}
+.inner .box.b03{ margin: 0 0 20px; font-size: 25px;}
+.inner .box.b05{ width:50%;}
+.inner .box.b06{ width: 50%; margin-right: 0; padding: 0;}
+.inner .box.b07{ width: 50%; position: relative; right: -50%;}
+.inner .box.b08{ width: 50%; position: relative; left: -50%;}
+.inner .box.b09{ margin: 0 0  20px;}
+.inner .box.b10{ width: 50%;}
+.inner .box.b11{ width: 45%; padding: 23% 0; margin: 0 0 0 5%; font-size: 25px;}

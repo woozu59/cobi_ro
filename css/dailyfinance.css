@@ -1,0 +1,221 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+    /* 구글폰트*/
+@import url('https://fonts.google.com/share?selection.family=Noto%20Sans%20KR:wght@300');
+   /*font-family: 'Noto Sans KR', sans-serif;  */
+   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'); 
+   /*폰트어썸*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid aqua;
+}
+
+
+.body{
+    min-width: 1200px;
+    min-height: 950px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.flexbox{/*박스 컨텐츠가 가로로 일정한 간견으로 나란히 놓여있게 함*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 770px;
+}
+.inner{
+    width:1200px;
+    margin: 0 auto;
+    
+}
+.inner .logo{
+   background-image: url("/img/daily/logo_phone.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 195px;
+    height: 74px;
+    display: block;
+    margin: 0 auto;
+    padding: 60px;
+    text-indent: -668px;
+    overflow: hidden;
+
+}
+.inner > h1{
+    color: rgb(104, 104, 104);
+    margin: 20px auto;
+    text-align: center;
+    font-style: normal;
+}
+
+
+/*아이콘 컨텐츠코드를 찾아서 작성하고 위치 크기 설정하기*/
+.inner > h1 > i::before{
+    content:"\f10d";
+    display: block;
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    left: 20%;
+    top: 10%;
+    font-size: 0.8em;
+    
+
+}
+.inner > h1 > i::after{
+    content:"\f10e";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20%;
+    top: 10%;
+    font-size: 0.8em;
+}
+/*쌍따옴표아이콘 코드 찾아서 .inner > h1::before{}/ ::after{} content: 넣어서 글씨 앞뒤로 넣기*/
+.inner .box{
+    width:290px;
+    height:230px;
+    margin: 0 0 20px;
+    display: block;
+    padding: 20px;
+    float: left;
+    color:white;
+
+}
+
+.inner .box .title{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+.inner .box .content{
+    height: 48px;
+    margin: 15px 0 0 0;
+    word-break:keep-all;
+    font-size: 17px;
+}
+
+.inner .box .date{
+    font-size: 15px;
+    margin-top: 25px;
+    display: block;
+
+}
+
+.inner .box button{
+    height: 25px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    margin-top: 14px;
+    padding: 0 10px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.inner .box button:hover{
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.inner .box.b01{
+    background-image: url(/img/daily/bg_phone_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+
+}
+
+.inner .box.b02{
+    background: crimson;
+}
+
+.inner .box.b03{
+    background-color: rgb(245, 246, 247);
+    color: rgb(102, 102, 102);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px auto;
+    padding: 40px 0;
+}
+
+.inner .box.b04{
+    background-image: url(/img/daily/bg_phone_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: 50% 50%;
+}
+
+.inner .box.b05, 
+.inner .box.b09{
+    background-color: rgb(245, 246,247);
+    color: rgb(102, 102, 102);
+}
+.inner .box.b05 button, 
+.inner .box.b09 button{
+    border: 1px solid rgba(86, 86, 86, 0.8);
+    color:rgba(86, 86, 86, 0.8);
+}
+
+.inner .box.b05 button:hover, 
+.inner .box.b09 button:hover{
+    border: 1px solid rgba(86, 86, 86, 0.5);
+    color: rgba(86, 86, 86, 0.5);
+}
+
+
+
+.inner .box.b06{
+    width: 600px;
+    background-image: url(/img/daily/bg_phone_03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.inner .box.b07{
+    background-image: url(/img/daily/bg_phone_04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.inner .box.b08{
+    background-image: url(/img/daily/bg_phone_05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.inner .box.b10{
+    background-image: url(/img/daily/bg_phone_06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(247, 201, 49, 0.74);
+    background-blend-mode: screen;
+    margin: 0 auto;
+}
+
+.inner .box.b11{
+    background-color: rgb(245, 246, 247);
+    color: rgb(102, 102, 102);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding: 65px 0;
+}

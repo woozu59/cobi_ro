@@ -1,0 +1,83 @@
+<!doctype charset="utf-8">
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maxium=initial-scale=1"> 
+    <title>daily금융</title>
+    <link rel="stylesheet" type="text/css" href="/css/dailyfinance.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1024px)" href="/css/dailyfinancestyle.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="/css/dailyfinancemb.css">
+</head>
+<!--전체적으로 html구성요소 짠다음 flex필요한 class에 판단해서 넣어주기-->
+<body>
+    <div class="inner"><!--데일리금융 로고사진 첨부하고 글씨는 옆으로 보낸뒤에 hidden 작성하여 가리기 -->
+        <a href="#" class="logo">데일리금융</a>
+        <h1>
+            <i class="fa-solid fa-quote-left fa-solid fa-quote-right" aria-hidden="true"> <!--글씨 양옆 쌍따음표 아이콘 첨부 빨간네모를 만들어서 로고옆에 붙이기-->
+                    데일리와 핀테크에 대한 다채로운 이야기, D Story 입니다.
+            </i>
+        </h1>
+        <div class="flexbox"><!--flex로 rowf로 떨어지게 한다음 남는 컨텐츠들은 줄바꿈으로 밑으로 떨어지게 만들기-->
+            <div class="box b01"></div><!--사진첨부!!-->
+            <div class="box b02">
+                <div class="title">NEWS</div>
+                <p class="content">
+                    [핀테크] 내 손안에 스마트한 '금융비서'...안쓰면 손해죠
+                </p>
+                <p class="date">Jan.2021</p>
+                <button type="submit" formaction="#">#브로콜리</button>
+            </div>
+
+            <div class="box b03">
+                <p>일상을<br>풍요롭게 하는<br>금융</p>
+            </div><!--flex로 사용하여 span으로 지정한 글들을 column으로 설정할수 있음 내용이 줄어들든 늘어나든 객체간격을 센터로 하면 그대로유지됨-->
+            <div class="box b04">
+                <div class="title">Diary</div>
+                <p class="content">
+                    #37.2021 핀테크 컨퍼런스 '금융의 진화, 핀테크 레볼루션'...
+                </p>
+                <p class="date">Nov.2021</p>
+                <button type="submit" formaction="#">#2021핀테크컨퍼런스</button>
+            </div><!--글자 양옆에 패딩지정하면 글씨 입력한대로 상자의 크기가 조절됨-->
+            <div class="box b05">
+                <div class="title">Diary</div>
+                <p class="content">
+                    #35. 데일리, 싱가폴 핀테크 어워즈 top10 선정
+                </p>
+                <p class="date">Nov.2021</p>
+                <button type="submit" formaction="#">#DAILY의_daily</button>
+            </div>
+            <div class="box b06"></div>
+            <div class="box b07">
+                <div class="title">Focus</div>
+                <p class="content">
+                    #15. 금융산업 진화와 한국형 핀테크의 미래
+                </p>
+                <p class="date">Nov.2021</p>
+                <button type="submit" formaction="#">#브로콜리</button>
+            </div>
+            <div class="box b08"></div>
+            <div class="box b09">
+                <div class="title">Tech</div>
+                <p class="content">
+                    LFT-loopchain consensus algoritm
+                </p>
+                <p class="date">Jul.2021</p>
+                <button type="submit" formaction="#">#블록체인</button>
+            </div>
+            <div class="box b10">
+                <div class="title">DAILIST</div><!--사진의 효과방법은 색상컬러집어넣고 백그라운드_블렌드_모드사용-->
+                <p class="content">
+                    블록체인으로 '신뢰의 사회'를 만들어가는 도전의 아이콘-
+                </p>
+                <p class="date">Mar.2021</p>
+                <button type="submit" formaction="#">#데일리인텔리전스</button>
+            </div>
+            <div class="box b11">
+                <p>Fintech in<br>DAILI</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
