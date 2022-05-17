@@ -42,7 +42,7 @@
         </nav>
     </header>
     <!--sec1 시작-->
-    <section class="sec1"><!--사진 or 동영상 저장 해서 위치시키기-->
+    <section class="sec1"><!--사진 or 동영상 저장 해서 위치시키기 / 동영상 나오면 로고 안보이게 하기-->
         <div class="dokdo">독도로고</div><!--로고 위치고정 및 bg에 고정-->
     </section>
     <!--sec2 시작-->
@@ -140,8 +140,8 @@
                     <details>
                         <summary>독도입도종합안내 바로가기</summary><!--4번 메뉴-->
                         <div>
-                        <button type="submit" formaction="http://www.ulleung.go.kr/ko/page.htm?mnu_uid=1649">독도입도종합안내 바로가기</button>
-                            <!--버튼 클릭하여 독도입도안내 사이트로 이동하기-->
+                        <button type="button" onClick="location.href='http://www.ulleung.go.kr/ko/page.htm?mnu_uid=1649'">독도입도종합안내 바로가기</button>
+                            <!--버튼 클릭하여 독도입도안내 사이트로 이동하기 / 새탭에서 페이지 열리도록 설정-->
                         </div>
                     </details>  
                 </div>
@@ -232,9 +232,9 @@
             <div class="title">
                 <h2>독도가 우리영토인 근거</h2>
             </div>
-            <div class="slide"><!--슬라이드/ sec3에 첨부된 사진 외교부에서 가져온 사진인지 확인하기-->
+            <div class="slide">
                 <div class="slidecontent">
-                    <div class="slidecard"><!--card사이즈 키워서 글자들 밑으로 떨어지지 않게 하기-->
+                    <div class="slidecard">
                         <div class="slideinner">
                             <div class="year">500년</div>
                             <img class="img" src="/img/dokdo/삼국사기.jpg" alt="삼국사기 이미지">
@@ -334,9 +334,9 @@
                 <span>본 홈페이지의 모든 권리는 외교부에 귀속됩니다. COPYRIGHT (c) 2013MOFA ALL RIGHTS RESERVED.</span>
             </address>
             <div class="snsicon">
-                <a href="#" class="sns1">페이스북</a>
-                <a href="#" class="sns2">트위터</a>
-                <a href="#" class="sns3">유튜브</a>
+                <a href="#" class="fa-brands fa-facebook-f">페이스북</a>
+                <a href="#" class="fa-brands fa-twitter" >트위터</a>
+                <a href="#" class="fa-brands fa-youtube" >유튜브</a>
             </div>
         </div>
     </footer>

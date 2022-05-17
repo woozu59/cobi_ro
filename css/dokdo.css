@@ -40,6 +40,7 @@ header .top .left{
 }
 header .top .left h6{
     color: white;
+    letter-spacing: 1px;
 }
 
 header .right button{
@@ -195,19 +196,20 @@ nav .inner .nav{
 .sec2 .guide table{
     width: 100%;
     border-collapse: collapse;
-    border-top: 1px solid #4444;
     background-color: rgba(36, 36, 36, 0.2);
+    border-radius: 10px;
+    border-style: hidden;
 }
 .sec2 .guide table td{
     border-bottom: 1px solid #4444;
     border-left: 1px solid #4444;
-    padding: 1px;
+    padding: 5px;
     text-align: center;
 }
 thead th{
     border-bottom: 1px solid #4444;
     border-left: 1px solid #4444;
-    padding: 1px;
+    padding: 3px;
     text-align: center;
 }
 thead th:first-child{
@@ -244,8 +246,8 @@ thead th:first-child{
 }
 
 .sec3 .cardgroup .card{
-    width: 385px;
-    height: auto;
+    width: 366px;
+    height: 339px;
 }
 
 .sec3 .card .cardti h4{
@@ -254,7 +256,8 @@ thead th:first-child{
 .sec3 .card img{
     width: 337px;
     height: 169px;
-    margin: 0px 0 0 48px;
+    margin: 0 0 0 29px;
+    position: relative;
 }
 
 .sec3 .card .inform{
@@ -264,22 +267,22 @@ thead th:first-child{
     height: auto;
     margin: -24px 0 0 0px;
     font-size: 15px;
+    position: absolute;
 }
 .sec3 .card .inform .source{
     font-size: 0.7em;
 }
-.sec3 .card .img:nth-of-type(even){
-    margin:0;
-}
-.sec3 .card .inform:nth-of-type(even){
+/*.sec3 .card .inform:nth-of-type(even){
     margin-left: 100px;
-}/*------>p:nth-child로 지정해야함*/
+}*//*------>p:nth-child로 지정해야함*/
 
 /*sec4 start*/
 .sec4{
     background: url(/img/dokdo/dokdo_banner.jpg) no-repeat 50% 50% / cover;
     background-color:rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
+    height: 618px;
+
 }
 .sec4 .inner .title h2{
     color: #ffff;
@@ -287,22 +290,37 @@ thead th:first-child{
 
 .sec4 .inner .slidecontent{
     display: flex;
-
+    margin-top: 40px;
+    margin-left: 25%;
+/*overflow할 필요없음 / 스크립트로 슬라이드정하면 자동적으로 넘어감*/
 }
 .sec4 .slidecontent .slidecard{
-    width: 495px;
-    height: 455px;
+   margin-right: 48%;
 }
 .sec4 .slidecard .slideinner{
     color: #ffff;
+    width: 495px;
+    height: 455px;
 }
-.sec4 .slidecard .img{
-    width: 280px;
-    height: 200px;
-}
+
 .sec4 .year{
     font-size: 20px;
     text-align: center;
+}
+.sec4 .slidecard .img{
+    width: 220px;
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+}
+.sec4 .source{
+    font-size: 13px;
+}
+
+.sec4 .copy > span{
+    font-size: 13px;
+    display: flex;
+    margin-top: 12px;
 }
 
 /*슬라이드 마지막에 설정*/
@@ -331,22 +349,20 @@ footer address{
 footer address > span{
     margin-bottom: 14px;
 }
-/*footer .snsicon.sns{
-    width: 36px;
-    width: 24px;
-    display: inline-block;
-    text-indent: -58px;
-    overflow: hidden;
-
-}
-footer .snsicon .sns1::before{
-    content:"\f167";
-    display: block;
-    position: absolute;
-    width: 24px;
+footer .snsicon{
     height: 24px;
-    color: #fff;
-}*/
+}
+a.fa-brands{
+    display: inline-block;
+    width: 30px;
+    height: 23px;
+    overflow: hidden;
+    font-family: "FontAwesome";
+    text-indent: 7px;
+    color: white;
+    padding: 6px 0px 6px 0px;
+    
+}
 /*---->아이콘 컬러변경해야되서 nth-child() svg로 다운받아서 못하고 i class로 설정하면
 아이콘을 연달아서 넣고 text를 숨기지 못함
 a로 설정하여 유니코드로 작성하여 위치를 조정해야함*/ 
