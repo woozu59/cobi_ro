@@ -224,57 +224,80 @@ thead th:first-child{
 .sec2 .note{
     background-color: rgba(36, 36, 36, 0.2);
     padding-bottom: 7px;
+    border-radius: 10px;
 }
 .sec2 .note ul{
     margin: 0 25px;
     text-indent: 6px;
-    font-size: 18px;
 }
 .sec2 .note li{
     margin: 11px 0;
 }
-
+.sec2 .note li span{
+    font-weight: bold;
+}
+.sec2 .note button{
+    margin: 16px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #E5E5E5;
+    border: 1px solid #7D7D7B;
+    border-radius: 8px;
+}
 
 /*sec3 start*/
 
 .sec3 .cardgroup{
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap:wrap;
-    margin: 0 auto;
+    margin: 1px auto;
 }
 
 .sec3 .cardgroup .card{
-    width: 366px;
-    height: 339px;
+    width: 406px;
+    height: 386px;
 }
 
 .sec3 .card .cardti h4{
     text-align: center;
+    margin: 0px 0px 35px 50px;
 }
 .sec3 .card img{
-    width: 337px;
+    width: 356px;
     height: 169px;
-    margin: 0 0 0 29px;
+    margin: 1px 0 0 50px;
     position: relative;
 }
 
 .sec3 .card .inform{
     background-color: rgba(36, 36, 36, 0.7);
     color: white;
-    width: 284px;
-    height: auto;
-    margin: -24px 0 0 0px;
+    width: 314px;
+    height: 135px;
+    margin: -45px 0 0 0;
     font-size: 15px;
     position: absolute;
+    padding: 10px 6px;
 }
 .sec3 .card .inform .source{
     font-size: 0.7em;
+    margin-top: 5px;
 }
-/*.sec3 .card .inform:nth-of-type(even){
-    margin-left: 100px;
-}*//*------>p:nth-child로 지정해야함*/
+.cardgroup .card:nth-child(even) img{
+    margin: 67px 0 0 0;
+}
+.cardgroup .card:nth-child(even) .inform{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    margin-left: 92px;
+    border: 1px solid #EDEEEE;
+}
+.cardgroup .card:nth-child(even) .cardti h4{
+    margin: 35px 50px 0 0;
+}
 
 /*sec4 start*/
 .sec4{
@@ -287,7 +310,10 @@ thead th:first-child{
 .sec4 .inner .title h2{
     color: #ffff;
 }
-
+.sec4 .inner .slide{
+    width: 100%;
+    height: 455px;
+}
 .sec4 .inner .slidecontent{
     display: flex;
     margin-top: 40px;
@@ -315,6 +341,7 @@ thead th:first-child{
 }
 .sec4 .source{
     font-size: 13px;
+    margin: 0 28%;
 }
 
 .sec4 .copy > span{
