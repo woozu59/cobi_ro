@@ -135,10 +135,10 @@ nav .inner .nav{
 }
 
 .header2 nav .menu a{
-    color: #242424;
+    color: white;
     font-weight: bold;
     font-size: 1.2em;
-    text-shadow: 1px 1px 5px #e5e5e5;
+    /* text-shadow: 1px 1px 5px #e5e5e5; */
 }
 
 /*sec1 css start*/
@@ -146,6 +146,7 @@ nav .inner .nav{
     overflow: hidden;
     margin: -127px 0 0 0;
     height: 100vh;
+    background: rgba(36,36,36,0.2);
 }
 .sec1 video{
     /* width:100%; */
@@ -159,14 +160,14 @@ nav .inner .nav{
     /*로고 padding으로 붙일지 position으로 붙일지 고민해보기*/
 }
 
-/* .sec1 .dokdo{
+.sec1 .dokdo{
     width: 160px;
     height: 170px;
     background: url(../img/dokdo/logo_korean.png) no-repeat 50% 50% / contain;
     text-indent: -100px;
     overflow: hidden;
-    margin: 0 auto;
-} */
+    margin: 128px auto;
+}
 
 /*sec2 css start*/
 
@@ -190,9 +191,10 @@ nav .inner .nav{
     height: 307px;
 }
 
+
 .sec2 .content .left,
 .sec2 .content .right{
-    width: 50%
+    width: 50%;
 }
 .sec2 .content .title h2{
     width: 100%;
@@ -303,9 +305,11 @@ thead th:first-child{
     transition:800ms ease all;
   }
 /*sec3 start*/
+
 .sec3{
     margin-top: -307px;
     background: white;
+    height:auto;
 }
 .sec3 .cardgroup{
     width: 80%;
