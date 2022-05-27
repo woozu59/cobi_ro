@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	list-style:none;
+	font-family: "맑은 고딕";
+}
+a{
+	color:#000000;
+	text-decoration:none;
+}
+.tabmenu{
+	float:left; 
+	position:absolute;
+	padding:0px;
+	width:400px;
+}
+.tabmenu>li{ 
+	float:left; 
+	width:200px;
+}
+.tabmenu>li.active>a{
+	background:#EEEEEE; 
+}
+.tabmenu>li>a:hover{
+  	background-color:#CCCCCC;
+}
+.tabmenu>li>a{ 
+	padding:10px;
+	display:block; 
+	text-align:center; 
+	border:1px solid #DDDDDD;
+}
+.tabmenu>li:first-child a{ 
+	border-right:none;
+}
+.tabmenu>li.active div{ 
+	width:398px; 
+	height:150px; 
+	border:1px solid #DDDDDD;
+	border-top:none;
+	padding-top:50px;
+}
+.tabmenu>li>div{ 
+	position:absolute;
+	left:0px;
+	height:0;
+	overflow:hidden;
+}
+.gallery ul li{
+	float:left;
+	padding:10px;
+}

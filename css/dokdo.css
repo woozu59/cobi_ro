@@ -334,28 +334,42 @@ thead th:first-child{
 }
 
 .sec3 .cardgroup .card{
-    width: 406px;
-    height: 386px;
     margin: 36px 0 46px 0;
     z-index: 20;
 }
-.sec3 .cardgroup .back{
+.sec3 .cardgroup .back_1{
     width:979px;
     height: 276px;
     position: absolute;
     left: 0;
     z-index: 2;
-    top: 50%;
+    top: 20%;
     background: rgba(144, 198, 227, 0.7);
 }
+.sec3 .cardgroup .back_2{
+    width: 950px;
+    height: 295px;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    top: 55%;
+    background: rgba(52, 128, 170, 0.7)
+}
+
+.sec3 .card .cardti{
+    position: relative;
+    top: 62px;
+    z-index: 5;
+}
 .sec3 .card .cardti h4{
-    text-align: center;
-    margin: 0px 0px 35px 50px;
+    margin: 0 0px 0 37px;
+    color: white;
+    font-size: 2.2vh;
 }
 .sec3 .card img{
-    width: 356px;
-    height: 169px;
-    margin: 1px 0 0 50px;
+    width: 500px;
+    height: 325px;
+    /* margin: 1px 0 0 50px; */
     position: relative;
     box-shadow: 5px 5px 7px rgb(36,36,36,0.3);
     border-radius: 18px;
@@ -364,12 +378,12 @@ thead th:first-child{
 .sec3 .card .inform{
     background-color: rgba(36, 36, 36, 0.7);
     color: white;
-    width: 314px;
-    height: 143px;
-    margin: -45px 0 0 0;
+    width: 393px;
+    height: 187px;
+    margin: -130px 0 0 0;
     font-size: 15px;
     position: absolute;
-    padding: 10px 6px;
+    padding: 20px;
     box-shadow: 5px 5px 7px rgb(36,36,36,0.3);
     border-radius: 18px;
 }
@@ -384,11 +398,11 @@ thead th:first-child{
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
     margin-left: 92px;
-    margin-top: -52px;
+    margin-top: -145px;
     border: 1px solid #EDEEEE;
 }
-.cardgroup .card:nth-child(even) .cardti h4{
-    margin: 35px 50px 0 0;
+.sec3 .card:nth-child(even) .cardti{
+    top: 133px;
 }
 
 /*sec4 start*/
