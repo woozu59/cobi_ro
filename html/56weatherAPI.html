@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>56weatherAPI</title>
+    <link rel="stylesheet" type="text/css" href="/css/56weatherAPIStyle.css" />
+</head>
+
+<body>
+    <h1>현재 독도의 날씨는?</h1>
+    <div class="wrap">
+        <div class="circle">
+            <p class="temp"></p>
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        // 개인계정의 API입력, 각 위치의 도시명이나 위도경도 입력
+        // api.openweathermap.org/data/2.5/weather?q={city name}&units=metric&lang=kr&appid={API key}
+        // https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid={API key}
+
+        //openweather사이트들어가서 회원가입하고 api 키 받은다음 appid= 뒤쪽에 넣기
+        //weather?1={도시 이름} 독도의 위도와 경도 구글지도로 찾아서 넣어주면 됨
+        //맨마지막 units=는 해외사이트여서 기본값이 화씨임 섭씨로 바꾸려면 metric이라 적어주면 됨
+        //아이콘은 openweather에서 제공하는 png아이콘을 svg로 다운받아서 색을 지정해줌]
+        //${result.weather[0].icon}은 openweather에서 작성하라고 주는 기본값임 날씨를 한시간에ㅔ 한번씩 정보를 불러오도록 함
+        //링크 넣은 다음 제이쿼리로 결과값 작성해주기
+        //icon , temp라는 변수를 만든 후 result.main.temp.toFixed는 무한한 소수점으로 떨어지는 온도를 소수점 뒤 한자리까지만 고정되서 나오도록 정함
+        //결과값을 메인에 온도만 표시되게끔
+        //circle안에 아이콘을 밀어넣도록 append로 적용 / 온도도 뒤에 기호가 같이 표시되게끔 밀어넣기
+
+
+        
+        // 날씨 아이콘 안내
+        // https://openweathermap.org/weather-conditions
+
+        $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=11dc855b398963b85357a001ce37a67c&units=metric', function(result) {
+            let icon = `<img src="/images/weather/${result.weather[0].icon}.svg"alt="${result.weather[0].description}">`
+            let temp = result.main.temp.toFixed(1)
+            $('.circle').append(icon);
+            $('.temp').append(`${temp}˚C`);
+        });
+    </script>
+</body>
+
+</html>

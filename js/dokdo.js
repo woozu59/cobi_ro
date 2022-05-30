@@ -1,30 +1,28 @@
-    var swiper = new Swiper(".slide", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-       
-        }
-    });
-// $(document).ready(function(){
-//   $(window).scroll(function(){
-//     $('.title1').each(function(i){
-      
-//       var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-//       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-//       if(bottom_of_window > bottom_of_element){
-//         $(this).animate({'opacity':'1','margion-bottom':'0px'}, 1000);
-//       }
-//     });
-//   });
-// });
+$.getJSON('https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=4e406371c47d543546a019fee8fe058d&units=metric', function(result){
+  let icon = `<img src="../img/weather/${result.weather[0].icon}.svg" alt="${result.weather[0].description}">`
+  let temp = result.main.temp.toFixed(1)
+  $('.circle').append(icon);
+  $('.temp').append(`${temp}℃`);
+});
+//  var weather = 
+//날씨 이미지 가져와서 날씨 이미지에 따른 날씨상황 띄울수 있도록 하고 입도희망자는 좌측메뉴 이용할수 있는 문구 띄우기
+ var swiper = new Swiper(".slide", {
+    navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+    },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+       
+      }
+  });
+
+ 
