@@ -121,7 +121,7 @@ nav .inner p{
     color: rgb(184, 184, 184);
 }
 nav .inner .nav{
-    width: 330px;
+    width: 400px;
 }
 .header2 nav .inner .menu{
     display: flex;
@@ -173,8 +173,9 @@ nav .inner .nav{
 
 .title h2{
     color: #242424;
-    text-decoration: underline;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 4px 0;
+    border-bottom: 2px solid #242424;
+    width: 147px;
 
 }
 
@@ -208,10 +209,7 @@ nav .inner .nav{
 }
 
 
-.sec2 .content .title h2{
-    width: 100%;
-    margin: 0;
-}
+
 /*날씨 css*/ 
 .sec2 .left .wrap{
     width: 420px;
@@ -220,30 +218,23 @@ nav .inner .nav{
     margin: 0 auto;
     
 }
-.sec2 .left .wrap .circle{
+.sec2 .left .wrap .weather{
     width: 292px;
     height: 151px;
     display: flex;
-    
     align-items: center;
     justify-content: center;
     position: relative;
-}
-.wrap .circle::before{
-    width: 1px;
-    height: 100px;
-    position: absolute;
-    display: block;
-    left: 20041px;
-    content: "";
+    color: #242424;
 }
 
-.wrap .circle > .temp{
+
+.wrap .weather > .temp{
     font-size: 1.8rem;
     position: relative;
     left: 108px;
 }
-.wrap .circle > img{
+.wrap .weather > img{
     width: 100px;
     position: relative;
     left: -100px;
@@ -254,6 +245,7 @@ nav .inner .nav{
 .sec2 .content .guide{
     overflow: auto;
     height: 231px;
+    margin: 15px 0 0 0;
     
 }
 .sec2 .content .guide details{
@@ -367,7 +359,7 @@ thead th:first-child{
     position: relative;
 }
 .sec3 .cardgroup{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
@@ -375,11 +367,11 @@ thead th:first-child{
 }
 
 .sec3 .cardgroup .card{
-    margin: 36px 0 46px 0;
+    margin: 50px 0;
     z-index: 20;
 }
 .sec3 .cardgroup .back_1{
-    width:979px;
+    width: 940px;
     height: 276px;
     position: absolute;
     left: 0;
@@ -388,12 +380,12 @@ thead th:first-child{
     background: rgba(144, 198, 227, 0.7);
 }
 .sec3 .cardgroup .back_2{
-    width: 950px;
+    width: 900px;
     height: 295px;
     position: absolute;
-    left: 50%;
+    right: 0%;
     z-index: 2;
-    top: 55%;
+    top: 56%;
     background: rgba(52, 128, 170, 0.7)
 }
 
@@ -439,7 +431,7 @@ thead th:first-child{
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
     margin-left: 92px;
-    margin-top: -145px;
+    margin-top: -138px;
     border: 1px solid #EDEEEE;
 }
 .sec3 .card:nth-child(even) .cardti{
@@ -458,6 +450,8 @@ thead th:first-child{
 }
 .sec4 .inner .title h2{
     color: #ffff;
+    width: 247px;
+    border-bottom: 2px solid #fff;
 }
 .sec4 .inner .slide{
     font-family: 'Noto Serif KR', serif;
