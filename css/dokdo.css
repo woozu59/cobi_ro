@@ -216,6 +216,7 @@ nav .inner .nav{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    flex-direction: column;
     
 }
 .sec2 .left .wrap .weather{
@@ -226,6 +227,7 @@ nav .inner .nav{
     justify-content: center;
     position: relative;
     color: #242424;
+    margin: 0 auto;
 }
 
 
@@ -238,8 +240,10 @@ nav .inner .nav{
     width: 100px;
     position: relative;
     left: -100px;
+}
 
-
+.wrap .coment{
+    margin: 10px;
 }
 /*날씨 css 끝*/
 .sec2 .content .guide{
