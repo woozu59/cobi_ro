@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*공통 css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid greenyellow;
+}
+/*전체 inner css*/
+.inner1200{
+    width:1200px;
+    margin: 0 auto;
+    background: #fff;
+    outline: 1px solid #d9d9d9;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    background: green;
+    text-align: center;
+    line-height: 100px;
+}
+.inner1200 .box{
+    width: 33%;
+    height: 200px;
+    background: #E5E5E5;
+    float: left;
+}
+.inner1200 .box:nth-child(2){margin: 0 0.5%;}
+.clearfix::after{
+    display: table;
+    content:'';
+    clear: both;
+}
+ul, li{list-style: none;}
+a, a:visited{
+    color: #6d6d6d;
+    text-decoration: none;
+}
+a:hover, a:active{color:#3333;}
+
+.inner1200 nav.top{
+    width: 100%;
+    height: 100px;
+    position:relative;
+    background: #f9fafc;
+}
+/* .inner1200 nav.top .logo{margin: 20px;} */
+.inner1200 nav.top .gnb{
+    width: 1200px;
+    height: 0;
+    padding: 0 20px 0 0;
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+    right: 0;
+    background:#71D9A7;
+    transition: height 0.5s;
+    display: flex;
+    justify-content: flex-end;
+} 
+.inner1200 nav.top .gnb:hover{
+    height: 100px;
+    transition: height 0.5s;
+}
+.gnb > li{
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+   margin-top: -100px;
+}
+.gnb > li > a{
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    z-index: 100;
+
+}
+.gnb > li:hover > a{
+    background: #e3e4e6;
+    color:#71D9A7;
+}
+/* .gnb > li > ul > li:hover{
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
