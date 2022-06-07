@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body{
+    min-width: 0;
+    width: 100%;
+}
+.title h2{
+    font-size: 1.3em;
+    width: 132px;
+}
+header{display: none;}
+header.header2{
+    display: block;
+    background: #242424;
+}
+.header2 .top{
+    display: block;
+    padding: 0 5px;
+}
+nav .inner .foregin{float:left;}
+
+a.logo{
+    width: 147px;
+    height: 57px;
+    margin: 15px 0;
+}
+a.logo2{
+    width: 70px;
+    height: 40px;
+    margin-top: 32px;
+}
+.header2 nav .inner{
+    width: 100%;
+}
+.inner .nav{
+    background: url(../img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
+    display:block;
+    width: 40px;
+    height: 35px;
+    float: right;
+    margin: 30px 0 0 58%;
+    padding: 18px;
+   
+    /*메뉴바 햄버거 모양이 안보임*/
+}
+.inner .menu{
+    display: none;
+}
+
+.sec1 .dokdo{
+    width: 13%;
+    height: 15%;
+    margin: 156px auto;
+}
+
+.sec1 video{margin: 0 0 0 -50%;}
+.sec2{
+    width: 100%;
+    background: none;
+    border-radius: 0;
+}
+.sec2 .content{flex-direction: column;}
+.sec2 .content .line{display: none;}
+.sec2 .content .left{border-radius: 20px 20px 0 0;}
+.sec2 .content .left,
+.sec2 .content .right{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: soft-light;
+}
+
+.sec2 .left .wrap{
+    width: 80%;
+    margin-bottom: 13px;
+}
+.sec2 .left .wrap .weather{
+    width: 80%;
+    height: 144px;
+}
+.left .title h2{
+    width: 111px;
+    font-size: 1.3em;
+}
+.wrap .coment{padding: 2px;}
+.wrap span{top: -19px;}    
+
+.sec3{top: 26%;}
+.sec3 .card img{
+    width: 425px;
+    height: 300px;
+}
+.sec3 .card .inform{
+    margin: -112px 0 0 0;
+}
+.sec4{top: 26%;}
+
+footer{
+    position: relative;
+    top: 26%;
+}

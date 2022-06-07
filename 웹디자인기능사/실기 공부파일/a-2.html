@@ -6,12 +6,12 @@
     <title>a-2</title>
     <link rel="stylesheet" type="text/css" href="css/a-2.css">
 </head>
-
+<!--full nav / slide 좌우애니메이션 / 탭 두개 별도-->
 <body>
     <div class="inner1200">
-        <nav class="top clearfix">
+        <nav class="top">
             <div class="logo">로고 삽입 영역</div>
-            <ul class="gnb clearfix">
+            <ul class="gnb">
                 <li>
                     <a href="#">재단소개</a>
                     <ul>
@@ -55,13 +55,10 @@
         </div>
         <div class="contents2 clearfix">
             <div class="box tab">
-                <ul class="clearfix">
-                    <li data-id="con1" class="on"><a href="#">공지사항</a></li>
-                    <li data-id="con2"><a href="#">갤러리</a></li>
-                </ul>
-                <div id="con1" class="conBox on">
+                <div data-id="con1" class="tabbt">공지사항</div>
+                <div id="con1" class="conBox">
                     <ul class="notice">
-                        <li><a href="#">공지사항1</a></li>
+                        <li class="notice1"><a href="#">공지사항1</a></li>
                         <li><a href="#">공지사항2</a></li>
                         <li><a href="#">공지사항3</a></li>
                         <li><a href="#">공지사항4</a></li>
@@ -72,7 +69,10 @@
                             <button class="bt">닫기</button>
                         </div>
                     </div>
-                </div>
+                </div>     
+            </div>
+            <div class="box tab">
+                <div data-id="con2" class="tabbt">갤러리</div>
                 <div id="con2" class="conBox">
                     이미지 파일 3개 집어 넣기
                 </div>
