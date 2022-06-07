@@ -174,14 +174,50 @@ ul.notice > li.notice1:hover{
     display: none;
     z-index: 1000;
 }
-.modalbg .box{width: 500px;
-height:300px;
-background: silver;
-position:absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-z-index: 1000;
+.modalbg .box{
+    width: 500px;
+    height:300px;
+    background: silver;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.modalbg .box .bt{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+footer{
+    height: 100px;
+    width: 100%;
+}
+.foot{
+    justify-content: space-around;
+}
+
+.foot .logo{
+    float: left;
+}
+.foot .address{
+    float: left;
+    width: 400px;
+    height: 100%;
+}
+.foot .site{
+    float:right;
+    width: 200px;
+    height: 100px;
+}
+.foot .site{
+    width: 200px;
+    height: 100px;
+}
+.foot .site > li{
+    height: 33%;
+    text-align: center;
+    line-height: 33px;
 }
 
 
