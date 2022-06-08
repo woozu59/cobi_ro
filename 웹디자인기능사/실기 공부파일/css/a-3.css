@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; box-sizing:border-box; outline: 1px solid salmon;}
+.clearfix::after{display:table; content:""; clear: both;}
+ul, li{list-style: none;}
+a, a:visited{color: #3333; text-decoration: none;}
+a:active, a:hover{color: #6d6d6d;}
+.inner1200{width: 1200px; margin: 0 auto; background:#d5d2d2; outline: 1px solid pink;}
+.logo{width: 200px; height: 100%; text-align: center; line-height: 100px;}
+.inner1200 .box{width: 33%; height: 200px; background: #efeeee; float: left;}
+.inner1200 .box:nth-child(2){margin: 0 0.5%;}
+.flexbox{display: flex;}
+.flex{display: flex; flex-direction: column; width: 100%; text-align: center;}
+
+
+/*nav 영역*/
+.inner1200 nav{width: 100%; height: 100px; position: relative; z-index: 100;}
+.inner1200 .top{background:#d9d9d9;}
+nav .logo{float: left;}
+nav .gnb{float: right; width: 700px; height: 100%; padding-top: 41px;}
+.gnb > li{width: 25%; float:left; text-align:center; cursor: pointer;}
+.gnb > li > a{width: 100%; height: 60px; line-height: 60px; display:block; background: #a967c4; color:#fff; z-index: 100;}
+.gnb > li:hover > a{color:#dedf99; background:#cda1e0;}
+.gnb > li > ul{background:#a967c4;}
+.gnb > li > ul > li:hover{background: #cda1e0;}
+/*nav 영역 끝*/
+/*슬라이드 fade in/ out*/
+.contents1{width: 100%; height:300px; overflow:hidden;}
+.contents1 .imgs{position: relative; display: flex; height: 100%;}
+
+.contents1 > .imgs > a{width: 100%; overflow: hidden; display: block; position: absolute;}
+
+/*슬라이드 영역 끝*/
+
+/*탭 영역*/
+
+.tab > ul{width: 100%; height: 40px;}
+.tab > ul > li{height: 40px; line-height: 40px; cursor: pointer; position:relative; background: #eced82; color: #3333; padding: 0 12px; margin: 0 3px 0 0; float: left; font-weight: 600;}
+.tab > ul > li.on{background: #a9aa49; cursor: default;}
+.tab > ul > li:hover{background: #a9aa49;}
+.tab > ul > li.on:hover{background: #a9aa49;}
+
+.tab .conBox{width: 100%; height: 160px; padding: 15px; background: #d5d2d2; display: none;}
+.tab .conBox.on{display: block;}
+
+/*탭 영역 끝*/
+/*모달팝업 영역*/
+ul.notice{width: 100%; height: 100%;}
+ul.notice > li{border-bottom: 1px solid #eee; height: 30px; line-height: 30px;}
+/* ul.notice > li.notice1{color: red;}
+ul.notice > li.notice1:hover{cursor: pointer; color: pink;} */
+.modalbg{width: 100%; height:100vh; background: rgba(0, 0, 0, 0.7); position: fixed; top:0; left:0; z-index: 1000; display: none;}
+.modalbg .box{width: 400px; height: 250px; background: silver; position: absolute; left: 50%; top: 50%; transform:translate(-50%, -50%); z-index: 1000;}
+.modalbg .box .bt{width:50px; height: 24px; position: relative; left: 63%; top: 81%;}
+/*모달팝업 영역 끝*/
+
+/* 배너 바로가기 영역*/
+.box .banner{float: left;}
+.box .shortcut{float: right;}
+
+footer.foot{width: 100%; height: 100px;}
+.flex .undermenu, .copyright{height: 50px; line-height: 50px;}
