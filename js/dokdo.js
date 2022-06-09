@@ -30,6 +30,7 @@ $(document).ready(function(){
           }else{
             $(".wrap").append("<span>현재 독도의 날씨는 안개 입니다.</span>");
           }
+          
         });
 
 
@@ -58,7 +59,9 @@ $(document).ready(function(){
           spaceBetween: 50,
         },
        
-      }
+      },
+
+     
   });
 
  

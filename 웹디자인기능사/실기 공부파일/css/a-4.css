@@ -1,0 +1,42 @@
+@charset "utf-8";
+*{margin:0; padding:0; box-sizing: border-box; outline: 1px solid steelblue;}
+.clearfix::after{display: table; content:""; clear:both;}
+a , a:visited{color: #333; text-decoration: none;}
+a:hover{color:#6d6d6d;}
+ul, li{list-style: none; text-decoration: none;}
+.inner1200{width:1200px; margin: 0 auto; background: #f7e7e7;}
+.inner1200 .box{width: 33%; height: 200px; background:#e7f4f7; float: left;}
+.inner1200 .box:nth-child(2){margin: 0 0.5%;}
+.logo{width: 200px; height: 100%; text-align:center; line-height: 100px;}
+.flex{display:flex; flex-direction: column; text-align: center; width: 100%;}
+/*nav full */
+nav.top{width: 100%; height: 100px; position: relative;}
+.top .gnb{display: flex; z-index: 100; position: absolute; top: 100px; right: 0; width: 1200px; height: 0; justify-content: flex-end; background:#71b0be; transition: height 0.5s;}
+.top .gnb:hover{height: 100px; transition: height 0.5s;}
+.gnb > li{width: 200px; margin-top: -60px; text-align: center; cursor: pointer;}
+.gnb > li > a{width: 100%; display: block; height: 60px; line-height: 60px; background: #fff; color: #333; font-weight: 600; position: relative;}
+.gnb > li:hover > a{background: steelblue; color:#fff;}
+.gnb > li > ul > li{width: 100%; height: 33px; line-height: 33px;}
+.gnb > li > ul > li:hover{background:#b9ebf6;}
+/* slide fade in/out*/
+.contents1{width: 100%; height:300px; overflow: hidden;}
+.imgs{position:relative; display:flex; height: 100%;}
+.contents1 > .imgs > a{width: 100%; position: absolute; display: block; overflow:hidden;}
+/*개별 tab*/
+.contents2{width: 100%; height: 200px;}
+.contents2 .con2{width: 69px; height: 40px; line-height: 40px; padding: 0 6px; font-weight: 500; background: #71b0be; color: #fff;}
+.contents2 .con1{width: 80px; height: 40px; line-height: 40px; padding: 0 6px; font-weight: 500; background: #71b0be; color: #fff;}
+.con1 .notice{width: 100%; height: 160px; padding: 5px;}
+.notice > li{margin-bottom: 15px}
+.notice > li.notice1:hover{cursor: pointer;}
+/*모달 팝업창*/
+.modalbg{width: 100%; height: 100vh; background:rgba(0,0,0,0.7); position: fixed; top: 0; left: 0; z-index:1000; display: none;}
+.modalbg .box{width: 400px; height: 300px; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 1000; background: #fff;}
+.modalbg button.bt{width: 40px; height: 30px; position: relative; top: 85%; left: 60%;}
+
+.shortcut{text-align: center; line-height: 200px;}
+/*footer*/
+footer{width: 100%; height: 100px;}
+.foot .site{float: right; width: 15%; height: 100%; line-height: 100px; text-align: center;}
+.foot .flex{width: 85%; height: 100%;}
+.flex .menu, .copyright{width: 100%; height: 50px; line-height: 50px;}
