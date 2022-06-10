@@ -75,11 +75,12 @@ ul.menu {
     left: -13px;
 }
 .sec3 .cardgroup .back_1{
-    width: 800px;
+    width: 80%;
     height: 250px;
+    
 }
 .sec3 .cardgroup .back_2{
-    width: 800px;
+    width: 80%;
     height: 250px;
     top: 60%;
 }

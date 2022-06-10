@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>b-1 nav / 좌우 슬라이드 / tab </title>
+        <link rel="stylesheet" type="text/css" href="css/b-1.css">
+    </head>
+    <body>
+        <div class="inner">
+            <nav class="top clearfix">
+                <div class="logo">대한은행</div>
+                <ul class="gnb clearfix">
+                    <li>
+                        <a href="#">개인</a>
+                        <ul>
+                            <li><a href="#">조회</a></li>
+                            <li><a href="#">이체</a></li>
+                            <li><a href="#">공과금</a></li>
+                            <li><a href="#">예금/신탁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">기업</a>
+                        <ul>
+                            <li><a href="#">조회</a></li>
+                            <li><a href="#">이체</a></li>
+                            <li><a href="#">전자결제</a></li>
+                            <li><a href="#">수표/어음</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">금융상품</a>
+                        <ul>
+                            <li><a href="#">저축상품</a></li>
+                            <li><a href="#">대출상품</a></li>
+                            <li><a href="#">투자상품</a></li>
+                            <li class="empty">빈영역</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">카드</a>
+                        <ul>
+                            <li><a href="#">카드정보</a></li>
+                            <li><a href="#">카드신청</a></li>
+                            <li><a href="#">이용내역조회</a></li>
+                            <li class="empty">빈 영역</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contents1">
+                <div class="imgs">
+                    <a href="#"><img src="images/space01.jpg" alt="배너1"></a>
+                    <a href="#"><img src="images/space02.jpg" alt="배너2"></a>
+                    <a href="#"><img src="images/space03.jpg" alt="배너3"></a>
+                </div>
+            </div>
+            <div class="contents2 clearfix">
+                <div class="box tab">
+                    <ul class="clearfix">
+                        <li data-id="con1" class="on"><a href="#">공지사항</a></li>
+                        <li data-id="con2"><a href="#">갤러리</a></li>
+                    </ul>
+                    <div id="con1" class="conBox on">
+                        <ul class="notice">
+                            <li class="notice1"><a href="#">공지사항1</a></li>
+                            <li><a href="#">공지사항2</a></li>
+                            <li><a href="#">공지사항3</a></li>
+                            <li><a href="#">공지사항4</a></li>
+                        </ul>
+                    </div>
+                    <div class="modalbg">
+                        <div class="box">
+                            모달팝업창
+                            <button class="bt">닫기</button>
+                        </div>
+                    </div>
+                    <div id="con2" class="conBox">
+                        갤러리 이미지 3가지
+                    </div>
+                </div>
+                <div class="box banner">
+                    배너 영역
+                </div>
+                <div class="box shortcut">
+                    바로가기 영역
+                </div>
+            </div>
+            <footer>
+                <div class="clearfix">
+                    <div class="logo">대한은행</div>
+                    <div class="flex">
+                        <div class="undermenu">하단메뉴</div>
+                        <div class="copyright">copyright</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/b-1.js"></script>
+    </body>
+</html>
