@@ -39,6 +39,8 @@ $(document).ready(function(){
   $(".menu").hover(function(){
     $(".menu ul").stop().slideToggle();
   });
+
+
 });
 
 
@@ -54,9 +56,9 @@ $(document).ready(function(){
           slidesPerView: 1,
           spaceBetween: 20,
         },
-        1000: {
+        1200: {
           slidesPerView: 2,
-          spaceBetween: 50,
+          spaceBetween: 40,
         },
        
       },
@@ -64,4 +66,6 @@ $(document).ready(function(){
      
   });
 
+
+ 
  

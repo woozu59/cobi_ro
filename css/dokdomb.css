@@ -40,10 +40,10 @@ a.logo2{
 .nav > .navIcon{
     background: url(../img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
     display:block;
-    width: 40px;
+    width: 36px;
     height: 35px;
     position: absolute;
-    top: 30px;
+    top: 28px;
     right: 0;
     cursor: pointer;
 }
@@ -60,8 +60,8 @@ a.logo2{
 }
 .menu1 .closeBt{
     background: url(../img/icon/xmark-solid.png) no-repeat 50% 50% / contain;
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 37px;
     display: block;
     position: relative;
     left: 86%;
@@ -77,15 +77,14 @@ a.logo2{
     width: 65%;
     z-index: 1000;
 }
-
+.nav .menu > li{
+    width: 166px;
+}
 .nav .menu > li > a {
     margin: 0 0 46px 0;
-    font-size: 1.1em;
+    font-size: 1.0em;
 }
 .nav .menu > li > ul{
-    position: relative;
-    left: 123%;
-    top: -42px;
     background: none;
     border: 1px solid #eee;
 }

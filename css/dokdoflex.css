@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+body{
+    min-width: 640px;
+    
+}
+.title h2{
+    font-size: 1.4em;
+}
+.header2 nav .inner{
+    width: 90%;
+}
+a.logo{
+    width: 120px;
+    height: 50px;
+    margin: 40px 0 0 0;
+}
+a.logo2{
+    width: 60px;
+    margin-top: 46px;
+}
+ul.menu {
+    width: 433px;
+}
+.nav .menu > li {
+    width: 144px;
+}
+.nav .menu > li > a{
+    font-size: 0.9em;
+}
+.nav .menu > li > ul > li {
+    padding: 0;
+}
+.sec1 .dokdo {
+    width: 10%;
+    height: 15%;
+}
+
+.sec2{
+    width: 80%;
+}
+.sec2 .left .wrap{
+    width: 88%;
+}
+.inner{
+    width: 90%;
+}
+.sec3 .cardgroup .card{
+    margin: 0;
+}
+.sec3 .card .cardti{
+    top: 52px;
+}
+.sec3 .card:nth-child(even) .cardti {
+    top: 52px;
+}
+.sec3 .card img{
+    width: 350px;
+    height: 300px;
+}
+.cardgroup .card:nth-child(even) img {
+    margin: 0;
+}
+.sec3 .card .inform{
+    width: 374px;
+    font-size: 15px;
+    top: 223px;
+    left: -13px;
+    margin: 0;
+}
+.cardgroup .card:nth-child(even) .inform{
+    margin: 0;
+    position: relative;
+    top: -104px;
+    left: -13px;
+}
+.sec3 .cardgroup .back_1{
+    width: 800px;
+    height: 250px;
+}
+.sec3 .cardgroup .back_2{
+    width: 800px;
+    height: 250px;
+    top: 60%;
+}
+footer .inner{
+    width: 90%;
+    padding: 0;
+}
+footer .inner .logo{
+    width: 125px;
+    height: 40px;
+}
+footer address{
+    margin: 22px 0 0 11px;
+    width: 95%;
+}
+footer .snsicon{
+    width: 26%;
+    margin-left: 12px;
+    margin-top: 22px;
+}

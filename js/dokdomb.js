@@ -6,12 +6,16 @@ $(document).ready(function(){
         $(".menu1").hide();
     });
     
-    
-    
-    $(".menu > li > ul").hide();
-    $(".gnb > li").click(function(){
-        $(this).find("ul").stop().slideToggle();
-    });
+    //nav 상단에 검색창 생성
+    $(".menu1 > text").html("<input type='text'>");
+    $(".menu1 > text").html("<img src='../img/icon/magnifying-glass-solid.png'>");
+    $("input:text").css("border","1px solid #fff");
 
+
+    //좌측 아코디언 nav
+    // $(".menu > li > ul").hide();
+    // $(".menu > li").hover(function(){
+    //     $(this).find("ul").stop().slideToggle();
+    // });
 
 });
