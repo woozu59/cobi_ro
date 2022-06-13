@@ -1,22 +1,24 @@
 @charset "utf-8";
 
-*{margin: 0; padding: 0; box-sizing: border-box; outline: 1px solid yellowgreen;}
+*{margin: 0; padding: 0; box-sizing: border-box; /*outline: 1px solid yellowgreen;*/}
 ul, li{list-style: none;}
-a, a:visited{color: #333333; text-decoration: none;}
-a:hover{color: #c4c4c4;}
+a, a:visited{color: #ffff; text-decoration: none;}
+a:hover{color: #333333;}
 .clearfix::after{display: table; content: ""; clear: both;}
-.logo{width: 200px; height: 100px; line-height: 100px; text-align: center; background: #eaeb50; float: left;}
+.logo{width: 200px; height: 100px; line-height: 100px; margin-left: 15%; text-align: center; background: #eaeb50; float: left;}
 .inner .box{width: 33%; height: 200px; background: #eee; float: left;}
 .inner .box:nth-child(2){margin:0 0.5%;}
 
 .inner{width: 100%; margin: 0 auto; background: #fff; outline: 1px solid #eaeb50;}
 .inner .top{width: 100%; height: 100px; background: #181e27;}
 
-.gnb{display: flex; width: 800px; position: relative; float: right;}
-.gnb > li{width: 20%; height: 60px; line-height: 60px; z-index: 100; text-align: center;}
-.gnb > li > a{color: #fff; font-weight: 600;}
+.gnb{display: flex;  position: relative; float: right; top: 39px; left: -15%;}
+.gnb > li{width: 200px; z-index: 100; text-align: center; position: relative;}
+.gnb > li > a{font-weight: 600; display: block; height: 60px; line-height: 60px;}
 .gnb > li:hover{background: #eaeb50;}
-.gnb > li:hover > a{color: #3333;}
+.gnb > li > ul{ width: 100%;  background: #181e27; position: absolute;}
+.gnb > li > ul > li{height: 25px; line-height: 25px; cursor: pointer;}
+.gnb > li > ul > li:hover{background: #eaeb50;}
 
 
 
@@ -25,4 +27,18 @@ a:hover{color: #c4c4c4;}
 .contents1 img{width: 1200px; height: 300px; flex-shrink: 0; vertical-align: top;}
 
 
-.contents2{width: 1200px; height: 300px; margin: 0 auto;}
+.contents2{width: 1200px; height: 200px; margin: 0 auto;}
+.con1, .con2{width: 72px; height: 40px; line-height: 40px; padding: 0 3px; margin-left: 5px; background: #eaeb50; text-align: center;}
+.con1 > .notice{height: 160px; margin: 0 0 0 5px;}
+.notice > li{height: 40px; line-height: 40px; background: #fff;}
+.notice > li > a{color: #333333;}
+.notice > li:hover > a{color: gray;}
+.modalbg{width: 100%; height: 100vh; background: rgba(0,0,0,0.7); position: fixed; top: 0; left: 0; z-index: 1000; display: none;}
+.modalbg .box{width: 400px; height: 300px; position: absolute; top: 50%; left: 50%; transform: translate( -50% , -50%); z-index: 1000;}
+.modalbg .bt{position: relative; top: 80%; left: 40%; width: 40px; height: 30px;}
+.banner{text-align: center; height: 200px; line-height: 200px;}
+.banner > a{display: block; color: #333;}
+
+footer{width: 100%; height: 100px; background: #181e27;}
+footer .copyright{width: 43%; height: 100px; line-height: 100px; float: left; text-align: center; color: #fff;}
+footer .sns{width: 300px; height: 100px; line-height: 100px; margin-right: 15%; float: right; text-align: center; color: #fff;}
