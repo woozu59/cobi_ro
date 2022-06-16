@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 body{
-    min-width: 0;
+    min-width:360px;
     width: 100%;
 }
-.title h2{
-    font-size: 1.3em;
-    width: 132px;
+.title h2 {
+    font-size: 1.0em;
+    width: 118px;
 }
 header{display: none;}
 header.header2{
@@ -20,18 +20,19 @@ header.header2{
 
 
 a.logo{
-    width: 147px;
-    height: 57px;
-    margin: 15px 0;
+    width: 100px;
+    height: 50px;
+    margin: 25px 0;
 }
 a.logo2{
-    width: 70px;
-    height: 40px;
-    margin-top: 32px;
+    width: 40px;
+    height: 30px;
+    margin-top: 40px;
 }
 .header2 nav .inner{
     width: 100%;
     justify-content: space-between;
+    height: 100%;
 }
 
 .inner .nav{
@@ -40,10 +41,10 @@ a.logo2{
 .nav > .navIcon{
     background: url(../img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
     display:block;
-    width: 36px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 28px;
+    top: 30px;
     right: 0;
     cursor: pointer;
 }
@@ -72,17 +73,19 @@ a.logo2{
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 15%;
-    left: 12px;
-    width: 65%;
+    top: 10%;
+    left: 5%;
+    width: 40%;
     z-index: 1000;
+    font-size: 14px;
 }
 .nav .menu > li{
-    width: 166px;
+    width: 100%;
 }
 .nav .menu > li > a {
-    margin: 0 0 46px 0;
-    font-size: 1.0em;
+    display: block;
+    height: 40px;
+    line-height: 40px;
 }
 .nav .menu > li > ul{
     background: none;
@@ -91,10 +94,13 @@ a.logo2{
 .nav .menu > li > ul > li a{
     color: #fff;
 }
-.sec1 .dokdo{
+.sec1 .dokdo {
     width: 13%;
     height: 15%;
-    margin: 156px auto;
+    position: relative;
+    top: 15%;
+    left: 45%;
+    margin: 0;
 }
 
 .sec1 video{margin: 0 0 0 -50%;}
@@ -122,15 +128,28 @@ a.logo2{
     width: 80%;
     height: 144px;
 }
-.left .title h2{
-    width: 111px;
-    font-size: 1.3em;
-}
-.wrap .coment{padding: 2px;}
-.wrap span{
-    top: -34px;
+.left .title h2 {
+    width: 87px;
     font-size: 1.0em;
+}
+.wrap .coment{
+    font-size: 0.9em;
+    top: 23px;
+}
+.wrap span{
+    top: -42px;
+    font-size: 0.9em;
 }    
+
+.sec2 .guide table,
+.sec2 .note ul{
+    font-size: 13px;
+}
+.site .bt{
+    width: 146px;
+    font-size: 12px;
+}
+
 
 .sec3{top: 26%;}
 .inner{width: 90%;}
@@ -140,38 +159,67 @@ a.logo2{
     position: relative;
     z-index: 0;
 }
-.sec3 .cardgroup .back_1{
-    width: 80%;
-    left: -31px;
+.sec3 .cardgroup .back_1 {
+    width: 100%;
+    left: -19px;
+    top: 20%;
 }
-.sec3 .cardgroup .back_2{
-    width: 80%;
-    top: 69%;
+.sec3 .cardgroup .back_2 {
+    width: 100%;
+    top: 66%;
     right: -31px;
 }
 .sec3 .cardgroup .card{
     margin: 25px 0;
 }
-
-.sec3 .card img{
-    width: 400px;
-    height: 300px;
+.sec3 .cardgroup .card:nth-child(even) {
+    height: 275px;
+    margin: 40px 0 25px 0;
+    width: 250px;
 }
-.sec3 .card .inform{
+.sec3 .card .cardti h4 {
+    margin: 0px 0px 0 16px;
+}
+.sec3 .card img{
+    width: 250px;
+    height: 250px;
+}
+.sec3 .card .inform {
     margin: 0;
-    top: 53%;
-    left: 13px;
+    top: 72%;
+    left: -10px;
+    width: 269px;
+    height: 140px;
+    font-size: 12px;
+    padding: 15px;
 }
 
 .cardgroup .card:nth-child(even) .inform {
     margin: 0;
-    left: 13px;
+    left: -10px;
+    top: -38%;
 }
 .cardgroup .card:last-child .inform{
-    margin-top: -139px;
+    margin-top: -16px;
 }
-.sec4{top: 26%;}
-
+.sec4{
+    top: 26%;
+    height: 557px;}
+.sec4 .year {
+    font-size: 18px;
+}
+.sec4 .source {
+    font-size: 13px;
+}
+.sec4 .slidecard .img {
+    width: 160px;
+    height: 175px;
+}
+.sec4 .copy {
+    font-size: 15px;
+    padding: 0px 15px;
+    letter-spacing: 2;
+}
 footer{
     position: relative;
     top: 26%;
@@ -184,9 +232,10 @@ footer .inner{
     padding: 0;
 
 }
-footer .inner .logo{
-    width: 89px;
-    height: 38px;
+footer .inner .logo {
+    width: 100px;
+    height: 40px;
+    margin: 0;
 }
 footer address{
     padding: 0;
@@ -194,14 +243,18 @@ footer address{
     width: 95%;
 }
 footer address > span:last-child{
-    width: 63%;
+    width: 100%;
 }
 
 footer .snsicon{
-    width: 104px;
+    width: 100%;
     margin: 0;
 }
 a.fa-brands{
     width: 12px;
     padding: 16px 0px 23px 31px;
+}
+
+a.fa-brands.fa-facebook-f {
+    padding: 16px 0px 10 46px;
 }
