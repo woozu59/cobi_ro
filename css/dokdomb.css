@@ -159,6 +159,8 @@ a.logo2{
 .sec2 .note ul{
     font-size: 13px;
 }
+.sec2 .guide table td{padding: 2px;}
+.sec2 .table div{font-size: 0.8em;}
 .site .bt{
     width: 146px;
     font-size: 12px;

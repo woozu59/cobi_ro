@@ -325,7 +325,7 @@ ul.menu{
     font-weight: bold;
 }
 .sec2 .right .guide img{
-    width: 98%;
+    width: 100%;
     border-radius: 10px;
    
 }
@@ -337,7 +337,7 @@ ul.menu{
 .sec2 .guide table{
     width: 98%;
     border-collapse: collapse;
-    background-color: rgba(36, 36, 36, 0.2);
+    background-color: #fff;
     border-radius: 10px;
     border-style: hidden;
 }
@@ -363,10 +363,11 @@ thead th:first-child{
 
 
 .sec2 .note{
-    background-color: rgba(36, 36, 36, 0.2);
+    /* background-color: rgba(36, 36, 36, 0.2); */
     padding-bottom: 7px;
     border-radius: 10px;
     margin-right: 10px;
+    background: #fff;
 }
 .sec2 .note ul{
     margin: 0 25px;
