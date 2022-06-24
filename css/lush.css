@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+/*Noto Sans KR 폰트*/
+@font-face{src: url("../fonts/Lush.ttf"); font-family: "Lush"; }
+*{margin: 0; padding: 0; box-sizing: border-box; outline:1px solid green;}
+ul,li{list-style: none;}
+a, a:active{
+    text-decoration: none; 
+    color: #333;
+}
+.logo{ 
+    width: 153px;
+    height: 43px;
+    background: url(../img/lush/kisspng-lush-cosmetics-shampoo-soap-bath-bomb-sign.white.png) no-repeat 50% 50% / contain;
+    display: block;
+}
+body{
+    min-width: 1080px;
+    font-family: 'Noto Sans KR', sans-serif;
+} 
+/*top 영역*/
+.top{
+    width: 100%; 
+    height: 30px; 
+    background: #000;
+}
+.top > a{color: #fff; 
+    font-size: 5px;
+}
+/*header 영역*/
+header{
+    width: 100%; 
+    height:320px; 
+    background:url(../img/lush/7\ Sunscreen\ Products\ You\ Should\ be\ Using\ _\ Her\ Campus.jpg) no-repeat 50% 50% / cover; 
+}
+.charitypot{font-family: "Lush"}
+
+/*sec1*/
+.section1{
+    width: 100%;
+    height: 450px;
+}
+
+.section1 .lushlife{
+    background: url(../img/lush/lush_life.jpg) no-repeat 50% 50% / contain;
+    display: block;
+    width: 320px;
+    height: 85px;
+}
+.naked img{
+    width: 1175px;
+    height: 864px;
+}
+.naked .inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.vd1{
+    width: 1063px;
+    height: 278px;
+}
+/* .section1 .coin1{
+    with:
+} */
+
+
+/*sec2*/
+
+/*sec3*/
+
+/*sec4*/
+
+/*sec5*/
+
+/*sec6*/
+
+/*sec7*/
+
+/*footer*/
