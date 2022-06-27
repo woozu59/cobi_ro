@@ -13,32 +13,55 @@ a, a:active{
     height: 43px;
     background: url(../img/lush/kisspng-lush-cosmetics-shampoo-soap-bath-bomb-sign.white.png) no-repeat 50% 50% / contain;
     display: block;
+    margin: 0 auto;
 }
 body{
     min-width: 1080px;
     font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
 } 
 /*top 영역*/
 .top{
     width: 100%; 
     height: 30px; 
     background: #000;
+    text-align: right;
+    line-height: 30px;
 }
-.top > a{color: #fff; 
+.top > a{
+    color: #fff; 
     font-size: 5px;
+    margin: 10px;
 }
+
 /*header 영역*/
 header{
     width: 100%; 
     height:320px; 
     background:url(../img/lush/7\ Sunscreen\ Products\ You\ Should\ be\ Using\ _\ Her\ Campus.jpg) no-repeat 50% 50% / cover; 
 }
-.charitypot{font-family: "Lush"}
-
+.inner {
+    width: 423px;
+    height: 147px;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    left: 0;
+    text-align: center;
+}
+.charitypot {
+    font-family: "Lush";
+    font-size: 4em;
+    color: #fff;
+    font-weight: 600;
+    /* text-align: center; */
+}
 /*sec1*/
 .section1{
     width: 100%;
-    height: 450px;
+    height: 2550px;
+    overflow: hidden;
 }
 
 .section1 .lushlife{
@@ -46,35 +69,121 @@ header{
     display: block;
     width: 320px;
     height: 85px;
+    margin: 0 auto;
+}
+p {
+    width: 555px;
+    text-align: center;
+    margin: 0 auto;
 }
 .naked img{
     width: 1175px;
     height: 864px;
+    display: block;
+    position: relative;
+    left: 29%;
+    z-index: 1;
+
 }
 .naked .inner{
     display: flex;
     flex-direction: column;
 }
+.naked .inner h1 {
+    font-size: 350px;
+    color: rgba(256,256,256,0.2);
+    z-index: 100;
+    margin-top: -108px;
+}
+.naked .inner h2 {
+    font-size: 200px;
+    z-index: 100;
+    color: rgba(256,256,256,0.3);
+}
+.naked .inner h3 {
+    z-index: 100;
+    color: rgba(256,256,256,0.4);
+    font-size: 150px;
+}
 
-.vd1{
+#vd1{
     width: 1063px;
     height: 278px;
 }
+
+.coin1 > img {
+    position: absolute;
+    top: 29%;
+    left: -30%;
+    width: 830px;
+    display: block;
+}
+.coin2 > img{
+    width: 460px;
+    position: absolute;
+    top: 130%;
+}
+.coin3 > img{
+    width: 310px;
+    position: absolute;
+    top: 100%;
+}
 /* .section1 .coin1{
-    with:
+    
 } */
 
 
 /*sec2*/
+.section2{ width: 100%; }
 
 /*sec3*/
 
 /*sec4*/
-
+.section4 > img {
+    width: 100%;
+    height: 408px;
+    display: block;
+}
 /*sec5*/
 
 /*sec6*/
+.section6 {
+    width: 100%;
+    height: 232px;
+}
+.section6 .title{
+    border-bottom: 1px solid #000;
+    width: 80%;
+    height: 30px;
+}
+.section6 .title > p {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    text-align: start;
+    line-height: 30px;
+}
+.products{display: flex;}
+.products .cream{display:flex;}
+.products .cream img{
+    width: 104px;
+    height: 102px;
+
+}
 
 /*sec7*/
-
+.section7{
+    background: #F0EFEF;
+    width: 100%;
+    height: 150px;
+}
 /*footer*/
+footer {
+    width: 100%;
+    height: 234px;
+    /* background: #000; */
+    /* color: #fff; */
+}
+ul.agreement {
+    display: flex;
+}
