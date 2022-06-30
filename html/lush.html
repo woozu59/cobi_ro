@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>LUSH 채러티 팟 페이지</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/lush.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="top"><!--링크 오른쪽 끝으로 옮기기-->
-        <a href="#">러쉬코리아 공식 홈페이지 바로가기</a>
+    <div class="top" id="top"><!--링크 오른쪽 끝으로 옮기기-->
+        <a href="https://lush.co.kr/?gclid=EAIaIQobChMI18qE5tzU-AIV0ENgCh0cpguTEAAYASAAEgJuYvD_BwE" target="blank">러쉬코리아 공식 홈페이지 바로가기</a>
     </div>
     <header><!--백그라운드 모바일이랑 모니터랑 사진 다르게 설정 블렌드 모드 설정-->
         <div class="inner">
@@ -33,10 +35,12 @@
         <video muted autoplay loop playsinline id="vd1">
             <source src="../img/lush/natural video.mp4" type="video/mp4">
         </video>
-        <div class="coin1"><img src="../img/lush/charity potcoin-green.png" alt="채러티 팟 코인1"></div>
-        <div class="coin2"><img src="../img/lush/LUSH Charity Pot (naked body lotion).png" alt="채러티 팟 코인2"></div>
-        <div class="coin3"><img src="../img/lush/Charity Pot Coin _ Body Lotions _ Lush Cosmetics.png" alt="채러티 팟 코인3"></div>
-        <div class="lotion"><img src="../img/lush/charity pot donation.png" alt="채러티 팟 로션"></div>
+        <div class="inner2">
+            <div class="coin1"><img src="../img/lush/charity potcoin-green.png" alt="채러티 팟 코인1"></div>
+            <div class="coin2"><img src="../img/lush/LUSH Charity Pot (naked body lotion).png" alt="채러티 팟 코인2"></div>
+            <div class="coin3"><img src="../img/lush/Charity Pot Coin _ Body Lotions _ Lush Cosmetics.png" alt="채러티 팟 코인3"></div>
+            <div class="lotion"><img src="../img/lush/charity pot donation.png" alt="채러티 팟 로션"></div>
+        </div>    
     </div>
     <div class="section2">
         <div class="sec2in"><!--가운데 설정-->
@@ -75,29 +79,36 @@
         </div>
     </div>
     <div class="section5">
-        <div class="slide card1">
-            <div class="contents1"><!--영역 크기 지정해서 백그라운드로 사진 넣기--></div>
-            <div class="informbox">
-                <p class="artical">아티클</p>
-                <p class="informtitle">채러티 팟(Charity Pot)</p>
-                <button class="bt3">자세히 알아보기</button>
-            </div>
-        </div>
-        <div class="slide card2">
-            <div class="contents2"></div>
-            <div class="informbox">
-                <p class="artical">아티클</p>
-                <p class="informtitle">사랑의 동전, 채러티 팟 코인</p>
-                <button class="bt3">자세히 알아보기</button>
-            </div>
-        </div>
-        <div class="slide card3">
-            <div class="contents3"></div>
-            <div class="informbox">
-                <p class="artical">아티클</p>
-                <p class="informtitle">블랙팟의 환생</p>
-                <button class="bt3">자세히 알아보기</button>
-            </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="card">
+                    <div class="contents1"></div>
+                    <div class="informbox">
+                        <p class="artical">아티클</p>
+                        <p class="informtitle">채러티 팟(Charity Pot)</p>
+                        <button class="bt3">자세히 알아보기</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contents2"></div>
+                    <div class="informbox">
+                        <p class="artical">아티클</p>
+                        <p class="informtitle">사랑의 동전, 채러티 팟 코인</p>
+                        <button class="bt3">자세히 알아보기</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contents3"></div>
+                    <div class="informbox">
+                        <p class="artical">아티클</p>
+                        <p class="informtitle">블랙팟의 환생</p>
+                        <button class="bt3">자세히 알아보기</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>   
         </div>
     </div>
     <div class="section6"><!--flex row-->
@@ -126,13 +137,6 @@
                     <li><a href="#">￦3000</a></li>
                 </ul>
             </div>
-            <!-- <div class="cream">
-                <a href="#"><img src="../img/lush/1000001495_detail_052.jpg" alt="채러티 팟 코인"></a>
-                <ul class="productsinform">
-                    <li><a href="#">채러티 팟 코인-환경</a></li>
-                    <li><a href="#">￦3000</a></li>
-                </ul>
-            </div> -->
         </div>
     </div>
     <footer class="section7">
@@ -169,8 +173,10 @@
         </div>
     </footer>
     <div class="scroll">
-        <a href="#">TOP</a>
+        <a href="#top">TOP</a>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/jqery3.6.0.min.js"></script>
     <script src="../js/lush.js"></script>
 </body>
