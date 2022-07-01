@@ -1,8 +1,50 @@
+function counting() {
+  // 정수카운팅
+  $('.counter').each(function() {
+      var $this = $(this),
+          countTo = $this.attr('data-count');
+      //시작 숫자와 종료숫자를 비교한다    
+      $({
+          countNum: $this.text()
+      }).animate({
+          countNum: countTo
+      }, {
+          duration: 3000,
+          easing: 'linear',
+          step: function() {
+              $this.text(numberWithCommas(Math.floor(this.countNum)));
+          },
+          complete: function() {
+              $this.text(numberWithCommas(this.countNum));
+          }
+      });
+  });
+}
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+// 3자리마다 ,콤마찍는 함수
+
+$(document).scroll(function() {
+  var scrolltop = $(window).scrollTop();
+  //ylangylang에서부터 카운터세기 시작
+  //그 밑으로 내려가서는 더이상 카운팅 하지 않도록 설정
+  //변수로 설정하여 지정
+  var start = $('.ylangylang').offset().top;
+  var end = $('.ylangylang').offset().top + 50
+      if (scrolltop > start && scrolltop < end) {
+         
+      counting();
+  } else if(scrolltop < start ) {
+      $(".counter").text('0');
+  }
+});
+
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+    spaceBetween: 60,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
+      delay: 3500,
       disableOnInteraction: false,
     },
     pagination: {

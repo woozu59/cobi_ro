@@ -526,19 +526,14 @@ thead th:first-child{
     border-bottom: 2px solid #fff;
 }
 .sec4 .inner .slide{
-    /* font-family: 'Noto Serif KR', serif; */
     width: 100%;
     height: 490px;
     margin-top: 20px;
 }
-/* .sec4 .inner .slidecontent{
-   display: flex; 
-   margin-top: 40px;
-} */
+
 
 .sec4 .slidecard .slideinner{
     color: #ffff;
-    /* width: 495px; */
     width: 100%;
 }
 

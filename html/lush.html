@@ -31,15 +31,14 @@
                 <h3>Vegan</h3>
             </div>    
             <img src="../img/lush/rosarganbodyconditioner_use.jpg" alt="채러티 팟">
-        </div>
-        <video muted autoplay loop playsinline id="vd1">
-            <source src="../img/lush/natural video.mp4" type="video/mp4">
-        </video>
-        <div class="inner2">
-            <div class="coin1"><img src="../img/lush/charity potcoin-green.png" alt="채러티 팟 코인1"></div>
-            <div class="coin2"><img src="../img/lush/LUSH Charity Pot (naked body lotion).png" alt="채러티 팟 코인2"></div>
-            <div class="coin3"><img src="../img/lush/Charity Pot Coin _ Body Lotions _ Lush Cosmetics.png" alt="채러티 팟 코인3"></div>
-            <div class="lotion"><img src="../img/lush/charity pot donation.png" alt="채러티 팟 로션"></div>
+            <div class="coin1"></div>
+            <div class="coin2"></div>
+            <div class="coin3"></div>
+            <div class="lotion"></div>    
+        
+            <video muted autoplay loop playsinline id="vd1">
+                <source src="../img/lush/natural video.mp4" type="video/mp4">
+            </video>
         </div>    
     </div>
     <div class="section2">
@@ -60,17 +59,26 @@
     </div>
     <div class="section3">
         <div class="line"></div>
-        <div class="videobg">
-            <video muted autoplay loop playsinline id="vd2">
-                <source src="../img/lush/wildflower.mp4" type="video/mp4">
-            </video>
-        </div>    
-        <div class="inner"><!--글씨 넘어가는 스크립트 & 글씨 두가지 색 설정-->
-            <h2>현재까지</h2>
-            <span>총</span><h1 class="number">1,521,405,549</h1><span>원</span>
-            <h3>105개의 단체를 후원했습니다.</h3>
-            <button class="bt1">후원내역 자세히 보기</button>
+        <div class="wrap">
+            <div class="container">
+                <video muted autoplay loop playsinline id="vd2">
+                    <source src="../img/lush/wildflower.mp4" type="video/mp4">
+                </video>
+                <div class="title white">
+                    <h2>현재까지</h2>
+                    <span>총</span><h1 class="counter" data-count="1521405549">0</h1><span>원</span>
+                    <h3>105개의 단체를 후원했습니다.</h3>
+                    <button class="bt1">후원내역 자세히 보기</button>
+                </div>    
+            </div>    
+            <div class="title">
+                <h2>현재까지</h2>
+                <span>총</span><h1 class="counter" data-count="1521405549">0</h1><span>원</span>
+                <h3>105개의 단체를 후원했습니다.</h3>
+                <button class="bt1">후원내역 자세히 보기</button>
+            </div>
         </div>
+    </div>
     </div>
     <div class="section4"><!--이미지 페럴렉스로 설정-->
         <div class="suport">
@@ -81,7 +89,7 @@
     <div class="section5">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="card">
+                <div class="card swiper-slide">
                     <div class="contents1"></div>
                     <div class="informbox">
                         <p class="artical">아티클</p>
@@ -89,7 +97,7 @@
                         <button class="bt3">자세히 알아보기</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card swiper-slide">
                     <div class="contents2"></div>
                     <div class="informbox">
                         <p class="artical">아티클</p>
@@ -97,7 +105,7 @@
                         <button class="bt3">자세히 알아보기</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card swiper-slide">
                     <div class="contents3"></div>
                     <div class="informbox">
                         <p class="artical">아티클</p>
@@ -111,8 +119,8 @@
             <div class="swiper-pagination"></div>   
         </div>
     </div>
-    <div class="section6"><!--flex row-->
-        <div class="title">
+    <div class="section6">
+        <div class="productstitle">
             <p>Related Products</p>
         </div>    
         <div class="products">
@@ -175,6 +183,7 @@
     <div class="scroll">
         <a href="#top">TOP</a>
     </div>
+        
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/jqery3.6.0.min.js"></script>

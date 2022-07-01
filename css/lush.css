@@ -32,7 +32,7 @@ body{
 .top > a{
     color: #fff; 
     font-size: 10px;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 /*header 영역*/
@@ -78,6 +78,7 @@ header .inner {
     margin: 0 auto;
     font-weight: 600;
 }
+.naked{position: relative;}
 .naked img{
     width: auto;
     height: 864px;
@@ -121,53 +122,47 @@ header .inner {
     width: 70%;
     height: 278px;
 }
-.inner2{
+/* .inner2{
     position: relative;
     top: 0;
     left: 0;
-}
+} */
 .coin1{
+    background: url(../img/lush/charity\ potcoin-green.png) no-repeat 50% 50% /contain;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -29%;
+    left: -23%;
     width: 830px;
     height: 830px;
-    display: block;
     filter: drop-shadow(-2px -4px 10px #5c5c5c);
 }
 
 .coin2{
+    background: url(../img/lush/LUSH\ Charity\ Pot\ _naked\ body\ lotion.png) no-repeat 50% 50% /contain;
     width: 460px;
     height: 460px;
-    display:block;
     filter: drop-shadow(-11px -3px 10px #5c5c5c);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 46%;
+    left: 14%;
     z-index: 100;
 }
-
-.coin1 > img, .coin2 > img,
- .coin3 > img, .lotion > img{
-    width: 100%;
-    z-index: 100;
-}
-
 .coin3{
+    background: url(../img/lush/Charity\ Pot\ Coin\ _\ Body\ Lotions\ _\ Lush\ Cosmetics.png) no-repeat 50% 50% /contain;
     width: 310px;
     height: 310px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 58%;
+    left: 27%;
     z-index: 99;
     filter: drop-shadow(-2px -4px 10px #5c5c5c);
 }
 .lotion{
-    display: block;
+    background: url(../img/lush/charity\ pot\ donation.png) no-repeat 50% 50% /contain;
     z-index: 100;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 51%;
+    left: 57%;
     width: 850px;
     height: 780px;
     filter: drop-shadow(-2px -4px 10px #5c5c5c);
@@ -207,67 +202,65 @@ li.cocoabutter {color: rgba(0,0,0,0.3);}
 /*sec3*/
 .section3{
     width: 100%;
-    position: relative;
-    height:1234px;
-    /*섹션별 위치 맞추면 height 지우기*/
 }
-.line {
-    width: 70%;
+.line{
+    width: 60%;
     height: 818px;
     background: none;
     outline: 2px solid gray;
-    z-index: 1;
+    z-index: 2;
 }
-.videobg{
-    z-index: 10;
-    position: absolute;
-    top: 111px;
-    right: 0;
+.wrap{
+    position: relative;
     width: 50%;
+    top: 0;
+    left: 50%;
+    margin-top: -35%;
 }
-#vd2 {
+
+.container{
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+.container #vd2{
     object-fit: cover;
     width: 100%;
-    height: 1080px;
+    height: 1000px;
 }
-.section3 .inner {
+.title{
     text-align: right;
-    position: relative;
-    z-index: 11;
-    top: -46%;
-    left: -26px;
-    color: rgba(256,256,256,0.5);
-    font-weight: 600;
-    text-shadow: -7px -8px 10px rgb(0 0 0 / 30%);
+    position:absolute;
+    top: 21%;
+    z-index: 1;
+    transform: translate(-45%, -31%);
+    white-space: nowrap;
+    color: rgba(0,0,0,0.7);
+    text-shadow: -6px -3px 12px rgb(0 0 0 / 30%)
 }
-
-
-.section3 .inner > h2 {
-    font-size: 100px;
-    color: rgba(256,256,256,0.5);
-    font-weight: 600;
+.title h2, .title h3 {
+    font-size: 130px;
 }
-.section3 .inner > span {
-    font-size: 80px;
-}
-h1.number {
+.counter {
     display: inline-block;
-    font-size: 150px;
+    font-size:150px;
 }
-.section3 .inner > h3 {
-    font-size: 100px;
+.title > span {
+    font-size: 90px;
 }
 button.bt1 {
     font-size: 30px;
     background: none;
     color: rgba(256,256,256,0.7);
-    border: 1px solid rgba(256,256,256,0.7);
+    border: 2px solid rgba(256,256,256,0.7);
     position: absolute;
-    top: 158%;
-    right: 48px;
+    top: 147%;
+    right: 7%;
     cursor: pointer;
     padding: 10px;
 }
+.container .white{color: rgba(256,256,256,0.7);}
+
 /*sec4*/
 .section4{
     width: 100%;
@@ -308,23 +301,21 @@ button.bt1 {
 /*sec5*/
 .section5{ 
     width: 100%;
-    margin-bottom: 10%;
-    display: flex;
-    width: 70%;
-    margin: 0 auto;
-    justify-content: space-between;
-    overflow: hidden;
 }
-/* .slide{
-    display: flex;
+.swiper{
     width: 70%;
-    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     overflow: hidden;
-} */
+    margin: 0 auto;
+}
 .card {
-    width: 750px;
-    height: 450px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 .contents1{
     background: url(../img/lush/charity_pot_ayr_pic_2019.jpg) no-repeat 50% 50% /cover;  
@@ -332,7 +323,8 @@ button.bt1 {
     height: 380px;
     z-index: 1;
     position: relative;
-    left: 17%;
+    margin: 0 0 0 200px;
+    
 }
 .contents2{
     background: url(../img/lush/Charity\ Pot\ _\ Lush\ Fresh\ Handmade\ Cosmetics.jpg) no-repeat 50% 50%/ cover;
@@ -340,7 +332,8 @@ button.bt1 {
     height: 380px;
     z-index: 1;
     position: relative;
-    left: 17%;
+    margin: 0 0 0 200px;
+    
 }
 .contents3{
     background: url(../img/lush/aticle_blackpot.jpg) no-repeat 50% 50% / cover;
@@ -348,7 +341,8 @@ button.bt1 {
     height: 380px;
     z-index: 1;
     position: relative;
-    left: 17%;
+    margin: 0 0 0 200px;
+
 }
 .informbox{
     width: 450px;
@@ -356,8 +350,9 @@ button.bt1 {
     background-color: #fff;
     z-index: 10;
     position: relative;
-    top: -40%;
-    box-shadow: -7px -5px 12px rgb(0 0 0 / 30%);
+    top: -20%;
+    box-shadow:-6px -2px 12px rgb(0 0 0 / 30%);
+    margin: 0 200px 0 0;
 }
 p.artical {
     font-size: 20px;
@@ -369,7 +364,7 @@ p.artical {
 p.informtitle {
     font-size: 25px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 .bt3 {
     background: none;
@@ -387,13 +382,13 @@ p.informtitle {
     width: 100%;
     /* height: 232px; */
 }
-.section6 .title{
+.section6 .productstitle{
     border-bottom: 2px solid #000;
     width: 70%;
     height: 40px;
     margin: 0 auto;
 }
-.section6 .title > p {
+.section6 .productstitle > p {
     font-size: 30px;
     font-weight: 600;
     margin: 0;
@@ -404,11 +399,10 @@ p.informtitle {
     display: flex;
     margin: 10px auto;
     width: 70%;
-    /* justify-content: space-between; */
 }
 .products .cream{
     display:flex;
-    margin-right: 10%;
+    margin-right: 8%;
 }
 .products .cream img{
     width: 104px;
@@ -434,7 +428,7 @@ ul.productsinform {
 }
 footer {
     width: 100%;
-    height: 234px;
+    height: 235px;
     background: #000;
     color: #fff;
 }
@@ -464,6 +458,7 @@ dd.call {
 .right{
     float: right;
     margin-top: 30px;
+    margin-right: 30px;
 }
 ul.agreement {
     display: flex;

@@ -1,0 +1,64 @@
+﻿-------------------------------교수자 자료
+https://runauxlabs.github.io/web/
+http://ezportfolio.cafe24.com/web/
+같은 자료, 일정 및 레퍼런스 확인, 기초
+
+https://sites.google.com/view/runauxlabsedu/
+웹 개념 자료
+
+
+
+-------------------------------UI/UX 디자인 이야기
+https://www.youtube.com/channel/UCXCKPZOlZzp5JSEwOsuT9kg
+연정's figma
+
+https://material.io/design
+구글디자인가이드
+
+https://developer.apple.com/design/
+애플디자인가이드
+
+
+
+-------------------------------퍼블리싱 이야기
+https://www.w3schools.com/
+W3schools
+
+https://developer.mozilla.org/ko/
+MDN web docs
+
+
+
+------------------------------------------보조 교육 채널
+https://www.edwith.org/search/index?categoryId=82
+네이버 edwith - 디자이너를 위한 코딩
+
+https://opentutorials.org/course/2039
+오픈 튜토리얼(생활코딩 - html수업)
+https://opentutorials.org/course/1058
+오픈 튜토리얼(생활코딩 - html사전)
+https://opentutorials.org/course/2418
+오픈 튜토리얼(생활코딩 - css수업)
+https://opentutorials.org/course/718/3798
+오픈 튜토리얼(생활코딩 - css사전)
+https://www.youtube.com/user/egoing2
+유튜브 생활코딩
+https://seomal.com/map/1
+생활코딩 서말
+
+https://www.youtube.com/channel/UCSLrpBAzr-ROVGHQ5EmxnUg
+유튜브 코딩애플
+수업이 심플하고 재미있음, 대신 사전지식 있어야 됨
+
+
+
+----------------------------------퍼블리싱 게임
+https://codepen.io/enxaneta/pen/adLPwv
+display flex 속성 샘플페이지
+
+http://flexboxfroggy.com/#ko
+flex 익히기 게임
+
+https://flukeout.github.io/
+selector 익히기 게임
+
