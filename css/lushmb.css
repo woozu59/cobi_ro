@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+body{
+    min-width: 320px;
+    width: 100%;
+}
+.logo{width: 57px;
+    height: 30px;
+}
+header{
+    height: 137px;
+    background: url(../img/lush/ec1557ebbe8dc637.jpg) no-repeat 50% 50% /cover;
+    background-color: rgba(0,0,0,0.3);
+}
+.charitypot {
+    font-size: 1.5em;
+}
+.lushlife p {
+    font-size: 12px;
+    width: 80%;
+    font-weight: 400;
+}
+
+.section1 .lushlife > img{
+    width: 40%;
+    height: 35%;
+    margin: 35px auto 35px;
+}
+
+.naked{display:none;}
+.section2{display: none;}
+
+.line{
+    width: 56%;
+    height: 230px;
+    position: relative;
+    top: 0;
+    outline: 1px solid gray;
+}
+.wrap {
+    width: 56%;
+    margin-top: -179px;
+    left: 44%;
+}
+.container #vd2{
+    object-fit: cover;
+    height: 300px;
+}
+.title {
+    transform: translate(-5%, -21%);
+    right: 0;
+}
+.title h2,
+.title h3 {
+    font-size: 23px;
+}
+.title > span {
+    font-size: 23px;
+}
+.counter {
+    font-size: 30px;
+}
+button.bt1 {
+    right: 0;
+    font-size: 13px;
+    top: 0;
+    padding: 5px;
+    margin-top: 72%;
+}
+.section4 {
+    margin: 20% 0 20% 0;
+}
+.section4 .suport{
+    background: url(../img/lush/charity_pot_bg.jpg) no-repeat 25% 22% / cover;
+    height: 150px;
+}
+.suport > h3{
+    font-size: 22px;
+    line-height: 150px;
+}
+.suport .bt2{
+    font-size: 15px;
+    padding: 5px;
+    top: 70%;
+}
+.section6 .productstitle {
+    width: 90%;
+    border-bottom: 1px solid #000;
+    height: 30px;
+}
+.section6 .productstitle > p {
+    font-size: 15px;
+}
+.products {
+    width: 90%;
+}
+.products .cream {
+    margin-right: 10px;
+}
+.products .cream img {
+    width: 40px;
+    height: 40px;
+}
+ul.productsinform {
+    margin: 0 0 0 15px;
+}
+.productsinform > li {
+    font-size: 11px;
+}
+.swiper{
+    width: 100%;
+}
+.card{
+    height: 350px
+}
+.contents1, .contents2,
+.contents3{
+    width: 100%;
+    height: 200px;
+    margin: 0;
+}
+.informbox{
+    width: 65%;
+    height: 150px;
+    top: -23%;
+    left: 19%;
+    margin: 0;
+}
+p.artical{
+    margin-left: 10px;
+    font-size: 15px;
+    top: 10px;
+}
+p.informtitle {
+    font-size: 15px;
+    margin-top: 10%;
+}
+.bt3 {
+    font-size: 12px;
+    padding: 5px;
+    top: 30px;
+    left: 53%;
+}
+.section7{display: none;}
+footer > .inner {
+    width: 90%;
+}
+.left {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.left > .logo {
+    display: none;
+}
+dt{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+dt > span {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 0 0 10px;
+}
+dd.call {
+    font-size: 15px;
+    flex-direction: row;
+}
+.call > p:first-child {
+    margin-right: 20px;
+}
+.right{
+    float: none;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+.right address{
+    color: #fff;
+    margin: 0 auto 2px;
+    font-size: 10px;
+    letter-spacing: 0px;
+}
+ul.agreement {
+    font-size: 12px;
+    margin: 20px 0;
+}
+.agreement > li {
+    margin-right: 5px;
+}
+.copyright{
+    color: #fff;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.scroll {
+    width: 30px;
+    height: 30px;
+    font-size: 8px;
+    top: 18%;
+}

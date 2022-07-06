@@ -27,11 +27,11 @@ function numberWithCommas(x) {
 
 $(document).scroll(function() {
   var scrolltop = $(window).scrollTop();
-  //ylangylang에서부터 카운터세기 시작
+  //sheabutter에서부터 카운터세기 시작
   //그 밑으로 내려가서는 더이상 카운팅 하지 않도록 설정
   //변수로 설정하여 지정
-  var start = $('.ylangylang').offset().top;
-  var end = $('.ylangylang').offset().top + 50
+  var start = $('.sheabutter').offset().top;
+  var end = $('.sheabutter').offset().top + 50
       if (scrolltop > start && scrolltop < end) {
          
       counting();
@@ -44,7 +44,7 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 60,
     centeredSlides: true,
     autoplay: {
-      delay: 3500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {

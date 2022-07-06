@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>LUSH 채러티 팟 페이지</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/lush.css">
+    <link rel="stylesheet" ytpe="text/css" media="all and (max-width: 640px)" href="../css/lushmb.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -26,9 +28,9 @@
         </div>
         <div class="naked">
             <div class="inner">
-                <h1>Naked</h1>
-                <h2>Campaign</h2>
-                <h3>Vegan</h3>
+                <h1 data-aos="fade-up" data-aos-duration="2000">Naked</h1>
+                <h2 data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Campaign</h2>
+                <h3 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">Vegan</h3>
             </div>    
             <img src="../img/lush/rosarganbodyconditioner_use.jpg" alt="채러티 팟">
             <div class="coin1"></div>
@@ -44,16 +46,16 @@
     <div class="section2">
         <div class="sec2in"><!--가운데 설정-->
             <div class="metarial"> <!--flex row로 설정-->
-                <img src="../img/lush/rosewood.png" alt="rosewood">
-                <img src="../img/lush/sheabutter.png" alt="sheabutter">
-                <img src="../img/lush/ylangylang.png" alt="ylangylang oil">
-                <img src="../img/lush/cocoa_butter.png" alt="cocoabutter">
+                <img data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom"src="../img/lush/rosewood.png" alt="rosewood">
+                <img data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000"src="../img/lush/sheabutter.png" alt="sheabutter">
+                <img data-aos="fade-up" data-aos-delay="1000"data-aos-duration="2000"src="../img/lush/ylangylang.png" alt="ylangylang oil">
+                <img data-aos="fade-up" data-aos-delay="1500"data-aos-duration="2000"src="../img/lush/cocoa_butter.png" alt="cocoabutter">
             </div>
             <ul class="metarial2"><!--flex column으로 설정-->
-                <li class="rosewood">Rose Wood</li>
-                <li class="sheabutter">Shea Butter</li>
-                <li class="ylangylang">Ylang Ylang Oil</li>
-                <li class="cocoabutter">Cocoa Butter</li>
+                <li data-aos="fade-up" data-aos-duration="2000"class="rosewood">Rose Wood</li>
+                <li data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000"class="sheabutter">Shea Butter</li>
+                <li data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000"class="ylangylang">Ylang Ylang Oil</li>
+                <li data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000"class="cocoabutter">Cocoa Butter</li>
             </div>
         </div>    
     </div>
@@ -157,8 +159,8 @@
                 <dl>
                     <dt>고객센터<span>1644-2357</span></dt>
                     <dd class="call">
-                        상담전화 13:00 ~ 16:00(평일)<br>
-                        상담톡 10:00 ~ 16:00(평일)
+                        <p>상담전화 13:00 ~ 16:00(평일)</p>
+                        <p>상담톡 10:00 ~ 16:00(평일)</p>
                     </dd>
                 </dl>
             </div>
@@ -181,12 +183,20 @@
         </div>
     </footer>
     <div class="scroll">
-        <a href="#top">TOP</a>
+        <a href="#top">
+            <img src="../img/icon/leaf-solid.svg" alt="scroll">
+            TOP
+        </a>
     </div>
         
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/jqery3.6.0.min.js"></script>
     <script src="../js/lush.js"></script>
+
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
