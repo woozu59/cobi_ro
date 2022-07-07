@@ -4,6 +4,7 @@
 <head><!--모바일, 태블릿 css만들때 뷰포트 선언문 작성하기-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"> 
+    <meta name="format-detection" content="telephone=no"/>
     <title>dokdo mofa</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/dokdo.css">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <header><!--header 시작--><!--모바일 css작성시 display none처리해서 안보이게 설정 / 피그마로 만든 nav에서 영어버튼은 뺄 예정-->
+    <header><!--header 시작-->
         <div class="top">
             <div class="left">
                 <h6>
@@ -75,14 +76,11 @@
         </nav>
     </header>
     <!--sec1 시작-->
-    <section class="sec1"><!--사진 or 동영상 저장 해서 위치시키기 / 동영상 나오면 로고 안보이게 하기-->
+    <section class="sec1">
         
         <video muted autoplay loop playsinline poster="../img/dokdo/날씨영역bg.jpg" id="vd1">
             <source src="../img/dokdo/울릉도, 독도로 가는 길(Journey to Ulleungdo & Dokdo).mp4" type="video/mp4">
         </video>
-        <!-- <video muted autoplay id="vd2">
-            <source src="../img/dokdo/대한민국의 아름다운 영토, 독도.mp4" type="video/mp4">
-        </video> -->
         <div class="dokdo">독도로고</div>
     </section>
     <!--sec2 시작-->
@@ -187,7 +185,6 @@
                         <summary>독도입도종합안내 바로가기</summary><!--4번 메뉴-->
                         <div class="site">
                           <button class="bt" onClick="location.href='http://www.ulleung.go.kr/ko/page.htm?mnu_uid=1649'"><span>독도입도종합안내 사이트</span></button>
-                         <!-- 새탭에서 페이지 열리도록 설정-->
                         </div>
                     </details>  
                 </div>
@@ -282,6 +279,7 @@
             <div class="swiper slide">
                 <div class="swiper-wrapper slidecontent">
                     <div class="swiper-slide slidecard">
+                        <!--첫번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">500년</div>
                             <img class="img" src="../img/dokdo/삼국사기.jpg" alt="삼국사기 이미지">
@@ -381,9 +379,9 @@
                 <span>본 홈페이지의 모든 권리는 외교부에 귀속됩니다. COPYRIGHT (c) 2013MOFA ALL RIGHTS RESERVED.</span>
             </address>
             <div class="snsicon">
-                <a href="#" class="fa-brands fa-facebook-f fa-lg">페이스북</a>
-                <a href="#" class="fa-brands fa-twitter fa-lg">트위터</a>
-                <a href="#" class="fa-brands fa-youtube fa-lg">유튜브</a>
+                <a href="https://facebook.com/mofakr.kr/?locale2=tr_TR" target="blank" class="fa-brands fa-facebook-f fa-lg">페이스북</a>
+                <a href="https://twitter.com/mofa_kr" target="blank" class="fa-brands fa-twitter fa-lg">트위터</a>
+                <a href="https://www.youtube.com/user/mofakorea" target="blank" class="fa-brands fa-youtube fa-lg">유튜브</a>
             </div>
         </div>
     </footer>

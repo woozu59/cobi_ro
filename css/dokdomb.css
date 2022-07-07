@@ -167,6 +167,7 @@ a.logo2{
 }
 .sec3{
     top: 25%;
+    margin-top: -58px;
 }
 .inner{width: 90%;}
 .sec3 .cardgroup{
@@ -233,6 +234,10 @@ a.logo2{
 .sec4 .source {
     font-size: 13px;
 }
+
+.sec4 .slidecard .slideinner {
+   margin-top: 17%;
+}
 .sec4 .slidecard .img {
     width: 160px;
     height: 175px;
@@ -246,7 +251,7 @@ a.logo2{
 footer{
     position: relative;
     top: 25%;
-    height: 182px;
+    height: 200px;
 }
 footer .inner{
     width: 95%;
@@ -258,7 +263,7 @@ footer .inner{
 footer .inner .logo {
     width: 100px;
     height: 40px;
-    margin: 0;
+    margin: 10px 0 10px 0;
 }
 footer address{
     padding: 0;

@@ -11,6 +11,7 @@ header{
     height: 137px;
     background: url(../img/lush/ec1557ebbe8dc637.jpg) no-repeat 50% 50% /cover;
     background-color: rgba(0,0,0,0.3);
+    
 }
 .charitypot {
     font-size: 1.5em;
@@ -163,7 +164,7 @@ dt > span {
     margin: 0 0 0 10px;
 }
 dd.call {
-    font-size: 15px;
+    font-size: 12px;
     flex-direction: row;
 }
 .call > p:first-child {
@@ -182,11 +183,15 @@ dd.call {
     letter-spacing: 0px;
 }
 ul.agreement {
-    font-size: 12px;
+    font-size: 11px;
     margin: 20px 0;
 }
 .agreement > li {
-    margin-right: 5px;
+    border-right: 1px solid #fff;
+    padding-right: 5px;
+}
+.agreement > li:last-child{
+    border-right: none;
 }
 .copyright{
     color: #fff;
@@ -197,5 +202,5 @@ ul.agreement {
     width: 30px;
     height: 30px;
     font-size: 8px;
-    top: 18%;
+    top: 33%;
 }

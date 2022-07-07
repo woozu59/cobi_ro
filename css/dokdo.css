@@ -204,6 +204,9 @@ ul.menu{
     overflow: hidden;
     margin: -127px 0 0 0;
     height: 100vh;
+   
+}
+.sec1 .bg{
     background: rgba(36,36,36,0.2);
 }
 .sec1 video{
