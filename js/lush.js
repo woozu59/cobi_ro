@@ -38,7 +38,11 @@ $(document).scroll(function() {
   } else if(scrolltop < start ) {
       $(".counter").text('0');
   }
+
+  
 });
+
+
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 60,
@@ -66,3 +70,30 @@ var swiper = new Swiper(".mySwiper", {
         },
     },
   });
+
+// $(document).scroll(function(){
+
+//   $(".scroll").hide();
+//   var scrolltop = $("window").scrollTop();
+
+
+//   var start = $(".section2").offset().top;
+//   var end = $(".section2").offset().top + 100
+//     if(scrolltop > start && scrolltop < end) {
+//       console.log("scroll 나타남");
+//       $(".scroll").show();
+//      } else if(scrolltop < start) {
+//       $(".scroll").hide();
+//     }
+// });
+
+  $(".scroll div").each(function() {
+    var thisOffset = $("." +$(this).data('id')).offset().top;
+  
+    $(this).click(function(){
+      $("html, body").animate({
+        scrollTop: thisOffset
+      }, 1000);
+      $(this).addClass('on');
+    });
+  });  
