@@ -3,7 +3,7 @@
 /*Noto Sans KR 폰트*/
 @font-face{src: url("../fonts/Lush.ttf"); font-family: "Lush"; }
 *{margin: 0; padding: 0; box-sizing: border-box; 
-    outline:1px solid green;
+    /* outline:1px solid green; */
 }
 ul,li{list-style: none;}
 a, a:active{
@@ -62,6 +62,7 @@ header .inner {
 .section1{
     width: 100%;
     overflow: hidden;
+    padding-bottom: 10%;
 }
 .lushlife {
     margin-bottom: 10%;
@@ -84,7 +85,7 @@ header .inner {
     left: 0;
 }
 .naked img{
-    width: auto;
+    width: 100%;
     height: 660px;
     display: block;
     position: relative;
@@ -99,7 +100,7 @@ header .inner {
     text-align: right;
     position: relative;
     left: 0%;
-    top: -100px;
+    top: -170px;
     height: auto;
     width: auto;
 }
@@ -131,7 +132,7 @@ header .inner {
     background: url(../img/lush/charity\ potcoin-green.png) no-repeat 50% 50% /contain;
     position: absolute;
     top: -29%;
-    left: -23%;
+    left: -19%;
     width: 830px;
     height: 830px;
     filter: drop-shadow(-2px -4px 10px rgba(0,0,0,0.2));
@@ -143,8 +144,8 @@ header .inner {
     height: 370px;
     filter: drop-shadow(-11px -3px 10px rgba(0,0,0,0.2));
     position: absolute;
-    top: 46%;
-    left: 14%;
+    top: 44%;
+    left: 17%;
     z-index: 100;
 }
 .coin3{
@@ -152,8 +153,8 @@ header .inner {
     width: 250px;
     height: 250px;
     position: absolute;
-    top: 55%;
-    left: 27%;
+    top: 53%;
+    left: 29%;
     z-index: 99;
     filter: drop-shadow(-2px -4px 10px rgba(0,0,0,0.2));
 }
@@ -161,8 +162,8 @@ header .inner {
     background: url(../img/lush/charity\ pot\ donation.png) no-repeat 50% 50% /contain;
     z-index: 100;
     position: absolute;
-    top: 49%;
-    left: 57%;
+    top: 54%;
+    left: 60%;
     width: 850px;
     height: 780px;
     filter: drop-shadow(-2px -4px 10px rgba(0,0,0,0.2));
@@ -174,7 +175,7 @@ header .inner {
     font-family: "Lush";
 }
 .metarial {
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
 }
@@ -202,7 +203,6 @@ li.cocoabutter {color: rgba(0,0,0,0.3);}
 /*sec3*/
 .section3{
     width: 100%;
-    margin-top: -3%;
 }
 .line{
     width: 60%;
@@ -213,7 +213,7 @@ li.cocoabutter {color: rgba(0,0,0,0.3);}
 }
 .wrap{
     position: relative;
-    width: 100%;
+    width: 50%;
     top: 0;
     left: 50%;
     margin-top: -35%;
@@ -223,7 +223,7 @@ li.cocoabutter {color: rgba(0,0,0,0.3);}
     position: relative;
     overflow: hidden;
     z-index: 3;
-    width: 50%;
+    width: 100%;
 }
 .container #vd2{
     object-fit: cover;
@@ -231,7 +231,6 @@ li.cocoabutter {color: rgba(0,0,0,0.3);}
     height: 856px;
 }
 .title{
-    width: 80%;
     text-align: right;
     position:absolute;
     top: 21%;
@@ -242,14 +241,14 @@ li.cocoabutter {color: rgba(0,0,0,0.3);}
     text-shadow: -6px -3px 12px rgb(0 0 0 / 30%)
 }
 .title h2, .title h3 {
-    font-size: 80px;
+    font-size: 100px;
 }
 .counter {
     display: inline-block;
-    font-size:100px;
+    font-size:120px;
 }
 .title > span {
-    font-size: 60px;
+    font-size: 80px;
 }
 button.bt1 {
     font-size: 35px;
@@ -257,8 +256,8 @@ button.bt1 {
     color: rgba(256,256,256,0.7);
     border: 2px solid rgba(256,256,256,0.7);
     position: absolute;
-    top: 0;
-    right: 7px;
+    top: 27%;
+    right: -17%;
     margin-top: 45%;
     cursor: pointer;
     padding: 10px;

@@ -210,7 +210,6 @@ ul.menu{
     background: rgba(36,36,36,0.2);
 }
 .sec1 video{
-    position: relative;
     position: fixed;
     z-index: -1;
 }
@@ -326,6 +325,9 @@ ul.menu{
 }
 .sec2 .content summary{
     font-weight: bold;
+}
+.sec2 .content summary:hover {
+    color: #565655;
 }
 .sec2 .right .guide img{
     width: 100%;
