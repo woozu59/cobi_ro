@@ -1,8 +1,6 @@
 @charset "utf-8";
 /*아이콘 넣어야될 시 @import 사용하여 cdn넣기*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
 /*나눔고딕*/
 
@@ -13,7 +11,7 @@
 }
 body{
     min-width: 1200px; min-height: 950px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Gothic';
     /*font사용시 여기에 작성*/
 }
 a, a:link{
@@ -453,7 +451,7 @@ thead th:first-child{
     left: 0;
     z-index: 2;
     top: 20%;
-    background: rgba(144, 198, 227, 0.7);
+    background: #90c6e3b3;
 }
 .sec3 .cardgroup .back_2{
     width: 900px;
@@ -462,7 +460,7 @@ thead th:first-child{
     right: 0%;
     z-index: 2;
     top: 56%;
-    background: rgba(52, 128, 170, 0.7)
+    background: #3480aab3
 }
 
 .sec3 .card .cardti{
