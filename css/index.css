@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box; outline: 1px solid steelblue;}
+ul > li{list-style:none;}
+a, a:active{text-decoration: none; color: #333;}
+.clearfix{display:table; content:" "; clear:both;}
+
+header > img{width: 200px;}
+
+.sec1{width:90%; height: 800px; background: #EFEFEF; margin: 0 auto; border: 1px solid #333;}
+.sec1 > .inform{float:left;}
+
+
+
+.vsc{width: 550px; height: 750px; background:#1E1E1E; float: right; position: relative; top: -120px;}
+.vschead{display: flex; background: #323233; width: 100%; height: 35px;}
+.vscside{width: 47px; height: 715px; float: left; background: #323233;}
+.menu{display:flex; line-height: 35px; font-weight: 400;}
+.menu > a{color:#8C8C8D;}
+.windows img{width: 20px; height: 20px;}
+.vsctab{width: 120px; height: 37px; display: flex; line-height: 37px; background: #1E1E1E; color: #f3f3f3;}
+.vsctab img{width: 20px; height: 20px;}
+
+.woozu{display: block; width: 480px; position: absolute; top: 56px; right: 22px;}
+.tabs{display: flex; justify-content: space-between; width: 410px;}
+.dokdo .dokdofile,
+.lush .lushfile{width: 150px; height: 210px;}
+
+
+
+.sec2{width: 100%;}
+.informs{float: left;}
+.dokdoinform, .lushinform{width: 540px; height: 700px;}
+.tag{font-weight: 600;}
+
+
+.word{display: flex;}
+.word img{width: 20px; height:20px;}
+
+.filebox{float: left; width: 60%; height: 790px; background: #EFEFEF;}
+.filebox ul{display:flex; flex-direction:column;}
+.filebox li {margin-top: 20px;}
+.filebox a{display:block; position:relative;}
+figure{width: 100%; height: auto;}
+figure img {width: 100%; height: auto;}
+figcaption{width: 100%; height: 100%; background: rgba(0,0,0,0.5); text-align: center; position:absolute; top: 0; left: 0; transition: 0.3s; color: #f3f3f3; padding: 100px 100px 0 100px; opacity: 0;}
+a:hover figcaption, a:focus figcaption{opacity: 1;}
