@@ -1,6 +1,11 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;600&display=swap');
 /*Gothic A1 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+/* Inconsolata 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+/*나눔 고딕*/
+@font-face{src: url("../fonts/Lush.ttf"); font-family: "Lush"; }
 *{margin: 0; padding: 0; box-sizing: border-box; outline: 1px solid steelblue;}
 ul > li{list-style:none;}
 a, a:active{text-decoration: none; color: #333;}
@@ -9,50 +14,94 @@ a, a:active{text-decoration: none; color: #333;}
 body{width:100%; font-family: 'Gothic A1', sans-serif;}
 header > img{width: 200px;position: relative; top: 0; left: 48px; z-index: 10; margin-top: 20px;}
 
-.sec1{width:90%; height: 800px; position: relative; top: -200px; background: #EFEFEF; margin: 0 auto; border: 1px solid #333;}
-.sec1 > .inform{float:left; position: relative; top: 500px; left: 100px; }
-.inform dt{font-size: 65px; font-weight: 600; margin-bottom: 10px;}
+.sec1{width:90%; height: 800px; font-family: 'Inconsolata', monospace; position: relative; top: -240px; background: #EFEFEF; margin: 0 auto; border: 1px solid #333;}
+.sec1 > .inform{float:left; position: relative; top: 450px; left: 150px; }
+.inform dt{font-size: 65px; font-weight: 600; margin-bottom: 15px;}
 /* .inform dt:last-child{margin-top: 40px;} */
 .inform dd{display:flex; /*justify-content: space-between;*/}
 dd > ul {display: flex; margin-bottom: 30px;}
-dd> ul > li{margin-right: 10px; font-size:30px;}
+dd> ul > li{margin-right: 20px; font-size:30px; font-weight: 600;}
 .inform dd > img{width: 60px; height: 60px; margin-right: 30px;}
 
 
 
-.vsc{width: 550px; height: 750px; background:#1E1E1E; float: right; position: relative; top: -178px; left: -85px;}
-.vschead{display: flex; background: #323233; width: 100%; height: 35px;}
-.vscside{width: 47px; height: 715px; float: left; background: #323233;}
-.menu{display:flex; line-height: 35px; font-weight: 400;}
-.menu > a{color:#8C8C8D;}
-.windows img{width: 20px; height: 20px;}
-.vsctab{width: 120px; height: 37px; display: flex; line-height: 37px; background: #1E1E1E; color: #f3f3f3;}
-.vsctab img{width: 20px; height: 20px;}
-.number > li {color: #fff;}
+.vsc{width: 550px; height: 750px; background:#252526; float: right; border-radius: 15px; position: relative; top: -178px; left: -85px; box-shadow: -4px 7px 15px #8d8d8d;}
+.vschead{display: flex; background: #333333; width: 100%; height: 35px; justify-content: space-between; border-radius: 15px 15px 0 0;}
+.vscside{width: 47px; height: 715px; float: left;  background-color: #333333; border-bottom-left-radius: 15px;}
+.vscside .sideicon{width: 100%; height:248px; background: url(../img/index/2022-07-14_100243.png) no-repeat 50% 50% / contain;}
+.menu{display:flex; line-height: 35px; font-weight: 400; margin-left: 7px;}
+.menu .vsclogo{width: 20px; height: 20px; margin: 7px 15px 7px 7px;}
+.menu > a{color:#8C8C8D; margin-right: 15px; font-weight: 600; font-size: 14px;}
+img.headicon {height: 35px; width: 100%;}
+.windows {margin: 10px;}
+.windows > a {margin-left: 27px;}
+.windows a:first-child {margin: 0;}
+.windows img{width: 15px; height: 15px;}
+.windows .minimize{width: 20px; height: 2px;}
 
-.woozu{display: block; width: 480px; position: absolute; top: 56px; right: 22px;}
-.tabs{display: flex; justify-content: space-between; width: 410px; position: absolute; top: 87%; right: 66px; z-index: 10;}
+.vsctab{width: 26%; height: 37px; display: flex; line-height: 37px; border-right: 1px solid #424242; background: #1E1E1E; color: #C7C7C7;}
+.vsctab .xml{height: 28px; width: 27px; margin: 5px -7px 0 0;}
+.vsctab > p {font-size: 13px; font-weight: 600; margin-right: 10px; margin-left: 8px;}
+.vsctab img{width: 12px; height: 12px;}
+
+.code{background:#1E1E1E; min-height: 678px; border-radius: 0 0 15px 15px;}
+:root{--color-blue:#3077C7; --color-sky:#67BDF1; --color-orange:#CE8B66;}
+ol.number {width: 90%; position: relative; top: 0; left: 48px;}
+.number > li {color: #858585; font-weight: 600; font-size: 17px; padding: 2px 0;}
+.number > li p {display: inline-block;}
+.number .blue{color: var(--color-blue);}
+.number .sky{color: var(--color-sky);}
+.number .orange{color: var(--color-orange);}
+
+
+.tabs{display: flex; justify-content: space-between; width: 410px; position: absolute; top: 92%; right: 66px; z-index: 100;}
 .dokdo .dokdofile,
-.lush .lushfile{width: 150px; height: 210px; cursor: pointer;}
+.lush .lushfile{width: 150px; cursor: pointer;}
 
 
 
-.sec2{width: 100%;position: relative; top: -157px; z-index: 5;}
-.informs{float: left;}
-.dokdoinform, .lushinform{width: 540px; height: 700px;}
-.report p {margin: 10px 25px 10px;}
-.tag{font-weight: 600;}
+.sec2{width: 100%;position: relative; top: -190px; z-index: 5; }
+.informs{float: left; margin-left: 3%; z-index: 5; width: 60%; height: 900px; border: 1px solid #333; padding-left: 20px;}
+.fileinform {width: 55%;}
+.dokdoinform {margin-top: 50px;}
+.lushinform {margin-top: 25px;}
+.about, .concept, .color {margin-bottom: 5%;}
+h2.title {font-size: 50px; text-align: center;}
+.report p {margin: 10px 25px 25px; word-spacing: 3px; word-break: break-all;}
+.word p {font-size: 25px;}
+.tag{font-weight: 600; font-size: 27px;}
 .color .report {display: flex; justify-content: space-around;}
-.fir-color{width: 110px; height: 110px; background:#90C6E3; border-radius: 50%;}
-.sec-color{width: 110px; height: 110px; background: #3480AA; border-radius: 50%;}
-.third-color{width: 110px; height: 110px; background: #242424; border-radius: 50%;}
-.fir-color > span, .sec-color > span,
-.third-color > span{line-height: 110px; color: #fff; margin-left: 22px;}
+.circle{width: 110px; height: 110px; border-radius: 50%;}
+.circle > span{line-height: 110px; color: #fff; font-weight: 600; margin-left: 22px;}
+.lushinform .circle > span{color: #565656;}
+
+.dokdoinform .fir-color{background:#90C6E3;}
+.dokdoinform .sec-color{background: #3480AA;}
+.dokdoinform .third-color{background: #242424;}
+
+.lushinform .fir-color{background:#FEEDC3;}
+.lushinform .sec-color{background:#93A953;}
+.lushinform .third-color{background:#F3F2EA;}
 
 
-.word{display: flex;}
-.word img{width: 20px; height:20px;}
-.box {width: 60%; height: 790px; float: left; background: #EFEFEF; border: 1px solid #333;}
+
+.word{display: flex; justify-content: space-around; } 
+.word img{width: 20px; height:20px; margin-top: 15px; font-family: 'Nanum Gothic', sans-serif;}
+.font h2 {text-align: center; margin-top: 20px; font-size: 2em;}
+button{font-size:15px; font-weight: 600; background: none; padding: 10px; border: 1px solid #333; position: relative; left: 67%;}
+button.site1 {top: 30px;}
+button.site2 {top: 15px;}
+button.site1:hover {background: #bee9f3; color: #fff; border: 1px solid #88c2cf; transition: 0.3s;}
+/* button .site2:hover {} */
+
+
+/*lushinform*/
+
+.font .lush{font-family: "Lush";}
+
+
+
+.box {width: 60%; height: 790px; float: left; background: #EFEFEF; border: 1px solid #333; z-index: 100; position: absolute; top: 50px; right: 42px;}
 .filebox{width: 90%; height: 90%; overflow: auto; margin: 75px auto 0;}
 .filebox ul{display:flex; flex-direction:column;}
 .filebox li {margin-top: 20px;}

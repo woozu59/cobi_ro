@@ -11,7 +11,7 @@
 }
 body{
     min-width: 1200px; min-height: 950px;
-    font-family: 'Nanum Gothic';
+    font-family: 'Nanum Gothic', sans-serif;
     /*font사용시 여기에 작성*/
 }
 a, a:link{
