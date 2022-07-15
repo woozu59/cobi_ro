@@ -9,17 +9,22 @@
 <!--html 작성 하고 title 달기-->
 <body>
     <header>
-        <img src="../img/index/portfolioFile.png" alt="포트폴리오 파일">
+        <img src="../img/index/folder.png" alt="포트폴리오 파일">
+        <!-- <p class="folder">PORTFOLIO</p> -->
     </header>
     <div class="sec1 clearfix">
         <dl class="inform"><!--float: left, 프로젝트에 사용된 도구 및 크로스브라우징 가능여부-->
+            <dt>Name</dt>
+            <dd>
+                WOO MINJU
+            </dd>
             <dt>Used Tool</dt>
             <dd>
                <ul>
                     <li>Photoshop</li>
+                    <li>Illustration</li>
                     <li>Html/Css</li>
                     <li>J-query</li>
-                    <li>Illustration</li>
                </ul>
             </dd>
             <dt>Cross Browsing</dt>
@@ -49,9 +54,7 @@
                 <div class="sideicon"></div>
             </div>
             <div class="vsctab">
-                <img src="../img/index/xml.png" class="xml" alt="xml">
-                <p>Portfolio.xml</p>
-                <a href="#"><img src="../img/icon/xmark-solid.png" alt="파일 닫기"></a>
+                <img src="../img/index/tab.png" class="xml" alt="xml">
             </div>
             <div class="code">
                 <ol class="number">
@@ -59,21 +62,13 @@
                     <li></li>
                     <li>&lt;<p class="blue">woozu</p>&gt;</li>
                     <li>&nbsp; &lt;<p class="blue">resume</p>&gt;</li>
-                    <li>&nbsp; &nbsp; &lt;<p class="blue">name</p>&gt; </li>
-                    <li>&nbsp; &nbsp; &nbsp; woo minju</li>
-                    <li>&nbsp; &nbsp; &lt;/<p class="blue">name</p>&gt; </li>
+                    <li>&nbsp; &nbsp; &lt;<p class="blue">name</p>&gt;<p class="answer">woo minju</p>&lt;/<p class="blue">name</p>&gt; </li>
                     <li></li>
-                    <li>&nbsp; &nbsp; &lt;<p class="blue">birth</p>&gt; </li>
-                    <li>&nbsp; &nbsp; &nbsp; 1998.01.20</li>
-                    <li>&nbsp; &nbsp; &lt;/<p class="blue">birth</p>&gt; </li>
+                    <li>&nbsp; &nbsp; &lt;<p class="blue">birth</p>&gt;<p class="answer">1998.01.20</p>&lt;/<p class="blue">birth</p>&gt; </li>
                     <li></li>
-                    <li>&nbsp; &nbsp; &lt;<p class="blue">tell</p>&gt; </li>
-                    <li>&nbsp; &nbsp; &nbsp; 010-8610-2041</li>
-                    <li>&nbsp; &nbsp; &lt;/<p class="blue">tell</p>&gt; </li>
+                    <li>&nbsp; &nbsp; &lt;<p class="blue">tell</p>&gt;<p class="answer">010-8610-2041</p>&lt;/<p class="blue">tell</p>&gt; </li>
                     <li></li>
-                    <li>&nbsp; &nbsp; &lt;<p class="blue">email</p>&gt; </li>
-                    <li>&nbsp; &nbsp; &nbsp; woozu5959@naver.com</li>
-                    <li>&nbsp; &nbsp; &lt;/<p class="blue">email</p>&gt; </li>
+                    <li>&nbsp; &nbsp; &lt;<p class="blue">email</p>&gt;<p class="answer">woozu5959@naver.com</p>&lt;/<p class="blue">email</p>&gt; </li>
                     <li></li>
                     <li>&nbsp; &lt;/<p class="blue">resume</p>&gt; </li>
                     <li>&lt;/<p class="blue">woozu</p>&gt; </li>
@@ -82,10 +77,10 @@
         </div>
         <div class="tabs">
             <div data-id="con1" class="on"><!--파일모양의 탭버튼-->
-                <a href="#"><img src="../img/index/dokdoFile.png" class="dokdofile" alt="dokdofile"></a>
+                <a href="#" onclick="return false;"><img src="../img/index/file.png" class="dokdofile" alt="dokdofile"></a>
             </div>
             <div data-id="con2">
-                <a href="#"><img src="../img/index/lushFile.png" class="lushfile" alt="lushfile"></a>
+                <a href="#" onclick="return false;"><img src="../img/index/file2.png" class="lushfile" alt="lushfile"></a>
             </div>
         </div>    
     </div>
@@ -173,7 +168,7 @@
                         <p class="tag">&lt;font&gt;</p>
                         <div class="report">
                             <h2>Noto Sans KR</h2>
-                            <h2 class="lush">Lush체</h2>
+                            <h2 class="lush">Lush</h2>
                         </div>
                     </div>
                     <button class="site2">러쉬 프로젝트로 바로가기</button>
@@ -316,11 +311,9 @@
             </div>
         </div>    
     </div>
-    <!-- <footer>
-        <div class="copyright">
-            <h2>고민중 뺄 수도 있음</h2>
-        </div>
-    </footer> -->
+    <footer>
+        <p>Copyrightⓒ2022 우민주Portfolio</p>
+    </footer>
     <script src="../js/jqery3.6.0.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/index.js"></script>
