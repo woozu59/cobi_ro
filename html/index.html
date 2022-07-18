@@ -6,14 +6,13 @@
     <title>woozu's index페이지</title>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
-<!--html 작성 하고 title 달기-->
+
 <body>
     <header>
         <img src="../img/index/folder.png" alt="포트폴리오 파일">
-        <!-- <p class="folder">PORTFOLIO</p> -->
     </header>
     <div class="sec1 clearfix">
-        <dl class="inform"><!--float: left, 프로젝트에 사용된 도구 및 크로스브라우징 가능여부-->
+        <dl class="inform">
             <dt>Name</dt>
             <dd>
                 WOO MINJU
@@ -108,7 +107,7 @@
                                 <img src="../img/icon/plus-solid.svg" alt="더하기">
                                 <p>편의성</p>
                                 <img src="../img/icon/plus-solid.svg" alt="더하기">
-                                <p>생동감</p><!--단어 추가해서 넣기-->
+                                <p>생동감</p>
                             </div>    
                         </div>
                     </div>
@@ -126,7 +125,7 @@
                             <h2>Noto Sans KR</h2>
                         </div>
                     </div>
-                    <button class="site1">독도 프로젝트로 바로가기</button>
+                    <button type="button" onclick="window.open('./dokdo.html');" class="site1">독도 프로젝트로 바로가기</button>
                 </div>
                 <div class="lushinform"><!--lush설명 시작-->
                     <h2 class="title">Lush</h2>
@@ -171,12 +170,12 @@
                             <h2 class="lush">Lush</h2>
                         </div>
                     </div>
-                    <button class="site2">러쉬 프로젝트로 바로가기</button>
+                    <button type="button" onclick="window.open('./lush.html');" class="site2">러쉬 프로젝트로 바로가기</button>
                 </div>
             </div>        
         </div>
         <div class="box">
-            <div id="con1" class="filebox on"><!--탭 클릭 시 변환 될 영역-->
+            <div id="con1" class="filebox on"><!--독도 섹션별 설명란-->
                 <ul>
                     <li>
                         <a href="#">

@@ -60,10 +60,9 @@ p.answer {font-size: 1.2em;}
 
 .tabs{display: flex; position: absolute; top: 94%; right: 0; z-index: 100;}
 .dokdofile, .lushfile{width: 270px; cursor: pointer; display: block; filter: drop-shadow(5px 5px 8px rgb(0 0 0 / 20%)) ;}
-/* .dokdofile:visited, .lushfile:visited{width: 270px;} */
-/* .dokdofile:active, .lushfile:active{width: 270px;} */
 
-.sec2{width: 100%;position: relative; top: -240px; z-index: 5; }
+
+.sec2{width: 100%;position: relative; top: -295px; z-index: 5; }
 .informs{float: left; margin-left: 3%; z-index: 5; width: 60%; height: 900px; box-shadow: -2px 2px 9px rgb(0 0 0 / 10%); padding-left: 45px;}
 .fileinform {width: 50%;}
 .dokdoinform {margin-top: 50px;}
@@ -128,5 +127,5 @@ a:hover figure img{transform: scale(1.1);}
 #con2 li:nth-child(5) figcaption{padding-top: 15%;}
 
 
-footer{width: 95%; background: #333; margin: -10% auto; height: 115px; box-shadow: -4px 5px 10px rgb(0 0 0 / 20%); }
+footer{width: 95%; background: #333; margin: -12% auto; height: 115px; box-shadow: -4px 5px 10px rgb(0 0 0 / 20%); }
 footer p{color: #9d9d9d; text-align: center; padding-top: 70px; font-size: 16px; font-weight: 600; letter-spacing: 1px;}

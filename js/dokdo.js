@@ -1,7 +1,14 @@
 //weather js
 
 $(document).ready(function(){
-      $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=4e406371c47d543546a019fee8fe058d&units=metric',function(result){
+  //top nav js
+  $(".menu > li > ul").hide();
+  $(".menu").hover(function(){
+    $(".menu ul").stop().slideToggle();
+  });    
+  
+  
+  $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=4e406371c47d543546a019fee8fe058d&units=metric',function(result){
           let icon = `<img src="../img/weather/${result.weather[0].icon}.svg" alt="${result.weather[0].description}">`
           let temp = result.main.temp.toFixed(1)
           $('.weather').append(icon);
@@ -34,11 +41,7 @@ $(document).ready(function(){
         });
 
 
-//top nav js
-  $(".menu > li > ul").hide();
-  $(".menu").hover(function(){
-    $(".menu ul").stop().slideToggle();
-  });
+
 
 
 });
