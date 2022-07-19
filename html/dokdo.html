@@ -103,13 +103,25 @@
                 <div class="title">
                     <h2>독도 입도 안내</h2>
                 </div>
-                <div class="guide">
-                    <details>
-                        <summary>입도절차</summary><!--1번 메뉴-->
-                        <img src="../img/dokdo/step.jpg" alt="입도절차안내">
-                    </details>
-                    <details>
-                    <summary>여객선정보</summary><!--2번 메뉴-->
+                <div id="guide"><!--아코디언 메뉴-->
+                    <div class="que">
+                        <span>입도절차</span><!--1번 메뉴-->
+                        <div class="arrow_wrap">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                    </div>
+                    <div class="anw">
+                        <span><img src="../img/dokdo/step.jpg" alt="입도절차안내"></span>
+                    </div>
+                    <div class="que">
+                        <span>여객선정보</span><!--2번 메뉴-->
+                        <div class="arrow_wrap">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                    </div>
+                    <div class="anw">
                         <table>
                             <thead>
                                 <tr>
@@ -166,11 +178,17 @@
                                     <td>사동항</td>
                                 </tr>
                             </tbody>
-                            </table>
-                            <div>2022년 1월기준</div>    
-                    </details>
-                    <details>
-                        <summary>유의사항</summary><!--3번 메뉴-->
+                        </table>
+                        <span>2022년 1월기준</span>    
+                    </div>
+                    <div class="que">
+                        <span>유의사항</span><!--3번 메뉴-->
+                        <div class="arrow_wrap">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                    </div>
+                    <div class="anw">
                         <div class="note">
                             <img src="../img/dokdo/dokdo.jpg" alt="독도 입도 유의사항">
                             <ul>
@@ -181,13 +199,19 @@
                                 <li>자세한 내용은 <span>'독도입도종합안내 사이트'</span>를 참고바랍니다.</li>
                             </ul>    
                         </div>
-                    </details>
-                    <details>
-                        <summary>독도입도종합안내 바로가기</summary><!--4번 메뉴-->
+                    </div>    
+                    <div class="que">
+                        <span>독도입도종합안내 바로가기</span><!--4번 메뉴-->
+                        <div class="arrow_wrap">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                    </div> 
+                    <div class="anw">   
                         <div class="site">
                           <button class="bt" onClick="location.href='http://www.ulleung.go.kr/ko/page.htm?mnu_uid=1649'"><span>독도입도종합안내 사이트</span></button>
                         </div>
-                    </details>  
+                    </div>  
                 </div>
             </div>
         </div>
@@ -388,6 +412,8 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/jqery3.6.0.min.js"></script>
     <script src="../js/dokdo.js"></script>
