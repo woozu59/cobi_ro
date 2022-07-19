@@ -1,0 +1,8 @@
+@charset "utf-8";
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    header .right i{color:#ffffff;}
+    .nav .menu > li > ul:hover{display:block; transform:translateY(100%);}
+    .sec2 .content summary{font-size: 20px; margin: 0 30% 0;}
+    .sec4{background:url(../img/dokdo/dokdo_banner.png) no-repeat 50% 50% / cover;}
+    footer .inner{color:#ffffff;}
+}

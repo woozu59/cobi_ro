@@ -3,7 +3,7 @@
 /*Noto Sans KR 폰트*/
 @font-face{src: url("../fonts/Lush.ttf"); font-family: "Lush"; }
 *{margin: 0; padding: 0; box-sizing: border-box; 
-    outline:1px solid green;
+    /* outline:1px solid green; */
 }
 ul,li{list-style: none;}
 a, a:active{
@@ -127,16 +127,7 @@ header .inner {
     width: 70%;
     height: 278px;
 }
-/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-}; */
+
 
 
 
@@ -518,18 +509,5 @@ ul.agreement {
     display: block;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    header{background: url(../img/lush/7\ Sunscreen\ Products\ You\ Should\ be\ Using\ _\ Her\ Campus.png) no-repeat 50% 50% /cover;}
-    .section1{padding-bottom: 24%;}
-    .naked .inner h1{text-shadow: -6px -8px 10px #D4D4D4;}
-    .coin1{top:-60%;}
-    .coin2{top: 70%;}
-    .coin3{top: 86%;}
-    .lotion{top:97%; left:64%;}
-    #vd1{position:absolute; top: 84%; left: 27%; min-width: 74%; min-height: 100%; transform:translate(-37%, 0); }
-    .scroll{top:36%;}
-    .container #vd2{transform: translate(0, -37%); width: auto; height: auto; min-width: 100%; min-height: 100%;}
-    .title{top:13%;}
-}
 
 

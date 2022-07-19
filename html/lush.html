@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/lush.css">
     <link rel="stylesheet" type="text/css" media="all and (max-width:1200px)" href="../css/lushflex.css">
-    <link rel="stylesheet" ytpe="text/css" media="all and (max-width: 640px)" href="../css/lushmb.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="../css/lushmb.css">
+    <link rel="stylesheet" type="text/css" href="../css/ex_lush.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,7 @@
     <header>
         <div class="inner">
             <div title="lush" class="logo"></div>
-            <span title="charity pot" class="charitypot">charity pot</span><!--lush 글씨체로 설정-->
+            <span title="charity pot" class="charitypot">charity pot</span>
         </div>
     </header>
     <div class="section1"><!--sec1 러쉬이념-->
@@ -40,9 +41,11 @@
             <div class="coin3"></div>
             <div class="lotion"></div>    
         
-            <video muted autoplay loop playsinline id="vd1"><!--video 재생-->
-                <source src="../img/lush/natural video.mp4" type="video/mp4">
-            </video>
+            <div class="vd">
+                <video muted autoplay loop playsinline id="vd1"><!--video 재생-->
+                    <source src="../img/lush/natural video.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>    
     </div>
     <div class="section2"><!--sec2 대표재료-->
@@ -65,9 +68,11 @@
         <div class="line"></div>
         <div class="wrap">
             <div class="container">
-                <video muted autoplay loop playsinline id="vd2">
-                    <source src="../img/lush/wildflower.mp4" type="video/mp4">
-                </video>
+                <div class="vd_1">
+                    <video muted autoplay loop playsinline id="vd2">
+                        <source src="../img/lush/wildflower.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div title="후원 총 금액" class="title white">
                     <h2>현재까지</h2>
                     <span>총</span><h1 class="counter" data-count="1521405549">0</h1><span>원</span>
@@ -119,8 +124,7 @@
                 </div>
             </div> 
             <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>   
+            <div class="swiper-button-prev"></div> 
         </div>
     </div>
     <div class="section6"><!--sec6 관련 제품-->
@@ -192,6 +196,8 @@
     </div>
         
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/jqery3.6.0.min.js"></script>
     <script src="../js/lush.js"></script>

@@ -41,19 +41,26 @@ $(document).scroll(function() {
 
   
 });
+//scroll js
+$(".scroll div").each(function() {
+  var thisOffset = $("." +$(this).data('id')).offset().top;
+
+  $(this).click(function(){
+    $("html, body").animate({
+      scrollTop: thisOffset
+    }, 1000);
+    $(this).addClass('on');
+  });
+});  
 
 
-
+//swiper js
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 60,
     centeredSlides: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -87,13 +94,4 @@ var swiper = new Swiper(".mySwiper", {
 //     }
 // });
 
-  $(".scroll div").each(function() {
-    var thisOffset = $("." +$(this).data('id')).offset().top;
   
-    $(this).click(function(){
-      $("html, body").animate({
-        scrollTop: thisOffset
-      }, 1000);
-      $(this).addClass('on');
-    });
-  });  

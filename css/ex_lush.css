@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+    header{background: url(../img/lush/7\ Sunscreen\ Products\ You\ Should\ be\ Using\ _\ Her\ Campus.png) no-repeat 50% 50% /cover;}
+    .section1{padding-bottom: 24%;}
+    .naked .inner h1{text-shadow: -6px -8px 10px #D4D4D4;}
+    .vd{width: 70%; height: 278px; overflow:hidden; position:relative; top: 250px; left:0;}
+    
+    #vd1{    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+    .coin1{background: url(../img/lush/charity\ potcoin-leaf_ex.ver.png) no-repeat 50% 50% / contain; top:-40%;}
+    .coin2{background: url(../img/lush/LUSH\ Charity\ Pot\ _ex.ver.png) no-repeat 50% 50% / contain; top: 50%;}
+    .coin3{background: url(../img/lush/Charity\ Pot\ Coin\ _hand_ex.ver.png) no-repeat 50% 50% / contain; top: 63%;}
+    .lotion{background: url(../img/lush/charity\ pot\ donation_ex.ver.png) no-repeat 50% 50% / contain; top: 70%; }
+
+    .scroll{top:36%;}
+    .section3{height: 1008px;}
+    .vd_1{width: 100%; height: 856px; position:relative; }
+    .container #vd2{transform: translate(-50%, -50%); position:absolute; top: 50%; left: 50%; width: auto; height: auto; min-width: 100%; min-height: 100%;}
+    .title{text-shadow: -6px -3px 12px #686868;}
+}; 
