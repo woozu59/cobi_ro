@@ -12,12 +12,12 @@ a, a:active{text-decoration: none; color: #333;}
 .clearfix{display:table; content:" "; clear:both;}
 
 body{width:100%; font-family: 'Gothic A1', sans-serif;}
-header > img {width: 450px; position: relative; top: -56px; left: 40px; z-index: 10; height: 450px;}
+header > img {width: 300px; position: relative; top: -20px; left: 30px; z-index: 10; height: 300px;}
 .folder{font-weight: 600; position: absolute; top: 22%; left: 150px; font-size: 35px; z-index: 50; color: #333;}
 
 
 
-.sec1{width:90%; height: 800px; font-family: 'Inconsolata', monospace; position: relative; top: -360px; background: #EFEFEF; margin: 0 auto; box-shadow: -7px 3px 10px rgb(0 0 0 / 10%);}
+.sec1{width:90%; height: 800px; font-family: 'Inconsolata', monospace; position: relative; top: -200px; background: #EFEFEF; margin: 0 auto; box-shadow: -7px 3px 10px rgb(0 0 0 / 10%);}
 .sec1 > .inform{float:left; position: relative; top: 450px; left: 150px; }
 .inform dt{font-size: 65px; font-weight: 600; margin-bottom: 15px;}
 .inform dd{display:flex;}
@@ -58,15 +58,18 @@ p.answer {font-size: 1.2em;}
 .number .orange{color: var(--color-orange);}
 
 
-.tabs{display: flex; position: absolute; top: 94%; right: 0; z-index: 100;}
-.dokdofile, .lushfile{width: 270px; cursor: pointer; display: block; filter: drop-shadow(5px 5px 8px rgb(0 0 0 / 20%)) ;}
+.tabs{display: flex; position: absolute; top: 102%; right: 0; z-index: 100;}
+.dokdofile, .lushfile{width: 230px; cursor: pointer; display: block; }
 
+.tabs > div.on img{width:270px;}
 
-.sec2{width: 100%;position: relative; top: -295px; z-index: 5; }
+.sec2{width: 100%;position: relative; top: -80px; z-index: 5; }
 .informs{float: left; margin-left: 3%; z-index: 5; width: 60%; height: 900px; box-shadow: -2px 2px 9px rgb(0 0 0 / 10%); padding-left: 45px;}
 .fileinform {width: 50%;}
-.dokdoinform {margin-top: 50px;}
-.lushinform {margin-top: 25px;}
+.dokdoinform {display: none; margin-top: 50px;}
+.lushinform {margin-top: 25px;display: none;}
+.dokdoinform.on{display:block;}
+.lushinform.on{display:block;}
 .about, .concept, .color {margin-bottom: 5%;}
 h2.title {font-size: 50px; text-align: center;}
 .report p {margin: 10px 25px 25px; word-spacing: 3px; word-break: break-all;}
@@ -127,5 +130,5 @@ a:hover figure img{transform: scale(1.1);}
 #con2 li:nth-child(5) figcaption{padding-top: 15%;}
 
 
-footer{width: 95%; background: #333; margin: -12% auto; height: 115px; box-shadow: -4px 5px 10px rgb(0 0 0 / 20%); }
+footer{width: 95%; background: #333; margin: -3% auto; height: 115px; box-shadow: -4px 5px 10px rgb(0 0 0 / 20%); }
 footer p{color: #9d9d9d; text-align: center; padding-top: 70px; font-size: 16px; font-weight: 600; letter-spacing: 1px;}
