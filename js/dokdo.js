@@ -46,7 +46,11 @@ $(document).ready(function(){
 
 });
 
-
+$(".que").click(function(){
+  $(this).next(".anw").stop().slideToggle(300);
+  $(this).toggleClass("on").siblings().removeClass("on");
+  $(this).next(".anw").siblings(".anw").slideup(300);
+});
 
 //swiper 
  var swiper = new Swiper(".slide", {

@@ -6,7 +6,7 @@
 *{
     padding: 0; margin: 0;
     box-sizing: border-box;
-    outline: 1px solid purple;
+    /* outline: 1px solid purple; */
 }
 body{
     min-width: 1200px; min-height: 950px;
@@ -202,8 +202,10 @@ ul.menu{
     height: 100vh;
    
 }
-.sec1 .bg{
+
+.sec1 .vd{
     background: rgba(36,36,36,0.2);
+    width:100%;
 }
 .sec1 video{
     position: fixed;
@@ -310,22 +312,36 @@ ul.menu{
     padding: 5px;
 }
 /*날씨 css 끝*/
-.sec2 .content .guide{
+div#guide {
+    height: 230px;
     overflow: auto;
-    height: 231px;
-    margin: 15px 0 0 0;
-    
 }
-.sec2 .content .guide details{
-    margin-bottom: 33px;
+.que {
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px 0;
+    width: 95%;
 }
-.sec2 .content summary{
-    font-weight: bold;
+.que img {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
 }
-.sec2 .content summary:hover {
-    color: #565655;
+
+.arrow_wrap {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
 }
-.sec2 .right .guide img{
+.que .minus {display: none; background: url(../img/icon/minus-solid.svg) no-repeat 50% 50% / contain; width:23px; height: 13px;}
+.que .plus {display: block;}
+.que.on .minus{display: block; }
+.que.on .plus{display:none;}
+.anw{display:none;}
+.anw img{
     width: 100%;
     border-radius: 10px;
    
@@ -335,14 +351,14 @@ ul.menu{
 /*table css*/
 
 
-.sec2 .guide table{
+table{
     width: 98%;
     border-collapse: collapse;
     background-color: #fff;
     border-radius: 10px;
     border-style: hidden;
 }
-.sec2 .guide table td{
+table td{
     border-bottom: 1px solid #4444;
     border-left: 1px solid #4444;
     padding: 5px;
@@ -357,7 +373,7 @@ thead th{
 thead th:first-child{
     border-left: none;
 }
-.sec2 .guide table td:first-child{
+table td:first-child{
     border-left: none;
     border-right: 1px solid #4444;
 }
@@ -581,7 +597,7 @@ footer .inner{
     display: flex;
     color: #ffff;
     height: 146px;
-    width: 75%;
+    width: 70%;
     padding-top: 25px;
 
 }
