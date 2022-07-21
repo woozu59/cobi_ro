@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>19_1tabJQuery</title>
+    <link rel="stylesheet" type="text/css" href="/css/19_1tabJQuerystyle.css" />
+</head>
+
+<body>
+    <section>
+        <h1>탭 가로형 기본 display none/block</h1>
+        <div class="tab">
+            <ul>
+                <li data-id="con1" class="on">tab #1</li>
+                <li data-id="con2">tab #2</li>
+                <li data-id="con3">tab #3</li>
+                <!-- 속성값의 시작이 "data-*" -->
+            </ul>
+            <div id="con1" class="conBox on">
+                tab #1 conBox1
+            </div>
+            <div id="con2" class="conBox">
+                tab #2 conBox2
+            </div>
+            <div id="con3" class="conBox">
+                tab #3 conBox3
+            </div>
+        </div>
+        <h1>탭 가로형 index, display none/block</h1>
+        <div class="indexBox">
+            <ul>
+                <li class="on">tab #01</li>
+                <li>tab #02</li>
+                <li>tab #03</li>
+            </ul>
+            <div>
+                <div class="conBox on">
+                    tab #01 conBox01
+                </div>
+                <div class="conBox">
+                    tab #02 conBox02
+                </div>
+                <div class="conBox">
+                    tab #03 conBox03
+                </div>
+            </div>
+        </div>
+
+        <h1>탭 세로형 기본 display none/block</h1>
+        <div class="tabV">
+            <ul>
+                <li data-id="con10" class="on">tab #10</li>
+                <li data-id="con11">tab #11</li>
+                <li data-id="con12">tab #12</li>
+                <li data-id="con13">tab #13</li>
+                <li data-id="con14">tab #14</li>
+            </ul>
+            <div class="content">
+                <div id="con10" class="conBox on">
+                    tab #10 conBox10
+                </div>
+                <div id="con11" class="conBox">
+                    tab #11 conBox11
+                </div>
+                <div id="con12" class="conBox">
+                    tab #12 conBox12
+                </div>
+                <div id="con13" class="conBox">
+                    tab #13 conBox13
+                </div>
+                <div id="con14" class="conBox">
+                    tab #14 conBox14
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>탭 가로형 fade in/out</h1>
+        <div class="fadeTab">
+            <ul>
+                <li data-id="fade1" class="on">fade tab #1</li>
+                <li data-id="fade2">fade tab #2</li>
+                <li data-id="fade3">fade tab #3</li>
+            </ul>
+            <div id="fade1" class="conBox">
+                tab #1 fade conBox1
+            </div>
+            <div id="fade2" class="conBox">
+                tab #2 fade conBox2
+            </div>
+            <div id="fade3" class="conBox">
+                tab #3 fade conBox3
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/19_1tabJQuery.js"></script>
+</body>
+
+</html>

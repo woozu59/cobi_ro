@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 1280px;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header,nav,section,footer{ width: 100%; }
+h1{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    font-size: 3rem;
+    font-weight: 300;
+    background: #212121;
+}
+section.hoverslide1,
+section.hoverslide2,
+section.hoverslide3,
+section.hoverslide4{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+}
+section.hoverslide1 .left{
+    width: 40%;
+    height: 100%;
+    background: url(/images/crecendo/furniture_1.jpg) 100% 50% no-repeat;
+}
+section.hoverslide1 .right{
+    width: 60%;
+    height: 100%;
+    background: #ccc;
+}
+section.hoverslide2 .left{
+    width: 60%;
+    height: 100%;
+    background: #ccc;
+}
+section.hoverslide2 .right{
+    width: 40%;
+    height: 100%;
+    background: url(/images/crecendo/furniture_1.jpg) 0 50% no-repeat;
+}
+section.hoverslide1 .left.on,
+section.hoverslide1 .right.on,
+section.hoverslide2 .left.on,
+section.hoverslide2 .right.on{
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+section.hoverslide1 .left.off,
+section.hoverslide1 .right.off,
+section.hoverslide2 .left.off,
+section.hoverslide2 .right.off{
+    width: 0;
+    transition: all 0.5s ease-out;
+}
+
+section.hoverslide3{
+    overflow: hidden;
+    width: 100%;
+
+}
+section.hoverslide3 article{
+    display: flex;
+    flex: 1 1 25%;
+    height: 100%;
+    background: #5f9ea0;
+    padding: 50px 100px;
+    align-items: center;
+}
+section.hoverslide3 article:nth-child(odd){
+    background: #cfe1e2;
+}
+section.hoverslide3 article h1{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    display: none;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    font-size: 3rem;
+    font-weight: 300;
+}
+section.hoverslide3 article:hover{
+    flex: 1 1 100%;
+    transition: all 0.5s ease-out;
+}
+section.hoverslide3 article:hover h1{
+    display: block;
+    transition: all 1s ease-out;
+}

@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
+/* AOS */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* 구글아이콘 */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-size: 14px;
+    color: #fff;
+}
+body{ min-width: 1280px; }
+header,nav,section,footer{ width: 100%; }
+ul, li{ list-style: none; }
+header{
+    background: rgba(255,255,255,0.3);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    transition: background 0.3s;
+}
+
+header .logo{
+    font-size: 2.15rem;
+    font-weight: 600;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0 0 20px;
+}
+header .logo a,
+header .logo a:visited{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+header .global{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
+}
+header .global span{
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+header .global span::after{
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    content: "";
+    top: 8px;
+    right: -10px;
+    transition: background 0.3s;
+}
+header .global span:last-child::after{ display: none; }
+header .mMenuBt{ display: none; }
+
+/* scroll에 의해 header.color로 변경 */
+header.color{
+    background: rgba(255,255,255,1);
+    transition: background 0.3s;
+    color: #666;
+}
+header.color .logo a,
+header.color .logo a:visited{
+    color: #666;
+    transition: color 0.3s;
+}
+header.color .global span::after{
+    background: #666;
+    transition: background 0.3s;    
+}
+
+
+/* 네비게이션*/
+nav{
+    height: 60px;
+    position: fixed;
+    display: inline-flex;
+    z-index: 110;
+}
+nav a,
+nav a:visited{
+    color:#fff;
+    text-decoration: none;
+}
+nav ul.gnb{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+nav ul.gnb li.gnbMenu{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.42rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav ul.gnb li.gnbMenu .title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+}
+
+/* 모바일용 서브메뉴 감추기 */
+nav ul.gnb .mCloseBt,
+nav ul.gnb ul.mSnb{ display: none; }
+
+/* pc용 서브메뉴 */
+nav .snb{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    background: rgba(0,0,0,0.2);
+    color: #000;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+}
+nav .gnb:hover .snb{
+    height: 150px;
+    transition: all 0.5s ease-in-out;
+}
+nav .snb ul{ width: 200px; }
+nav .snb ul li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/***************** section *****************/
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.scene01{ background-image: url(/images/banner/space01.jpg) }
+section.scene02{ background-image: url(/images/banner/space02.jpg) }
+section.scene03{ background-image: url(/images/banner/space03.jpg) }
+section article{
+    max-width: 80%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+section article h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+section article h1::after{
+    display: block;
+    width: 30%;
+    border-bottom: 1px solid white;
+    content: '';
+    margin: 1rem auto 0;
+}
+
+
+
+
+
+/* scroll 버튼 */
+.scroll{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.2);
+    z-index: 100;
+}
+.scroll span{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-collapse: collapse;
+    font-weight: 600;
+    cursor: pointer;
+}
+.scroll span:hover{
+    background: rgba(0,0,0,0.2);
+}

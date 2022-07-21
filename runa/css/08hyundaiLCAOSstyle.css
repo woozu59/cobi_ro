@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* 08현대l_c 레이아웃 AOS css */
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{ min-width: 1280px; }
+.section1{
+    height: 830px;
+    background: url("/images/crecendo/furniture_1.jpg") 50% 30% no-repeat;
+    background-size: 100% 830px;
+    padding: 200px 0 0 0;
+    text-align: center;
+    color: #fff;
+}
+.section1 .title{
+    font-size: 100px;
+    letter-spacing: 20px;
+    font-weight: 800;
+    text-shadow: 5px 5px 10px #000;
+}
+.section1 .txt1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #009882;
+}
+.section1 .txt2{
+    width: 100%;
+    font-size: 20px;
+}
+.section1 .bt{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #009882;
+    margin: 50px auto 0;
+}
+.section2,
+.section3{
+    height: 900px;
+    clear: both;
+}
+.section2 .box,
+.section3 .box{
+    width: 50%;
+    height: 900px;
+    float: left;
+    position: relative;
+}
+.section2 .box.txt{
+    text-align: right;
+    font-size: 50px;
+    padding: 120px 360px 0 0;
+    font-weight: 600;
+}
+.section2 .box.txt .image2{
+    width: 690px;
+    height: 430px;
+    background: url("/images/crecendo/furniture_2.png") 50% 50% no-repeat;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    margin: -230px 0 0 0;
+    z-index: 100;
+}
+
+.section2 .box.color{
+    background: #009882;
+    padding: 300px 0 0 200px;
+    color: #fff;
+}
+.section2 .box.color .title{
+    width: 400px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.section2 .box.color .txt1{
+    width: 400px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+}
+.section2 .box.color .txt2{
+    width: 400px;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+.section2 .box.color .bt{
+    font-size: 20px;
+    margin: 40px 0 0 0;
+    display: inline-block;
+}
+
+.section3 .box.color{ background: #f4f4f4; }
+.section3 .box.color .image3{
+    width: 600px;
+    height: 470px;
+    background: url("/images/crecendo/furniture_3.jpg") 50% 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    margin: -235px 0 0 0;
+    padding: 50px;
+}
+.section3 .box.color .image3 div:first-child{
+    font-size: 30px;
+    color: #fff;
+}
+.section3 .box.color .image3 .bt{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    color: #fff;
+}
+.section3 .box.color .image3 .bt span{
+    color: #009882;
+}
+.section3 .box.txt{
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 50px;
+}
+.section3 .box.txt .image4{
+    width: 600px;
+    height: 470px;
+    background: url("/images/crecendo/furniture_4.jpg") 50% 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin: -235px 0 0 0;
+    padding: 50px;
+}
+.section3 .box.txt .image4 div:first-child{
+    font-size: 30px;
+    color: #000;
+    font-weight: normal;
+}
+.section3 .box.txt .image4 .bt{
+    font-weight: normal;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #009882;
+    font-size: 14px;
+}
+
+.section4{
+    height: 590px;
+    background-image: url("../images/crecendo/pattern_01.png"), url("../images/crecendo/furniture_5.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: 3px 3px, 120% 590px;
+    padding: 150px 0 0 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.section4 .title{
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+.section4 .txt1{
+    font-size: 18px;
+    margin: 50px 0 0 0;
+}
+.section4 .bt{
+    width: 200px;
+    height: 120px;
+    line-height: 120px;
+    background-color: #009882;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -100px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>43mailForm</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/css/43mailFormstyle.css" />
+</head>
+<body class="themeBlack">
+    <div class="bg">
+        <div id="dragPop" class="popup ui-widget-content" style="display: none;">
+            <span class="material-icons ic_close"> close </span>
+            <span class="material-icons ic_main"> mark_email_read </span>
+            <h1>Contact!</h1>
+            <h2>runa.uxlabs@gmail.com</h2>
+            <form id="contactForm" class="mail">
+            <!-- <form class="mail" action="mailto:runa.uxlabs@gmail.com" method="GET"> -->
+                <input type="hidden" name="contact_number">
+                <input type="text" id="from_name" name="from_name" placeholder="이름"/>
+                <input type="email" name="from_email" placeholder="연락가능한 이메일"/>
+                <textarea name="message" placeholder="내용"></textarea>
+                <input type="submit" value="보내기" />
+                <input type="reset" value="초기화" />
+            </form>
+            <form>
+                <input type="checkbox" id="pop_day"/>
+                <label for="pop_day">1일동안닫기</label>
+                <a href="#" class="btn_close">1일동안닫기</a>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/43mailForm.js"></script>
+</body>
+</html>

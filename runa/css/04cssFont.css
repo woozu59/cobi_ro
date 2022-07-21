@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* p{ font-size: 150%; }
+ul{ font-size: 20px; }
+ul li{ font-size: 2em; }
+ul li:last-child{ font-size: 4em; } */
+
+/* html{ font-size: 40px; } */
+/* :root{ font-size: 14px; } */
+
+
+li{ font-size: 3rem; }
+
+/* p{
+    width: 100vw;
+    height: 100vh;
+} */
+p:nth-child(1){ font-weight: bold; }
+p:nth-child(2){ font-weight: 900; }
+p:nth-child(3){  font-weight: 100;  }
+p:nth-child(4){ font-variant: small-caps; }
+p:nth-child(5){ text-transform: uppercase; }
+/* p:nth-child(6){ text-transform: lowercase; } */
+p:nth-child(6){ text-transform: capitalize; }
+/* text-transform은 html에서 입력된 값을 대문자, 소문자로 변경 할 수 있다.*/
+p > span{
+    font-size: 8px;
+    position: relative;
+    top: -0.5rem;
+}
+p{ line-height: 2.5; }
+div{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #eee;
+    text-align: center;
+    letter-spacing: 0px;
+    word-spacing: 10px;
+}
+
+
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font: bold 20px/2 '궁서'; */
+    /* font 축약형은
+    font: weight size line-height family 순으로 작성한다. 생략되면 기본으로 진행 */
+    /* :root+rem단위+font축약형기재 조합으로 진행 */
+}
+p{
+    font-family: 'East Sea Dokdo', cursive;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.color1{ background: magenta; }
+.color2{ background: #9999ff; }
+.color3{ background: rgb(255, 128, 0); }
+/* .color3{ background: rgb(r, g, b); } */
+.color4{ background: rgba(255, 128,0, 0.7); }
+/* .color4{ background: rgba(r, g, b, alpha); } */
+.color5{ background: hsl(180, 50%, 80%); }
+/* .color5{ background: hsl(hue, saturation%, lightness%); } */
+.color6{ background: hsla(180, 50%, 80%, 0.7); }
+/* .color6{ background: hsla(hue, saturation%, lightness%,); } */
+
+ul > li.shadow{
+    text-shadow: 2px 3px 10px rgba(0,0,0, 0.8);
+    /* text-shadow: x y blur color; */
+} 
+ul > li.shadow2{
+    text-shadow: 2px 3px rgba(100,100,0, 0.6);
+    /* text-shadow: x y color; */
+    /* 선언하지 않을 값은 생략 가능 - 기본값 부여 */
+} 
+ul > li.shadow3{
+    text-shadow: 2px 2px #246,
+    3px 3px #357,
+    4px 4px #468,
+    5px 5px #579,
+    6px 6px #68a,
+    7px 7px #79b,
+    8px 8px #8ac;
+    /* 텍스트 쉐도우는 셋트완성하여 ,로 구분해서 여러장을 깔 수 있다. */
+} 
+p.vAlign img{
+    width: 100px;
+    vertical-align: bottom;
+}
+p.vAlign2{
+    height: 200px;
+    vertical-align: middle;
+    /* vertical-align은 img, 폼요소, table요소에만 적용된다. */
+}
+p.paper{
+    border: 1px solid grey;
+    text-indent: 15px;
+    background: url(/images/butterfly.png) 6px 19px no-repeat;
+    background-size: 15px 15px;
+}
+/* p.paper img{
+    width: 15px;
+    height: 15px;
+} */
+a.imgbg{
+    width: 200px;
+    height: 100px;
+    background: url(/images/butterfly.png);
+    display: block;
+
+    overflow: hidden;
+    text-indent: -1000000px;
+}
+
+/* word-wrap ww*/
+.ww{
+    width: 50%;
+    word-wrap: break-word;
+}
+/* word-break wb*/
+.wb{
+    width: 50%;
+    /* word-break: break-all; */
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+/* white-space ws*/
+.ws{
+    /* white-space: normal; */
+    /* 쓰나 안쓰나 기본값 */
+
+    /* white-space: nowrap; */
+    /* 뚫고 지나감 */
+
+    /* white-space: pre; */
+    /* 엔터, 공백, 탭 모두 허용, 줄바꿈 안됨 */
+    /* white-space: pre-wrap; */
+    /* 엔터, 공백, 탭 모두 허용, 줄바꿈 됨 */
+    white-space: pre-line;
+    /* 엔터만 허용, 줄바꿈 됨 */
+}
+
+/* text-overflow */
+h3{
+    border: 1px solid grey;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div{
+    width: 200px;
+
+    /* 높이가 지정된 객체에서 한줄 글씨를 중앙에 배치하는 법 */
+    height: 300px;
+    /* line-height: 300px; */
+    /* 2줄이상 생성되는 부분에서는 행간적용과 같다. 멀티라인 사용금지 */
+
+    /* display: block;
+    display: none; */
+    /* display: table-cell;
+    vertical-align: middle; */
+
+    /* padding: 140px 0 0 0;  */
+}
+.hdd{ display: none; }
+.hdd2{ visibility: hidden; }
+
+p.flow{
+    width: 300px;
+    height: 50px;
+    /* overflow: auto;
+    overflow: scroll; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* overflow: visible; */
+    /* 제한된 영역에 많은 콘텐츠를 배치해야할 때 사용한다. */
+    /* background: rgba(255, 128,0, 0.3); */
+}
+p.flow:hover{
+    opacity: 0.2;
+}

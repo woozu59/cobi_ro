@@ -1,0 +1,509 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* 구글아이콘폰트 */
+@import url('/lib/swiper-5.4.5/package/css/swiper.min.css');
+/* Swiper css */
+@import url('/lib/slick-1.8.1/slick/slick.css');
+/* @import url('/lib/slick-1.8.1/slick/slick-theme.css'); */
+/* slick css */
+@import url('/css/IEstyle.css');
+/* IE cross browsing */
+
+/* GS그룹 레이아웃 css */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #666;
+    --swiper-theme-color: #fff;
+}
+ul, li{list-style: none;}
+a{ text-decoration: none; }
+body{
+    min-width: 1080px;
+}
+.inner{
+    width: 1020px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+}
+h3{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+h4{ 
+    color: #333;
+    font-weight: 500;
+ }
+header{
+    width: 100%;
+    height: 95px;
+    border-bottom: 1px solid #ccc;
+}
+header .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header .top span.mMenuBt,
+nav span.close{
+    display: none;
+}
+header .top .logo{
+    width: 95px;
+    height: 48px;
+    background: url("/images/gs/top_logo.png") 50% 50% no-repeat;
+}
+header .top .global{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+header .top .global .search{
+    width: 220px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+header .top .global .search label{
+    display: none;
+}
+.search input.searchBox{
+    width: 80%;
+    height: 30px;
+    background: #ccc;
+    border: none;
+    color: #fff;
+}
+.search .searchBt{
+    width: 25px;
+    height: 25px;
+    background: url("/images/gs/btn_search.png") 50% 50% no-repeat;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+header .top .global .bt{
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #009999;
+    border: 1px solid #ccc;
+}
+header .top .global .bt:last-child{
+    color: #666;
+    border-left: none;
+}
+
+
+
+
+nav{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+
+nav ul.inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+}
+nav ul.inner li.depth1{
+    height: 50px;
+    line-height: 50px;
+    margin: 0 70px 0 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    position: relative;
+    z-index: 50;
+}
+nav ul.inner li.depth1::after{
+    width: 0%;
+    height: 3px;
+    background: #009999;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    z-index: 10;
+}
+nav ul.inner li a,
+nav ul.inner li a:visited,
+nav ul.inner li a:active{
+    text-decoration: none;
+    color: #000;
+}
+nav ul.inner li.depth1 ul.depth2{
+    min-width: 170px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 15px rgba(0,0,0, 0.1);
+    display: none;
+}
+nav ul.inner li.depth1 ul.depth2 li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+nav ul.inner li.depth1:hover::after{
+    width: 110%;
+    transition: width 0.3s;
+}
+nav ul.inner li.depth1:hover ul.depth2{
+    display: block;
+}
+nav ul.inner li.depth1 ul.depth2 li:hover{
+    background: #009999;
+}
+nav ul.inner li.depth1 ul.depth2 li:hover a{
+    color: #fff;
+}
+
+
+/* main */
+.swiper-container{
+    width: 100%;
+}
+.art1{
+    width: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+    margin: 20px 0 0 0;
+}
+.art1 .slide{
+    width: 100%;
+    height: 400px;
+    background: url(/images/gs/main_slide_gsenergy_0.png) 0 0 no-repeat;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    padding: 50px;
+}
+.art1 .slide:hover{ text-decoration: underline; }
+
+.art1 .slide.visual02{
+    background: url(https://www.gs.co.kr/resources/front/ko/images/main/energy-section-03.jpg) 0 50% no-repeat;
+    background-size: cover;
+}
+.art1 .slide.visual03{
+    background: url(https://www.gs.co.kr/resources/front/ko/images/main/energy-section-02.jpg) 0 20% no-repeat;
+    background-size: cover;
+}
+.art1 .slide p{
+    margin: 20px 0 0 0;
+    font-size: 1.5rem;
+}
+
+.art2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+.art2 .box{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.art2 .box h2{
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+    position: relative;
+}
+.art2 .box h2::after{
+    width: 20px;
+    height: 20px;
+    background: url(/images/gs/btn_more.png) 50% 50% no-repeat;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 22px;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+.art2 .box h2:hover::after{
+    transform: rotate(360deg);
+    transition: transform .5s;
+}
+.art2 .box .thumnail_01{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.art2 .box .thumnail_01 .img{
+    width: 200px;
+    height: 120px;
+    background: url(/images/gs/top_logo.png) 50% 50% no-repeat, #fff;
+    border: 1px solid #eee;
+}
+.art2 .box:last-child .thumnail_01 .img{
+    background: url(/images/gs/unity.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.thumnail_01 .contents{
+    padding: 0 0 0 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.thumnail_01 .contents h3{
+    margin: 0 0 10px 0;
+}
+.thumnail_01 .contents p{
+    line-height: 1.8;
+    word-break: keep-all;
+}
+.thumnail_01:hover{
+    text-decoration: underline;
+}
+
+
+.art2 .box:first-child .thumnail_02{
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    width: 100%;
+    cursor: pointer;
+}
+.art2 .box:first-child .thumnail_02:hover{
+    text-decoration: underline;
+}
+
+.art2 .box:first-child .thumnail_02 .img{
+    width: 100%;
+    height: 194px;
+    background: url(/images/gs/img_ceo1.png) 50% 0% no-repeat;
+    background-size: 100% 218px;
+}
+.art2 .box:first-child .thumnail_02 h3{
+    padding: 10px 20px 10px;
+}
+.art2 .box:first-child .thumnail_02 p{
+    padding: 10px 20px 30px;
+}
+.art2 .box:last-child .thumnail_02{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.art2 .box:last-child .thumnail_02 .left,
+.art2 .box:last-child .thumnail_02 .right{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    background: #f0f0f0;
+}
+
+.art2 .box:last-child .thumnail_02 .left:hover,
+.art2 .box:last-child .thumnail_02 .right:hover{
+    text-decoration: underline;
+}
+.art2 .box:last-child .thumnail_02 .left .img{
+    width: 100%;
+    height: 194px;
+    background: url("/images/gs/gs_incruit_img_02.png") 50% 0% no-repeat;
+    background-size: 100% 218px;
+
+}
+.art2 .box:last-child .thumnail_02 .right .img{
+    width: 100%;
+    height: 194px;
+    background: url("/images/gs/gs_incruit_img_03.png") 50% 0% no-repeat;
+    background-size: 100% 218px;
+}
+.thumnail_02 .left h3,
+.thumnail_02 .right h3{
+    padding: 10px 20px 10px;
+}
+.thumnail_02 .left p,
+.thumnail_02 .right p{
+    padding: 10px 20px 30px;
+}
+
+.art3{
+    width: 100%;
+    height: 80px;
+    margin: 20px 0 0 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.art3 .swiper-slide{
+    display: flex !important;
+    align-items: center;
+}
+.art3 .swiper-slide h4{
+    height: 78px;
+    line-height: 78px;
+}
+.art3 .swiper-slide h4.g1{
+    color: #009999;
+    margin: 0 20px 0 0;
+}
+.art3 .swiper-slide h4.g2{
+    color: #000;
+    margin: 0 10px 0 0 
+}
+.art4{
+    width: 100%;
+    height: 100px;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.art4 .banner_01, 
+.art4 .banner_02{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #ccc;
+    background: url("/images/gs/icon_contribution.png") 20px 20px no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 70px;
+}
+.art4 .banner_02{
+    background: url("/images/gs/icon_ethics.png") 20px 20px no-repeat;
+}
+.art4 .banner_01 p, 
+.art4 .banner_02 p{
+    margin: 15px 0 0 0;
+}
+footer{
+    width: 100%;
+    height: 140px;
+    background: #f3f3f3;
+    margin: 50px 0 0 0;
+    display: block;
+    font-size: 11px;
+}
+footer .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer .inner .footerLeft{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+.footerLeft .footerMenu span{
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+.footerLeft .footerMenu span:first-child{
+    padding: 0px 20px 0px 0px;
+}
+.footerLeft .footerMenu span::after{
+    width: 1px;
+    height: 8px;
+    content: "";
+    background: #ccc;
+    position: absolute;
+    top: 4px;
+    right: -2px;
+}
+.footerLeft .footerMenu span:last-child::after{
+    display: none;
+}
+.footerLeft .addr,
+.footerLeft .tel,
+.footerLeft .copyright{
+    display: block;
+    margin: 3px 0 0 0;
+}
+footer .inner select{
+    width: 140px;
+    height: 26px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    display: block;
+    margin: 30px 0 0 0;
+}
+footer .inner .mselect{
+    display: none;
+}
+
+/* GS 모바일/태블릿 레이아웃 */
+@media screen and (min-width:640px) and (max-width:1280px) {
+	
+}
+@media screen and (max-width:640px){
+	footer{
+        width: 100%;
+        height: 140px;
+        background: red;
+        margin: 50px 0 0 0;
+        display: block;
+        font-size: 11px;
+        color: #666;
+    }
+    footer.mColor{
+        color: #fff;
+    }
+    footer .inner .mselect{
+        display: block;
+    }
+}
+
+
+
+/* 크로스브라우징 연습 */
+/* ie11hack */
+/* 현재 10, 11버전 적용됨 */
+/* @media all and (-ms-high-contrast:none) {
+    h2{
+        color: red;
+    }
+} */
+
+/* ie10,ie11 hack */
+/* @media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    h2{
+        color: red;
+    }
+   
+} */
+/* ie9전용 hack */
+/* :root h2 {color: #F00\9;} */
+/* 현재 9,10버전 적용됨 */

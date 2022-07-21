@@ -1,0 +1,324 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Pure CSS input design */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    /* accent-color: #74992e; */
+    /* 활성화 컬러 일괄변경 */
+}
+body {
+    min-width: 1280px;
+}
+header,
+nav,
+section,
+footer {
+    width: 100%;
+}
+ul,
+li {
+    list-style: none;
+}
+h1,
+h2 {
+    text-align: center;
+}
+form {
+    width: 1200px;
+    margin: 20px auto 50px;
+    display: flex;
+    padding: 20px;
+    border: 1px solid #999;
+}
+form:last-child {
+    margin: 20px auto 500px
+}
+form.column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+p {
+    margin: 0 40px 0 0;
+}
+p.login,
+p.datalist {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+p.login input,
+p.datalist input {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ddd;
+    margin: 0 0 5px 0;
+    padding: 0 20px;
+}
+p.login label {
+    font-size: 1px;
+    overflow: hidden;
+    height: 1px;
+    color: transparent;
+}
+textarea.resiable {
+    /* resize: both; */
+    /* resize: horizontal; */
+    /* resize: vertical; */
+    resize: none;
+    /* ie에서는 서비스 불가 */
+}
+/* 체크박스 디자인 이미지로 변경 */
+input[type=checkbox].css-checkbox {
+    border: none;
+    background: none;
+    position: absolute;
+    left: -9999px;
+}
+input[type=checkbox].css-checkbox + label {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    height: 20px;
+    line-height: 20px;
+    background: url(/images/bg_checkbox.png) no-repeat 0 0;
+    background-size: 20px 40px;
+    vertical-align: middle;
+}
+input[type=checkbox].css-checkbox:checked + label {
+    background-position: 0 -20px;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* 체크박스 기본설정 */
+.pcc [type="checkbox"]:not(:checked),
+.pcc [type="checkbox"]:checked {
+    display: none;
+}
+.pcc [type="checkbox"]:not(:checked) + label,
+.pcc [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+/* 기존의 체크박스는 보여지지 않는다 */
+/* 가상요소(before, after)로 체크박스를 만들고, 라벨의 왼쪽부분에 여백을 주고 그곳에 위치시킨다. */
+
+/* 체크박스 상자 디자인 */
+.pcc [type="checkbox"]:not(:checked) + label:before,
+.pcc [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* 체크표시 선택 디자인 */
+.pcc [type="checkbox"]:not(:checked) + label:after,
+.pcc [type="checkbox"]:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    top: 0.15rem;
+    left: 0.22rem;
+    font-size: 1.3rem;
+    line-height: 0.8;
+    color: #09ad7e;
+    transition: all .2s;
+}
+/* 체크된 것과 안 된 것의 스케일을 조정하여 상태 구분 */
+.pcc [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.pcc [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* 선택불가 체크박스 */
+.pcc [type="checkbox"]:disabled:not(:checked) + label:before,
+.pcc [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb !important;
+    background-color: #ddd !important;
+}
+.pcc [type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+.pcc [type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+
+
+
+/* ----------------------------------------- */
+/* 라디오버튼 기본설정 */
+.pcc [type="radio"]:not(:checked),
+.pcc [type="radio"]:checked {
+    display: none;
+}
+.pcc [type="radio"]:not(:checked) + label,
+.pcc [type="radio"]:checked + label {
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+/* 라디오버튼 테두리 디자인 */
+.pcc [type="radio"]:not(:checked) + label::before,
+.pcc [type="radio"]:checked + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* 라디오버튼 선택 디자인 */
+.pcc [type="radio"]:not(:checked) + label::after,
+.pcc [type="radio"]:checked + label::after {
+    content: '\273F';
+    position: absolute;
+    top: 0.16rem;
+    left: 0.21rem;
+    font-size: 1.3rem;
+    line-height: 0.8;
+    color: #09ad7e;
+    transition: all .2s;
+}
+/* 선택표시에 들어갈 컨텐츠는 css_entitis이며, 폰트 디자인을 따라간다.
+https://www.w3schools.com/cssref/css_entities.asp */
+
+/* 체크된 것과 안 된 것의 스케일을 조정하여 상태 구분 */
+.pcc [type="radio"]:not(:checked) + label::after {
+    opacity: 0;
+    transform: scale(0);
+}
+.pcc [type="radio"]:checked + label::after {
+    opacity: 1;
+    transform: scale(1);
+}
+/* 선택불가 라디오버튼 */
+.pcc [type="radio"]:disabled:not(:checked) + label::before,
+.pcc [type="radio"]:disabled:checked + label::before {
+    box-shadow: none;
+    border-color: #bbb !important;
+    background-color: #ddd !important;
+}
+.pcc [type="radio"]:disabled:checked + label::after {
+    color: #999;
+}
+.pcc [type="radio"]:disabled + label {
+    color: #aaa;
+}
+/* ----------------------------------------- */
+/* 추가옵션 */
+label:hover::before {
+    border: 2px solid #09ad7e !important;
+}
+
+
+/* ----------------------------------------- */
+/* 셀렉트박스 기본설정 */
+.selectbox {
+    position: relative;
+    width: 200px;
+    font-size: 1.2rem;
+}
+.selectbox_current {
+    position: relative;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: 2px solid #ccc;
+    outline: #ccc;
+}
+.selectbox_current:hover {
+    border-color: #09ad7e;
+}
+.selectbox_value {
+    display: flex;
+}
+.selectbox_input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+}
+.selectbox_input {
+    display: none;
+}
+.selectbox_input:checked + .selectbox_input-text {
+    display: block;
+}
+
+/* 옵션값 디자인 설정 */
+.selectbox_list {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    opacity: 0;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+.selectbox_option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+}
+.selectbox_option:hover,
+.selectbox_option:focus {
+    color: #fff;
+    background-color: #09ad7e;
+}
+/* selectbox_current에 tabindex속성을 입력함으로써 Pure 포커싱이 되도록한다 */
+.selectbox_current:focus + .selectbox_list,
+.selectbox_list:focus {
+    opacity: 1;
+}
+.selectbox_current:focus + .selectbox_list .selectbox_option {
+    cursor: pointer;
+}
+.selectbox_current::after {
+    position: absolute;
+    content: "\25BE";
+    top: 50%;
+    right: 15px;
+    width: 20px;
+    font-size: 2rem;
+    color: #09ad7e;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+.selectbox_current:focus::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+/* js없는 Autocompleate */
+p.datalist datalist option{
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ddd;
+}
+
+
+/* 곧 업데이트 */
+/* :has(), js에서만 접근 가능했던 돔접근, css도 가능! */
+/* form.pcc:has(button){
+    background: cadetblue;
+} */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>39modalVideo</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.css">
+    
+</head>
+<body>
+    <a href="" data-izimodal-open="#modal-youtube">Youtube</a>
+    <div id="modal-youtube" class="modais" data-izimodal-transitionin="fadeInDown" data-izimodal-title="Youtube" data-izimodal-iframeURL="https://www.youtube.com/embed/NTWNttZ-aMQ?autoplay=1"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.js"></script>
+    <script>
+      $(document).ready(function(){
+  
+            $(".modais").iziModal({
+                history: false,
+                iframe : true,
+                fullscreen: true,
+                headerColor: '#000000',
+                group: 'group1',
+                loop: true
+            });
+            
+      });
+    </script>
+</body>
+</html>

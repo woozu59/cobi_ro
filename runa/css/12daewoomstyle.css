@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* 대우건설 모바일 레이아웃 css */
+
+body{ min-width: 320px; }
+body .top{
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+header{ height: 235px; }
+header .inner{
+    min-width: 320px;
+    max-width: 640px;
+    padding: 0 20px;
+    height: 60px;
+}
+header .inner::after{ display: none; }
+header .inner .mMenuBt{
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+}
+header .inner .gnb{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-width: 320px;
+    z-index: 100;
+    background: #f1f1f3;
+    display: flex;
+    justify-content: flex-start;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+header .inner .gnb.on{
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+header .inner .gnb .mCloseBt{
+    color: #6b9ecc;
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    z-index: 300;
+} 
+header .inner .gnb > div{
+    width: 150px;
+    height: 100%;
+    background: #6b9ecc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 0;
+}
+header .inner .gnb > div > span{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+header .inner .gnb > div > span:first-child{ color: #fff; }
+header .inner .gnb > div > span.on{ background: rgba(255,255,255,0.1); }
+
+
+/* subgnball */
+header .inner .gnb .subgnball{
+    height: auto;
+    position: unset;
+    min-width: 100px;
+    width: calc(100% - 150px);
+    background: #f1f1f3;
+    padding: 100px 0;
+    font-size: 1.1rem;
+}
+header .inner .gnb .subgnball > ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+header .inner .gnb .subgnball > ul > li{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    border-left: unset;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+header .inner .gnb .subgnball > ul > li.on{
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+header .inner .gnb .subgnball > ul > li:last-child{
+    border-right: unset;
+}
+
+/* inner:hover일때 상단디자인 변경 및 .subgnball unset*/
+header .inner:hover .logo{
+    background: url("../images/daewoo/daewoo_logo.png") 0 0 no-repeat;
+}
+header .inner:hover .gnb > div > span{ color: #fff; }
+header .inner:hover .gnb .subgnball{
+    height: auto;
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
+    transition: unset;
+}
+
+
+header .inner .global{ display: none; }
+
+header h1::after{
+    width: 40px;
+    height: 1px;
+}
+header .location{
+    max-width: 640px;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* nav */
+nav, section{
+    width: 100%;
+    min-width: 320px;
+}
+nav{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom: none;
+    height: auto;
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
+}
+nav div{
+    flex: 0 0 50%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+nav div.nav01{ order:1; }
+nav div.nav02{ order:2; }
+nav div.nav01::before,
+nav div.nav02::after,
+nav div:nth-child(4)::after{ display: none; }
+nav div ul{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 50px;
+    left: 0;
+}
+
+/* section */
+section h2{
+    margin: 60px 0 0px;
+    padding: 0 40px;
+}
+section h3{
+    margin: 40px 0 0px;
+    padding: 0 40px;
+    word-break: keep-all;
+}
+section > div{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.art1{
+    min-height: 265px;
+    height: auto;
+    background: none;
+    padding: 20px;
+}
+.art1 img.mart1{
+    width: 100%;
+    display: block;
+}
+.art1 .depth1,
+.art1 .depth2,
+.art1 .depth3{
+    display: none;
+}
+.art2 table{ margin: 50px 0; }
+.art3{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#f3f3f3 50%, #ffffff 50%) 0 -300px no-repeat;
+}
+.art3 .report,
+.art3 .reportHistory{
+    width: 100%;
+}
+.art3 .report{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 0 0 0;
+}
+.art3 .report .leftBox{ order: 2; }
+.art3 .report .reportImg{ order: 1; }
+.art3 .report .leftBox .title{
+    text-align: center;
+}
+.art3 .report .leftBox .substance{
+    width: 100%;
+    padding: 0 40px;
+}
+.art3 .report .leftBox .btnGroup{
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.btnGroup a{
+    width: calc(50% - 20px);
+    margin: 0;
+}
+.art3 .reportHistory{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 10px 0 0;
+    padding: 40px;
+    background: #f3f3f3;
+}
+.art3 .reportHistory .reportGroup{ margin: 0; }
+/* footer */
+footer{
+    height: auto;
+    padding: 20px;
+}
+footer .inner{
+    min-width: 280px;
+    max-width: 600px;
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+}
+footer .inner .left{
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    font-weight: 400;
+    background: url("../images/daewoo/daewoo_footer_logo.png") 50% 0 no-repeat;
+}
+footer .inner .left .menu,
+footer .inner .left .addr{
+    text-align: center;
+}
+footer .inner .left .menu span:last-child{
+    padding: 0;
+}
+footer .inner .left .menu span:nth-child(2),
+footer .inner .left .menu span:nth-child(3),
+footer .inner .right{
+     display: none;
+}

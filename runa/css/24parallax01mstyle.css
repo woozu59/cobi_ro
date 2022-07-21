@@ -1,0 +1,88 @@
+@charset "UTF-8";
+body{ min-width: 360px; }
+header .logo{ width: 35%; }
+header .global{ width: 40%; }
+header .global span:last-child{ display: none; }
+header .mMenuBt{
+    display: block;
+    font-size: 2rem;
+    margin: 0 20px 0 0;
+}
+/* scroll에 의해 header.color로 변경 */
+header.color .mMenuBt{
+    color: #666;
+    transition: color 0.3s; 
+}
+nav{
+    position: fixed;
+    width: 90%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+nav.open{ transform: translateX(0%); }
+/* 모바일에서는 nav가 안보이다가, 메뉴 아이콘을 클릭하면 nav가 나타남 */
+nav ul.gnb{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 120px 50px 50px; 
+    width: 100%;
+    position: relative;
+}
+nav ul.gnb .mCloseBt{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 23px;
+}
+nav ul.gnb .mCloseBt i{
+    display: block;
+    font-size: 2rem;
+}
+nav ul.gnb li.gnbMenu{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+nav ul.gnb li.gnbMenu .title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+/* 모바일용 서브메뉴 보이기 */
+nav ul.gnb ul.mSnb{
+    display: block;
+    width: 100%;
+}
+nav ul.gnb ul.mSnb li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.14rem;
+    margin: 1px 0 0 0;
+    display: block;
+    background: rgba(255,255,255,0.5);
+}
+
+
+/* PC용 서브메뉴 감추기 */
+nav .snb{ display: none; }
+
+
+
+
+/* scroll 버튼 */
+.scroll{
+    right: 50%;
+    top: unset;
+    bottom: 0;
+    transform: translateX(50%);
+}

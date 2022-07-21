@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* 구글아이콘폰트 */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body{ min-width: 1280px; }
+ul, li{ list-style: none; }
+
+/* 탭메뉴 - 세로형 */
+section .tabV{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: hidden;
+    background:#ccc;
+}
+section .tabV ul{
+    width: 150px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+section .tabV ul.lefttab{
+    border-right: 1px solid #bbb;
+}
+section .tabV ul li{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px;
+    margin: 0 0 2px 0;
+    background: #b4bcc2;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+}
+section .tabV ul li:hover{ background: #999; }
+section .tabV ul li.on{
+    border-bottom: 3px solid #bbb;
+    background: #ccc;
+}
+section .tabV .content{
+    width: calc(100% - 150px);
+    height: 400px;
+    color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    transition: width 0.5s;
+    position: relative;
+}
+section .tabV .content.left{ justify-content: flex-end; }
+section .tabV .content.right{ justify-content: flex-start; }
+section .tabV .content span.close{
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
+section .tabV .content span.close.on{ display: block; }
+section .tabV .content span.close.left{ left: 20px; }
+section .tabV .content span.close.right{ right: 20px; }
+section .tabV .content .conBox{
+    display:flex;
+    flex-shrink: 0;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    padding: 20px;
+    border: 1px solid #bbb;
+    position: absolute;
+    /* transition: transform 0.5s; */
+    transition: opacity 0.5s;
+}
+section .tabV .content .conBox iframe,
+section .tabV .content .conBox object,
+section .tabV .content .conBox embed,
+section .tabV .content .conBox video{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+}
+section .tabV .content.left .conBox{
+    /* transform: translateX(-130%); */
+    opacity: 0;
+    left: 80px;
+}
+section .tabV .content.right .conBox{
+    /* transform: translateX(130%); */
+    opacity: 0;
+    right: 80px;
+}
+section .tabV .content.left .conBox.on,
+section .tabV .content.right .conBox.on{
+    /* transform: translateX(0%); */
+    opacity: 1;
+    /* transition: transform 0.5s; */
+    transition: opacity 0.5s;
+}
+section .tabV ul.off,
+section .tabV .content.off{
+    width: 0;
+    transition: width 0.5s;
+}

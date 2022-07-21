@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* Material Icons */
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+/* 두루누비 레이아웃 css */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+ul,li{ list-style: none; }
+a{ text-decoration: none; }
+body{ min-width: 1280px; }
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 45px;
+}
+header .inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+}
+header .inner .logo.color{ display: none; }
+header .inner .topL a{
+    position: relative;
+    margin: 0 35px 0 0;
+    color: inherit;
+}
+header .inner .topL a::after{
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+    position: absolute;
+    top: 4px;
+    right: -20px;
+    content: "";
+}
+header .inner .topL a:last-child::after{
+    display: none;
+}
+
+header .inner .topR{
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.topR > a{
+    margin: 0 0 0 35px;
+    color: inherit;
+}
+.topR > button{ border: none; }
+.topR .search{
+    background: #1553a3;
+    color: #fff;
+    font-size: 2rem;
+    padding: 9px 8px 8px;
+    margin: 0 0 0 35px;
+}
+.topR .mmenu,
+.topR .mclose{
+    background: #2bc63e;
+    color: #fff;
+    font-size: 2rem;
+    padding: 9px 8px 8px;
+}
+.topR .mmenu,
+.topR .mclose{ display: none; }
+.topR .mmenu.on,
+.topR .mclose.on{ display: block; }
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: url(/images/duru/pattern_01.png) 0 0 repeat,url(/images/duru/visual.png) 50% 0 no-repeat;
+    background-size: 3px 3px, 1920px 872px;
+    position: relative;
+    cursor: pointer;
+}
+nav > a{ display: none; }
+nav > .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+nav > .inner .logo.wh{ width: 180px; }
+nav > .inner .logo.color{ display: none; }
+nav > .inner ul.gnb{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 0 0 0 80px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+nav > .inner ul.gnb > li{
+    color: #fff;
+    min-width: 80px;
+    font-size: 1.42rem;
+    font-weight: 300;
+    margin: 0 20px;
+}
+/* snb */
+nav .snb{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    /* 초기높이 입력해 놓고 레이아웃 작업한다. 완성후에 이벤트에 의해 높이조정을 해주면 된다 */
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.3);
+}
+nav:hover{ background: #fff; }
+nav:hover > .inner .logo.wh{ display: none; }
+nav:hover > .inner .logo.color{
+    display: block;
+    width: 180px;
+}
+nav:hover > .inner ul.gnb{
+    border-bottom: 1px solid #c6c6c6;
+}
+nav:hover > .inner ul.gnb > li{ color: #2d2d2d; }
+nav:hover .snb{
+    height: 180px;
+    transition: height 0.5s;
+}
+nav .snb > .inner{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: #c6c6c6;
+}
+nav .snb > .inner::after{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: url(/images/duru/snb_bg.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 180px;
+    height: 123px;
+    content: "";
+    opacity: 0.2;
+}
+nav .snb > .inner ul{
+    width: 120px;
+    margin: 20px 0 0 0;
+}
+nav .snb > .inner ul:last-child{
+    margin: 20px 275px 0 123px;
+}
+nav .snb > .inner ul:first-child{
+    margin: 20px 10px 0 0 ;
+}
+nav .snb > .inner ul li{
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+nav .mfooter{ display: none; }
+
+
+/* visual */
+section.visual{
+    width: 100%;
+    height: 703px;
+    background: url(/images/duru/pattern_01.png) 0 0 repeat,url(/images/duru/visual.png) 50% -80px no-repeat;
+    background-size: 3px 3px, 1920px 872px;
+    padding: 170px 0 0 0;
+    color: #fff;
+}
+section.visual .inner:last-child{
+    margin: 160px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+section.visual h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+}
+section.visual .inner > div{
+    width: 278px;
+    height: 190px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.visual .inner > div:nth-child(1){
+    background: url(/images/duru/thumnail_01.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section.visual .inner > div:nth-child(2){
+    background: url(/images/duru/thumnail_02.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section.visual .inner > div:nth-child(3){
+    background: url(/images/duru/thumnail_03.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section.visual .inner > div:nth-child(4){
+    background: url(/images/duru/thumnail_04.png) 50% 50% no-repeat;
+    background-size: cover; 
+}
+section.recommand{
+    width: 100%;
+    height: auto;
+    padding: 70px 0;
+}
+section.recommand .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+section.recommand h2{
+    text-align: center;
+    width: 250px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #2BC63E, #1553A3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section.recommand .inner > .roadgroup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 0 0 0;
+
+}
+.roadgroup > .road{
+    width: 378px;
+    height: 382px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.roadgroup > .road .photo{
+    width: 100%;
+    height: 236px;
+    position: relative;
+}
+.roadgroup > .road:nth-child(1) .photo{
+    background: url(/images/duru/road_01.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.roadgroup > .road:nth-child(2) .photo{
+    background: url(/images/duru/road_02.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.roadgroup > .road:nth-child(3) .photo{
+    background: url(/images/duru/road_03.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+/* .photo의 ::before(아이콘),
+::after(원)로 객체넣기 */
+.roadgroup > .road .photo::after{
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    right: 19px;
+    bottom: -35px;
+    color: #fff;
+    border-radius: 50%;
+}
+.roadgroup > .road:nth-child(even) .photo::after{
+    background: #2BC63E;
+}
+.roadgroup > .road:nth-child(odd) .photo::after{
+    background: #1553A3;
+}
+.roadgroup > .road .photo::before{
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+}
+.roadgroup > .road:nth-child(even) .photo::before{
+    content: "\f70c";
+    right: 38px;
+    bottom: -17px;
+    font-size: 2.5rem;
+}
+.roadgroup > .road:nth-child(odd) .photo::before{
+    content: "\f84a";
+    right: 35px;
+    bottom: -15px;
+    font-size: 2.1rem;
+}
+
+/* .photo의 i(아이콘),
+ ::after(원)로 객체넣기 */
+ .roadgroup > .road .photo > i{
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+}
+.roadgroup > .road:nth-child(even) .photo > i{
+    right: 38px;
+    bottom: -17px;
+    font-size: 2.5rem;
+}
+.roadgroup > .road:nth-child(odd) .photo > i{
+    right: 35px;
+    bottom: -15px;
+    font-size: 2.1rem;
+}
+
+.roadgroup > .road span{ width: 90%; }
+.roadgroup > .road span:nth-of-type(1){ margin: 30px 0 13px; }
+.roadgroup > .road:nth-child(even) span{ color: #2BC63E; }
+.roadgroup > .road:nth-child(odd) span{ color: #1553A3; }
+.roadgroup > .road span:last-child{
+    font-size: 1.6rem;
+    color: #3d3d3d;
+    font-weight: 500;
+}
+section.recommand .inner > .btgroup{
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+.btgroup button{
+    padding: 12px 45px;
+    margin: 0 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+.btgroup button:first-child{
+    background: #2BC63E;
+}
+.btgroup button:last-child{
+    background: #1553A3;
+}

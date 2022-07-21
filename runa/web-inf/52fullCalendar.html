@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>52fullCalendar</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" />
+    <link rel="stylesheet" href="/css/52fullCalendarStyle.css" />
+    <link rel="stylesheet" media="all and (max-width: 960px)" href="/css/52fullCalendarmstyle.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div id='calendarRow'></div>
+    </div>
+
+    <!--부트스트랩 모달-->
+    <div class="modal fade" id="calendarModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="modalTitle" class="modal-title">타이틀</h4>
+                </div>
+                <div id="modalBody" class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">예매하러가기</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">닫기</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="/js/52fullCalendar.js"></script>
+</body>
+
+</html>

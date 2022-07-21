@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>23_1scrollOn</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/23_1scrollOnstyle.css" />
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="/css/23_1scrollOnmstyle.css" />
+</head>
+
+<body>
+    <header class="top">
+        <div class="logo">Company</div>
+        <div class="global">
+            <span>로그인</span>
+            <span>회원가입</span>
+        </div>
+        <div class="mMenuBt"></div>
+    </header>
+    <nav>
+        <ul class="gnb">
+            <li class="mCloseBt"></li>
+            <li class="gnbMenu">
+                <div class="title">제품소개</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu2_1</a></li>
+                    <li><a href="#">menu2_2</a></li>
+                    <li><a href="#">menu2_3</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">홍보센터</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu3_1</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">고객센터</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu4_1</a></li>
+                    <li><a href="#">menu4_2</a></li>
+                    <li><a href="#">menu4_3</a></li>
+                </ul>
+            </li>
+            <li class="snb">
+                <ul>
+                    <li><a href="#">menu2_1</a></li>
+                    <li><a href="#">menu2_2</a></li>
+                    <li><a href="#">menu2_3</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu3_1</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu4_1</a></li>
+                    <li><a href="#">menu4_2</a></li>
+                    <li><a href="#">menu4_3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section1">
+        <h1>section1</h1>
+    </section>
+    <section class="section2">
+        <h2>section2 counting</h2>
+        <h2 class="counting" data-count="52">0</h2>
+        
+        <!-- <h2 class="counting2" data-count="8.9">0</h2> -->
+        <!-- element의 attribute는 소수점을 값으로 갖지 못한다, input 요소만 step을 통해서 소수점 설정 가능 -->
+    </section>
+    <section class="section3">
+        <h2>section3</h2>
+    </section>
+    <section class="section4">
+        <h2>section4</h2>
+        <h2 class="counting2">0</h2>
+    </section>
+    <section class="section5">
+        <h2>section5 AOS</h2>
+        <div class="aniBox left" data-aos="zoom-in-right" data-aos-mirror="true">data-aos="zoom-in-right"</div>
+        <div class="aniBox right" data-aos="zoom-in-left" data-aos-mirror="true">data-aos="zoom-in-left"</div>
+    </section>
+    <section class="section6">
+        <h2>section6</h2>
+    </section>
+    <section class="section7">
+        <h2>section7</h2>
+    </section>
+    <footer class="footer"></footer>
+
+    <div class="scroll">
+        <span data-id="top">top</span>
+
+        <span data-id="section1">1번섹션</span>
+        <span data-id="section2">2번섹션</span>
+        <span data-id="section3">3번섹션</span>
+        <span data-id="section4">4번섹션</span>
+        <span data-id="section5">5번섹션</span>
+        <span data-id="section6">6번섹션</span>
+        <span data-id="section7">7번섹션</span>
+
+        <span data-id="footer">bottom</span>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/23_1scrollOn.js"></script>
+    <script>
+        // AOS.init();
+        AOS.init({
+            disable: function() {
+                var maxWidth = 641;
+                return window.innerWidth < maxWidth;
+            },
+            //모바일에서 AOS를 사용하고 싶지 않을때
+            // once: false,
+            mirror: true,
+        });
+    </script>
+</body>
+
+</html>

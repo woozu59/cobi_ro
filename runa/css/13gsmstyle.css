@@ -1,0 +1,235 @@
+/* GS그룹 모바일 전용 레이아웃 css */
+body{
+    min-width: 320px;
+}
+.inner{
+    width: unset;
+    margin: unset;
+}
+header{
+    height: 100px;
+}
+header .top{
+    justify-content: center;
+    position: relative;
+}
+header .top span.mMenuBt{
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    left: 20px;
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+}
+header .top .search,
+header .top .global{
+    display: none;
+}
+nav{
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-200%);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 100px 0px 50px;
+}
+nav.dpFlex{ 
+    background: #009999;
+    transform: translateX(0%);
+    transition: all 0.5s;
+}
+nav.dpFlex span.close{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+nav.dpFlex ul.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 151px;
+    height: 100%;
+    background: #009999;
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+nav ul.inner li a,
+nav ul.inner li a:visited,
+nav ul.inner li a:active{
+    color: #fff;
+}
+nav ul.inner li.depth1{
+    width: 150px;
+    margin: 0;
+}
+nav ul.inner li.depth1::after{
+    display: none;
+}
+nav ul.inner li.depth1 > a{
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1000;
+    background: #009999;
+}
+nav ul.inner li.depth1:last-child > a{
+    height: 200px;
+}
+nav ul.inner li.depth1 ul.depth2{
+    height: auto;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid #ddd;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: unset;
+    transform: translateX(-200%);
+    box-shadow: 2px 2px 15px rgba(0,0,0, 0.1);
+    display: block;
+}
+nav ul.inner li.depth1:hover ul.depth2{
+    display: unset;
+}
+nav ul.inner li.depth1 ul.depth2.on{
+    transform: translateX(150px);
+    transition: all 0.5s;
+}
+
+
+main,
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+.art1{
+    height: 300px;
+    margin: 10px 0 0 0;
+}
+.art1 .slide{
+    height: 100%;
+    text-align: center;
+    font-size: 26px;
+    padding: 70px 50px;
+    word-break: keep-all;
+}
+.art2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+.art2 .box{
+    width: 100%;
+}
+.art2 .box .thumnail_01 {
+    align-items: center;
+}
+/* .thumnail_01 .contents h3,
+.thumnail_01 .contents p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+.art2 .box .thumnail_01 .img{
+    width: 40%;
+    /* height: 85px; */
+}
+
+.art2 .box:last-child .thumnail_02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.art2 .box:last-child .thumnail_02 .left,
+.art2 .box:last-child .thumnail_02 .right{
+    width: 100%;
+}
+.art2 .box:first-child .thumnail_02 .img {
+    height: 150px;
+    background-size: cover;
+}
+.art2 .box:last-child .thumnail_02 .left .img{
+    width: 100%;
+    height: 150px;
+    background: url(/images/gs/gs_incruit_img_02.png) 0 50% no-repeat;
+    background-size: cover;
+}
+.art2 .box:last-child .thumnail_02 .right .img {
+    height: 150px;
+    background: url(/images/gs/gs_incruit_img_03.png) 0 0 no-repeat;
+    background-size: cover
+}
+.art3{ width: 90%; }
+.art3 .swiper-slide h4.g1,
+.art3 .swiper-slide h4.g2{
+    width: 90px;
+    display: flex;
+    flex-shrink: 0;
+}
+.art3 .swiper-slide h4.g3{
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.art4{
+    width: 90%;
+    height: auto;
+    margin: 20px 0 0 0;
+    flex-direction: column;
+}
+.art4 .banner_01, 
+.art4 .banner_02{
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 20px 20px 0px 70px;
+}
+.art4 .banner_01 p,
+.art4 .banner_02 p{
+    margin: 10px 0 20px;
+}
+footer{
+    height: auto;
+    background: #009999;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+footer .inner{
+    width: 90%;
+    margin: 0 auto;
+}
+footer .inner .footerLeft{
+    width: 100%;
+}
+footer .inner select{
+    display: none;
+}
+.footerLeft .footerMenu span{
+    padding: 0 !important;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(255,255,255,0.1);
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+.footerLeft .footerMenu span::after{ display: none; }
+.footerLeft .addr,
+.footerLeft .tel,
+.footerLeft .copyright{
+    margin: 7px 0 0 0;
+}

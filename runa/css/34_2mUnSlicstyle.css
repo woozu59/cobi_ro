@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('/lib/slick-1.8.1/slick/slick.css');
+@import url('/lib/slick-1.8.1/slick/slick-theme.css');
+/* Slick */
+
+
+/* 34_2mUnSlick */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+ul, li{list-style: none;}
+body{ min-width: 1024px; }
+h1{
+	margin: 1em;
+	text-align: center;
+}
+section{
+    width: 960px;
+    height: auto;
+    margin: 50px auto 150px;
+    border: 1px solid #ccc;
+}
+
+.slider{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.slider .slide{
+    width: 100%;
+    height: 300px;
+    display: block;
+    background-color: #ccc;
+    overflow: hidden;
+    border: 5px solid #f7f7f7;
+}
+.slider .slide:nth-child(1),
+.slider .slide:nth-child(4){ width: 30%; }
+.slider .slide:nth-child(2),
+.slider .slide:nth-child(3){ width: 70%; }
+.slider .slide img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 모바일 캐러셀 */
+@media screen and (max-width:640px){
+    body{ min-width: 320px; }
+    section{ width: 100%; }
+    /* slider */
+    .slider{
+        width: 80%;
+        padding: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    .slider .slide{
+        width: 100%;
+        height: 600px;
+    }
+    .slider .slide:nth-child(1),
+    .slider .slide:nth-child(2),
+    .slider .slide:nth-child(3),
+    .slider .slide:nth-child(4){ width: 100%; }
+    /* 네비게이션 customazing */
+    .slider .slick-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 100;
+    }
+    .slider .slick-arrow::before,
+    .slider .slick-arrow::after{
+        color: #ccc;
+        font-size: 3rem;
+    }
+    .slick-prev{
+        left: -30px;
+        width: unset;
+        height: unset;
+    }
+    .slick-next{
+        right: -30px;
+        width: unset;
+        height: unset;
+    }
+}

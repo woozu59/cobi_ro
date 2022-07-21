@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* font-awsome v5.15.4 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+
+/* 데일리금융 레이아웃 css */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+}
+:root{ font-family: 'Noto Sans KR', sans-serif; }
+body{ min-width: 1280px; }
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+h1{ text-align: center; }
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.inner a.logo{
+    background: url("/images/daily/logo_phone.png") 50% 50% no-repeat;
+    width: 152px;
+    height: 57px;
+    display: block;
+    margin: 55px auto 52px;
+    text-indent: -9000px;
+    overflow: hidden;
+}
+.inner > h1{
+    margin: 0 0 100px;
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 300;
+}
+.inner > h1 div{
+    position: relative;
+}
+.inner > h1 div::before{
+    content: "\f10d";
+    position: absolute;
+    right: 38px;
+    bottom: -17px;
+    font-size: 2.5rem;
+    display: block;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: bisque;
+}
+.inner > h1 div::after{
+    content: "\f70c";
+    position: absolute;
+    right: 38px;
+    bottom: -17px;
+    font-size: 2.5rem;
+    color: #000;
+    display: block;
+    z-index: 10;
+}
+
+/* .inner > h1 > i{
+    font-size: 1.3rem;
+    color: #d7d7d7;
+    margin: 0 15px;
+}
+.inner > h1 > i::before{
+    content: "\f10d";
+}
+.inner > h1 > i::after{
+    content: "\f10e";
+}
+
+.inner > h1 > .material-icons-outlined::before{
+    content: "\e2eb";
+}
+.inner > h1 > .material-icons-outlined::after{
+    content: "\f041";
+} */
+
+.inner .box{
+    width: 290px;
+    height: 230px;
+    display: block;
+    float: left;
+    margin: 0 0 20px;
+    padding: 20px;
+    color: #fff;
+}
+.inner .box .title{
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+.inner .box p.copy{
+    margin: 22px 0 0 0;
+    font-weight: 400;
+    height: 48px;
+    overflow: hidden;
+    word-break: keep-all;
+}
+.inner .box span.date{
+    margin: 20px 0 0 0;
+    color: rgba(255,255,255, 0.5);
+    display: block;
+}
+.inner .box button{
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 20px;
+    border: 1px solid rgba(255,255,255, 0.6);
+    color: rgba(255,255,255, 0.6);
+    background: none;
+    display: block;
+    cursor: pointer;
+}
+.inner .box button:hover{
+    border: 1px solid rgba(255,255,255, 0.8);
+    color: rgba(255,255,255, 0.8);
+}
+
+.inner .box.b01{
+    background: url("/images/daily/bg_phone_01.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.inner .box.b02{
+    background: #db0d36;
+}
+.inner .box.b03{
+    padding: 48px 20px 0;
+    margin: 0 20px 20px;
+    background: #f5f6f7;
+}
+.inner .box.b03 p,
+.inner .box.b11 p{
+    font-size: 1.9rem;
+    color: #888;
+    margin: 0;
+    text-align: center;
+}
+.inner .box.b04{
+    background: url("/images/daily/bg_phone_02.jpg") 50% 50% no-repeat;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.inner .box.b05,
+.inner .box.b09{
+    color: #888;
+    background: #f5f6f7;
+}
+.inner .box.b05 span.date,
+.inner .box.b09 span.date{
+    color: #bbb;
+}
+.inner .box.b05 button,
+.inner .box.b09 button{
+    border: 1PX solid #bbb;
+    color: #bbb;
+}
+.inner .box.b05 button:hover,
+.inner .box.b09 button:hover{
+    border: 1PX solid #888;
+    color: #888;
+}
+.inner .box.b06{
+    width: 600px;
+    margin: 0 20px 20px 0;
+    background: url("/images/daily/bg_phone_03.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.inner .box.b07{
+    background: url("/images/daily/bg_phone_04.jpg") 50% 50% no-repeat;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.inner .box.b08{
+    background: url("/images/daily/bg_phone_05.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.inner .box.b10{
+    margin: 0 20px 20px;
+    background: url("/images/daily/bg_phone_06.jpg") 0% 0% no-repeat;
+    background-color: rgba(223, 169, 23, 0.8);
+    background-blend-mode: screen;
+    background-size: cover;
+}
+.inner .box.b11{
+    background: #f5f6f7;
+    padding-top: 70px; 
+}

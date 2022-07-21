@@ -1,0 +1,752 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* 구글아이콘폰트 */
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px solid red; */
+}
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-color: #fff;
+}
+
+body {
+    min-width: 1280px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+h1 {
+    text-align: center;
+    margin: 200px 0 0 0;
+}
+h1:first-child {
+    margin: 0;
+}
+.basic,
+.basic2{
+    width: 100%;
+    height: 750px;
+    color: #fff;
+    font-size: 4rem;
+}
+/* .basic2 .swiper-slide{
+    width: 30%;
+} */
+.swiper-slide.sec01 {
+    background: #333;
+}
+.swiper-slide.sec02 {
+    background: #555;
+}
+.swiper-slide.sec03 {
+    background: #777;
+}
+.swiper-slide.sec04 {
+    background: #999;
+}
+.swiper-slide.sec05 {
+    background: #111;
+}
+.basic2 .swiper-slide.sec03 {
+    background: #777;
+    /* width: 10%; */
+}
+
+
+
+
+/* swiper에 iframe 영상넣기 */
+.ab_dahong {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.ab_dahong .iframeSwiper {
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ab_dahong .iframeSwiper .swiper-slide > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* thumbGallery loop swiper 세로형 .vertical */
+.vertical.thumbGallery {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+}
+.vertical.thumbGallery .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.vertical.thumbGallery .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) center;
+    background-size: cover;
+}
+.vertical.thumbGallery .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) center;
+    background-size: cover;
+}
+.vertical.thumbGallery .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+}
+.vertical.thumbGallery .mainSlide {
+    width: 900px;
+    height: 100%;
+    margin: 0;
+}
+.vertical.thumbGallery .thumbSlide {
+    width: 200px;
+    height: 100%;
+}
+.vertical.thumbGallery .thumbSlide .swiper-slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.vertical.thumbGallery .thumbSlide .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+
+
+/* thumbGallery 형식의 swiper 응용2 .expand */
+.expand.thumbGallery {
+    width: 100%;
+    height: 500px;
+    margin: 0 0 200px;
+    background: #000;
+    position: relative;
+}
+.mainSlide2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.mainSlide2 .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) center no-repeat;
+    background-size: 100%;
+}
+.mainSlide2 .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) center no-repeat;
+    background-size: 100%;
+}
+.mainSlide2 .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) center no-repeat;
+    background-size: 100%;
+}
+.mainSlide2 .swiper-slide.bg01.swiper-slide-active {
+    background: url(/images/banner/space01.jpg) center no-repeat;
+    background-size: 150%;
+    transition: all 2s ease-in;
+}
+.mainSlide2 .swiper-slide.bg02.swiper-slide-active {
+    background: url(/images/banner/space02.jpg) center no-repeat;
+    background-size: 150%;
+    transition: all 2s ease-in;
+}
+.mainSlide2 .swiper-slide.bg03.swiper-slide-active {
+    background: url(/images/banner/space03.jpg) center no-repeat;
+    background-size: 150%;
+    transition: all 2s ease-in;
+}
+.thumbSlide2 {
+    width: 320px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    /* border-radius: 30px; */
+}
+.thumbSlide2 .swiper-slide {
+    border-radius: 50%;
+    box-shadow: 0 5px 15px inset rgba(0, 0, 0, 0.8);
+}
+.thumbSlide2 .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) center;
+    background-size: cover;
+}
+.thumbSlide2 .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) center;
+    background-size: cover;
+}
+.thumbSlide2 .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+}
+.thumbSlide2 .swiper-slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.thumbSlide2 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+
+/* thumbGallery 형식의 swiper 응용3 .expand2 */
+.expand2.thumbGallery {
+    width: 100%;
+    height: 700px;
+    margin: 0 0 200px;
+    background: #000;
+    position: relative;
+}
+.mainSlide3 {
+    width: 100%;
+    height: 100%;
+}
+.mainSlide3 .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) right bottom no-repeat;
+    background-size: cover;
+}
+.mainSlide3 .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) right bottom no-repeat;
+    background-size: cover;
+}
+.mainSlide3 .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) right bottom no-repeat;
+    background-size: cover;
+}
+.mainSlide3 .swiper-button-next {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+}
+.mainSlide3 .swiper-button-prev {
+    top: auto;
+    bottom: 20px;
+    left: auto;
+    right: 100px;
+}
+.thumbSlide3 {
+    width: 310px;
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    bottom: -50px;
+    right: 150px;
+    z-index: 100;
+}
+.thumbSlide3 .swiper-slide {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+}
+.thumbSlide3 .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) center;
+    background-size: cover;
+}
+.thumbSlide3 .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) center;
+    background-size: cover;
+}
+.thumbSlide3 .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+}
+.thumbSlide3 .swiper-slide-thumb-active {
+    border: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+
+/* thumbGallery 형식의 swiper 응용4, thumbnail의 다음장이 메인으로 들어옴 .expand2 */
+.expand2.thumbGallery {
+    width: 100%;
+    height: 700px;
+    margin: 0 0 200px;
+    background: #000;
+    position: relative;
+}
+.mainSlide4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.mainSlide4 .swiper-slide.bg01 {
+    background: url(/images/banner/space03.jpg) center no-repeat;
+    background-size: cover;
+}
+.mainSlide4 .swiper-slide.bg02 {
+    background: url(/images/banner/space01.jpg) center no-repeat;
+    background-size: cover;
+}
+.mainSlide4 .swiper-slide.bg03 {
+    background: url(/images/banner/space02.jpg) center no-repeat;
+    background-size: cover;
+}
+.mainSlide4 .swiper-button-next {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+}
+.mainSlide4 .swiper-button-prev {
+    top: auto;
+    bottom: 20px;
+    left: auto;
+    right: 100px;
+}
+.thumbSlide4 {
+    width: 310px;
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    bottom: -50px;
+    right: 150px;
+    z-index: 100;
+}
+.thumbSlide4 .swiper-slide {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+}
+.thumbSlide4 .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) center;
+    background-size: cover;
+}
+.thumbSlide4 .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) center;
+    background-size: cover;
+}
+.thumbSlide4 .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+}
+.thumbSlide4 .swiper-slide-thumb-active {
+    border: 10px solid rgba(0, 0, 0, 0.5);
+}
+/* swiper 응용5, thumbnail의 다음장이 메인으로 들어옴, TouchMove 막힘 */
+.mainSlide5 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.mainSlide5 .swiper-slide.bg01 {
+    background: url(/images/banner/space03.jpg) center no-repeat;
+    background-size: cover;
+}
+.mainSlide5 .swiper-slide.bg02 {
+    background: url(/images/banner/space01.jpg) center no-repeat;
+    background-size: cover;
+}
+.mainSlide5 .swiper-slide.bg03 {
+    background: url(/images/banner/space02.jpg) center no-repeat;
+    background-size: cover;
+}
+.thumbSlide5 {
+    width: 310px;
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+.thumbSlide5 .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) center;
+    background-size: cover;
+}
+.thumbSlide5 .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) center;
+    background-size: cover;
+}
+.thumbSlide5 .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+}
+
+
+
+/*swiper active 슬라이드 확대형*/
+.expandSlide {
+    width: 100%;
+    height: 700px;
+    margin: 0 0 200px;
+    background: #000;
+}
+.expandSlide .swiper-slide {
+    transform: scale(0.3);
+    opacity: 0.5;
+}
+.expandSlide .swiper-slide.bg01 {
+    background: url(/images/banner/space01.jpg) center;
+    background-size: cover;
+}
+.expandSlide .swiper-slide.bg02 {
+    background: url(/images/banner/space02.jpg) center;
+    background-size: cover;
+}
+.expandSlide .swiper-slide.bg03 {
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+}
+.expandSlide .swiper-slide.swiper-slide-active {
+    transition: transform 0.4s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* 패럴랙스 슬라이드 loop */
+.parallax {
+    color: #fff;
+    height: 700px;
+    margin: 0 0 200px;
+    background: #000;
+    position: relative;
+}
+.parallax .parallax-bg {
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+}
+.parallax .swiper-slide {
+    padding: 50px 100px;
+}
+.parallax .swiper-slide .title {
+    font-size: 4rem;
+    font-weight: 300;
+}
+.parallax .swiper-slide .subtitle {
+    font-size: 2rem;
+}
+.parallax .swiper-slide .text {
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+
+/* 탭안의 thumbGallery swiper + active 확대형 */
+.tabBox {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto 200px;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    background: #f7f7f7;
+}
+.tabBox ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px 2px;
+    border-bottom: 1px solid #ccc;
+}
+.tabBox ul li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 40px;
+    cursor: pointer;
+    background: #b4bcc2;
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.tabBox ul li.on {
+    background: #ccc;
+}
+.tabBox ul li:hover::after,
+.tabBox ul li.on::after {
+    width: 100%;
+    height: 3px;
+    background: #73a6c7;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tabBox ul li:hover::after {
+    background: rgba(255, 255, 255, 0.3);
+}
+.tabBox .conBox {
+    width: 100%;
+    height: 550px;
+    padding: 40px;
+    color: #333;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s;
+}
+.tabBox .conBox.on {
+    opacity: 1;
+    z-index: 100;
+    transition: opacity 0.5s;
+}
+:is(.mainSlide6, .mainSlide7, .mainSlide8) {
+    width: 30%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(0, -50%);
+    z-index: 100;
+}
+:is(.thumbSlide6, .thumbSlide7, .thumbSlide8) {
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+:is(.thumbSlide6,.thumbSlide7, .thumbSlide8) .swiper-slide {
+    transform: scale(0.6);
+    opacity: 0.5;
+}
+/* :is(.thumbSlide6) .swiper-slide-visible.swiper-slide-duplicate-prev {
+    transform: scale(1);
+    opacity: 1;
+}
+:is(.thumbSlide6) .swiper-slide.swiper-slide-active,
+:is(.thumbSlide6) .swiper-slide.swiper-slide-visible.swiper-slide-next {
+    transition: transform 0.4s;
+    opacity: 0.5;
+    transform: scale(0.6);
+} */
+:is(.thumbSlide6, .thumbSlide7, .thumbSlide8) .swiper-slide.swiper-slide-active {
+    transition: transform 0.4s;
+    opacity: 1;
+    transform: scale(1);
+}
+.mainSlide6 .swiper-slide.bg01,
+.thumbSlide6 .swiper-slide.bg01 {
+    background: #a8e6cf;
+}
+.mainSlide6 .swiper-slide.bg02,
+.thumbSlide6 .swiper-slide.bg02 {
+    background: #dcedc1;
+}
+.mainSlide6 .swiper-slide.bg03,
+.thumbSlide6 .swiper-slide.bg03 {
+    background: #ffd3b6;
+}
+.mainSlide7 .swiper-slide.bg01,
+.thumbSlide7 .swiper-slide.bg01 {
+    background: #9a8262;
+}
+.mainSlide7 .swiper-slide.bg02,
+.thumbSlide7 .swiper-slide.bg02 {
+    background: #e8ca93;
+}
+.mainSlide7 .swiper-slide.bg03,
+.thumbSlide7 .swiper-slide.bg03 {
+    background: #f0e2a8;
+}
+.mainSlide8 .swiper-slide.bg01,
+.thumbSlide8 .swiper-slide.bg01 {
+    background: #ed5555;
+}
+.mainSlide8 .swiper-slide.bg02,
+.thumbSlide8 .swiper-slide.bg02 {
+    background: #b4c468;
+}
+.mainSlide8 .swiper-slide.bg03,
+.thumbSlide8 .swiper-slide.bg03 {
+    background: #b8a7ea;
+}
+
+
+/* 패럴랙스 + coverflow + thumbnail */
+.coverflow {
+    width: 1200px;
+    margin: 0 auto 200px;
+    padding: 50px 0;
+    position: relative;
+    background: #121212;
+}
+.coverflow .bgBlur{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.coverflow .bgBlur .coverflowmain{
+    width: 100%;
+    height: 100%;
+    filter: blur(1rem);
+    opacity: 0.6;
+}
+.coverflow .swiper-slide.bg01{
+    background: url(/images/banner/space01.jpg) center;
+    background-size: cover;
+}
+.coverflow .swiper-slide.bg02{
+    background: url(/images/banner/space02.jpg) center;
+    background-size: cover;
+}
+.coverflow .swiper-slide.bg03{
+    background: url(/images/banner/space03.jpg) center;
+    background-size: cover;
+}
+.coverflow .coverflowthumb{
+    position: relative;
+    z-index: 10;
+    padding: 50px 0;
+}
+.coverflowthumb .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 380px;
+    height: 300px;
+    padding: 50px 5%;
+    color: #fff;
+    overflow: hidden;
+}
+.coverflowthumb .swiper-slide .title {
+    font-size: 4rem;
+    font-weight: 300;
+}
+.coverflowthumb .swiper-slide .subtitle {
+    font-size: 2rem;
+}
+.coverflowthumb .swiper-slide .text {
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 1.3;
+}
+.coverflowthumb .swiper-slide > *{
+    opacity: 0;
+}
+.coverflowthumb .swiper-slide.swiper-slide-active > *{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.coverflow .swiper-button-next,
+.coverflow .swiper-button-prev,
+.coverflow .swiper-pagination{
+    position: absolute;
+    z-index: 100;
+}
+
+
+/* full 탭안의 thumbGallery swiper + rtl active 확대형 */
+.tabBoxFull {
+    width: 100%;
+    height: 600px;
+    margin: 0 0 200px;
+    border-bottom: 2px solid #ccc;
+    background: #f7f7f7;
+    position: relative;
+}
+.tabBoxFull ul {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px 2px;
+    border-bottom: 1px solid #ccc;
+}
+.tabBoxFull ul li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 40px;
+    cursor: pointer;
+    background: #b4bcc2;
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.tabBoxFull ul li.on {
+    background: #ccc;
+}
+.tabBoxFull ul li:hover::after,
+.tabBoxFull ul li.on::after {
+    width: 100%;
+    height: 3px;
+    background: #73a6c7;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tabBoxFull ul li:hover::after {
+    background: rgba(255, 255, 255, 0.3);
+}
+.tabBoxFull .conBox {
+    width: 100%;
+    height: 550px;
+    padding: 40px;
+    color: #333;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s;
+    display: flex;
+    justify-content: flex-start;
+}
+.tabBoxFull .conBox.on {
+    opacity: 1;
+    z-index: 100;
+    transition: opacity 0.5s;
+}
+.tabBoxFull .conBox .mainSlide9{
+    width: 25%;
+    margin: 0 17% 0 0;
+    height: 100%;
+}
+.tabBoxFull .conBox .thumbSlide9{
+    width: 50%;
+    min-width: 1000px;
+    height: 100%;
+}
+.tabBoxFull .conBox .thumbSlide9 .swiper-slide{
+    width: 30%;
+}
+.mainSlide9 .swiper-slide.bg01,
+.thumbSlide9 .swiper-slide.bg01 {
+    background: #a8e6cf;
+}
+.mainSlide9 .swiper-slide.bg02,
+.thumbSlide9 .swiper-slide.bg02 {
+    background: #dcedc1;
+}
+.mainSlide9 .swiper-slide.bg03,
+.thumbSlide9 .swiper-slide.bg03 {
+    background: #ffd3b6;
+}

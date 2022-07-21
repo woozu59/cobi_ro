@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('/lib/slick-1.8.1/slick/slick.css');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    min-width: 1280px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+footer {
+    width: 100%;
+    background: #1F2124;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.1s;
+}
+footer.on {
+    height: 100px;
+    transition: height 0.1s;
+}
+ul,
+li {
+    list-style: none;
+}
+/* swiper theme */
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    --swiper-theme-color: rgb(255, 255, 117);
+}
+.swiper-pagination-bullet {
+    background: #f1f1f1;
+    opacity: .5;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--swiper-pagination-color, var(--swiper-theme-color)) !important;
+}
+section.scroll_v {
+    height: 100vh;
+}
+section.scroll_v .sec01 {
+    background: #F6B352;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.scroll_v .sec03 {
+    background: rgb(87, 235, 246);
+}
+section.scroll_v .swiper-pagination-bullets,
+section.scroll_v .swiper-pagination-vertical.swiper-pagination-bullets,
+section.scroll_v .swiper-vertical > .swiper-pagination-bullets{
+    right: 18px;
+}
+section.scroll_v .swiper-button-prev {
+    right: 10px;
+    left: unset;
+    transform: rotate(90deg);
+    margin: -100px 0 0 0;
+}
+section.scroll_v .swiper-button-next {
+    transform: rotate(90deg);
+    margin: 50px 0 0 0;
+}
+/* sec02 가로캐러셀 */
+section.scroll_v .sec02 {
+    background: #F68657;
+    height: 100vh;
+    text-align: center;
+    padding: 100px 200px;
+}
+.swiper-container.swiper_h {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #222;
+}
+/* sec03 애니메이션 */
+section.scroll_v .sec03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.scroll_v .sec03 .title {
+    font-size: 50px;
+}
+/* sec04동영상 */
+section.scroll_v .sec04 {
+    background: #000;
+}
+section.scroll_v .sec04 .full {
+    width: 100%;
+    position: relative;
+    padding-bottom: 48.8%;
+    /* padding-bottom: 56.25%; */
+    height: 0;
+    overflow: hidden;
+}
+section.scroll_v .sec04 .full .cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+section.scroll_v .sec04 .full iframe,
+section.scroll_v .sec04 .full object,
+section.scroll_v .sec04 .full embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+/* .sec05 카운터 */
+section.scroll_v .sec05 {
+    background: #383A3F;
+}
+section.scroll_v .sec05 .slide-content {
+    padding: 20% 0 0 0;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+
+/* 달력 */
+.date-picker {
+    width: 260px;
+    height: auto;
+    max-height: 50px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.3s 0s ease-in-out;
+    transition: all 0.3s 0s ease-in-out;
+}
+.date-picker .input {
+    width: 100%;
+    height: 50px;
+    font-size: 0;
+    cursor: pointer;
+}
+.date-picker .input .result,
+.date-picker .input button {
+    display: inline-block;
+    vertical-align: top;
+}
+.date-picker .input .result {
+    width: calc(100% - 50px);
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: grey;
+    box-sizing: border-box;
+}
+.date-picker .input button {
+    width: 50px;
+    height: 50px;
+    background-color: #8392A7;
+    color: white;
+    line-height: 50px;
+    border: 0;
+    font-size: 18px;
+    padding: 0;
+}
+.date-picker .input button:hover {
+    background-color: #68768A;
+}
+.date-picker .input button:focus {
+    outline: 0;
+}
+.date-picker .calendar {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 0px;
+    overflow: hidden;
+}
+.date-picker .ui-datepicker-inline {
+    position: relative;
+    width: 100%;
+}
+.date-picker .ui-datepicker-header {
+    height: 100%;
+    line-height: 50px;
+    background: #8392A7;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.date-picker .ui-datepicker-prev,
+.date-picker .ui-datepicker-next {
+    width: 20px;
+    height: 20px;
+    text-indent: 9999px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 12px;
+}
+.date-picker .ui-datepicker-prev {
+    float: left;
+    margin-left: 12px;
+}
+.date-picker .ui-datepicker-prev:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: -45px 0px 0px 6px;
+    /* margin: -43px 0px 0px 8px; */
+}
+.date-picker .ui-datepicker-next {
+    float: right;
+    margin-right: 12px;
+}
+.date-picker .ui-datepicker-next:after {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin: -45px 0px 0px 4px;
+    /* margin: -43px 0px 0px 6px; */
+}
+.date-picker .ui-datepicker-prev:after,
+.date-picker .ui-datepicker-next:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.date-picker .ui-datepicker-prev:hover,
+.date-picker .ui-datepicker-next:hover,
+.date-picker .ui-datepicker-prev:hover:after,
+.date-picker .ui-datepicker-next:hover:after {
+    border-color: #68768A;
+}
+.date-picker .ui-datepicker-title {
+    text-align: center;
+}
+.date-picker .ui-datepicker-calendar {
+    width: 100%;
+    text-align: center;
+}
+.date-picker .ui-datepicker-calendar thead tr th span {
+    display: block;
+    width: 100%;
+    color: #8392A7;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.date-picker .ui-state-default {
+    display: block;
+    text-decoration: none;
+    color: #b5b5b5;
+    line-height: 40px;
+    font-size: 12px;
+}
+.date-picker .ui-state-default:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+.date-picker .ui-state-highlight {
+    color: #68768A;
+}
+.date-picker .ui-state-active {
+    color: #68768A;
+    background-color: rgba(131, 146, 167, 0.12);
+    font-weight: 600;
+}
+.date-picker .ui-datepicker-unselectable .ui-state-default {
+    color: #eee;
+    border: 2px solid transparent;
+}
+.date-picker.open {
+    max-height: 400px;
+}
+.date-picker.open .input button {
+    background: #68768A;
+}

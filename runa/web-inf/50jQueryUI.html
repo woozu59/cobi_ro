@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50jQueryUI</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/css/50jQueryUIStyle.css" />
+</head>
+
+<body>
+    <section class="bg">
+        <h1 class="fontWhite txtcenter">jQueryUI를 이용하여 빠르고 간단하게 기능구현하기</h1>
+        <!-- Dialog modal form -->
+        <article class="userList">
+            <h2>Dialog modal form</h2>
+            <div id="dialog-form" title="신규 사용자 추가 양식">
+                <p class="validateTips">아래 정보를 입력하고 사용자를 추가해주세요.</p>
+                <form>
+                    <fieldset>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+
+                        <!-- 키보드 엔터로도 submit 구현이 되도록 작성됨 -->
+                        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                    </fieldset>
+                </form>
+            </div>
+
+
+            <div id="users-contain" class="ui-widget">
+                <h3>사용자 목록</h3>
+                <table id="users" class="ui-widget ui-widget-content">
+                    <thead>
+                        <tr class="ui-widget-header ">
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john.doe@example.com</td>
+                            <td>johndoe1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button id="create-user">신규 사용자 등록</button>
+        </article>
+        <!-- Autocomplete -->
+        <article>
+            <h2>Autocomplete</h2>
+            <div class="ui-widget tagsForm">
+                <span class="material-icons"> build </span>
+                <label for="langs">Language of development: </label>
+                <input id="langs" type="text" />
+            </div>
+        </article>
+        <!-- Date-picker -->
+        <article>
+            <h2>Date-picker</h2>
+            <div class="date-picker">
+                <div class="input">
+                    <div class="result">
+                        <span></span>
+                    </div>
+                    <button>
+                        <span class="material-icons"> date_range </span>
+                    </button>
+                </div>
+                <div class="calendar"></div>
+            </div>
+        </article>
+        <!-- draggable -->
+        <article>
+            <h2>draggable</h2>
+            <div class="dragObj">
+                <span class="material-icons"> sanitizer </span>
+            </div>
+            <div class="dragObj">
+                <span class="material-icons"> sanitizer </span>
+            </div>
+            <div class="dragObj">
+                <span class="material-icons"> coronavirus </span>
+            </div>
+            <div class="dragObj">
+                <span class="material-icons"> coronavirus </span>
+            </div>
+
+        </article>
+        <!-- Sortable -->
+        <article>
+            <h2>Sortable</h2>
+            <ul id="sortable" class="sortList">
+                <li class="ui-state-default">
+                    <span class="material-icons"> swap_vert </span>
+                    <span>Item 1</span>
+                </li>
+                <li class="ui-state-default">
+                    <span class="material-icons"> swap_vert </span>
+                    <span>Item 2</span>
+                </li>
+                <li class="ui-state-default">
+                    <span class="material-icons"> swap_vert </span>
+                    <span>Item 3</span>
+                </li>
+                <li class="ui-state-default">
+                    <span class="material-icons"> swap_vert </span>
+                    <span>Item 4</span>
+                </li>
+                <li class="ui-state-default">
+                    <span class="material-icons"> swap_vert </span>
+                    <span>Item 5</span>
+                </li>
+                <li class="ui-state-default">
+                    <span class="material-icons"> swap_vert </span>
+                    <span>Item 6</span>
+                </li>
+            </ul>
+        </article>
+
+
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/50jQueryUI.js"></script>
+</body>
+
+</html>

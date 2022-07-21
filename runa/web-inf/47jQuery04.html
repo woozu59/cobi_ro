@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47jQuery연습페이지</title>
+    <link rel="stylesheet" type="text/css" href="/css/45flexLayoutResponsiveStyle.css">
+</head>
+
+<body>
+    <main>
+        <header>
+        </header>
+        <nav>
+        </nav>
+        <section>
+            <h1>제이쿼리 기초</h1>
+            <div class="article h50">
+                <div class="gnb"></div>
+                <p class="para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihiLorem
+                    ipsum dolor
+                    sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihiLorem ipsum dolor sit
+                    amet,
+                    consectetur adipisicing elit. Totam suscipit sint ab beatae nihiLorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit. Totam suscipit sint ab beatae nihiLorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.
+                    Totam suscipit sint ab beatae nihiLorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
+                    suscipit
+                    sint ab beatae nihiLorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab
+                    beatae
+                    nihiLorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+                </p>
+                <input type="button" id="on" value="높이계산" />
+            </div>
+            <!-- 탭 구현 -->
+            <div class="article h80">
+                <h2>탭 가로형</h2>
+                <div class="tab">
+                    <ul class="nav-tabs">
+                        <li data-id="con1" class="on">tab #1</li>
+                        <li data-id="con2">tab #2</li>
+                        <li data-id="con3">tab #3</li>
+                    </ul>
+                    <div id="con1" class="conBox on">
+                        tab #1 conBox1
+                    </div>
+                    <div id="con2" class="conBox">
+                        tab #2 conBox2
+                    </div>
+                    <div id="con3" class="conBox">
+                        tab #3 conBox3
+                    </div>
+                </div>
+
+                <h1>탭 세로형</h1>
+                <div class="tabV">
+                    <ul>
+                        <li data-id="con10" class="on">tab #10</li>
+                        <li data-id="con11">tab #11</li>
+                        <li data-id="con12">tab #12</li>
+                        <li data-id="con13">tab #13</li>
+                        <li data-id="con14">tab #14</li>
+                    </ul>
+                    <div class="content">
+                        <div id="con10" class="conBox on">
+                            tab #10 conBox10
+                        </div>
+                        <div id="con11" class="conBox">
+                            tab #11 conBox11
+                        </div>
+                        <div id="con12" class="conBox">
+                            tab #12 conBox12
+                        </div>
+                        <div id="con13" class="conBox">
+                            tab #13 conBox13
+                        </div>
+                        <div id="con14" class="conBox">
+                            tab #14 conBox14
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 버튼슬라이드 구현 -->
+            <div class="article h80">
+                <div class="slide">
+                    <h1>Button Opacity Slide</h1>
+                    <ul class="images btSlide">
+                        <li>
+                            <img src="../images/banner/space01.jpg" alt="배너1">
+                        </li>
+                        <li>
+                            <img src="../images/banner/space02.jpg" alt="배너2">
+                        </li>
+                        <li>
+                            <img src="../images/banner/space03.jpg" alt="배너3">
+                        </li>
+                    </ul>
+                    <div class="btnSlide">
+                        <span class="material-icons btnSlide_prev off"> first_page </span>
+                        <span class="material-icons btnSlide_next"> last_page </span>
+                    </div>
+                </div>
+            </div>
+            <!-- 페이징슬라이드 구현 -->
+            <div class="article">
+                <div class="slide">
+                    <h1>paging Slide</h1>
+                    <ul class="images pageSlide">
+                        <li>
+                            <img src="../images/banner/space01.jpg" alt="배너1">
+                        </li>
+                        <li>
+                            <img src="../images/banner/space02.jpg" alt="배너2">
+                        </li>
+                        <li>
+                            <img src="../images/banner/space03.jpg" alt="배너3">
+                        </li>
+                    </ul>
+                    <ul class="paging">
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 아코디언 탭 -->
+            <div class="article h80">
+                <ul class="acc">
+                    <li>
+                        <div class="title">
+                            <span>Step 01</span>
+                            <span class="material-icons"> keyboard_arrow_down </span>
+                        </div>
+                        <div class="content">
+                            내용 01
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span>Step 02</span>
+                            <span class="material-icons"> keyboard_arrow_down </span>
+                        </div>
+                        <div class="content">
+                            내용 02
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span>Step 03</span>
+                            <span class="material-icons"> keyboard_arrow_down </span>
+                        </div>
+                        <div class="content">
+                            내용 03
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span>Step 04</span>
+                            <span class="material-icons"> keyboard_arrow_down </span>
+                        </div>
+                        <div class="content">
+                            내용 04
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- select 옵션추가 -->
+            <div class="article">
+                <form id="newslwtter">
+                    <select id="montly">
+                        <option>-- 테라타임즈를 선택하세요--</option>
+                    </select>
+                </form>
+            </div>
+            <!-- 할일추가/삭제 리스트 -->
+            <div class="article">
+                <div class="bg">
+                    <div class="task">
+                        <h1 class="txtCenter">
+                            할 일 목록
+                            <span id="counter"></span>
+                        </h1>
+                        <ul>
+                            <li>출근하기</li>
+                            <li>오전수업</li>
+                            <li>쉬는시간</li>
+                            <li>점심식사</li>
+                            <li>오후수업</li>
+                        </ul>
+                        <form id="newTaskForm">
+                            <input type="text" id="taskDescription" placeholder="할 일을 입력하세요" />
+                            <input type="submit" id="addButton" value="추가" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/45flexLayoutResponsive.js"></script>
+</body>
+
+</html>

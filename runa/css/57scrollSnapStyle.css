@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 57scrollSnapStyle */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.wrap{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+section{
+    height: 100%;
+    color: #fff;
+    scroll-snap-align: start;
+}
+section:nth-of-type(1){ background: #025373; }
+section:nth-of-type(2){ background: #18778C; }
+section:nth-of-type(3){ background: #1F98A6; }
+section:nth-of-type(4){ background: #BAD9C8; }

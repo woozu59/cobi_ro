@@ -1,0 +1,354 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+
+/* 카카오생활 New 레이아웃 css */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    letter-spacing: -0.05rem;
+    outline: 1px solid red;
+}
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --colorBlack: #000;
+    --colorEEE: #eee;
+    --colorEEELight: #e8e8e8;
+    --colorGreyBasic: #666;
+    --colorGreyLight: #969696;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+h1 {
+    height: 280px;
+    font-size: 2.625rem;
+    line-height: 1;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 62px;
+    background: url(/images/kakao/ico_tit_culture.gif) no-repeat -5px 50% / 64px 64px;
+}
+h2 {
+    width: 100%;
+    height: 2.25rem;
+    font-size: 2.25rem;
+    line-height: 1;
+    font-weight: 700;
+    flex-grow: 0;
+}
+h3 {
+    font-size: 1.75rem;
+    line-height: 1;
+    width: 100%;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+nav {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+nav a.logo {
+    width: 100px;
+    height: 22px;
+    text-indent: -200px;
+    overflow: hidden;
+    background: url(/images/kakao/img_logo.png) no-repeat 50% 50% / cover;
+}
+nav ul.gnb {
+    display: flex;
+}
+nav ul.gnb:hover {
+    color: var(--colorGreyLight);
+}
+nav ul.gnb li {
+    padding: 0 30px;
+    font-size: 1rem;
+}
+nav ul.gnb li:hover {
+    color: #000;
+}
+nav a.login::after {
+    content: "\025BE";
+}
+section {
+    width: 100%;
+}
+section > article:nth-of-type(1) {
+    min-height: 1000px;
+}
+.card {
+    width: 100%;
+    height: 740px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.card::-webkit-scrollbar {
+    border-radius: 8px;
+}
+.card::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.card::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+}
+.card .swiper-wrap {
+    display: flex;
+    gap: 0 50px;
+    padding: 20px 0;
+}
+.card .swiper-slide {
+    min-width: 1080px;
+    min-height: 680px;
+    border-radius: 15px;
+    padding: 90px 540px 90px 90px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+.card .swiper-slide > span {
+    color: var(--colorGreyLight);
+    align-self: flex-end;
+    margin: 0 30px 0 0;
+}
+.card .swiper-slide > span:first-of-type {
+    width: 100%;
+    margin: 0;
+}
+.card .swiper-slide > h3 {
+    font-size: 2.25rem;
+    line-height: 1.4;
+}
+.card .swiper-slide > p {
+    width: 100%;
+    padding: 130px 0px 0 0;
+}
+.card .swiper-slide > video {
+    width: 580px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(40px, -50%);
+    z-index: 0;
+}
+section > article:nth-of-type(2) {
+    flex-direction: column;
+    padding: 0 0 100px 0;
+}
+.tabButton{
+    margin: 60px 0 50px 0;
+    display: flex;
+    gap: 0 10px;
+}
+.tabButton > button{
+    font-size: 1.125rem;
+    border-radius: 24px;
+    background: var(--colorEEE);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.tabButton > button.on,
+.tabButton > button:hover{
+    background: #000;
+    color: #fff;
+}
+.tabContent{
+    display: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 0 40px;
+}
+.tabContent .benefit{
+    width: 100%;
+    gap: 0 40px;
+    display: none;
+    flex-flow: row wrap;
+}
+.tabContent .benefit.on{ display: flex; }
+.tabContent .benefit > div{
+    width: calc(50% - 20px);
+    min-height: 335px;
+    padding: 50px 0 0 0;
+    border-bottom: 1px solid var(--colorEEELight);
+}
+.tabContent .benefit h3 {
+    margin: 0 0 30px 0;
+}
+.tabContent .benefit h3::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 0 30px 0;
+    background: var(--colorEEE);
+}
+.benefit.b01 > div:nth-child(1) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left 0px top 0px / 600px 104px; }
+.benefit.b01 > div:nth-child(2) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -55px top 0px / 600px 104px; }
+.benefit.b01 > div:nth-child(3) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -110px top 0px / 600px 104px; }
+.benefit.b01 > div:nth-child(4) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -165px top 0px / 600px 104px; }
+.benefit.b01 > div:nth-child(5) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -220px top 0px / 600px 104px; }
+.benefit.b01 > div:nth-child(6) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -275px top 0px / 600px 104px; }
+.benefit.b01 > div:nth-child(7) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -330px top 0px / 600px 104px; }
+.benefit.b01 > div:nth-child(8) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -385px top 0px / 600px 104px; }
+.benefit.b02 > div:nth-child(1) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -440px top 0px / 600px 104px; }
+.benefit.b02 > div:nth-child(2) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -495px top 0px / 600px 104px; }
+.benefit.b02 > div:nth-child(3) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -550px top 0px / 600px 104px; }
+.benefit.b02 > div:nth-child(4) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left 0px bottom 0px / 600px 104px; }
+.benefit.b02 > div:nth-child(5) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -55px bottom 0px / 600px 104px; }
+.benefit.b03 > div:nth-child(1) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -110px bottom 0px / 600px 104px; }
+.benefit.b03 > div:nth-child(2) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -165px bottom 0px / 600px 104px; }
+.benefit.b03 > div:nth-child(3) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -220px bottom 0px / 600px 104px; }
+.benefit.b03 > div:nth-child(4) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -275px bottom 0px / 600px 104px; }
+.benefit.b04 > div:nth-child(1) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -330px bottom 0px / 600px 104px; }
+.benefit.b04 > div:nth-child(2) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -385px bottom 0px / 600px 104px; }
+.benefit.b04 > div:nth-child(3) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -440px bottom 0px / 600px 104px; }
+.benefit.b04 > div:nth-child(4) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -495px bottom 0px / 600px 104px; }
+.benefit.b04 > div:nth-child(5) > h3::before { background: url(/images/kakao/ico_benefit.png) no-repeat left -550px bottom 0px / 600px 104px; }
+.tabContent .benefit p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+section > article:nth-of-type(3) {
+    min-height: 570px;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 40px 30px;
+}
+section > article:nth-of-type(3) > .office {
+    flex: 1 1 30%;
+    height: 370px;
+    border-radius: 20px;
+    padding: 245px 20px 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+section > article:nth-of-type(3) > .office:hover {
+    transform: translate(0, -20px);
+    transition: all 0.3s;
+}
+.office:nth-of-type(1) {
+    background: url(/images/kakao/img_office_jeju.jpg) no-repeat 50% 0 / auto 220px;
+}
+.office:nth-of-type(2) {
+    background: url(/images/kakao/img_office_pangyo.jpg) no-repeat 50% 0 / auto 220px;
+}
+.office:nth-of-type(3) {
+    background: url(/images/kakao/img_office_samseong.jpg) no-repeat 50% 0 / auto 220px;
+}
+.office > h3 {
+    margin: 0 0 20px 0;
+}
+.office > p {
+    letter-spacing: -0.1rem;
+}
+footer {
+    width: 100%;
+    min-height: 310px;
+    border-top: 1px solid var(--colorEEELight);
+    font-size: 0.75rem;
+    color: var(--colorGreyLight);
+}
+footer > .inner {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0 0 0;
+}
+footer > .inner > h2 {
+    color: #000;
+    height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+footer > .inner > div:first-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+}
+footer > .inner a.sns {
+    color: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-indent: -500px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+footer > .inner a.sns:nth-child(1) {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right -60px top 0 / 260px 251px;
+}
+footer > .inner a.sns:nth-child(1):hover {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right 0 top 0 / 260px 251px;
+}
+footer > .inner a.sns:nth-child(2) {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right -60px top -60px / 260px 251px;
+}
+footer > .inner a.sns:nth-child(2):hover {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right 0 top -60px / 260px 251px;
+}
+footer > .inner a.sns:nth-child(3) {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right -60px top -120px / 260px 251px;
+}
+footer > .inner a.sns:nth-child(3):hover {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right 0 top -120px / 260px 251px;
+}
+footer > .inner a.sns:nth-child(4) {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right -60px top -180px / 260px 251px;
+}
+footer > .inner a.sns:nth-child(4):hover {
+    background: url(/images/kakao/ico_jobs.png) no-repeat right 0 top -180px / 260px 251px;
+}
+footer > .inner a.sns:nth-child(5) {
+    background: url(/images/kakao/ico_jobs.png) no-repeat left 0 bottom 0 / 260px 251px;
+}
+footer > .inner a.sns:nth-child(5):hover {
+    background: url(/images/kakao/ico_jobs.png) no-repeat left -60px bottom 0 / 260px 251px;
+}
+footer > .inner > div:last-of-type {
+    width: 225px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px 20px;
+    margin: 50px 0 20px;
+}
+footer > .inner > div:last-of-type > a:first-of-type {
+    font-weight: 600;
+    color: var(--colorGreyBasic)
+}
+footer > .inner > select {
+    background: var(--colorEEELight);
+    border-radius: 15px;
+    width: 220px;
+    height: 30px;
+    padding: 0 10px;
+    color: var(--colorGreyLight);
+    position: relative;
+}

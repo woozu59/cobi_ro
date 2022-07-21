@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>01htmlBasic</title>
+    <style>
+        /* header{
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        section{
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #333;
+        }
+        footer{
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #999;
+        } */
+        /* .키워드{} 클래스명 지정 css 기본형 */
+        /* #키워드{} 아이디 지정 css 기본형 */
+        /* 클래스명은 중첩사용이 가능함. 아이디는 고유값.
+        개발자가 객체에 접근하는 용도가 아이디(ID)이다. */
+        .wrap{
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <!-- 안녕하십니까 -->
+    <!-- html에서는 공백이 1칸만 인정이 된다 -->
+
+    <!-- &nbsp; 엔티티코드(특수문자) & ;
+    특수문자 문자 공백을 표현하는 특수문자 =/ 공백 -->
+
+    안녕하십니까&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&yen;주석
+    <br>
+    <br />
+    <br><br><br><br><br><br>
+    <!-- 줄바꿈태그 -->
+    <!-- 닫기태그가 따로 없는 단일태그 -->
+
+    <!-- 로렘입숨 의미없는 문장 해석이 되는 애들이 아님 문법이 틀리진 않았음
+    -->
+
+    <!-- 인라인 요소와 블럭레벨요소 -->
+    <!-- 인라인이란 낱개로 자유로운 영혼 액체같은 존재 -->
+    <!-- 블럭레벨요소는 덩어리로 생각하자 -->
+
+    Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+
+
+    <!-- 헌법재판소에서 법률의 위헌결정, 탄핵의 결정, 정당해산의 결정 또는 헌법소원에 관한 인용결정을 할 때에는 재판관 6인 이상의 찬성이 있어야 한다. 국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다. -->
+    <!-- <span>홈&gt;지속가능경영&gt;지속가능경영</span> -->
+    <span>What is Lorem Ipsum?</span>
+    <!-- 인라인요소 대표-->
+
+
+    <!-- <h1 style="font-size: 100px;">What is Lorem Ipsum?</h1> -->
+    <h1>What is Lorem Ipsum?</h1>
+    <!-- 블록요소의 대표 -->
+    <h2>What is Lorem Ipsum?</h2>
+    <h3>What is Lorem Ipsum?</h3>
+    <h4>What is Lorem Ipsum?</h4>
+    <h5>What is Lorem Ipsum?</h5>
+    <h6>What is Lorem Ipsum?</h6>
+    <!-- 헤딩태그는 기본 캐릭터 설정이 되어있는 블록레벨요소이다. 추후 css를 통해서 수정을 할수있다. 본인 기획에 맞춰서 조정해서 쓰면 된다. -->
+
+    <!-- 텍스특관련요소 -->
+    안녕
+    <em>안녕</em>
+    <strong>안녕</strong>
+    <mark>안녕</mark>
+    <b>안녕</b>
+    <small>안녕</small>
+    <sub>안녕</sub>
+    <sup>안녕</sup>
+    <br><br><br><br><br><br>
+
+
+    <a>기본</a>
+    <a href="#">네이버</a>
+    <!-- 목적지가 비설정된 상태 -->
+    <!-- 태그는 목적에 맞게 쓰자, 공링크 href="#"가 쓰여지는 이유가 따로 있는게 아니라면 일반 태그에 담겨도 된다. -->
+
+    <br><br><br><br><br><br><br>
+    <a href="http://www.naver.com">네이버</a>
+    <!-- 하이퍼링크 = 외부링크 -->
+    <a href="mailto:runa.uxlabs@gmail.com">교수자 메일주소</a>
+    <a href="tel:0100000000">교수자 연락처</a>
+    <a href="#content">내용물 8번째 링크</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <a id="content">내용물 8번째 본문</a>
+    <!-- 내부링크 -->
+
+    <a href="javascript:;" title="새 창">#링크 이동 막기-스크립트버전</a>
+    <!-- 링크이동을 막고 스크립트를 실행하라는것 -->
+
+
+
+    <a href="http://www.naver.com" target="_parent">네이버</a>
+    <a href="http://www.naver.com" target="_top">네이버</a>
+    <a href="http://www.naver.com" target="_self">네이버</a>
+    <a href="http://www.naver.com" target="_blank">네이버 새창뜨기</a>
+    <a href="http://www.naver.com">네이버 스스로 뜨기</a>
+    <!-- target을 쓰지 않으면 스스로 뜨기(target="_self")랑 같은 현상발현 -->
+
+    <!-- 상대경로에서 ../는 상위디렉토리로 이동한다는 뜻 -->
+    <!-- /는 각 디렉토리를 말한다 -->
+    <!-- 모든 기준은 현재 내 html파일에서 목적지까지 상대적인 위치를 적는다 -->
+    <a href="../files/2019_daewooenc_SR_en.pdf" target="_blank" style="text-decoration: none;">
+        대우건설 2019년 보고서
+    </a>
+
+    <!-- 상대경로는 초반 디렉토리 상관관계 잡기에는 용이하나,
+    하지만 파일이 후에 이동을 한 경우에는 그 경로를 다시 재설정 해줘야 한다
+
+    절대경로는 개념 잡기는 쉽지 않으나, 수정에 대응하기 쉽다. -->
+
+
+
+
+
+
+    <a href="../files/webTimeTable210215.pdf" target="_blank">시간표</a>
+    <!-- 나랑 같은 방(디렉토리)에 있는 파일은 파일명만 적는다 -->
+
+
+
+
+
+
+
+    <a href="05float.html" target="_blank">
+        플로트설명페이지
+    </a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+
+
+
+    <img src="../images/apple.png" alt="사과" class="img100" />
+    <img src="../images/apple.png" alt />
+    <!-- 816*544인 원래 사이즈를 조정해서 띄울 수 있다 -->
+    <!-- attribute로 width와 height를 입력하여 리사이징 할 수 있으며,
+    한 항목만 기재하려 비율을 살릴수 있다.
+    해당항목의 단위는 px, %되나 width의 개념에서만 %가 적용된다. -->
+    <!-- 나의 프로젝트는 반응형 웹 디자인을 하는것. 요소의 종류에 따라 비율로 갈 것 인지, 고정값으로 갈 것인지 기획단계에서 설정해야한다. -->
+
+    <img src="https://lh3.googleusercontent.com/proxy/Ot9eMmMeaQe_PG2PvPuhzorqjHZKt5g4gDGbxOqLMFMsrtQ1L_ykC5h_zT6f6qSffWr902xXYbU9z9uB8z2CoZbT-fq4idyw6dqDcWL_9jRiBAywWavHxByDfVDDPqRU60JEjGdurGg"
+        alt="절대경로사과" />
+
+
+
+
+
+
+    <p style="border: 1px solid red; ">
+        <!-- 인라인스타일 > 모아서 css 분리 -->
+        <!-- <p> -->
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </p>
+    <!-- 문단 태그기 때문에 위아래 바깥여백(마진)을 기본으로 가지고 있다 -->
+    <!-- <div> -->
+    <div style="border: 1px solid red;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
+
+    <!-- 투명 포스트잇으로 생각해라 -->
+    <div>
+        <p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </p>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+    <ul>
+        <li style="list-style: none;"><b>요리교실 준비물</b></li>
+        <li style="list-style: square;">양상추</li>
+        <li>당근</li>
+        <li>파프리카</li>
+        <li>샐러리</li>
+        <li>소스</li>
+    </ul>
+    <ol>
+        <li><b>요리교실 준비물</b></li>
+        <li style="list-style: none;">양상추</li>
+        <li style="list-style: upper-alpha;">당근</li>
+        <li>파프리카</li>
+        <li>샐러리</li>
+        <li>소스</li>
+    </ol>
+    <dl>
+        <div>
+            <dt><b>요리교실 준비물</b></dt>
+            <dd>양상추</dd>
+        </div>
+    </dl>
+    <dl>
+        <dt><b>요리교실 준비물</b></dt>
+        <dd>당근</dd>
+        <dd>파프리카</dd>
+        <dd>샐러리</dd>
+        <dt>요리교실 준비물2</dt>
+        <dd>무</dd>
+        <dd>상추</dd>
+    </dl>
+
+
+    <!-- 중첩된 ul 구조 -->
+    <ul>
+        <li>
+            <a href="#">메뉴1</a>
+            <ul>
+                <li><a href="#">메뉴1-1</a></li>
+                <li><a href="#">메뉴1-2</a></li>
+                <li><a href="#">메뉴1-3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">메뉴2</a>
+            <ul>
+                <li><a href="#">메뉴2-1</a></li>
+                <li><a href="#">메뉴2-2</a></li>
+                <li><a href="#">메뉴2-3</a></li>
+            </ul>
+        </li>
+    </ul>
+
+<div class="wrap">
+    <header>헤더</header>
+    <div>본문</div>
+    <footer>푸터</footer>
+</div>
+
+</body>
+
+</html>

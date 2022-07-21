@@ -1,0 +1,172 @@
+@charset "UTF-8"; * { box-sizing: border-box; padding: 0; margin: 0; } 
+
+body { min-width: 1280px; } 
+ul { padding: 0; margin: 0; list-style: none; } 
+
+header { background: #4b7089; height: 100px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; color: #fff; } 
+header .logo { font-size: 30px; font-weight: 600; width: 50%; height: 50px; line-height: 50px; margin: 0 0 0 20px; } 
+header .global { width: 50%; display: flex; flex-direction: row; justify-content: flex-end; margin: 0 20px 0 0; } 
+header .global span { height: 30px; line-height: 30px; margin: 0 0 0 20px; position: relative; } 
+header .global span::after { width: 1px; height: 15px; position: absolute; background: rgba(255, 255, 255, 0.5); content: ""; top: 8px; right: -10px; } 
+header .global span:last-child::after { display: none; } 
+header .mMenuBt { display: none; } 
+
+/* 네비게이션*/
+nav { background: #6190b1; height: 60px; color: #fff; position: relative; } 
+nav a { color: #fff; text-decoration: none; } 
+nav a:visited { color: #fff; } 
+nav ul.gnb { width: 1000px; display: flex; flex-direction: row; justify-content: center; align-items: center; margin: 0 auto; } 
+nav ul.gnb li.gnbMenu { width: 25%; height: 100%; text-align: center; font-size: 20px; font-weight: 600; cursor: pointer; } 
+nav ul.gnb li.gnbMenu .title { width: 100%; height: 60px; line-height: 60px; text-align: center; display: block; } 
+
+/* 모바일용 서브메뉴 감추기 */
+nav ul.gnb ul.mSnb { display: none; } 
+
+/* pc용 서브메뉴 */
+nav .snb { display: flex; justify-content: center; width: 100%; height: 0; background: #90b1c8; color: #000; overflow: hidden; position: absolute; top: 60px; left: 0; z-index: 100; } 
+nav .gnb:hover .snb { height: 150px; transition: all 0.5s ease-in-out; } 
+nav .snb ul { width: 250px; } 
+nav .snb ul li { width: 100%; height: 40px; line-height: 40px; color: #fff; text-align: center; } 
+
+
+/***************** section *****************/
+section { height: 100vh; } 
+h2 { text-align: center; } 
+
+
+/* section.section1 opacity 캐러셀 */
+section.section1 { background: #fff; position: relative; overflow: hidden; width: 100%; height: 780px; } 
+section.section1 ul { display: flex; flex-direction: row; } 
+section.section1 ul li { display: none; flex-direction: column; width: 100%; height: 780px; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 10; } 
+section.section1 ul li.active { display: flex; z-index: 20; } 
+section.section1 ul li img { outline: none; position: absolute; top: 0; left: 50%; vertical-align: top; margin-left: -1000px; } 
+section.section1 ul li .cts { position: absolute; top: 170px; right: 25%; width: 520px; } 
+section.section1 ul li .cts h3 { font-family: 'Nanum Myeongjo', serif; font-size: 1.6rem !important; color: #fff; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); line-height: 1.2; } 
+section.section1 ul li .cts p { color: #fff; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); margin: 10px 0; } 
+section.section1 ul li .cts a { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.8); background: rgba(255, 255, 255, 0.2); color: #fff; padding: 5px 20px; text-decoration: none; } 
+section.section1 .btn { position: absolute; top: 400px; padding: 20px; background: rgba(0, 0, 0, 0.3); color: #fff; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.3); z-index: 30; } 
+section.section1 .btn.prev { right: 50%; margin-right: 500px; } 
+section.section1 .btn.next { left: 50%; margin-left: 500px; } 
+section.section1 .paging { position: absolute; left: 0; bottom: 50px; width: 100%; height: 20px; text-align: center; display: flex; justify-content: center; align-items: center; z-index: 30; } 
+section.section1 .paging button { display: inline-block; width: 10px; height: 10px; border-radius: 100%; margin: 0 20px; background: rgba(0, 0, 0, 0.5); outline: none; border: none; padding: 0; } 
+section.section1 .paging button.active { background: #d4d4d4; width: 15px; height: 15px; } 
+section.section1 .ctrl_group { position: absolute; left: 0; bottom: 5px; width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; z-index: 30; } 
+section.section1 .ctrl_group .numbering,
+section.section1 .ctrl_group .stop,
+section.section1 .ctrl_group .play { height: 36px; width: 50px; padding: 5px 0px; background: rgba(0, 0, 0, 0.3); color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); display: flex; align-items: center; justify-content: center; } 
+section.section1 .ctrl_group .stop img,
+section.section1 .ctrl_group .play img { width: 26px; height: 26px; } 
+
+
+/* section.section2 탭메뉴 */
+section.section2 { background: #e1ecf3; padding: 40px; } 
+section.section2 .tab { width: 100%; } 
+section.section2 .tab ul { width: 100%; display: flex; flex-direction: row; } 
+section.section2 .tab ul li { display: inline-block; height: 60px; line-height: 60px; padding: 0px 40px; cursor: pointer; background: #b4bcc2; position: relative; margin: 0 0 0 2px; font-weight: 600; color: #fff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); } 
+section.section2 .tab ul li:first-child { margin: 0; } 
+section.section2 .tab ul li.on { background: #ccc; } 
+section.section2 .tab ul li:hover::after,
+section.section2 .tab ul li.on::after { width: 100%; height: 5px; background: #73a6c7; content: ""; position: absolute; top: 0; left: 0; } 
+section.section2 .tab ul li:hover::after { background: rgba(255, 255, 255, 0.3); } 
+section.section2 .tab .conBox { display: none; width: 100%; height: auto; min-height: 300px; background: #ccc; padding: 40px; color: #333; overflow: hidden; } 
+section.section2 .tab .conBox.on { display: block; } 
+section.section2 .tab2 { width: 100%; display: flex; flex-direction: row; align-items: flex-start; margin: 70px 0 0 0; } 
+section.section2 .tab2 ul { width: 150px; display: flex; flex-direction: column; } 
+section.section2 .tab2 ul li { display: block; width: 100%; height: 60px; line-height: 60px; padding: 0px 40px; cursor: pointer; background: #b4bcc2; position: relative; margin: 0 0 2px 0; font-weight: 600; color: #fff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); } 
+section.section2 .tab2 ul li.on { background: #ccc; } 
+section.section2 .tab2 ul li:hover::after,
+section.section2 .tab2 ul li.on::after { width: 5px; height: 100%; background: #73a6c7; content: ""; position: absolute; top: 0; left: 0; } 
+section.section2 .tab2 ul li:hover::after { background: rgba(255, 255, 255, 0.3); } 
+section.section2 .tab2 .content { width: calc(100% - 150px); height: 400px; background: #ccc; padding: 40px; color: #333; } 
+section.section2 .tab2 .content .conBox { display: none; height: 100%; } 
+section.section2 .tab2 .content .conBox.on { display: block; } 
+
+
+/* section.section3 fullsize 캐러셀 */
+section.section3 { position: relative; overflow: hidden; background: #c4d9e7; } 
+section.section3 ul { position: absolute; top: 0; left: 0; display: flex; flex-direction: row; padding: 0; margin: 0; } 
+section.section3 ul li { height: 100%; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; } 
+section.section3 ul li img { outline: none; } 
+section.section3 ul li .cts { position: absolute; top: 170px; left: 50%; margin-left: 50px; width: 490px; } 
+section.section3 ul li .cts h3 { font-family: 'Nanum Myeongjo', serif; font-size: 1.6rem !important; color: #fff; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); line-height: 1.2; } 
+section.section3 ul li .cts p { color: #fff; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); margin: 10px 0; } 
+section.section3 ul li .cts a { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.8); background: rgba(255, 255, 255, 0.2); color: #fff; padding: 5px 20px; text-decoration: none; } 
+section.section3 .btn { position: absolute; top: 400px; padding: 20px; background: rgba(0, 0, 0, 0.3); color: #fff; white-space: nowrap; border: 1px solid rgba(255, 255, 255, 0.3); } 
+section.section3 .btn.prev { right: 50%; margin-right: 500px; } 
+section.section3 .btn.next { left: 50%; margin-left: 500px; } 
+section.section3 .paging { position: absolute; left: 0; bottom: 70px; width: 100%; height: 20px; text-align: center; display: flex; justify-content: center; align-items: center; } 
+section.section3 .paging button { display: inline-block; width: 10px; height: 10px; border-radius: 100%; margin: 0 20px; background: rgba(0, 0, 0, 0.5); outline: none; border: none; padding: 0; } 
+section.section3 .paging button.active { background: #d4d4d4; width: 15px; height: 15px; } 
+section.section3 .ctrl_group { position: absolute; left: 0; bottom: 20px; width: 100%; text-align: center; display: flex; align-items: center; justify-content: center; } 
+section.section3 .ctrl_group .numbering,
+section.section3 .ctrl_group .stop,
+section.section3 .ctrl_group .play { height: 36px; width: 50px; padding: 5px 0px; background: rgba(0, 0, 0, 0.3); color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); display: flex; align-items: center; justify-content: center; } 
+section.section3 .ctrl_group .stop img,
+section.section3 .ctrl_group .play img { width: 26px; height: 26px; } 
+
+
+/* section.section4 다중이미지 캐러셀 */
+section.section4 { display: block; position: relative; width: 100%; height: 650px; background: #a6c6dc; padding: 100px 0; } 
+section.section4 .banner_wrap { position: relative; width: 80%; overflow: hidden; margin: 0 auto; } 
+section.section4 .banner_wrap ul { position: absolute; top: 0; left: 0; } 
+section.section4 .banner_wrap ul li { float: left; position: relative; } 
+section.section4 .banner_wrap ul li a { display: block; height: 400px; border: 1px solid #ccc; background: #ededed; text-align: center; margin: 0 10px; } 
+section.section4 .banner_wrap ul li.no1 a { background: #d11141; } 
+section.section4 .banner_wrap ul li.no2 a { background: #00b159; } 
+section.section4 .banner_wrap ul li.no3 a { background: #00aedb; } 
+section.section4 .banner_wrap ul li.no4 a { background: #f37735; } 
+section.section4 .banner_wrap ul li.no5 a { background: #ffc425; } 
+section.section4 .banner_wrap ul li a { display: block; height: 400px; font-size: 100px; color: #fff; position: relative; text-decoration: none; margin: 0 10px; } 
+section.section4 .banner_wrap ul li a:visited { color: #fff; } 
+section.section4 .banner_wrap ul li a .cover { position: absolute; left: 0; right: 0; bottom: 0; height: 0; text-align: center; background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); overflow: hidden; transition: all 0.5s ease-in-out; z-index: 50; } 
+section.section4 .banner_wrap ul li a:hover { font-size: 150px; } 
+section.section4 .banner_wrap ul li a:hover .cover { height: 400px; } 
+section.section4 .btn { position: absolute; border: none; width: 48px; height: 48px; z-index: 70; } 
+section.section4 .btn.next { top: 50%; right: 5%; margin: -24px 0 0 0; background: url(/images/banner/baseline_navigate_next_white_24dp.png) 50% 50% no-repeat; cursor: pointer; } 
+section.section4 .btn.prev { top: 50%; left: 5%; margin: -24px 0 0 0; background: url(/images/banner/baseline_navigate_before_white_24dp.png) 50% 50% no-repeat; cursor: pointer; } 
+section.section4 .btn.stop,
+section.section4 .btn.play { bottom: 50px; left: 52%; margin: 0 0 0 -24px; background: url(/images/banner/baseline_pause_white_24dp.png) 50% 50% no-repeat; } 
+section.section4 .btn.play { left: 48%; background: url(/images/banner/baseline_play_arrow_white_24dp.png) 50% 50% no-repeat; } 
+
+
+/* scroll 버튼 */
+.scroll { position: fixed; right: 0; bottom: 10px; width: 100px; display: flex; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.5); background: rgba(255, 255, 255, 0.2); z-index: 100; } 
+.scroll span { width: 100%; text-align: center; height: 40px; line-height: 40px; border: 1px solid rgba(255, 255, 255, 0.5); border-collapse: collapse; color: #fff; font-weight: 600; cursor: pointer; } 
+.scroll span:hover,
+.scroll span.on { background: rgba(0, 0, 0, 0.2); } 
+
+
+/* section.section5,6 CSS애니메이션, 스크롤 애니메이션 */
+section.section5 { padding: 10%; display: flex; flex-wrap: wrap; flex-direction: row; min-height: 980px; height: auto; background: #6ca0c5; } 
+section.section5 h2 { width: 100%; } 
+section.section6 { height: auto; padding: 10%; display: flex; flex-direction: column; align-items: center; } 
+section.section5 { background: #89b3d0; } 
+section.section5 .aniBox,
+section.section6 .aniBox { width: 30%; height: 200px; padding: 75px 0 0; border: 10px solid #fff; background: #ff9b9b; color: #fff; font-size: 20px; text-align: center; } 
+section.section5 .aniBox { margin: 0 1% 100px; cursor: pointer; } 
+section.section5 .aniBox:nth-child(1):hover { animation: bounce 1s infinite; } 
+section.section5 .aniBox:nth-child(2):hover { animation: hinge 2s infinite; } 
+section.section5 .aniBox:nth-child(3):hover { animation: flash 1s infinite; } 
+section.section5 .aniBox:nth-child(4):hover { animation: swing 1s infinite; } 
+section.section5 .aniBox:nth-child(5):hover { animation: rubberBand 1s infinite; } 
+section.section5 .aniBox:nth-child(6):hover { animation: wobble 1s infinite; } 
+section.section6 .aniBox.left { margin: 0 0 100px -40%; } 
+section.section6 .aniBox.right { margin: 0 -40% 100px 0; } 
+
+
+/* section.section7 가로탭메뉴링크 */
+section.section7 { background: #3f6b8d; padding: 100px 0; } 
+ul.pageTabs { width: 100%; display: flex; flex-direction: row; margin: 50px 0 0; } 
+ul.pageTabs li { display: inline-block; height: 60px; line-height: 60px; padding: 0px 40px; cursor: pointer; position: relative; font-weight: 600; color: #fff; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); text-decoration: none; margin: 0 0 0 2px; background: #b4bcc2; } 
+ul.pageTabs li:first-child { margin: 0; } 
+ul.pageTabs li:hover { position: relative; } 
+ul.pageTabs li.on { background: #ccc; position: relative; } 
+ul.pageTabs li:hover::after,
+ul.pageTabs li.on::after { width: 100%; height: 5px; background: #73a6c7; content: ""; position: absolute; top: 0; left: 0; } 
+ul.pageTabs li:hover::after { background: rgba(255, 255, 255, 0.3); } 
+.conbox { display: none; width: 100%; height: auto; min-height: 300px; background: #ccc; padding: 40px; color: #333; } 
+.conbox.on { display: block; } 
+footer { background: #2b404e; height: 140px; } 
+.spot11,
+.spot12,
+.spot13 { cursor: pointer; } 

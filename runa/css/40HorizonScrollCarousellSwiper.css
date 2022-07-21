@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+* { box-sizing: border-box; }
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 1280px;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header,nav,section,footer{ width: 100%; }
+
+section.horizon{
+    height: 100vh;
+}
+section.horizon .sec01{ background: #F6B352; }
+section.horizon .sec02{ background: #F68657; }
+section.horizon .sec03{ background: rgb(87, 235, 246); }
+section.horizon .sec04{ background: #000; }
+section.horizon .sec05{ background: #383A3F; }
+
+.swiper-container .swiper-wrapper .swiper-slide{
+    padding: 100px;
+}
+
+/* custmm bullets style */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+    color:#fff;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 20px;
+    z-index: 101;
+    cursor: pointer;
+}
+.swiper-pagination-bullet {
+    width: 200px;
+    height: 50px;
+    border-radius: unset;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color:#fff;
+    opacity: 1;
+    background:transparent;
+}
+.swiper-pagination-bullet-active {
+    font-size: 24px;
+    font-weight: 800;
+    color:#000;
+}

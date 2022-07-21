@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body{
+    min-width: 1280px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.pd20{ padding: 20px; }
+.pt124{ padding-top: 124px; }
+h1{
+    font-size: 70px;
+    font-weight: 400;
+    margin: 77px 0 40px 0;
+    color: #2d2d2d;
+    /* color: red; */
+}
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
+p{ 
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 45px 15px 45px;
+    color: #666;
+}
+p.p01{
+    line-height: 1.5;
+    margin: 15px 0 0 0;
+}
+p.p01:last-of-type{
+    margin: 0px 0 75px 0;
+}
+h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.16;
+    color: #fff;
+    margin: 0 0 44px;
+}
+section.sec02{
+    background: url(/images/bg1.png) no-repeat 50% -200px / 100% 600px;
+    height: 1300px;
+    position: relative;
+}
+section.sec02::before{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #5ebcaf;
+    opacity: 0.8;
+    z-index: 0;
+}
+section.sec02 .inner{
+    position: relative;
+    z-index: 5;
+}
+section.sec02 .inner .group .box{
+    width: 33.333%;
+    /* width: 400px; */
+    display: block;
+    float: left;
+}
+section.sec02 .inner .group .box.two{
+    margin: 100px 0 0 0;
+}
+section.sec02 .inner .group .box.three{
+    margin: 50px 0 0 0;
+}
+section.sec02 .inner .group .box .title{
+    font-size: 35px;
+    font-weight: 400;
+    margin: 45px 45px 13px;
+    color: #2d2d2d;
+}
+section.sec02 .inner .group .box .subTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 45px;
+    letter-spacing: -2px;
+    color: #666;
+}
+/* section.sec02 .inner .group .box.one{
+    background: url(/images/lotte/lotte_12.png) 0 0 no-repeat;
+    padding-top: 378px;
+} */
+/* section.sec02 .inner .group .box.two{
+    background: url(/images/lotte/lotte_18.png) 0 0 no-repeat;
+    padding-top: 378px;
+} */
+/* section.sec02 .inner .group .box.three{
+    background: url(/images/lotte/lotte_21.png) 0 0 no-repeat;
+    padding-top: 378px;
+} */
+
+
+
+/* pc.css에서 사용한 selector를 그대로 가지고와서 작성해야한다.
+
+변경이 필요한 속성의 값을 바꿔주면 되고, 기재하지 않는 사항은 pc.css에서 상속을 받는다.
+pc의 속성을 쓰지 않을것이라면, 안쓴다고 속성선언을 해야한다. */
+
+/* @media all and (max-width: 768px) {
+    h1{
+        color: blue;
+    }
+}
+ */
+
+
+

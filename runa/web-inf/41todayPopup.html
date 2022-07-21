@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>41todayPopup</title>
+    <link rel="stylesheet" type="text/css" href="/css/41todayPopupstyle.css" />
+</head>
+<body>
+    <div class="bg">
+        <div class="popup" style="display: none;">
+            <span class="material-icons ic_close"> close </span>
+            <span class="material-icons ic_main"> 6_ft_apart </span>
+            <h1>관람안내</h1>
+            <h2>화요일~일요일 / 10:00~18:00</h2>
+            <h3>야간개장 18:00~21:00</h3>
+            <h5>※거리두기 관람에 저해하지 않는 범위 내에서 현장접수가능합니다※</h5>
+            <form>
+                <input type="checkbox" id="pop_day"/>
+                <label for="pop_day">1일동안닫기</label>
+                <a href="#" class="btn_close">1일동안닫기</a>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/41cookiePopup.js"></script>
+</body>
+</html>

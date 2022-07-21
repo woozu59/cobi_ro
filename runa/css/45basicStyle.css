@@ -1,0 +1,15 @@
+@charset "UTF-8";
+p.para{
+    width: 100%;
+    border: 3px solid red;
+}
+.gnb{
+    width: 100px;
+    height: 200px;
+    background: red;
+}
+.gnb.on{
+    width: 300px;
+    height: 100px;
+    background: blue;
+}

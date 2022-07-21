@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 360px;
+}
+
+/* .sec01 opacity 캐러셀 */
+.sec01{ height: unset; }
+.sec01 ul li{ height: 400px; }
+.sec01 .btn,
+.sec01 .ctrl_group{ display: none; }
+.sec01 .paging{ bottom: 10px; }
+
+/* .sec03 이미지 캐러셀 */
+.sec03 ul li{
+    height: 400px;
+    overflow: hidden;
+}
+.sec03 .btn,
+.sec03 .ctrl_group{ display: none; }
+.sec03 .paging{ bottom: 10px; }

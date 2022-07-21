@@ -1,0 +1,411 @@
+@charset "UTF-8";
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid red; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+:root {
+    font-size: 14px;
+    color: #666;
+}
+
+section.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+article {
+    width: 1200px;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.3);
+    margin: 30px 0;
+    flex-shrink: 0;
+}
+
+article h2 {
+    margin: 0 0 20px 0;
+}
+
+/* draggable */
+.dragObj {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.dragObj:nth-of-type(1) .material-icons,
+.dragObj:nth-of-type(2) .material-icons {
+    font-size: 8rem;
+    color: #325b84;
+}
+
+.dragObj .material-icons:hover {
+    color: #5a7b9c;
+}
+
+.dragObj:nth-of-type(3) .material-icons,
+.dragObj:nth-of-type(4) .material-icons {
+    font-size: 5rem;
+    color: #ff7373;
+}
+
+/* Sortable */
+.sortList {
+    width: 50%;
+}
+
+.sortList>li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    background: #47969d;
+    border: none;
+    border-top: 1px solid #5ba2a8;
+    border-bottom: 1px solid #2d7d84;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.sortList>li:active {
+    background: #c49490;
+}
+
+.sortList>li>span:first-child {
+    margin: 0 20px 0 0;
+}
+
+/* Autocomplete */
+.tagsForm {
+    display: flex;
+    align-items: center;
+}
+
+.tagsForm .material-icons {
+    color: #067084;
+    margin: 0 5px 0 0;
+}
+
+.tagsForm label {
+    font-size: 1.5rem;
+    color: #088da5;
+    margin: 0 15px 0 0;
+}
+
+.tagsForm input[type='text'] {
+    width: 500px;
+    height: 40px;
+    border: 3px solid #ccc;
+    padding: 0 20px;
+}
+
+.tagsForm input[type='text']:focus {
+    border: 3px solid #ddd;
+    outline: none;
+}
+
+
+/* Datapicker */
+.date-picker {
+    width: 260px;
+    height: auto;
+    max-height: 50px;
+    background: #d9d9d9;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s 0s ease-in-out;
+    margin: 0 auto;
+}
+
+.date-picker .input {
+    width: 100%;
+    height: 50px;
+    font-size: 0;
+}
+
+.date-picker .input .result,
+.date-picker .input button {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.date-picker .input .result {
+    width: calc(100% - 50px);
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: grey;
+}
+
+.date-picker .input button {
+    width: 50px;
+    height: 50px;
+    background-color: #8392A7;
+    color: white;
+    border: 0;
+    padding: 0;
+}
+
+.date-picker .input button:hover {
+    background-color: #68768A;
+}
+
+.date-picker .input button:focus {
+    outline: 0;
+}
+
+.date-picker .input button span {
+    font-size: 2.5rem;
+}
+
+.date-picker .calendar {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.date-picker .ui-datepicker-inline {
+    position: relative;
+    width: 100%;
+    margin: 2px 0 0 0;
+    border: none;
+    background: #d9d9d9;
+}
+
+.date-picker .ui-datepicker-header {
+    height: 100%;
+    line-height: 50px;
+    background: #8392A7;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.date-picker .ui-datepicker-prev,
+.date-picker .ui-datepicker-next {
+    width: 20px;
+    height: 20px;
+    text-indent: 9999px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.date-picker .ui-datepicker-prev {
+    float: left;
+    margin-left: 12px;
+}
+
+.date-picker .ui-datepicker-prev:after {
+    transform: rotate(45deg);
+    margin: -45px 0px 0px 6px;
+}
+
+.date-picker .ui-datepicker-next {
+    float: right;
+    margin-right: 12px;
+}
+
+.date-picker .ui-datepicker-next:after {
+    transform: rotate(-135deg);
+    margin: -45px 0px 0px 4px;
+}
+
+.date-picker .ui-datepicker-prev:after,
+.date-picker .ui-datepicker-next:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.date-picker .ui-datepicker-prev:hover,
+.date-picker .ui-datepicker-next:hover,
+.date-picker .ui-datepicker-prev:hover:after,
+.date-picker .ui-datepicker-next:hover:after {
+    border-color: #68768A;
+}
+
+.date-picker .ui-datepicker-title {
+    text-align: center;
+    line-height: unset;
+}
+
+.date-picker .ui-datepicker-calendar {
+    width: 100%;
+    text-align: center;
+}
+
+.date-picker .ui-datepicker-calendar thead tr th span {
+    display: block;
+    width: 100%;
+    color: #8392A7;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.date-picker .ui-datepicker-calendar th,
+.date-picker .ui-datepicker-calendar td {
+    width: 14.285%;
+    padding: 0;
+}
+
+.date-picker .ui-state-default {
+    display: block;
+    text-decoration: none;
+    color: #b5b5b5;
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+.date-picker .ui-state-default:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.date-picker .ui-state-highlight {
+    color: #68768A;
+}
+
+.date-picker .ui-state-active {
+    color: #68768A;
+    background-color: rgba(131, 146, 167, 0.12);
+    font-weight: 600;
+}
+
+.date-picker .ui-datepicker-unselectable .ui-state-default {
+    color: #eee;
+    border: 2px solid transparent;
+}
+
+.date-picker.open {
+    max-height: 400px;
+}
+
+.date-picker.open .input button {
+    background: #68768A;
+}
+
+
+/* Dialog modal form */
+
+.userList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userList h2,
+.userList div {
+    width: 100%;
+}
+
+.userList table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.userList table th {
+    border: 1px solid #ccc;
+    background: #e9e9e9;
+    padding: 7px;
+}
+
+.userList table td {
+    border: 1px solid #ccc;
+    padding: 7px;
+}
+
+.ui-widget-overlay {
+    background: #000;
+    opacity: .5;
+}
+
+.ui-widget-header {
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    background: #fff;
+    font-weight: normal;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 10px;
+}
+
+#dialog-form .validateTips {
+    margin: 5px 0;
+}
+
+#dialog-form form fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+#dialog-form form fieldset *:nth-child(odd) {
+    width: 30%;
+}
+
+#dialog-form form fieldset *:nth-child(even) {
+    width: 70%;
+}
+
+#dialog-form form fieldset * {
+    height: 30px;
+    margin: 0 0 10px 0;
+}
+
+#dialog-form form fieldset input {
+    padding: 0 10px;
+}
+
+#dialog-form form fieldset input:focus {
+    outline: none;
+    border: 3px solid #088da5;
+}
+
+.ui-dialog-buttonset button,
+#create-user {
+    margin: 20px 0 0 0;
+    outline: none;
+    border-color: #088da5;
+    color: #088da5;
+}
+
+.ui-dialog-buttonset button:hover,
+#create-user:hover {
+    background: #39a3b7;
+    border-color: #eee;
+    color: #fff;
+}
+
+.ui-dialog-buttonset button:active,
+#create-user:active {
+    background: #088da5;
+    border-color: #eee;
+    color: #fff;
+}

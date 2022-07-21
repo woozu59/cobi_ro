@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body{ min-width: 1280px; }
+ul, li{ list-style: none; }
+section{ 
+    background: #e1ecf3;
+    padding: 40px;
+    min-height: 500px;
+}
+
+
+
+
+/* 탭메뉴 - 가로형 */
+section .tab,
+section .indexBox{
+    width: 100%;
+    margin: 0 0 100px 0;
+    position: relative;
+}
+section .tab ul,
+section .indexBox ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+section .tab ul li,
+section .indexBox ul li{
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px;
+    margin: 0 0 0 2px;
+    background: #b4bcc2;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+}
+section .tab ul li:first-child,
+section .indexBox ul li:first-child{ margin: 0; }
+section .tab ul li.on,
+section .indexBox ul li.on{ background: #ccc; }
+section .tab ul li:hover::after,
+section .indexBox ul li:hover::after,
+section .tab ul li.on::after,
+section .indexBox ul li.on::after{
+    width: 100%;
+    height: 5px;
+    background: #73a6c7;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .tab ul li:hover::after,
+section .indexBox ul li:hover::after{ background: rgba(255,255,255,0.3); }
+section .tab .conBox,
+section .indexBox .conBox{
+    display: none;
+    width: 100%;
+    height: 300px;
+    background:#ccc;
+    padding: 40px;
+    color: #333;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+section .tab .conBox.on,
+section .indexBox .conBox.on{ display:block; }
+
+
+/* 탭메뉴 - 세로형 */
+section .tabV{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+section .tabV ul{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+section .tabV ul li{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px;
+    margin: 0 0 2px 0;
+    background: #b4bcc2;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+}
+section .tabV ul li.on{ background: #ccc; }
+section .tabV ul li:hover::after,
+section .tabV ul li.on::after{
+    width: 5px;
+    height: 100%;
+    background: #73a6c7;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .tabV ul li:hover::after{ background: rgba(255,255,255,0.3); }
+section .tabV .content{
+    width: calc(100% - 150px);
+    height: 400px;
+    background:#ccc;
+    padding: 40px;
+    color: #333;
+}
+section .tabV .content .conBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+section .tabV .content .conBox.on{ display:block; }
+
+
+
+
+
+
+/* 탭메뉴 - 페이드박스 가로형 */
+section .fadeTab{
+    width: 100%;
+    margin: 0 0 100px 0;
+    position: relative;
+}
+section .fadeTab ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+section .fadeTab ul li{
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px;
+    margin: 0 0 0 2px;
+    background: #b4bcc2;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+}
+section .fadeTab ul li:first-child{ margin: 0; }
+section .fadeTab ul li.on{ background: #ccc; }
+section .fadeTab ul li:hover::after,
+section .fadeTab ul li.on::after{
+    width: 100%;
+    height: 5px;
+    background: #73a6c7;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .fadeTab ul li:hover::after{ background: rgba(255,255,255,0.3); }
+section .fadeTab .conBox{
+    width: 100%;
+    height: 300px;
+    background:#ccc;
+    padding: 40px;
+    color: #333;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}

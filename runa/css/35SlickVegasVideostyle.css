@@ -1,0 +1,108 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 1280px;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* slide */
+.vertical-slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.vertical-slide.s01{ background-color: indianred; }
+.vertical-slide.s02{ background-color: dodgerblue; }
+.vertical-slide.s03{ background-color: burlywood; }
+.vertical-slide.s04{ background-color: sandybrown; }
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    margin: 3em;
+    text-align: center;
+}
+
+
+
+
+
+/* slick-paging */
+.slick-dots li button::before,
+.slick-dots li.slick-active button::before{
+    color: #fff;
+}
+/* slide dots */
+.vertical-slider.slick-dotted{
+    margin-bottom: 0;
+}
+.vertical-slider > .slick-dots{
+    width: auto;
+    bottom: auto;
+    left: .5em;
+    right: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.vertical-slider > .slick-dots li{
+    display: block;
+    margin: .125em;
+}
+.vertical-slider > .slick-dots li button{
+    padding: .125em;
+}
+
+
+
+
+
+
+
+
+
+/* vegas rotate */
+.s02 .slide-content .circle{
+    width: 550px;
+    height: 550px;
+    border: 1px solid lemonchiffon;
+    position: absolute;
+    z-index: 100;
+    top: 51%;
+    left: 49%;
+    margin: -275px 0 0 -275px;
+}
+.s02 .slide-content .circle::before{
+    width: 600px;
+    height: 600px;
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 100;
+    top: 48%;
+    left: 47%;
+    margin: -300px 0 0 -300px;
+    content: "";
+    transform: rotate(30deg);
+}
+.s02 .slide-content .circle::after{
+    width: 640px;
+    height: 640px;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-45deg);
+    border: 1px solid pink;
+    margin: -320px 0 0 -320px;
+    content: "";
+    -webkit-animation: rotate 4s infinite;
+    animation: rotate 4s infinite;
+}

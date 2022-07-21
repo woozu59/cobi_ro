@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url('../lib/swiper-5.4.5/package/css/swiper.min.css');
+/* Swiper css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-width: 1080px;
+}
+header,
+nav,
+section,
+footer {
+    width: 100%;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+*[tabindex]:focus {
+    outline: none;
+}
+.section1 {
+    margin: 20px 0 50px 0;
+}
+h1,
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/****** 탭스타일 ******/
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.tabs label {
+    width: 50%;
+    order: 1;
+    /* 객체나열의 최우선순위 가짐 */
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background .2s ease-in;
+}
+.tabs .tab {
+    order: 99;
+    /* label보다 무조건 다음순서 */
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+    background: #fff;
+    border-bottom: 3px solid #cbcbcb;
+}
+.tabs input[type="radio"] {
+    display: none;
+}
+.tabs input[type="radio"] + label {
+    border-bottom: 3px solid #cbcbcb;
+    color: #cbcbcb;
+}
+.tabs input[type="radio"]:checked + label {
+    border: 3px solid #cbcbcb;
+    border-bottom: none;
+    color: #666;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+    display: flex;
+}
+.tabs .tab .left,
+.tabs .tab .right {
+    width: 50%;
+    height: auto;
+    padding: 50px;
+    position: relative;
+}
+.tabs .tab .left:after {
+    position: absolute;
+    width: 1px;
+    height: 500px;
+    background: #cbcbcb;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+/****** Swiper(터치적용 캐러셀) ******/
+.swiper1 {
+    width: 100%;
+    height: 500px;
+}
+li.swiper-slide {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+li.fullBg01 {
+    background: #F0E5DE;
+}
+li.fullBg02 {
+    background: #ABD0CE;
+}
+li.fullBg03 {
+    background: #7C7877;
+}
+li.fullBg04 {
+    background: #D9D4CF;
+}
+li.fullBg05 {
+    background: #F6B352;
+}
+li.fullBg06 {
+    background: #F68657;
+}
+li.fullBg07 {
+    background: #383A3F;
+}
+li.fullBg08 {
+    background: #1F2124;
+}
+
+.swiper1 .swiper-pagination {
+    height: 20px;
+    z-index: 100;
+}
+.swiper1 .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+
+/* section2 탭메뉴 */
+.section2 {
+    background: #e1ecf3;
+    padding: 40px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.section2 .tab {
+    width: 100%;
+}
+.section2 .tab ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.section2 .tab ul li {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px;
+    cursor: pointer;
+    background: #b4bcc2;
+    position: relative;
+    margin: 0 0 0 2px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.section2 .tab ul li:first-child {
+    margin: 0;
+}
+.section2 .tab ul li.on {
+    background: #ccc;
+}
+.section2 .tab ul li:hover::after,
+.section2 .tab ul li.on::after {
+    width: 100%;
+    height: 5px;
+    background: #73a6c7;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section2 .tab ul li:hover::after {
+    background: rgba(255, 255, 255, 0.3);
+}
+.section2 .tab .conBox {
+    display: none;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background: #ccc;
+    padding: 40px;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+}
+.section2 .tab .conBox.on {
+    display: block;
+}
+
+
+/* 탭 Swiper 실험실 */
+.art1 {
+    width: 100%;
+    height: 400px;
+}
+.art1 .slide {
+    /* width: 100%; */
+    height: 100%;
+    color: #fff;
+    margin: 0 auto;
+}
+.art1 .slide.s01 {
+    background: yellowgreen;
+}
+.art1 .slide.s02 {
+    background: green;
+}
+.art1 .slide.s03 {
+    background: blue;
+}
+.art1 .slide.s04 {
+    background: plum;
+}
+.box {
+    width: 1200px;
+    height: 200px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    color: #333;
+    overflow: hidden;
+    margin: 0 auto 50px;
+    padding: 40px;
+    /*swiper-button이 위치 할 부모의 여백 */
+    position: relative;
+    /* swiper-button을 꺼내기 위해 기준점 제시 */
+}
+.box .swiper-container {
+    width: 100%;
+    height: 100%;
+}

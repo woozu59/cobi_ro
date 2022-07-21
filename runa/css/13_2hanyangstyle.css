@@ -1,0 +1,369 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* 구글아이콘폰트 */
+
+/* 한양이앤지 메인 레이아웃 css */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    word-break: keep-all;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+body{ min-width: 1280px; }
+ul, li{ list-style: none; }
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 헤더, 비주얼 */
+header{
+    height: 820px;
+    background: url(/images/hanyang/pattern_01.png) 50% 50% repeat, url(/images/hanyang/visual_01.png) 50% 50% no-repeat;
+    background-size: 0.2%, cover;
+}
+header .top{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .top .logo{ width: 200px; }
+header .top .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+/* header .top .nav div{
+    font-weight: 400;
+    margin: 0 0 0 50px;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1rem;
+} */
+/* ::after를 위한 수정버전 */
+header .top .nav div{
+    font-weight: 400;
+    margin: 0 0 0 30px;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+header .top .nav div:hover{ color: #ddd; }
+header .top .nav div:last-child:hover{ color: rgb(241, 140, 10); }
+header .top .nav div::after{
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: rgba(255,255,255,0.3);
+    content: "";
+    bottom: 20px;
+    left: 0;
+}
+header .top .nav div:last-child::after{
+    background: rgba(241, 140, 10,0.3);
+
+}
+/* header .top .nav div:hover::after{
+    width: 140px;
+    transition: width 0.5s;
+} */
+/* ::after를 위한 수정버전 */
+header .top .nav div:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+}
+header .top .nav div span{
+    height: 80px;
+    line-height: 80px;
+}
+header .top .nav div ul.snb{
+    background: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    min-width: 140px;
+    height: auto;
+    z-index: 10;
+}
+header .top .nav div ul.snb li{
+    width: 100%;
+    height: 0px;
+    line-height: 34px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+header .top .nav div:hover ul.snb{
+    padding: 10px 0 20px;
+}
+header .top .nav div:hover ul.snb li{
+    height: 34px;
+    transition: height 0.5s;
+}
+header .top .nav div:hover ul.snb li:hover{
+    background: rgba(255,255,255,0.1)
+}
+header .top .mMenuBt{display: none;}
+header .top .mCloseBt{display: none;}
+header .copy{
+    margin: 130px auto 0;
+    padding: 150px 0;
+    width: 50%;
+    height: 430px;
+    border: 15px solid rgba(255,255,255,0.3);
+    border-left: none;
+    position: relative;
+}
+header .copy::before,
+header .copy::after{
+    position: absolute;
+    width: 15px;
+    height: 70px;
+    background: rgba(255,255,255,0.3);
+    content: "";
+    top: 0;
+    left: 0;
+}
+header .copy::after{
+    top: auto;
+    bottom: 0;
+}
+header .copy h1{
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 85px;
+    left: -300px;
+    width: 820px;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+header .copy h1:nth-of-type(2){
+    margin: 55px 0 0 0;
+}
+header .copy h4{
+    position: absolute;
+    top: 240px;
+    left: -200px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+header .copy h4:nth-of-type(2){
+    margin: 30px 0 0 0;
+}
+
+
+
+section{ width: 100%; }
+/* 비지니스 */
+section:nth-child(1){
+    height: 752px;
+    background: url(/images/hanyang/visual_02.png) 50% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 70px 0 0 0;
+}
+section:nth-child(1)::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(8,43,71,0.95);
+    content: "";
+    z-index: 1;
+}
+section h2,
+section h4{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+section:nth-child(2) h2,
+section:nth-child(2) h4{ color: #212121; }
+section h2{ font-size: 2.1rem;}
+section h4{
+    font-weight: normal;
+    margin: 30px 0 0 0;
+}
+section h4:nth-of-type(2){
+    margin: 5px 0 0 0;
+}
+section .cardBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+    margin: 70px 0 0 0;
+}
+section:nth-child(1) .cardBox .card{
+    width: 23%;
+    height: 370px;
+    padding: 210px 0 20px;
+    border-bottom-right-radius: 50px;
+    background-size: 100%, cover;
+}
+section:nth-child(1) .cardBox .card:nth-of-type(1){
+    background: linear-gradient(to top, #000 30%, transparent 70% ) 0 0 no-repeat,url("../images/hanyang/thumnail_01.png") 50% 50% no-repeat;
+}
+section:nth-child(1) .cardBox .card:nth-of-type(2){
+    background: linear-gradient(to top, #000 30%, transparent 70% ) 0 0 no-repeat,url("../images/hanyang/thumnail_02.png") 50% 50% no-repeat;
+}
+section:nth-child(1) .cardBox .card:nth-of-type(3){
+    background: linear-gradient(to top, #000 30%, transparent 70% ) 0 0 no-repeat,url("../images/hanyang/thumnail_03.png") 50% 50% no-repeat;
+}
+section:nth-child(1) .cardBox .card:nth-of-type(4){
+    background: linear-gradient(to top, #000 30%, transparent 70% ) 0 0 no-repeat,url("../images/hanyang/thumnail_04.png") 50% 50% no-repeat;
+}
+section:nth-child(1) .cardBox .card h3{
+    font-size: 2rem;
+    padding: 0 20px; 
+}
+section:nth-child(1) .cardBox .card p{
+    padding: 0 20px;
+}
+section:nth-child(1) .cardBox .card button{
+    margin: 15px 0 0 20px;
+    background: none;
+    border: none;
+    outline: 0;
+    color: #f18c0a;
+    position: relative;
+}
+section:nth-child(1) .cardBox .card button::before{
+    position: absolute;
+    top: 13px;
+    left: 70px;
+    background:#f18c0a;
+    content: "";
+    width: 80px;
+    height: 1px;
+}
+section:nth-child(1) .cardBox .card button::after{
+    position: absolute;
+    top: 9px;
+    left: 141px;
+    background:#f18c0a;
+    content: "";
+    width: 10px;
+    height: 1px;
+    transform: rotate(45deg);
+}
+
+
+
+
+/* 뉴스 */
+section:nth-child(2){
+    height: 860px;
+    padding: 70px 0 0 0;
+}
+section:nth-child(2) .cardBox{ color: #212121; }
+section:nth-child(2) .cardBox .left{ width: 580px; }
+section:nth-child(2) .cardBox .right{
+    width: 580px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section:nth-child(2) .cardBox .left .card{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section:nth-child(2) .cardBox .left .card .thumnail{
+    width: 100%;
+    height: 320px;
+    background: url(/images/hanyang/thumnail_05.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section:nth-child(2) .cardBox .left .card h4{
+    margin: 20px 0 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: left;
+    
+}
+section:nth-child(2) .cardBox .left .card p{
+    line-height: 1.6rem;
+}
+
+section:nth-child(2) .cardBox .right .card{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 26px 0;
+}
+section:nth-child(2) .cardBox .right .card:nth-child(2){
+    margin: 0 0 26px 20px;
+}
+section:nth-child(2) .cardBox .right .card:nth-child(3){
+    margin: 0;
+}
+section:nth-child(2) .cardBox .right .card:nth-child(4){
+    margin: 0 0 0 20px;
+}
+section:nth-child(2) .cardBox .right .card .thumnail{
+    width: 100%;
+    height: 170px;
+}
+section:nth-child(2) .cardBox .right .card:nth-child(1) .thumnail{
+    background: url(/images/hanyang/thumnail_06.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section:nth-child(2) .cardBox .right .card:nth-child(2) .thumnail{
+    background: url(/images/hanyang/thumnail_07.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section:nth-child(2) .cardBox .right .card:nth-child(3) .thumnail{
+    background: url(/images/hanyang/thumnail_08.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section:nth-child(2) .cardBox .right .card:nth-child(4) .thumnail{
+    background: url(/images/hanyang/thumnail_09.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+section:nth-child(2) .cardBox .right .card h4{
+    margin: 10px 0 13px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: left;
+}
+section:nth-child(2) .cardBox .card span{
+    color: #0075b1;
+}
+
+/* 채용 */
+section:nth-child(3){
+    height: 580px;
+    background: url(/images/hanyang/visual_03.png) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 165px 0 0 0;
+    color: #212121;
+}
+section:nth-child(3) h2,
+section:nth-child(3) h4{
+    text-align: left;
+}
+section:nth-child(3) h2:nth-of-type(2){
+    margin: -5px 0 0 0;
+}
+section:nth-child(3) h4{
+    margin: 10px 0 0 0;
+}
+

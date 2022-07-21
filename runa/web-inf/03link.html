@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>03link</title>
+    <style>
+    /* *{ border: 1px solid red; } */
+    a:link, a:visited{
+        color: #000;
+        text-decoration: none;
+        font-size: 50px;
+        /* width: 500px;
+        height: 100px;
+        display: inline-block; */
+    }
+    a:hover{ color:red; }
+    a:active{ color: #ccc; }
+    
+    a.blockLink{
+        width: 300px;
+        height: 300px;
+        margin: 50px auto 0;
+        text-align: center;
+        background: #ddd;
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <a href="http://www.naver.com" target="_blank">
+        네이버
+    </a>
+    <a href="http://www.naver.com" target="_blank">
+        <div>네이버</div>
+    </a>
+    <a href="http://www.naver.com" target="_blank" class="blockLink">a tag<br>직접꾸미기</a>
+</body>
+</html>

@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+header,nav,section,footer{ width: 100%; }
+ul, li{ list-style: none; }
+header{
+    background: #4b7089;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+header .logo{
+    font-size: 30px;
+    font-weight: 600;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0 0 20px;
+}
+header .global{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
+}
+header .global span{
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+header .global span::after{
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    content: "";
+    top: 8px;
+    right: -10px;
+}
+header .global span:last-child::after{ display: none; }
+header .mMenuBt{ display: none; }
+
+/* 네비게이션*/
+nav{
+    background: #6190b1;
+    height: 60px;
+    color: #fff;
+    position: relative;
+}
+nav a{
+    color:#fff;
+    text-decoration: none;
+}
+nav a:visited{
+    color:#fff;
+}
+nav ul.gnb{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+nav ul.gnb li.gnbMenu{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav ul.gnb li.gnbMenu .title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+}
+
+/* 모바일용 서브메뉴 감추기 */
+nav ul.gnb ul.mSnb{ display: none; }
+
+/* pc용 서브메뉴 */
+nav .snb{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    background: #90b1c8;
+    color: #000;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+}
+nav .gnb:hover .snb{
+    height: 150px;
+    transition: all 0.5s ease-in-out;
+}
+nav .snb ul{ width: 250px; }
+nav .snb ul li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+/***************** section *****************/
+section{ height: 100vh; }
+section.section1{ background: #d3dbe1; }
+section.section2{ background: #becad2; }
+section.section3{ background: #a8b8c3; }
+section.section4{ background: #93a7b4; }
+section.section5{ background: #7d95a5; }
+section.section6{ background: #678396; }
+section.section7{ background: #527287; }
+footer{
+    background:#132734;
+    height: 150px;
+}
+section.section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.section5 .aniBox{
+    width: 400px;
+    height: 200px;
+    border: 10px solid #fff;
+    background: #ff9b9b;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+section.section5 .aniBox.left{ margin: 0 0 100px -40%; }
+section.section5 .aniBox.right{ margin: 0 -40% 100px 0; }
+
+/* scroll 버튼 */
+.scroll{
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+.scroll span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: -1px;
+}
+.scroll span:first-child{
+    margin-bottom: 20px;
+}
+.scroll span:last-child{
+    margin-top: 20px;
+}
+.scroll span:hover,
+.scroll span.on{
+    background: rgba(0,0,0,0.2);
+}

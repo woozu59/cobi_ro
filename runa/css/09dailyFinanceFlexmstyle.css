@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* 데일리금융 레이아웃 flex 모바일 전용 css */
+
+body { min-width: 320px; }
+.wrap > .title .copy { line-height: 1.2rem; }
+.wrap > .title .copy::before,
+.wrap > .title .copy::after { display: none; }
+
+.contents .box { flex: 1 1 100%; }
+.contents .box button { max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #fff; } 
+
+.contents .box.b01 { order: 2; }
+.contents .box.b02 { order: 1; }
+.contents .box.b03 { order: 3; margin: 0; }
+.contents .box.b04 { order: 4; }
+.contents .box.b05 { order: 5; flex: 1 1 40%; background: #36c1d3; color: #fff; }
+.contents .box.photo { order: 6; flex: 1 1 40%; background-color: #f17127; background-blend-mode: luminosity; }
+.contents .box.b06 { order: 8; flex: 1 1 40%; }
+.contents .box.b07 { order: 7; flex: 1 1 40%; }
+.contents .box.b08 { order: 9; color: #fff; background: rgba(0,0,0,0.5); }
+.contents .box.b09 { order: 10; flex: 1 1 40%; margin: 0; }
+.contents .box.b10 { order: 11; flex: 1 1 40%; margin: 0; }

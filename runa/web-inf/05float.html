@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/05float.css" />
+    <title>05float</title>
+</head>
+
+<body>
+    <!-- flaot을 이용해서 정렬을 할 때에는 같은 depth을 구분하는 group용 div가 필요하다.
+        display: block과 float: left/right/none을 이용해서 레이아웃 배치를 한다.
+        <img>를 섞어서 레이아웃 배치를 했을 때, 감싸는 div가 높이를 인식하지 못하는 이슈 때문에 clearfix라는 요소를 사용한다.
+        clearfix의 본체는 일을 하지 않고, ::after라는 가상요소가 일을 하는데 이는 html에 작성하는것이 아니고, CSS 나타나는 가상요소이다.
+        
+        태그 기준으로 앞으로는 ::before,뒤로는 ::after가 붙는데, 이 요소를 이용해서 감싸는 div 높이를 복구하는 것이다.
+
+        ::after선언은 흔적은 있는데 높이는 없는 요소를 마지막에 깔아서 사용.
+        
+        챙겨야 할게 많아서 귀찮다.
+
+        css3에서는 flex-box라고 하는 개념이 생겼다.
+
+        float은 스스로에게 선언.
+        flex-box는 감싸고 있는 부모에게 선언하는 식이다.
+
+        display: flex; 선언후
+        direction, align-items, justify-content 세항목 추가선언 -->
+
+
+
+    <h3>ul/li로 헤더 만들기</h3>
+    <ul>
+        <li class="logo">
+            <img src="../images/gs/top_logo.png" alt="gs로고">
+        </li>
+        <li class="menu">메뉴1</li>
+        <li class="menu">메뉴2</li>
+        <li class="menu">메뉴3</li>
+    </ul>
+
+    <ul class="ulmenu clearfix">
+        <li class="logo"></li>
+        <li>회사소개</li>
+        <li>사업소개</li>
+        <li>지속가능경영</li>
+        <li>홍보센터</li>
+        <li>고객지원</li>
+    </ul>
+
+
+    <h3>clearfix</h3>
+    <p class="clearfix">
+        <img src="../images/flower.png" alt="꽃" height="200" />
+        Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        ::after
+    </p>
+
+    <h3>float 종류별 left/right/none</h3>
+    <div class="ex clearfix">
+        <div class="boxLeft">글씨</div>
+        <div class="boxRight">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+        <div class="none">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+    </div>
+
+    <h3>float이 섞여있을 때</h3>
+    <div class="layout clearfix mb50">
+        <div class="box11">box1 float:left</div>
+        <div class="box22">box2 float:right</div>
+        <div class="box33">box3 float:right</div>
+    </div>
+
+    <!-- <h3>clearfix 핵을 쓰지않고 동일효과내기</h3>
+        <div class="ex">
+            <div class="layout noclearfix">
+                <div class="block_photo"></div>
+                <div class="block_txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+        </div> -->
+
+    <div class="ex">
+        <div class="layout clearfix">
+            <div class="block_photo"></div>
+            <div class="block_txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+        </div>
+        <div class="layout clearfix">
+            <!-- <div class="block_txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+                <div class="block_photo"></div> -->
+            <div class="block_txt2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            <div class="block_photo2"></div>
+        </div>
+        <div class="layout clearfix">
+            <div class="block_photo"></div>
+            <div class="block_txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+        </div>
+    </div>
+    <!-- 사진이 왼쪽, 글단락이 오른쪽에 있으니 이것을 지그재그로 표현하려면 각 객체를 반대로 정렬하면 될 것이라고 생각한다. 하지만, float left/right끼리 모여있으면 정렬이 되지만, 섞여있는 경우 float right가 먼저 와도 left먼저 배열된다 -->
+
+
+
+
+    <div class="layout clearfix">
+        <!-- <div class="block_txt4">첫번째 문단</div>
+            <div class="block_photo4">사진1</div>
+            <div class="block_photo4">사진2</div>
+            <div class="block_txt4">두번째 문단</div>
+            <div class="block_txt4">세번째 문단</div>
+            <div class="block_photo4">사진3</div> -->
+        <!-- <div class="block_photo3">사진1</div>
+            <div class="block_txt3">첫번째 문단</div>
+            <div class="block_txt3">두번째 문단</div>
+            <div class="block_photo3">사진2</div>
+            <div class="block_photo3">사진3</div>
+            <div class="block_txt3">세번째 문단</div> -->
+        <!-- <div class="block_photo3">사진1</div>
+            <div class="block_txt3">첫번째 문단</div>
+            <div class="block_txt3">두번째 문단</div>
+            <div class="block_photo3">사진2</div>
+            <div class="block_photo3">사진3</div>
+            <div class="block_txt3">세번째 문단</div> -->
+    </div>
+
+
+    <div class="layout clearfix">
+        <div class="left">
+            <div class="photo">사진1</div>
+            <div class="text">글단락2</div>
+            <div class="photo">사진3</div>
+        </div>
+        <div class="right">
+            <div class="text">글단락1</div>
+            <div class="photo">사진2</div>
+            <div class="text">글단락3</div>
+        </div>
+    </div>
+
+    <div class="layoutFlex">
+        <div class="photo">사진1</div>
+        <div class="txt">글1</div>
+        <div class="txt">글2</div>
+        <div class="photo">사진2</div>
+        <div class="photo">사진3</div>
+        <div class="txt">글3</div>
+    </div>
+</body>
+
+</html>

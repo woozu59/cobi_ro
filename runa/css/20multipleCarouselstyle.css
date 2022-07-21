@@ -1,0 +1,85 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+body{
+    padding: 0;
+    margin: 0;
+}
+h2{
+    width: 100%;
+    text-align: center;
+}
+/* 배너슬라이드(이미지캐러셀)-여러장 */
+.banner{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.banner .banner_wrap{
+    position: relative;
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto 50px;
+}
+.banner .banner_wrap ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.banner .banner_wrap ul li{
+    float: left;
+}
+.banner .banner_wrap ul li a{
+    display: block;
+    height: 400px;
+    line-height: 400px;
+    border: 1px solid #ccc;
+    background: #ededed;
+    text-align: center;
+    margin: 0 10px;
+}
+.banner .btn{
+    position: absolute;
+    top: 50%;
+    white-space: nowrap;
+    padding: 5px 20px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+}
+.banner .btn.next{
+    right: 50%;
+    margin: 0 -550px 0 0;
+}
+.banner .btn.prev{
+    left: 50%;
+    margin: 0 0 0 -550px;
+}
+.banner .btn.stop{
+    top: unset;
+    bottom: -40px;
+    left: 50%;
+    margin-left: 10px;
+}
+.banner .btn.play{
+    top: unset;
+    bottom: -40px;
+    right: 50%;
+    margin-right: 10px;
+}
+@media screen and (max-width: 640px){
+	.banner .banner_wrap{
+        margin: 0 10%;
+        width: 80%;
+    }
+	.banner .btn.next{
+        left: 50%;
+        margin-left: 30%;
+    }
+	.banner .btn.prev{
+        right: 50%;
+        left: auto;
+        margin-right: 30%;
+    }
+}

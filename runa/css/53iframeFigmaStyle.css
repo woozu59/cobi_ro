@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    min-width: 1280px;
+}
+.sec01{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.sec01 > .figma {
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+.sec01 > div{
+    flex: 1 1 50%;
+    height: 100%;
+    text-align: center;
+}

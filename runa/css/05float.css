@@ -1,0 +1,222 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+ul{
+    list-style: none;
+    width: 1200px;
+    height: 100px;
+    margin: 50px auto;
+}
+ul li{
+    float: left;
+}
+ul li.logo{
+    display: block;
+    margin: 22px 500px 0 0;
+}
+ul li.menu{
+    display: block;
+    width: 200px;
+    height: 100%;
+}
+p img{
+    float: left;
+}
+/* .clearfix{
+    overflow: auto;
+} */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+ul.ulmenu{
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    width: 1200px;
+    margin: 100px auto;
+}
+ul.ulmenu li{
+    width: 10%;
+    height: 80px;
+    border: none;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+ul.ulmenu li.logo{
+    width: 134px;
+    height: 80px;
+    background: url(/images/daewoo/daewoo_logo.png) 0 -12px no-repeat;
+    margin: 0 400px 0 20px;
+}
+
+
+.ex{
+    width: 1200px;
+    /* padding: 20px; */
+    margin: 50px auto;
+}
+.ex .boxLeft{
+    width: 50%;
+    height: 200px;
+    background: url(/images/flower.png) 0 50% no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    /* background-size: 100%; */
+    /* background-size: 100% 100%; */
+    display: block;
+    float: left;
+    color: #fff;
+    padding: 50px;
+}
+.ex .boxRight{
+    width: 30%;
+    height: 200px;
+    display: block;
+    float: right;
+}
+.ex .none{
+    width: 100%;
+    height: 100px;
+    display: block;
+    float: none;
+    clear: both;
+}
+
+
+
+/* float zigzag */
+.layout{
+    margin: 50px auto;
+    width: 1200px;
+}
+.layout.noclearfix{
+    display: inline-block;
+    clear: both;
+}
+.layout .block_photo{
+    width: 40%;
+    height: 200px;
+    background: url("../images/door.png") 50% 50% no-repeat;
+    background-size: cover;
+    float: left;
+}
+.layout .block_photo2{
+    width: 40%;
+    height: 200px;
+    background: url("../images/door.png") 50% 50% no-repeat;
+    background-size: cover;
+    float: right;
+}
+.layout .block_photo3{
+    width: 50%;
+    height: 200px;
+    background: url("../images/door.png") 50% 50% no-repeat;
+    background-size: cover;
+    float: left;
+}
+.layout .block_photo4{
+    width: 40%;
+    height: 200px;
+    background: url("../images/door.png") 50% 50% no-repeat;
+    background-size: cover;
+    float: right;
+}
+.layout div.block_photo4:nth-of-type(2),
+.layout div.block_txt4:nth-of-type(4),
+.layout div.block_photo4:nth-of-type(6){
+    margin: 0 20% 0 0;
+}
+.layout .block_txt,
+.layout .block_txt4{
+    width: 40%;
+    height: 200px;
+    padding: 50px 0 0 20px;
+    float: right;
+}
+.layout .block_txt2{
+    width: 40%;
+    height: 200px;
+    padding: 50px 20px 0 0px;
+    float: left;
+}
+.layout .block_txt3{
+    width: 40%;
+    height: 200px;
+    padding: 50px;
+    float: left;
+}
+.layout .box11{
+    width: 20%;
+    height: 100px;
+    display: block;
+    float: left;
+    font-size: 30px;
+}
+.layout .box22,
+.layout .box33{
+    width: 20%;
+    height: 100px;
+    display: block;
+    float: right;
+    font-size: 30px;
+}
+.layout.mb50{
+    margin: 0 0 50px 0;
+}
+
+.layout .left{
+    width: 40%;
+    height: 600px;
+    display: block;
+    float: left;
+}
+.layout .right{
+    width: 40%;
+    height: 600px;
+    display: block;
+    float: right;
+}
+.layout .left .photo,
+.layout .right .photo{
+    width: 100%;
+    height: 200px;
+    background: url("../images/door.png") 50% 50% no-repeat;
+    background-size: cover;
+    display: block;
+}
+.layout .left .text,
+.layout .right .text{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+/* flex zigzag */
+.layoutFlex{
+    margin: 50px auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.layoutFlex .photo{
+    width: 40%;
+    height: 100px;
+    background: url(/images/spakle.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.layoutFlex .txt{
+    width: 40%;
+    height: 50px;
+}

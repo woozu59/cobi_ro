@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* Noto Sans KR 폰트 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    --swiper-theme-color: #f9d700;
+}
+body {
+    min-width: 1080px;
+}
+.inner {
+    width: 940px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+/* 카카오 오시는길 */
+.sec01 {
+    background: #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0;
+}
+.sec01 .inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sec01 .inner h1 {
+    width: 100%;
+}
+.sec01 .inner .roadmap {
+    width: 460px;
+}
+.sec01 .inner .roadmap > div {
+    width: 100%;
+    height: 284px;
+    border: 1px solid #e6e6e6;
+}
+.sec01 .inner .roadmap dl dt {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 36px 0 6px 0;
+}
+.sec01 .inner .roadmap dl dd {
+    font-size: 1.07rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin: 10px 0;
+}
+
+/* 청주시 예방접종센터 오시는길 */
+.sec02 {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0;
+}
+.sec02 .inner h1 {
+    width: 100%;
+}
+.sec02 .inner h1 button {
+    display: inline-block;
+    font-size: 1rem;    
+    margin: 0 20px;
+    height: 100%;
+    padding: 2px 5px 3px;
+    cursor: pointer;
+}
+.sec02 .inner .roadmap {
+    width: 100%;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sec02 .inner .roadmap.on {
+    display: flex;
+}
+.sec02 .inner .roadmap > div {
+    width: 65%;
+    height: 400px;
+    border: 1px solid #e6e6e6;
+}
+.sec02 .inner .roadmap dl{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.sec02 .inner .roadmap dl dt {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+}
+.sec02 .inner .roadmap dl dd {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin: 5px 0 0;
+    word-break: keep-all;
+}

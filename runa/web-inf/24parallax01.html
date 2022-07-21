@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>24parallax01</title>
+    <link rel="stylesheet" href="/css/24parallax01style.css" />
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="/css/24parallax01mstyle.css" />
+</head>
+<body>
+    <!-- iOS에서는 background-attachment: fixed;가 작동하지 않음 -->
+    <header>
+        <div class="logo"><a href="http://www.naver.com" target="_blank">Company</a></div>
+        <div class="global">
+            <span>로그인</span>
+            <span>회원가입</span>
+        </div>
+        <span class="material-icons mMenuBt">
+            menu_open
+        </span>
+    </header>
+    <nav>
+        <ul class="gnb">
+            <li class="mCloseBt">
+                <span class="material-icons">
+                    close
+                </span>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">회사소개</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu1_1</a></li>
+                    <li><a href="#">menu1_2</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">제품소개</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu2_1</a></li>
+                    <li><a href="#">menu2_2</a></li>
+                    <li><a href="#">menu2_3</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">홍보센터</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu3_1</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">고객센터</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu4_1</a></li>
+                    <li><a href="#">menu4_2</a></li>
+                    <li><a href="#">menu4_3</a></li>
+                </ul>
+            </li>
+            <li class="snb">
+                <ul>
+                    <li><a href="#">menu1_1</a></li>
+                    <li><a href="#">menu1_2</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu2_1</a></li>
+                    <li><a href="#">menu2_2</a></li>
+                    <li><a href="#">menu2_3</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu3_1</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu4_1</a></li>
+                    <li><a href="#">menu4_2</a></li>
+                    <li><a href="#">menu4_3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="scene01">
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+        </article>
+    </section>
+    <section class="scene02" data-aos="fade-up">
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+        </article>
+    </section>
+    <section class="scene03">
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+        </article>
+    </section>
+    <div class="scroll">
+        <span class="goTop">top</span>
+    </div>
+<script src="/js/jquery-1.12.4.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/js/25mAccodion.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

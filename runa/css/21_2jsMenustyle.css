@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* Material Icons */
+
+/* js로 슬라이드메뉴 만들기 + 모바일 메뉴 변형 */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{ min-width: 1280px; }
+ul, li{ list-style: none; }
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+.gnb{
+    width: 100%;
+    height: 60px;
+    background: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gnb > ul{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.gnb >  ul > li{
+    width: 180px;
+    background: #555;
+}
+.gnb >  ul > li > a{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.snb{
+    width: 100%;
+    height: auto;
+    background: #777;
+    display: none;
+}
+.snb li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-bottom: 1px solid #555;
+    padding: 0 20px;
+}
+.material-icons{ display: none; }

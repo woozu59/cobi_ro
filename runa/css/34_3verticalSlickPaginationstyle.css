@@ -1,0 +1,86 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('/lib/slick-1.8.1/slick/slick.css');
+@import url('/lib/slick-1.8.1/slick/slick-theme.css');
+/* Slick */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+ul, li{list-style: none;}
+body{ min-width: 1080px; }
+h1{
+	display: block;
+	margin: 3em;
+	text-align: center;
+	color: #fff;
+}
+.vertical-slider.slick-dotted{
+	margin-bottom: 0;
+}
+.vertical-slider{
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.vertical-slider .slide{ height: 100vh; }
+.slide{ display: block; }
+.vertical-slide.s01{ background-color: indianred; }
+.vertical-slide.s02{ background-color: dodgerblue; }
+.vertical-slide.s03{ background-color: green; }
+.vertical-slide.s04{ background-color: burlywood; }
+.slide-content{
+	display: block;
+	position: relative;
+}
+
+
+.vertical-slider.slick-dotted{ margin-bottom: 0; }
+.vertical-slider > .slick-dots{
+    width:100px;
+    height: 100px;
+    bottom: auto;
+    top:50%;
+    left:1.5em;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+    border-radius: 50%;
+    background:rgba(255,255,255,0.5);
+}
+.slick-dots li{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0;
+}
+.slick-dots li button{
+    width: 100%;
+    height: 100%;
+}
+#slick-slide-control00{ transform: translate(110px, 20px); }
+#slick-slide-control01{ transform: rotate(-90deg) translate(110px, 20px); }
+#slick-slide-control02{ transform: rotate(180deg) translate(110px, 20px); }
+#slick-slide-control03{ transform: rotate(90deg) translate(110px, 20px); }
+.slick-dots li button::before{
+    color:rgba(255,255,255,0.65);
+    content:unset;
+    font-size: 2rem;
+    line-height: 1.05;
+}
+.slick-dots li.slick-active button::before{ color:rgba(255,255,255,1); }
+#slick-slide-control00::before{ content:"Section 01"; }
+#slick-slide-control01::before{ content:"Section 02"; }
+#slick-slide-control02::before{ content:"Section 03"; }
+#slick-slide-control03::before{ content:"Section 04"; }

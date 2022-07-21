@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>24_1parallax_ios</title>
+    <link rel="stylesheet" href="../lib/vegas/vegas.css" />
+    <link rel="stylesheet" href="/css/24_1parallax_iosstyle.css" />
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="/css/24parallax01mstyle.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+</head>
+<body>
+    <!-- iOS에서는 background-attachment: fixed;가 작동하지 않음 -->
+    <!-- iOS에서 동일효과 대체 -->
+    <header>
+        <div class="logo"><a href="http://www.naver.com" target="_blank">Company</a></div>
+        <div class="global">
+            <span>로그인</span>
+            <span>회원가입</span>
+        </div>
+        <span class="material-icons mMenuBt">
+            menu_open
+        </span>
+    </header>
+    <nav>
+        <ul class="gnb">
+            <li class="mCloseBt">
+                <span class="material-icons">
+                    close
+                </span>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">회사소개</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu1_1</a></li>
+                    <li><a href="#">menu1_2</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">제품소개</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu2_1</a></li>
+                    <li><a href="#">menu2_2</a></li>
+                    <li><a href="#">menu2_3</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">홍보센터</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu3_1</a></li>
+                </ul>
+            </li>
+            <li class="gnbMenu">
+                <div class="title">고객센터</div>
+                <ul class="mSnb">
+                    <li><a href="#">menu4_1</a></li>
+                    <li><a href="#">menu4_2</a></li>
+                    <li><a href="#">menu4_3</a></li>
+                </ul>
+            </li>
+            <li class="snb">
+                <ul>
+                    <li><a href="#">menu1_1</a></li>
+                    <li><a href="#">menu1_2</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu2_1</a></li>
+                    <li><a href="#">menu2_2</a></li>
+                    <li><a href="#">menu2_3</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu3_1</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">menu4_1</a></li>
+                    <li><a href="#">menu4_2</a></li>
+                    <li><a href="#">menu4_3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="scene01">
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+        </article>
+        <div class="bg-wrap">
+            <div class="bg"></div>
+        </div>
+    </section>
+    <section class="scene02">
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+        </article>
+        <div class="bg-wrap">
+            <div class="bg"></div>
+        </div>
+    </section>
+    <section class="scene03">
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+        </article>
+        <div class="bg-wrap">
+            <div class="bg"></div>
+        </div>
+    </section>
+    <div class="scroll">
+        <span class="goTop">top</span>
+    </div>
+<script src="/js/jquery-1.12.4.min.js"></script>
+<script src="../lib/vegas/vegas.js"></script>
+<script src="/js/25mAccodion.js"></script>
+<script>
+    new WOW().init();
+    </script>
+<script>
+    //vegas
+    $(function() {
+        $('.scene01 .bg-wrap .bg').vegas({
+        slides: [
+            { src: "../images/banner/space01.jpg", delay: 3500 },
+            { src: "../images/banner/space02.jpg", delay: 3500 },
+            { src: "../images/banner/space03.jpg",
+            video: {
+                src: [
+                    '../images/banner/view-main.mp4'
+                ],
+                loop: false,
+                mute: true,
+            }, delay: 5000
+            }
+        ],
+        animation: [ 'kenburnsLeft', 'kenburnsDown', 'kenburnsUp' ]
+        });
+    });
+    //모바일에서 베가스는 동영상을 지원하지 않음
+    $.vegas.isVideoCompatible = function () {
+        var devices = /(Android|webOS|Phone|iPad|iPod|BlackBerry|Windows Phone)/i;
+        return !devices.test(navigator.userAgent);
+    }
+</script>
+</body>
+</html>

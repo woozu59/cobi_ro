@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* 구글아이콘폰트 */
+
+/* javascriptBasic */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #313131;
+}
+ul, li{list-style: none;}
+body{
+    min-width: 1080px;
+    background: url(/images/hotel/travelworthy-backdrop.jpg) right 150px no-repeat;
+}
+.inner{
+    width: 1020px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: relative;
+    z-index: 110;
+}
+header .inner{
+    position: relative;
+    height: 100%;
+    padding: 0 20px 0 250px;
+}
+header .inner .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 160px;
+    background: url(/images/hotel/travelworthy-logo.gif) 50% 50% no-repeat, #313131;
+}
+nav{
+    width: 100%;
+    height: 60px;
+}
+nav ul.inner{
+    padding: 0 20px 0 250px;
+    height: 100%;
+    border-bottom: 5px solid #313131;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+nav ul.inner li{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+nav ul.inner li>span{
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background: #fff;
+    position: relative;
+    z-index: 110;
+}
+nav ul.inner li>ul{
+    width: 100%;
+    height: auto;
+    background: #1e1b1e;
+    color: #fff;
+    border-left: 1px solid #313131;
+    border-right: 1px solid #313131;
+    border-bottom: 3px solid #313131;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    z-index: 100;
+    transform: translateY(-100%);
+}   
+nav ul.inner li>ul>li{
+    width: 100%;
+    height: 40px;
+    text-align: center; 
+}
+nav ul.inner li>ul>li>a{ color: #fff }
+nav ul.inner li>ul>li>a:visited{ color: #999 }
+nav ul.inner li>ul>li>a:hover,
+nav ul.inner li>ul>li>a:active{ color: #ccc }
+nav ul.inner li:hover>ul{
+    transform: translateY(0%);
+    transition: all 0.3s ease;
+}
+main{
+    width: 1020px;
+    height: calc(100vh - 210px);
+    margin: 0 auto;
+    display: flex;
+}
+
+aside{
+    width: 230px;
+    height: 100%;
+    background-color: #1e1b1e;
+}
+section{
+    width: 790px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 40px 0 20px 20px;
+    overflow-y: auto;
+}
+section article{
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    margin: 0 20px 20px 0;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5) ;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #81d8d0;
+}
+footer .inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

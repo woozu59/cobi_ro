@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* *{ border: 1px solid grey; } */
+/* p.bg{
+    width: 500px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+p.bg:hover{ background-color: transparent; } */
+p.bg{
+    width: 100px;
+    padding: 50px;
+    background-color: aliceblue;
+    background-image: url(../images/nimo.png);
+    background-size: contain;
+    /* background: url(../images/notebook.png);
+    background-size: 100px; */
+    /* background-repeat: space; */
+    /* background-repeat: round; */
+    background-repeat: no-repeat;
+    /* space/round 이미지의 사이즈나 개체수를변동하여 정해진 영역의 무늬를 까는데 도와준다. 배경이 투명할수록 활용도가 좋다*/
+
+    background-position: center center;
+    /* x y값을 조정하는 속성. 단위는 모두가능. 단어와 %는 상대적위치, px은 절대적인 위치로 이동 */
+}
+p.bg:hover{ background-color: transparent; }
+ul{ padding: 0; }
+ul.bgList > li{
+    list-style: none;
+    /* background: 색상 이미지주소 반복여부 xy위치 고정여부; */
+    background: url(../images/nimo.png) no-repeat;
+    /* background-image: url(../images/nimo.png);
+    background-repeat: no-repeat; */
+    background-size: contain;
+    padding: 0 0 0 25px; 
+}
+
+div.bgFull{
+    width: 50%;
+    height: 300px;
+    background: url(/images/nimo.png) no-repeat;
+    background-size: contain;
+    /* background: 색상 이미지주소 반복여부 xy위치 고정여부 / 사이즈; */
+    /* background: url(/images/nimo.png) no-repeat / contain; */
+}
+
+ul.bgSprite > li{
+    list-style: none;
+    height: 34px;
+    padding: 0 0 0 34px;
+    background: url(/images/daewoo/ico_common.png) no-repeat;
+    background-position: 0px -50px;
+}
+ul.bgSprite > li > a{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+}
+ul.bgSprite > li > a:hover{ color: #333; }
+p.gradient{
+    width: 200px;
+    height: 200px;
+    margin: 0 0 20px 0;
+}
+/* background: linear-gradient(출발색상, 도착색상); */
+/* 라이너그라디언트 방향성은 적지않으면 기본값이 to bottom */
+/* background: linear-gradient(방향성, 출발색상, 도착색상); */
+p.g1{ background: linear-gradient(#2bc0e4, #eaecc6); }
+p.g2{ background: linear-gradient(to right, #2bc0e4, #eaecc6); }
+p.g3{ background: linear-gradient(to bottom right, #3d7eaa, #ffe47a); }
+p.g4{ background: linear-gradient(150deg, #3d7eaa, #ffe47a); }
+p.g5{ background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)); }
+p.g6{ background: repeating-linear-gradient(brown, yellow 15%, green 30%); }
+
+/* 래디얼그라디언트 방향성은 적지않으면 기본값이 중심에서 밖으로 나가는 방사형 */
+p.g7{ background: radial-gradient(#2bc0e4, #eaecc6); }
+p.g8{ background: radial-gradient(red 5%, yellow 15%, green 60%); }
+/* 범주를 적고 종료지점을 적지 않으면 마지막까지 색이 채워진다 */
+p.g9{ background: radial-gradient(circle,#2bc0e4, #eaecc6); }
+/* circle은 방향성이 없는 radial에서 정비율을 담당한다 */
+p.g10{ background: repeating-radial-gradient(brown, yellow 15%, green 30%); }
+
+p.g11{ background: radial-gradient(closest-side at 10% 10%, #77a1d3, #79cbca, #e684ae); }
+p.g12{ background: radial-gradient(closest-corner at 10% 10%, #77a1d3, #79cbca, #e684ae); }
+p.g13{ background: radial-gradient(farthest-side at 10% 10%, #77a1d3, #79cbca, #e684ae); }
+p.g14{ background: radial-gradient(farthest-corner at 10% 10%, #77a1d3, #79cbca, #e684ae); }
+

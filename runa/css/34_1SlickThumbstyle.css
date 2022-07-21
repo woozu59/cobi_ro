@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('/lib/slick-1.8.1/slick/slick.css');
+@import url('/lib/slick-1.8.1/slick/slick-theme.css');
+/* Slick */
+
+
+/* 34_1SlickThumb */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body{ min-width: 1080px; }
+h1{
+	margin: 1em;
+	text-align: center;
+}
+section{
+    width: 960px;
+    height: auto;
+    margin: 50px auto 150px;
+    border: 1px solid #ccc;
+}
+
+
+/* view */
+.slider-for{
+    width: 100%;
+    padding: 20px;
+}
+.slider-for .slide{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+.slider3 .slide{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+/* thumnail */
+.slider-nav{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+
+}
+.slider-nav .slide{
+    cursor: pointer;
+    height: 160px;
+    margin: 0 10px;
+}
+
+
+/* 슬라이드 공통디자인 */
+.slide{
+    background-color: #ccc;
+    overflow: hidden;
+    border: 5px solid #f7f7f7;
+}
+
+/* 사진의 비율이 보이게 img배치 */
+.slider .slide img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/* 사진이 꽉차보이게 img배치 */
+.slider2 .slide img,
+.slider3 .slide img,
+.slider4 .slide img{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 기본 슬릭 append + css background */
+.slider5{
+    height: 500px;
+    overflow: hidden;
+}
+.slider5 img{
+    display: block;
+    margin: 0 auto;
+    transform: translate(0, -50%);
+}
+.slider5 .slide,
+.slider5 .slick-list,
+.slider5 .slick-list .slick-track{
+    width: 100%;
+    height: 100%;
+}
+.slider5 .img0{ background: url(/images/apple.png) center / cover; }
+.slider5 .img1{ background: url(/images/spakle.png) center / cover; }
+.slider5 .img2{ background: url(/images/notebook.png) center / cover; }
+.slider5 .img3{ background: url(/images/mojito.png) center / cover; }
+.slider5 .img4{ background: url(/images/flower.png) center / cover; }
+
+
+/* 네비게이션 customazing */
+.slider-nav .slick-arrow,
+.slider3 .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+}
+.slider-nav .slick-arrow::before,
+.slider-nav .slick-arrow::after,
+.slider3 .slick-arrow::before,
+.slider3 .slick-arrow::after{
+    color: #ccc;
+    font-size: 3rem;
+}
+.slick-prev{
+    left: -50px;
+    width: unset;
+    height: unset;
+}
+.slick-next{
+    right: -50px;
+    width: unset;
+    height: unset;
+}
+
+
+/* vertical 갤러리 */
+.vertical{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.vertical h1{
+    width: 100%;
+}
+.vertical .slider-for{
+    width: 74%;
+    overflow: hidden;
+}
+.vertical .slider-nav{
+    width: 25%;
+}
+.vertical .slider-nav .slide{
+    cursor: pointer;
+    height: 130px;
+    margin: 2px 0;
+}
+.vertical .slider-nav .slick-arrow{
+    top: auto;
+    bottom: -55px;
+}
+.vertical .slider-nav .slick-prev.slick-arrow{
+    left: 50px;
+}
+.vertical .slider-nav .slick-next.slick-arrow{
+    right: 40px;
+}

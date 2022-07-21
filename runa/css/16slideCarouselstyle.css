@@ -1,0 +1,164 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 슬라이드 배너 예시 */
+section.slideBanner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+section.slideBanner ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+section.slideBanner ul li{
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.slideBanner ul li img{
+    outline: none;
+}
+section.slideBanner ul li .cts{
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: 50px;
+    width: 490px;
+}
+section.slideBanner ul li .cts h3{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.6rem !important;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    line-height: 1.2;
+}
+section.slideBanner ul li .cts p{
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin: 10px 0;
+}
+section.slideBanner ul li .cts a{
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+section.slideBanner .btn{
+    position: absolute;
+    top: 400px;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    white-space: nowrap;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+section.slideBanner .btn.prev{
+    right: 50%;
+    margin-right: 500px;
+}
+section.slideBanner .btn.next{
+    left: 50%;
+    margin-left: 500px;
+}
+section.slideBanner .paging{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.slideBanner .paging button{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 20px;
+    background: rgba(0,0,0,0.5);
+    outline: none;
+    border: none;
+    padding: 0;
+}
+section.slideBanner .paging button.active{
+    background: #d4d4d4;
+    width: 15px;
+    height: 15px;
+}
+section.slideBanner .ctrl_group{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.slideBanner .ctrl_group .numbering,
+section.slideBanner .ctrl_group .stop,
+section.slideBanner .ctrl_group .play{
+    height: 36px;
+    width: 50px;
+    padding: 5px 0px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.slideBanner .ctrl_group .stop img,
+section.slideBanner .ctrl_group .play img{
+    width: 26px;
+    height: 26px;
+}
+@media screen and (max-width: 640px){
+	section.slideBanner ul li{
+        height: 400px;
+        overflow: hidden;
+    }
+    section.slideBanner ul li img{
+        width: 1000px;
+        margin: 0 0 0 -50%;
+    }
+	section.slideBanner ul li .cts{
+        top: 50%;
+        left: 50%;
+        margin: -12% 0 0 -35%;
+        width: 70%;
+        padding: 20px 5%;
+        background: rgba(0,0,0,0.3);
+        text-align: center;
+    }
+	section.slideBanner ul li .cts h3{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    section.slideBanner ul li .cts p,
+    section.slideBanner .btn,
+    section.slideBanner .ctrl_group{
+        display: none;
+    }
+	section.slideBanner .paging{
+        bottom: 10px;
+    }
+}

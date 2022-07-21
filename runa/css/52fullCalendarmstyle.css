@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* 52fullCalendarmstyle */
+
+/* fullCalendar 태블릿이하 grid형태 */
+.wrap { width: 80%; min-width: 500px; } 
+#modalBody { display: flex; flex-direction: column; align-items: center; } 
+#modalBody img { width: 80%; } 
+#calendarRow .fc-scroller { overflow: unset; } 
+#calendarRow .fc-scroller table,
+#calendarRow .fc-scroller .fc-daygrid-body { width: auto; } 
+#calendarRow .fc-button-group button:last-child { display: none; } 

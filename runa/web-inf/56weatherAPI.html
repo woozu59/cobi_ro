@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>56weatherAPI</title>
+    <link rel="stylesheet" type="text/css" href="/css/56weatherAPIStyle.css" />
+</head>
+
+<body>
+    <h1>현재 독도의 날씨는?</h1>
+    <div class="wrap">
+        <div class="circle">
+            <p class="temp"></p>
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        // 개인계정의 API입력, 각 위치의 도시명이나 위도경도 입력
+        // api.openweathermap.org/data/2.5/weather?q={city name}&units=metric&lang=kr&appid={API key}
+        // https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid={API key}
+        
+        // 날씨 아이콘 안내
+        // https://openweathermap.org/weather-conditions
+
+        let weatherAPIurl = 'https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=11dc855b398963b85357a001ce37a67c&units=metric';
+        $.getJSON(weatherAPIurl, function(result) {
+            let icon = `<img src="/images/weather/${result.weather[0].icon}.svg" alt="${result.weather[0].description}">`
+            let temp = result.main.temp.toFixed(1)
+            $('.circle').append(icon);
+            $('.temp').append(`${temp}˚C`);
+        });
+    </script>
+</body>
+
+</html>

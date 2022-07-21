@@ -1,0 +1,52 @@
+@charset "UTF-8"; @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); /* Noto Sans KR 폰트 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); /* font-awsome v5.15.4 */
+/* 데일리금융 레이아웃 flex css */
+
+* { box-sizing: border-box; padding: 0px; margin: 0px; } 
+*:focus { outline: 2px dashed magenta; } 
+:root { font-family: 'Noto Sans KR', sans-serif; } 
+body { min-width: 1280px; } 
+.wrap { width: 1200px; margin: 0px auto; } 
+.wrap > .title { text-align: center; } 
+.wrap > .title .logo { background: url("/images/daily/logo_phone.png") 50% 50% no-repeat; width: 152px; height: 57px; margin: 55px auto 20px; display: block; text-indent: -9000px; overflow: hidden; } 
+.wrap > .title .copy { height: 50px; line-height: 50px; color: #bbb; } 
+.wrap > .title .copy::before,
+.wrap > .title .copy::after { font-size: 1.2rem; color: #ddd; position: relative; top: -10px; } 
+.wrap > .title .copy::before { content: "\f10d"; } 
+.wrap > .title .copy::after { content: "\f10e"; } 
+
+.wrap .contents { margin: 50px 0 0 0; display: flex; flex-wrap: wrap; } 
+.contents .box { /* width: 290px; */ flex: 1 1 290px; height: 230px; padding: 20px; margin: 0 0 20px 0; color: #fff; overflow: hidden; } 
+.contents .box .title { font-size: 1.9rem; font-weight: 800; } 
+.contents .box .copy { margin: 30px 0 0 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.3; max-height: 2.6rem; } 
+.contents .box .date { margin: 20px 0 0 0; color: rgba(255, 255, 255, 0.5); } 
+.contents .box button { height: 30px; line-height: 30px; padding: 0px 20px; border: 1px solid rgba(255, 255, 255, 0.6); color: rgba(255, 255, 255, 0.6); background: none; display: block; cursor: pointer; } 
+.contents .box button:hover { border: 1px solid rgba(255, 255, 255, 0.8); color: rgba(255, 255, 255, 0.8); } 
+.contents .box.b01 { background: url("/images/daily/bg_phone_01.jpg") 50% 50% no-repeat; background-size: cover; } 
+.contents .box.b02 { background: #db0d36; color: #fff; } 
+.contents .box.b03,
+.contents .box.b10 { margin: 0 20px 20px; font-size: 1.9rem; color: #888; text-align: center; background: #f5f6f7; display: flex; flex-direction: column; justify-content: center; align-content: center; } 
+.contents .box.b04 { background: url("/images/daily/bg_phone_02.jpg") 50% 50% no-repeat; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: multiply; background-size: cover; } 
+.contents .box.b05,
+.contents .box.b08 { color: #888; background: #f5f6f7; } 
+.contents .box.b05 .date,
+.contents .box.b08 .date { color: #bbb; } 
+.contents .box.b05 button,
+.contents .box.b08 button { border: 1PX solid #bbb; color: #bbb; } 
+.contents .box.b05 button:hover,
+.contents .box.b08 button:hover { border: 1PX solid #888; color: #888; } 
+.contents .box.photo { /* width: 600px; */ flex: 1 1 600px; margin: 0 20px 20px 0; background: url("/images/daily/bg_phone_03.jpg") 50% 50% no-repeat; background-size: cover; } 
+.contents .box.b06 { background: url("/images/daily/bg_phone_04.jpg") 50% 50% no-repeat; background-color: rgba(0, 0, 0, 0.6); background-blend-mode: multiply; background-size: cover; } 
+.contents .box.b07 { background: url("/images/daily/bg_phone_05.jpg") 50% 50% no-repeat; background-size: cover; } 
+.contents .box.b09 { background: url("/images/daily/bg_phone_06.jpg") 0% 0% no-repeat; background-color: rgba(223, 169, 23, 0.8); background-blend-mode: screen; background-size: cover; margin: 0 20px 20px; } 
+.contents .box.b10 { margin: 0 0 20px 0px; } 
+
+
+
+
+/* 반응형CSS적용 */
+
+/* @media (max-width: 640px) { body { background: blue; min-width: 320px; } 
+ }
+@media (min-width: 641px) and (max-width: 1024px) { body { background: green; min-width: 640px; } 
+ }*/

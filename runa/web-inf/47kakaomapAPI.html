@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47kakaomapAPI</title>
+    <link rel="stylesheet" type="text/css" href="/css/47kakaomapAPIStyle.css">
+</head>
+
+<body>
+    <!-- 카카오 오피스 오시는길 -->
+    <section class="sec01">
+        <div class="inner">
+            <h1>카카오 오피스 오시는 길</h1>
+            <div class="roadmap">
+                <!-- 카카오 제주 -->
+                <div id="jejuMap"></div>
+                <dl>
+                    <dt>카카오 본사</dt>
+                    <dd>
+                        <strong>주소</strong>
+                        <span>제주특별자치도 제주시 첨단로 242</span>
+                    </dd>
+                    <dd>
+                        <strong>전화</strong>
+                        <span>02-6718-1501</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="roadmap">
+                <!-- 카카오 판교 -->
+                <div id="pangyoMap"> </div>
+                <dl>
+                    <dt>판교 오피스</dt>
+                    <dd>
+                        <strong>주소</strong>
+                        <span>경기도 성남시 분당구 판교역로 235 에이치스퀘어 N동 7층</span>
+                    </dd>
+                    <dd>
+                        <strong>전화</strong>
+                        <span>070-7492-1300</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- 청주시 코로나19 백신 예방접종센터 위치 -->
+    <section class="sec02">
+        <div class="inner">
+            <h1>청주시 예방접종센터 오시는 길<button onclick="setBounds()">지도 보기 및 재설정</button></h1>
+            <div class="roadmap">
+                <!-- 예방접종센터 4곳 -->
+                <div id="covid19Vaccine"></div>
+                <dl>
+                    <dt>청주시 예방접종센터</dt>
+                    <dd>
+                        <strong>주소</strong>
+                        <span>충청북도 청주시 상당구 남일면 단재로 466</span>
+                    </dd>
+                    <dd>
+                        <strong>전화</strong>
+                        <span>043-201-5317</span>
+                    </dd>
+                <!-- </dl>
+                <dl> -->
+                    <dt>청주시 서원구 예방접종센터</dt>
+                    <dd>
+                        <strong>주소</strong>
+                        <span>충청북도 청주시 서원구 사직1동 사직대로 229</span>
+                    </dd>
+                    <dt>청주시 흥덕구 예방접종센터</dt>
+                    <dd>
+                        <strong>주소</strong>
+                        <span>충청북도 청주시 흥덕구 대농로 88</span>
+                    </dd>
+                    <dt>청주시 청원구 예방접종센터</dt>
+                    <dd>
+                        <strong>주소</strong>
+                        <span>충청북도 청주시 청원구 율량.사천동 사천로18번길 81</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=b31533f3cc94ccccfa6d5299d0c9c051"></script>
+    <script src="/js/47kakaomapAPI.js"></script>
+</body>
+
+</html>

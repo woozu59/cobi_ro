@@ -1,0 +1,431 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* Material Icons */
+@import url('/lib/swiper-5.4.5/package/css/swiper.css');
+/* swiper-5.4.5 */
+
+
+// sasstest
+// $mycolor: red;
+
+/* 카카오 인재영입 css */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    // color: $mycolor;
+    --swiper-theme-color: #f9d700;
+}
+body {
+    min-width: 1080px;
+}
+/* 화면의 가로가 줄어들었을 때 콘테츠 보호를 위해 가로방향 스크롤바 생성을 위해 최상위 객체에 제한을 걸어준다 */
+.inner {
+    width: 940px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 600px;
+    padding: 220px 0 0;
+    background: url("/images/kakao/White-Paper-Pattern.jpg") 50% 50% repeat;
+    color: #fff;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url("/images/kakao/ryan.png") 68.5% bottom no-repeat, rgba(0, 0, 0, 0.45);
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        padding: 0 20px;
+
+        &:hover,
+        &.on {
+            background: #fff;
+            color: #666;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        span.mMenuBt {
+            display: none;
+        }
+        > a {
+            text-decoration: none;
+            color: inherit;
+        }
+        span:first-child {
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+    p {
+        width: 940px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+        font-size: 3rem;
+        font-weight: 300;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    }
+}
+ul.gnb {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+    li {
+        margin: 0 0 0 42px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+        }
+        &:first-child {
+            margin: 0;
+        }
+        > ul {
+            list-style: none;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            transform: translateY(-140px);
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &.bt {
+            display: none;
+        }
+        &:hover > ul {
+            transform: translateY(0%);
+            transition: all 0.5s;
+            background: #fff;
+            color: #666;
+        }
+    }
+    > li:hover li a {
+        color: #666
+    }
+}
+
+header .top:hover ul.gnb li a,
+header .top:hover ul.gnb li a:visited,
+header .top.on ul.gnb li a,
+header .top.on ul.gnb li a:visited {
+    color: #666;
+}
+
+ul.gnb > li:first-child > a::after,
+ul.gnb li a:hover::after,
+ul.gnb li li a:hover::after {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+}
+
+header .top:hover ul.gnb li:first-child a::after,
+header .top:hover ul.gnb li a:hover::after,
+header .top:hover ul.gnb li li a:hover::after,
+ul.gnb li li a:hover::after {
+    background: #999;
+}
+
+
+section {
+    padding: 65px 0 0 0;
+
+    h1 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        margin: 0 0 35px 0;
+    }
+}
+
+// 카카오스러움
+.sec01 {
+    height: 665px;
+    background: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+
+    // 카카오스러움 배경원
+    &::before,
+    &::after,
+    .cir {
+        position: absolute;
+        width: 231px;
+        height: 231px;
+        border-radius: 50%;
+        content: "";
+        background: #f9d700;
+        bottom: -70px;
+        z-index: 2;
+    }
+    &::before {
+        left: 137px;
+    }
+    &::after {
+        right: 137px;
+    }
+    .cir {
+        background: #f9e87d;
+        right: 280px;
+        z-index: 1;
+    }
+
+    // 리스트
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 5;
+
+        li {
+            width: 32%;
+            height: 242px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10px;
+
+            &:nth-child(3n-1) {
+                margin: 0 2% 10px;
+            }
+            > div {
+                width: 100%;
+                height: 60px;
+                color: #ccc;
+                border-bottom: 1px solid #e6e6e6;
+                font-size: 2.4rem;
+            }
+            a:link,
+            a:visited {
+                margin: 15px 0;
+                display: block;
+                color: #333;
+                font-size: 1.6rem;
+                text-decoration: none;
+                letter-spacing: -0.13rem;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+/* 복지제도 */
+.sec02 {
+    position: relative;
+
+    .welfare {
+        padding: 0 0 60px 0;
+        display: flex;
+        border-bottom: 1px solid #e6e6e6;
+        color: #1e1e1e;
+
+        &:nth-of-type(1) {
+            padding: 0 0 60px 0;
+        }
+        &:nth-of-type(3) {
+            border-bottom: none;
+        }
+        h2 {
+            width: 25%;
+            font-size: 2.6rem;
+            font-weight: 300;
+        }
+        dl {
+            width: 75%;
+
+            dt {
+                width: 100%;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            dd {
+                font-size: 1.07rem;
+                font-weight: 300;
+                line-height: 1.8rem;
+                margin: 15px 0 30px;
+
+                &:last-child {
+                    margin: 15px 0 0;
+                }
+            }
+
+        }
+    }
+}
+
+// sec02에 ::after로 배경 깔기
+.sec02::after {
+    width: 100%;
+    min-height: 672px;
+    background: url(/images/kakao/img_gallery0.jpg) 50% top no-repeat;
+    content: "";
+    display: block;
+}
+
+// sec03에 배경이미지 깔기(div로 분할)
+.sec03 {
+    min-height: 674px;
+    display: flex;
+    justify-content: center;
+
+    > div:first-child {
+        width: 761px;
+        min-height: 100%;
+
+        > div:first-child {
+            min-height: 50%;
+            background: url(/images/kakao/img_gallery1.jpg) right bottom no-repeat;
+            background-size: 100%;
+        }
+        > div:last-child {
+            min-height: 50%;
+            background: url(/images/kakao/img_gallery2.jpg) right top no-repeat;
+            background-size: 100%;
+        }
+    }
+    > div:last-child {
+        width: 1133px;
+        min-height: 100%;
+        background: url(/images/kakao/img_gallery3.jpg) 0 50% no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+/* 오시는길 */
+.sec04 {
+    height: 696px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
+
+    .inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        h1 {
+            width: 100%;
+        }
+        .roadmap {
+            width: 460px;
+
+            > div {
+                width: 100%;
+                height: 284px;
+                border: 1px solid #e6e6e6;
+
+                > iframe {
+                    width: 100%;
+                    height: 282px;
+                }
+            }
+            dl dt {
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 36px 0 6px 0;
+            }
+            dl dd {
+                font-size: 1.07rem;
+                font-weight: 300;
+                line-height: 1.8rem;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+
+// footer
+footer {
+    height: 90px;
+    padding: 15px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.8rem;
+
+    > div:first-child {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+
+        > span:first-child {
+            font-weight: 600;
+            position: relative;
+            margin: 0 30px 0 0;
+
+            &::after {
+                width: 1px;
+                height: 10px;
+                position: absolute;
+                top: 4px;
+                right: -15px;
+                content: "";
+                background: #e6e6e6;
+            }
+        }
+    }
+    select {
+        border: none;
+    }
+}
+
+
+/* ie10 cross-browsing */
+.lt-ie10 {
+    .swiper-button-next {
+        width: 75px;
+        height: 75px;
+        background: url(/images/svg/navigate_next-yellow-48dp.svg) 50% 50% no-repeat;
+        background-size: cover;
+    }
+    .swiper-button-prev {
+        width: 75px;
+        height: 75px;
+        background: url(/images/svg/navigate_before-yellow-48dp.svg) 50% 50% no-repeat;
+        background-size: cover;
+    }
+    .sec03 {
+        height: 674px;
+    }
+}

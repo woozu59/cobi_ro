@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* 59GSAPscrollStyle */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html, body { height: 100vh; }
+.wrap{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.s01{ background: #025373; height: 100%; }
+.s02{ background: #18778C; }
+.s03{ background: #1F98A6; }
+.s04{ background: #BAD9C8; }
+.s05{ background: #ebf8f1; }

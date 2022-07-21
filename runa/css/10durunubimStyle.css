@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* 두루누비 모바일 CSS */
+body{ min-width: 320px; }
+.inner{ width: calc(100% - 40px); }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+}
+header .inner{ width: 100%; }
+header .inner .logo.color{
+    display: block;
+    width: 80px;
+    margin: 0 0 0 20px;
+}
+header .inner .topL,
+header .inner .topR > a{ display: none; }
+nav{
+    display: none;
+    position: fixed;
+    top: 46px;
+    right: 0;
+    width: 90%;
+    height: auto;
+    background: #fff;
+    box-shadow: -10px 5px 10px -5px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+nav.on{ display: block; }
+nav > a{
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 20px;
+}
+nav > a.mlogin{
+    background: linear-gradient(to right, #2BC63E, #1553A3);
+    justify-content: space-between;
+}
+nav > a.mhome{ background: #666; }
+nav > a.mhome span:last-child{ margin: 0 0 0 5px; }
+nav > .inner{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #f7f7f7;
+}
+nav > .inner .logo.wh,
+nav > .inner .logo.color{ display: none; }
+nav > .inner ul.gnb{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0; 
+    border-right: 1px solid rgba(0,0,0,0.3);
+    border-bottom: none;
+    background: #fff;
+}
+nav > .inner ul.gnb > li{
+    width: 100%;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 10px 20px;
+    position: relative;
+}
+nav > .inner ul.gnb > li:first-child{
+    margin: 20px 0 0 0;
+}
+nav > .inner ul.gnb > li:last-child{
+    margin: 0 0 50px 0;
+}
+nav > .inner ul.gnb > li.mgnb.on{
+    background: #f7f7f7;
+    color: #2BC63E;
+}
+nav > .inner ul.gnb > li.mgnb::after{
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 0.9rem;
+    content: "\276F";
+}
+nav .mfooter{
+    width: 100%;
+    height: 60px;
+    background: #333;
+    color: #b5b5b5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    text-align: center;
+}
+nav .mfooter > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .mfooter > div a,
+nav .mfooter > div a:visited{
+    color: #b5b5b5;
+    text-decoration: none;
+    display: block;
+    margin: 5px 10px;
+}
+/* snb */
+nav .snb{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: calc(100% - 150px);
+    height: 328px;
+    overflow: hidden;
+    background: unset;
+    box-shadow: none;
+}
+nav:hover > .inner .logo.wh,
+nav:hover > .inner .logo.color,
+nav .snb > .inner::after{ display: none; }
+
+nav .snb > .inner{
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 20px 0 0 0;
+}
+nav .snb > .inner::after{
+    top: unset;
+    bottom: 30px;
+    width: 150px;
+}
+nav .snb > .inner ul{
+    width: 100%;
+    margin: 0 !important;
+    display: none;
+}
+nav .snb > .inner ul.on{ display: block; }
+nav .snb > .inner ul li{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+
+/* visual */
+section.visual .inner h1{
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    word-break: keep-all;
+}
+section.visual .inner:last-child{
+    overflow-x: auto;
+    margin: 110px auto 0;   
+}
+section.visual .inner > div{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin: 0 40px;
+}
+section.recommand .inner > div{
+    overflow-x: auto;
+    margin: 30px 0 0 0;
+    padding: 0 0 10px 0;
+}
+section.recommand .inner > div > .road{
+    width: 100%;
+    flex-shrink: 0;
+    margin: 0 20px 0 0;
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.3);
+}
+.recommand .inner > div > .road .photo{ height: 210px; }
+section.recommand .inner .btgroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+section.recommand .inner .btgroup button{
+    width: 70%;
+    padding: 12px 30px;
+    margin: 5px 0 0 0;
+    word-break: keep-all;
+}
