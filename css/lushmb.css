@@ -76,13 +76,14 @@ button.bt1 {
     height: 150px;
 }
 .suport > h3{
-    font-size: 22px;
+    font-size: 17px;
     line-height: 150px;
 }
 .suport .bt2{
     font-size: 15px;
     padding: 5px;
     top: 70%;
+    right: 35%;
 }
 .section6 .productstitle {
     width: 90%;
@@ -93,7 +94,7 @@ button.bt1 {
     font-size: 15px;
 }
 .products {
-    width: 90%;
+    overflow:auto;
 }
 .products .cream {
     margin-right: 10px;
@@ -116,7 +117,7 @@ ul.productsinform {
 }
 .contents1, .contents2,
 .contents3{
-    width: 100%;
+    width: 90%;
     height: 200px;
     margin: 0;
 }
@@ -140,7 +141,7 @@ p.informtitle {
     font-size: 12px;
     padding: 5px;
     top: 30px;
-    left: 53%;
+    left: 44%;
 }
 .section7{display: none;}
 footer > .inner {
@@ -164,7 +165,7 @@ dt > span {
     margin: 0 0 0 10px;
 }
 dd.call {
-    font-size: 12px;
+    font-size: 11px;
     flex-direction: row;
 }
 .call > p:first-child {
@@ -183,7 +184,7 @@ dd.call {
     letter-spacing: 0px;
 }
 ul.agreement {
-    font-size: 11px;
+    font-size: 10px;
     margin: 20px 0;
 }
 .agreement > li {

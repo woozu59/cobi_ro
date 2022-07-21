@@ -1,0 +1,6 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box; outline: 1px solid #333;}
+
+.iphone{width: 370px; position:absolute;}
+.dokdo{width: 320px; position: absolute;}
+.all{position: relative; width: 80%; margin: 0 auto;}

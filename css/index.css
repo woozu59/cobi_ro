@@ -130,5 +130,12 @@ a:hover figure img{transform: scale(1.1);}
 #con2 li:nth-child(5) figcaption{padding-top: 15%;}
 
 
+/*sec3*/
+.sec3{width: 90%; background: #ffffff; box-shadow: -2px 2px 9px rgb(0 0 0 / 10%); margin: 0 auto;}
+.mobile {display: flex; width: 90%; justify-content: space-around; margin: 0 auto;}
+.iphone {display: block; margin-top: 10%;}
+.lushmobile{height: 1900px;}
+
+
 footer{width: 95%; background: #333; margin: -3% auto; height: 115px; box-shadow: -4px 5px 10px rgb(0 0 0 / 20%); }
 footer p{color: #9d9d9d; text-align: center; padding-top: 70px; font-size: 16px; font-weight: 600; letter-spacing: 1px;}
