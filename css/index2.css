@@ -4,12 +4,245 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+    outline: 1px solid blue;
 }
-ul.li{list-style:none;}
+@keyframes bounce{
+    0%{left: 50%; top: 80%;}
+    100%{left: 50%; top: 83%;}
+}
+ul, li{list-style:none;}
 body{min-width:1080px;}
 a{
     text-decoration: none;
     color: #000000;
+}
+/*header part*/
+header {
+    height: 150px;
+    display: flex;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+nav {
+    width: 100%;
+}
+ul.nav {
+    display: flex;
+    justify-content: right;
+    margin: 50px 50px 0 0;
+}
+.nav li {
+    margin: 0 0 0 50px;
+}
+.nav li > a {
+    font-size: 2em;
+    font-weight: bold;
+    height: 100%;
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+    text-shadow: 2px 3px rgb(255 255 255 / 20%);
+}
+
+
+/*slide s01 part*/
+.videobox {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: relative;
+    overflow:hidden;
+}
+video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+}
+.videobox h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+div#scroll {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    display: block;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.videobox > p {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.2em;
+    top: 92%;
+    left: 48%;
+}
+div#scroll > i{
+    display: block;
+    font-size: 3.3em;
+}
+
+/*slide s02 part*/
+.about {
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+}
+/*height 100vh 나중에 100%로 바꾸기
+슬라이드 css추가 할 시 트러질 수도 있음*/
+
+/*secation left part*/
+.left{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 8%;
+}
+.left img{
+    width: 200px;
+    margin: 0 auto;
+}
+.profile {
+    text-align: center;
+    margin: 7% 0;
+}
+.profile p {
+    font-weight: bold;
+    font-size: 25px;
+}
+.hashtag {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.hashtag p {
+    font-weight: bold;
+    color: #A5D9FF;
+}
+
+/*left-bt css*/
+.btn {
+    margin: 40px auto;
+}
+
+.btn-flip-down {
+--flip-button-height: 40px;
+height: var(--flip-button-height);
+color: transparent;
+border: none;
+border-radius: 0;
+perspective: 500px;
+transition: 0.3s;
+width: 40%;
+height: 40px;
+}
+.btn-flip-down:hover {
+color: transparent;
+background: transparent;
+}
+.btn-flip-down .front,
+.btn-flip-down .back {
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 40px;
+}
+.btn-flip-down .front {
+background: #A5D9FF;
+color: white;
+transition: 0.3s;
+transform-origin: center center calc(var(--flip-button-height) / -2);
+}
+.btn-flip-down .back {
+color: white;
+background: #A5D9FF;
+transform: rotateX(88deg);
+transform-origin: center center calc(var(--flip-button-height) / -2);
+transition: 0.3s;
+}
+.btn-flip-down:hover .front {
+transform: rotateX(-90deg);
+}
+.btn-flip-down:hover .back {
+transform: rotateX(0deg);
+}
+
+
+/*section right part*/  
+.right{
+    width: 70%;
+    margin: 8% 0 0 0;
+}
+.title {
+    text-align: center;
+    font-size: 1.2em;
+    width: 80%;
+}
+h1.name {
+    padding: 0 0 0 15%;
+}
+.contact {
+    margin-top: 8%;
+}
+.contact, .edu, .licen, .skill{
+    display:flex;
+    margin-bottom:50px;
+}
+.contact h2, .edu h2, 
+.licen h2, .skill h2{
+    color:#A5D9FF;
+    width: 200px;
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+}
+.contact_a, .edu_a,
+.licen_a, .skill_a{
+    font-size: 20px;
+    margin: 1% 0 0 0;
+}
+.skill_a {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+
+/*slide s03 part*/
+
+.result .mobile, .coming .mobile {
+    width: 160px;
+}
+.result .pc, .coming .pc {
+    width: 427px;
 }
 /* .vertical-slider.slick-dotted{
     margin-bottom:0;
@@ -39,13 +272,13 @@ a{
 }
 .vertical-slider .slide{height: 100vh;}
 
-.slide{display: block;}
+.slide{display: block;} */
 
 .vertical-slide.s01{background-color: #ffffff;}
-.vertical-slide.s02{background-color: #A5D9FF;}
-.vertical-slide.s03{background-color: #ffffff;}
+.vertical-slide.s02{background-color: #ffffff;}
+.vertical-slide.s03{background-color: #A5D9FF;}
 
-.slide-content{
+/* .slide-content{
     display:block;
     position: relative;
 }
@@ -61,3 +294,16 @@ a{
 
 .slick-dots li button::before{color: #808080;}
 .slick-dots li.slick-active button::before{color: #808080;} */
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: #fff8f8;
+}
+.foot {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
