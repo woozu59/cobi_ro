@@ -36,11 +36,14 @@ header {
 }
 nav {
     width: 100%;
+    height: 100%;
 }
 ul.nav {
     display: flex;
     justify-content: right;
     margin: 50px 50px 0 0;
+    height: 50px;
+    line-height: 50px;
 }
 .nav li {
     margin: 0 0 0 50px;
@@ -53,8 +56,32 @@ ul.nav {
     color: #ffffff;
     cursor: pointer;
     text-shadow: 2px 3px rgb(255 255 255 / 20%);
+    position: relative;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #c0c0c0;
 }
 
+.nav li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #c0c0c0;
+  height: 1px;
+}
+.nav li a:hover:after {
+  width: 100%;
+}
 
 /*slide s01 part*/
 .videobox {
@@ -109,6 +136,7 @@ div#scroll > i{
     width: 90%;
     height: 100vh;
     margin: 0 auto;
+    padding-top: 150px;
 }
 /*height 100vh 나중에 100%로 바꾸기
 슬라이드 css추가 할 시 트러질 수도 있음*/
@@ -118,7 +146,6 @@ div#scroll > i{
     display:flex;
     flex-direction: column;
     width: 30%;
-    margin-top: 8%;
 }
 .left img{
     width: 200px;
@@ -199,7 +226,6 @@ transform: rotateX(0deg);
 /*section right part*/  
 .right{
     width: 70%;
-    margin: 8% 0 0 0;
 }
 .title {
     text-align: center;
@@ -210,11 +236,11 @@ h1.name {
     padding: 0 0 0 15%;
 }
 .contact {
-    margin-top: 8%;
+    margin-top: 5%;
 }
 .contact, .edu, .licen, .skill{
     display:flex;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 .contact h2, .edu h2, 
 .licen h2, .skill h2{
@@ -237,12 +263,66 @@ h1.name {
 
 
 /*slide s03 part*/
+.publishing {
+    padding-top: 150px;
+    width: 90%;
+    margin: 0 auto;
+}
+.publish {
+    display: flex;
+    height: 100%;
+}
+.result{
+    width: 45%;
+    height: 100%;
+    margin-top: 8%;
+}
+.click{
+    display:block;
+    width: 100px;
+    height: 30px;
+    background: #A5D9FF;
+    color:#ffffff;
+    position: relative;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.result:hover .click{opacity: 1;}
+.result:hover{background: rgba(0,0,0,0.5);}
 
 .result .mobile, .coming .mobile {
     width: 160px;
+    position: relative;
+    top: 25%;
+    left: 17%;
+    z-index: 11;
 }
 .result .pc, .coming .pc {
     width: 427px;
+    position: relative;
+    z-index: 10;
+    top: 25%;
+    left: -5%;
+}
+.inform{
+    width: 55%;
+    border: 1px solid #fffafa;
+    height: 400px;
+    background: #fffafa;
+    border-radius: 15%;
+    padding: 4% 0 0 0;
+    margin: 5% auto;
+}
+.inform h2{text-align:center;}
+.inform_hash {
+    display: flex;
+    width: 80%;
+    font-weight: 600;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #393939;
 }
 /* .vertical-slider.slick-dotted{
     margin-bottom:0;
