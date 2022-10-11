@@ -35,7 +35,7 @@ header {
     height: 100%;
 }
 nav {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 ul.nav {
@@ -48,7 +48,8 @@ ul.nav {
 .nav li {
     margin: 0 0 0 50px;
 }
-.nav li > a {
+.nav li > a,
+.nav li.on > a {
     font-size: 2em;
     font-weight: bold;
     height: 100%;
@@ -58,16 +59,26 @@ ul.nav {
     text-shadow: 2px 3px rgb(255 255 255 / 20%);
     position: relative;
 }
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-nav ul li a:hover {
-  color: #c0c0c0;
+/*nav class "on" 추가 css*/
+.nav li.on > a{
+    color: #A5D9FF;
 }
 
-.nav li a:after{
+.nav li a,
+.nav li a:after,
+.nav li a:before
+.nav li.on a,
+.nav li.on a:after,
+.nav li.on a:before {
+  transition: all .5s;
+}
+.nav li a:hover,
+.nav li.on a:hover {color: #c0c0c0;}
+
+
+
+.nav li a:after,
+.nav li.on a:after{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -79,7 +90,8 @@ nav ul li a:hover {
   background: #c0c0c0;
   height: 1px;
 }
-.nav li a:hover:after {
+.nav li a:hover:after,
+.nav li.on a:hover:after {
   width: 100%;
 }
 
@@ -93,12 +105,11 @@ nav ul li a:hover {
     overflow:hidden;
 }
 video{
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    overflow:hidden;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
+/*모바일 버전 재설정하기*/
 .videobox h1 {
     position: absolute;
     top: 50%;
@@ -136,7 +147,7 @@ div#scroll > i{
     width: 90%;
     height: 100vh;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 9%;
 }
 /*height 100vh 나중에 100%로 바꾸기
 슬라이드 css추가 할 시 트러질 수도 있음*/
@@ -146,7 +157,6 @@ div#scroll > i{
     display:flex;
     flex-direction: column;
     width: 30%;
-    animation: fadeIn 0.5s ease-in-out;
 }
 .left img{
     width: 200px;
@@ -268,24 +278,35 @@ h1.name {
 .publish {
     display: flex;
     height: 100vh;
-    padding-top: 150px;
+    padding-top: 9%;
     width: 90%;
     margin: 0 auto;
 }
-.result{
-    width: 45%;
+.publish .left{
+    width: 40%;
     height: 100%;
+    display:block;
+}
+.publish .right{
+    width: 60%;
+    height: 100%;
+    margin-left: 0;
+}
+.result{
+    height: 100%;
+    
 }
 .wrap {
-    width: 500px;
-    margin: 0 auto;
-    height: 300px;
+    width: 90%;
+    margin: 0px auto;
+    height: 55%;
     position: relative;
-    top: -30%;
-    left: 5%;
+    top: -74%;
+    left: 0%;
     z-index: 20;
     border-radius: 10px;
 }
+.coming .wrap {top: -24%;}
 .click{
     display:block;
     width: 100px;
@@ -311,25 +332,33 @@ h1.name {
 .result .mobile, .coming .mobile {
     width: 160px;
     position: relative;
-    top: 25%;
-    left: 17%;
+    top: 35%;
+    left: 10%;
     z-index: 11;
 }
 .result .pc, .coming .pc {
     width: 427px;
     position: relative;
     z-index: 10;
-    top: 25%;
-    left: -5%;
+    top: -20%;
+    left: 15%;
+}
+.coming .mobile {
+    left: 13%;
+    top: 30%;
+}
+.coming .pc {
+    left: -10%;
+    top: 30%;
 }
 .inform{
-    width: 55%;
+    width: 80%;
     border: 1px solid #fffafa;
-    height: 400px;
+    height: 75%;
     background: #fffafa;
     border-radius: 15%;
     padding: 4% 0 0 0;
-    margin: 5% auto;
+    margin: 8% auto;
     box-shadow: 2px 2px 10px -2px grey;
 }
 .lush .inform{background: #A5D9FF;}
@@ -338,15 +367,15 @@ h1.name {
     display: flex;
     width: 80%;
     font-weight: 600;
-    margin: 0 auto;
+    margin: 25px auto 0;
     justify-content: space-around;
     font-size: 1.2em;
-    margin-top: 15px;
     color: #393939;
 }
+
 .inform .existing, .inform .renewal{
     width: 80%;
-    margin: 20px auto 0;
+    margin: 30px auto 0;
 }
 .inform .inform_title{
     font-size: 18px;
@@ -366,7 +395,7 @@ h1.name {
 .vertical-slide.s05{background-color: #A5D9FF;}
 
 .vertical-slider.slick-dotted{
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 .vertical-slider{
     height:100vh;
@@ -374,6 +403,7 @@ h1.name {
     position:relative;
     width:100%;
 }
+.vertical-slider .slick-track{height: 100vh;}
 .vertical-slider > .slick-dots{
     bottom: auto;
     left: .5em;
@@ -391,7 +421,10 @@ h1.name {
 .vertical-slider > .slick-dots li button{
     padding: .125em;
 }
-.vertical-slider .slide{height: 100vh;}
+.vertical-slider .slide{
+    height: 100vh;
+    margin-bottom: 10px;
+}
 
 .slide{display: block;}
 
@@ -399,7 +432,7 @@ h1.name {
     display:block;
     position: relative;
 }
-
+/*slick-dots*/
 .slick-dots{
     position: absolute;
     bottom: 0;
@@ -415,8 +448,14 @@ h1.name {
 
 footer {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     background: #fff8f8;
+    display: none;
+    transition: transform 0.7s 0.3s ease;
+}
+footer.hideBar{
+    transform : translate(0, 100%);
+    display: block;
 }
 .foot {
     width: 100%;
@@ -424,4 +463,4 @@ footer {
     text-align: center;
     padding: 30px 0 0 0;
 }
-.foot p{margin-top: 10px;}
+/* .foot p{margin-top: 10px;} */
