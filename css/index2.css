@@ -4,7 +4,7 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 @keyframes bounce{
     0%{left: 50%; top: 80%;}
@@ -45,11 +45,11 @@ ul.nav {
     height: 50px;
     line-height: 50px;
 }
+
 .nav li {
     margin: 0 0 0 50px;
 }
-.nav li > a,
-.nav li.on > a {
+.nav li > a{
     font-size: 2em;
     font-weight: bold;
     height: 100%;
@@ -61,15 +61,12 @@ ul.nav {
 }
 /*nav class "on" 추가 css*/
 .nav li.on > a{
-    color: #A5D9FF;
+    color: #222222;
 }
 
 .nav li a,
 .nav li a:after,
-.nav li a:before
-.nav li.on a,
-.nav li.on a:after,
-.nav li.on a:before {
+.nav li a:before{
   transition: all .5s;
 }
 .nav li a:hover,
@@ -77,8 +74,7 @@ ul.nav {
 
 
 
-.nav li a:after,
-.nav li.on a:after{
+.nav li a:after{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -90,8 +86,7 @@ ul.nav {
   background: #c0c0c0;
   height: 1px;
 }
-.nav li a:hover:after,
-.nav li.on a:hover:after {
+.nav li a:hover:after{
   width: 100%;
 }
 
@@ -448,9 +443,8 @@ h1.name {
 
 footer {
     width: 100%;
-    /* height: 100px; */
+    height: 100px;
     background: #fff8f8;
-    display: none;
     transition: transform 0.7s 0.3s ease;
 }
 footer.hideBar{

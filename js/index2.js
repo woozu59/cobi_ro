@@ -11,14 +11,8 @@
 // });
 
 
-$(document).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if (scroll > 1285.6){
-        $("footer").addClass("hideBar");
-    }
-    else if (scroll < 1285){
-        $("footer").removeClass("hideBar");
-    }
+$(document).ready(function(){
+    
     
 
     $('.vertical-slider').slick({
@@ -47,8 +41,33 @@ $(document).scroll(function(){
         }
     });
 
-  
+
+
+
     
+  var scroll = $(window).scrollTop();
+
+
+
+//   console.log(scroll.length);
+
+
+
+
+
+
+  if (scroll > 721.6){
+      $("footer").addClass(".hideBar");
+  }
+
+
+
+  else if (scroll < 721.5){
+      $("footer").removeClass(".hideBar");
+  }
 
    
 });
+
+
+  
