@@ -4,12 +4,36 @@
 <head>
     <meta charset="utf-8">
     <title>연습용 html</title>
-    <link rel="stylesheet" type="css/text" href="../css/연습용.css">
+    <script>
+     window.onload = function(){
+        var frm = document.frm;
+        var date = new Date();
+        var year = date.getFullYear();
+        for(i = 1970; i <= year; i++) {
+            frm.y.add(new Option(i,i));
+        }
+        for(i = 1; i <= 12; i++) {
+            frm.m.add(new Option(i,i));
+        }
+        frm.sub.length = 3;
+     }
+    </script>
 </head>
 <body>
-    <div class="all">
-        <img src="../img/index/pngegg.png" class="iphone" alt="모바일">
-        <img src="../img/index/dokdo_mobile2.png" class="dokdo" alt="독도 스크롤">
-    </div>
+    <form action="#" name="frm">
+        <select name="y">
+            <option value="#">년도 선택</option>
+        </select>
+        <select name="m">
+            <option value="#">월 선택</option>
+        </select>
+        <select name="sub">
+            <option value="#">과목선택</option>
+            <option value="#">html</option>
+            <option value="#">css</option>
+            <option value="#">javascript</option>
+
+        </select>
+    </form>
 </body>
 </html>

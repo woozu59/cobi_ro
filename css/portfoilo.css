@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/*Noto Sans KR 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/*Noto Serif 폰트*/
+@import url('../css/slick.css');
 *{
     margin:0px;
     padding: 0px;
@@ -11,7 +15,12 @@
     100%{left: 50%; top: 83%;}
 }
 ul, li{list-style:none;}
-body{min-width:1080px;}
+body{
+    min-width:1080px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
 a{
     text-decoration: none;
     color: #000000;
@@ -28,7 +37,7 @@ header {
 .logo {
     width: 100px;
     height: 100px;
-    margin: 25px;
+    margin: 30px 25px 25px 4%;
 }
 .logo img {
     width: 100%;
@@ -41,7 +50,7 @@ nav {
 ul.nav {
     display: flex;
     justify-content: right;
-    margin: 50px 50px 0 0;
+    margin: 5% 7% 0 0;
     height: 50px;
     line-height: 50px;
 }
@@ -54,7 +63,7 @@ ul.nav {
     font-weight: bold;
     height: 100%;
     display: block;
-    color: #ffffff;
+    color: #000000;
     cursor: pointer;
     text-shadow: 2px 3px rgb(255 255 255 / 20%);
     position: relative;
@@ -70,7 +79,7 @@ ul.nav {
   transition: all .5s;
 }
 .nav li a:hover,
-.nav li.on a:hover {color: #c0c0c0;}
+.nav li.on a:hover {color: #808080;}
 
 
 
@@ -83,7 +92,7 @@ ul.nav {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #c0c0c0;
+  background: #808080;
   height: 1px;
 }
 .nav li a:hover:after{
@@ -112,6 +121,8 @@ video{
     width: 100%;
     text-align: center;
     z-index: 10;
+    /* font-family: 'Noto Serif', serif; */
+
 }
 div#scroll {
     position: absolute;
@@ -144,8 +155,6 @@ div#scroll > i{
     margin: 0 auto;
     padding-top: 9%;
 }
-/*height 100vh 나중에 100%로 바꾸기
-슬라이드 css추가 할 시 트러질 수도 있음*/
 
 /*secation left part*/
 .left{
@@ -382,74 +391,69 @@ h1.name {
 }
 
 
-
-.vertical-slide.s01{background-color: #ffffff;}
-.vertical-slide.s02{background-color: #ffffff;}
-.vertical-slide.s03{background-color: #A5D9FF;}
-.vertical-slide.s04{background-color: #ffffff;}
-.vertical-slide.s05{background-color: #A5D9FF;}
-
-.vertical-slider.slick-dotted{
-    margin-bottom: 0;
+/*swiper theme*/
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --swiper-theme-color: #179eff;
 }
-.vertical-slider{
-    height:100vh;
-    overflow:hidden;
-    position:relative;
-    width:100%;
+.swiper-pagination-bullet {
+    background: #f1f1f1;
+    opacity: .5;
 }
-.vertical-slider .slick-track{height: 100vh;}
-.vertical-slider > .slick-dots{
-    bottom: auto;
-    left: .5em;
-    padding: 0;
-    right: auto;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: auto;        
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--swiper-pagination-color, var(--swiper-theme-color)) !important;
 }
-.vertical-slider > .slick-dots li{
-    display: block;
-    margin: 0 .125em;
-}
-.vertical-slider > .slick-dots li button{
-    padding: .125em;
-}
-.vertical-slider .slide{
+main.scroll_v {
     height: 100vh;
-    margin-bottom: 10px;
+}
+main.scroll_v .sec01 {
+    background: #ffffff;
+    /* display: flex; */
+
+}
+main.scroll_v .sec02 {
+    background: #ffffff;
+    height: 100vh;
+}
+main.scroll_v .sec03 {
+    background: #A5D9FF;
+}
+main.scroll_v .sec04 {
+    background: #ffffff;
+}
+main.scroll_v .sec05 {
+    background: #A5D9FF;
+}
+main.scroll_v .swiper-pagination-bullets,
+main.scroll_v .swiper-pagination-vertical.swiper-pagination-bullets,
+main.scroll_v .swiper-vertical > .swiper-pagination-bullets{
+    right: 18px;
+}
+main.scroll_v .swiper-button-prev {
+    right: 10px;
+    left: unset;
+    transform: rotate(90deg);
+    margin: -100px 0 0 0;
+}
+main.scroll_v .swiper-button-next {
+    transform: rotate(90deg);
+    margin: 50px 0 0 0;
 }
 
-.slide{display: block;}
 
-.slide-content{
-    display:block;
-    position: relative;
-}
-/*slick-dots*/
-.slick-dots{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: auto;
-}
-
-.slick-dots li button::before{color: #808080;}
-.slick-dots li.slick-active button::before{color: #808080;}
-
+/*footer*/
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 0;
+    overflow: hidden;
     background: #fff8f8;
-    transition: transform 0.7s 0.3s ease;
+    transition: height 0.1s;
 }
-footer.hideBar{
-    transform : translate(0, 100%);
-    display: block;
+footer.on{
+   height: 100px;
+   transition: height 0.1s;
 }
 .foot {
     width: 100%;
@@ -457,4 +461,3 @@ footer.hideBar{
     text-align: center;
     padding: 30px 0 0 0;
 }
-/* .foot p{margin-top: 10px;} */
