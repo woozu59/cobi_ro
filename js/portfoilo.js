@@ -23,20 +23,15 @@ var swiper1 = new Swiper('.scroll_v', {
     eventsTarget: 'scroll_v',
     on: {
         slideChangeTransitionStart: function() {
-            $('.title').hide();
-        },
-        slideChangeTransitionEnd: function() {
-            $('.title').delay(100).slideDown(1000);
-            // setTimeout(function() {
-            //     $('.title').slideDown(1000);
-            // }, 1000);
-            // AOS.init(); // AOS 강제실행 안됨
-        },
-        slideChangeTransitionStart: function() {
             $('.publish .inform').hide();
         },
         slideChangeTransitionEnd: function() {
             $('.publish .inform').delay(100).slideDown(1000);
+        },
+        slideChange: function() {
+            $('.title').hide();
+
+            $('.title').delay(100).slideDown(1000);
         },
         reachEnd: function() {
             swiper1.mousewheel.disable();
