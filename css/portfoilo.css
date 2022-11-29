@@ -8,7 +8,7 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 @keyframes bounce{
     0%{left: 50%; top: 80%;}
