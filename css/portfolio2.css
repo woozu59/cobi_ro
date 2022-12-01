@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: 1px solid skyblue;
+
+}
+ul,li{list-style: none;}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+body{min-width:1080px;}
+/* body::-webkit-scrollbar {display: none;} */
+
+header{
+    width: 1024px;
+    height: 70px;
+    position: fixed;
+    top: 4%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    background: #F9FDFE;
+    border-radius: 1.8rem;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 5px 25px;
+}
+.logo > a{
+    width: 60px;
+    height: 60px;
+}
+.logo > a > img {
+    width: 100%;
+    height: 100%;
+}
+ul.nav_menu {
+    display: flex;
+    height: 100%;
+}
+ul.nav_menu > li {
+    margin-right: 30px;
+}
+.nav_menu > li > a {
+    display: block;
+    height: 100%;
+    font-size: 1.2rem;
+    line-height: 60px;
+    font-weight: 600;
+    color: #272727;
+}
+.nav_toggle{display: none;}
+
+#page_1st {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #CCEAFF, #FFFFFF);
+}
+
+.home{
+    background-image: url(../img/index2/cloude_ver2.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;  
+    width: 100%;
+    height: 100%;
+}
+
+.cloud > img {
+    width: 600px;
+    height: 400px;
+}
+
+.memoji {
+    display: flex;
+    position: relative;
+    top: -45%;
+    left: 60%;
+}
+.memoji img.memoji_hi {
+    width: 200px;
+    height: 220px;
+}
+.memoji img.woozu_hi {
+    width: 240px;
+    height: 240px;
+}
+#page_2st {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#page_3rd {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+#page_4th {
+    width: 100vw;
+    height: 100vh;
+}
+
+footer{
+    width: 100vw;
+    height: 500px;
+}
