@@ -3,18 +3,47 @@
 /* Roboto 폰트*/
 @keyframes move {
     0% {background-position: center bottom;}
-    100% {background-position: 1440px bottom;}
+    100% {background-position: 250% bottom;}
+}
+@keyframes reversemove {
+    0% {background-position: center bottom;}
+    100%{background-position: -250% bottom;}
 }
 @keyframes scroll {
     0% { opacity: 0; }
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
 }
+@keyframes bounce {
+    0%{ transform: translateY(0px);}
+    50%{ transform: translateY(20px);}
+    100%{ transform: translateY(0px);}
+}
+@keyframes typing {
+    from {width: 0; }
+    to {width: 100%; }
+}
+/*text_typing cursor effect*/
+@keyframes blink-caret {
+    from, to {border-color: transparent; }
+    50% {border-color: #656565; }
+}
+/* @keyframes shake {
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(45deg);}
+    20%{transform: rotate(-45deg);}
+    30%{transform: rotate(30deg);}
+    40%{transform: rotate(-30deg);}
+    50%{transform: rotate(10deg);}
+    60%{transform: rotate(-10deg);}
+    70%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+} */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid skyblue;
+    /* outline: 1px solid skyblue; */
 
 }
 ul,li{list-style: none;}
@@ -30,22 +59,40 @@ body{
 /* body::-webkit-scrollbar {display: none;} */
 
 header{
-    width: 80%;
+    width: 90%;
     height: 70px;
     position: fixed;
-    top: 3%;
-    left: 10%;
-    display: flex;
-    justify-content: space-between;
-    background: #F9FDFE;
+    top: 2%;
+    left: 5%;
+    background: rgba(249, 253, 254, 0.5);
+    backdrop-filter: blur(5px);
     border-radius: 1.8rem;
     z-index: 100;
+    transition: all 0.5s;
 }
+
+header.on{
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    background: rgba(139, 185, 219, 0.2);
+    height: 75px;
+}
+header .inner{    
+    width: 90%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
 .logo {
     width: 60px;
     height: 60px;
     margin: 5px 25px;
 }
+
 .logo > a{
     width: 60px;
     height: 60px;
@@ -54,22 +101,23 @@ header{
     width: 100%;
     height: 100%;
 }
-ul.nav_menu {
+ul.gnb {
     display: flex;
     height: 100%;
 }
-ul.nav_menu > li {
+ul.gnb > li {
     margin-right: 30px;
 }
-.nav_menu > li > a {
+.gnb > li > a {
     display: block;
     height: 100%;
     font-size: 1.2rem;
-    line-height: 60px;
+    line-height: 70px;
     font-weight: 600;
     color: #272727;
 }
-.nav_toggle{display: none;}
+.gnb_toggle{display: none;}
+
 
 main{
     height: auto;
@@ -83,22 +131,58 @@ main{
 }
 
 .home{
-    background: url(../img/index2/cloude_ver2.png) center bottom / 1440px repeat-x;
+    background: url(../img/index2/cloude_ver2.png) center bottom / auto repeat-x;
     width: 100%;
     height: 100%;
-    animation: move 20s linear infinite;
+    animation: move 100s linear infinite;
 }
 
 
 .cloud > img {
-    width: 500px;
-    height: 350px;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 10%;
+}
+/*text-typing*/
+
+.text_wrap{
+    width: 1200px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text_wrap h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2rem;
+}
+.text_wrap .text_typing:first-child h2.text {
+    border-right: .15rem solid #656565;
+    animation:
+        typing 2.5s steps(22, end),
+        blink-caret .5s step-end 5;
+    animation-fill-mode: forwards;
+}
+.text_wrap .text_typing:last-child h2.text {
+    border-right: .15rem solid #656565;
+    animation:
+        typing 3s steps(25, end),
+        blink-caret .5s step-end infinite;
+    animation-fill-mode: both;
+    animation-delay: 2.7s;
 }
 
+/*page_1st memoji*/
 .memoji {
     display: flex;
     position: relative;
-    top: -30%;
+    top: -55%;
     left: 60%;
     z-index: 1;
     width: 450px;
@@ -106,6 +190,7 @@ main{
 .memoji img.memoji_hi {
     width: 200px;
     height: 220px;
+    animation: bounce 1s linear infinite;
 }
 .memoji img.woozu_hi {
     width: 240px;
@@ -114,7 +199,7 @@ main{
 
 .scroll_down {
     position: relative;
-    top: -20px;
+    top: -25%;
     left: 0;
     margin: auto;
     width :37px;
@@ -124,7 +209,7 @@ main{
     width: 2px;
     padding: 10px 15px;
     height: 35px;
-    border: 2px solid #6c6c6c;
+    border: 2px solid #656565;
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
@@ -133,7 +218,7 @@ main{
     width: 3px;
     height: 10px;
     border-radius: 25%;
-    background-color: #6c6c6c;
+    background-color: #656565;
     animation: scroll 2.2s cubic-bezier(.15,.41,.69,.94) infinite;
 }
 
@@ -155,6 +240,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 35%;
+    margin: 20px 0 0 0;
 }
 .line_box{
     width: 100%;
@@ -265,6 +351,7 @@ font-weight: 600;
 
 .about .about_right{
     width: 65%;
+    margin: 50px 0 0 20px;
 
 }
 .title {
@@ -313,7 +400,6 @@ h1.tt_empty {
 #page_3rd {
     width: 100%;
     height: 100vh;
-    outline: 1px solid red;
 }
 
 .publishing {
@@ -357,7 +443,6 @@ p.pb_text {
 }
 .result {
     width: 40%;
-    outline: 1px solid violet;
 }
 img.mobile {
     width: 200px;
@@ -376,7 +461,6 @@ img.pc {
 .inform {
     width: 60%;
     margin-left: 2%;
-    outline: 1px solid black;
 }
 .inform h1 {
     text-align: center;
@@ -444,7 +528,7 @@ ul.inform_hashtag {
 #page_4th p.pb_under{
     color: #D1EBFF;
     position: relative;
-    top: 70%;
+    top: 72%;
     left: 0%;
     text-align: right;
 }    
@@ -456,41 +540,37 @@ ul.inform_hashtag {
 footer{
     width: 100%;
     height: 700px;
-    /* position: relative;
-    transform: translateY(-100%); */
     background: linear-gradient(180deg, #CDEAFF, #A6D9FF);
 }
-.ft_cloud{
+
+.footer_cloud{
+    background: url(../img/index2/cloude_ver2.png) center bottom / auto repeat-x;
     width: 100%;
     height: 100%;
+    animation: reversemove 100s linear infinite;
 }
 
-.ft_cloud img.ft_cloud1{
+footer img.ft_cloud1{
     width: 500px;
     position: relative;
     top: -40%;
     left: 60%;
 
 }
-.ft_cloud img.ft_cloud2{
-    width: 100%;
-    position: relative;
-    top: -64%;
-    display: block;
-    z-index: 1;
 
-}
 footer .memoji {
-    display: flex;
-    position: relative;
     top: 15%;
     left: 10%;
-    z-index: 1;
 }
 
 .memoji img.memoji_bye {
     width: 200px;
     height: 220px;
+    transform-origin: 0% 50%;
+      animation-name: shake;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 0.5s;
 }
 .memoji img.woozu_bye {
     width: 240px;

@@ -6,39 +6,50 @@
     <title>Woozu's Portfolio</title>
     <link rel="shortcut icon" type="image/favicon" href="/icon/favicon_1.ico">
     <script src="https://kit.fontawesome.com/fb88773035.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <link rel="stylesheet" type="text/css" href="../css/portfolio2.css">
 
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="#"><img src="../img/index2/WMJ_logo.png" alt="wmj logo"></a>
-        </div>
-        <nav>
-            <ul class="nav_menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PUBLISHING</a></li>
-                <li><a href="#">CLONECODING</a></li>
-            </ul>
-            <!--모바일 버전 메뉴-->
-            <a href="#" class="nav_toggle">
-                <i class="'fas fa-bars"></i>
-            </a>
-        </nav>
+        <div class="inner">
+            <div class="logo">
+                <a href="#"><img src="../img/index2/WMJ_logo.png" alt="wmj logo"></a>
+            </div>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#page_1st">Home</a></li>
+                    <li><a href="#page_2nd">About me</a></li>
+                    <li><a href="#page_3rd">My work</a></li>
+                </ul>
+                <!--모바일 버전 메뉴-->
+                <a href="#" class="gnb_toggle">
+                    <i class="'fas fa-bars"></i>
+                </a>
+            </nav>
+        </div>    
     </header>
     <main>
         <section id="page_1st">
+            <h2 hidden id="a11y-markup-headline">Home</h2>
             <div class= "home">
                 <div class="cloud">
                     <!--배경으로 움직이는 구름 모양 넣기-->
                     <img src="../img/index2/cloud.png" alt="구름">
                 </div>
                 <!--타이핑 타이틀-->
-                <div class="typing_text">
-                    <span class="text">WELCOME TO <BR> WOOZU'S PORTFOILO</span>
-                    <!--글씨 나중에 지우고 타이핑효과 넣기-->
-                    <span>|</span>
+                <div class="text_wrap bar">
+                    <div class="text_typing">
+                        <h2 class="text">
+                          WELCOME TO
+                        </h2>
+                    </div>
+                    <div class="text_typing">
+                        <h2 class="text">
+                            WOOZU'S PORTFOILO
+                        </h2>
+                    </div>
                 </div>
                 <!--말풍선 미모티콘-->
                 <div class="memoji">
@@ -54,6 +65,7 @@
             </div>    
         </section>
         <section id="page_2nd">
+            <h2 hidden id="a11y-markup-headline">About me</h2>
             <div class="about">
                 <div class="about_left">
                     <div class="line_box">
@@ -85,12 +97,12 @@
                     <div class="title">
                         <!--두줄로 설정된 타이틀 / 중간중간 글씨 안 텅빈 스타일로 설정-->
                         <div class="title_1">
-                            <h1>배움에</h1>
-                            <h1 class="tt_empty">욕심있는</h1>
+                            <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">배움에</h1>
+                            <h1 class="tt_empty" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">욕심있는</h1>
                         </div>
                         <div class="title_2">
-                            <h1 class="tt_empty">신입 웹 퍼블리셔</h1>
-                            <h1>우민주 입니다.</h1>
+                            <h1 class="tt_empty" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">신입 웹 퍼블리셔</h1>
+                            <h1  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">우민주 입니다.</h1>
                         </div>
                     </div>
                     <div class="contact">
@@ -129,6 +141,7 @@
             </div>
         </section>
         <section id="page_3rd">
+            <h2 hidden id="a11y-markup-headline">My work</h2>
             <div class="publishing">
                 <!--영역 뒤에 고정되어 있는 글씨들 -->
                 <p class="pb_text">Publishing</p>
@@ -184,6 +197,7 @@
             </div>
         </section>
         <section id="page_4th">
+            <h2 hidden id="a11y-markup-headline">publishing</h2>
             <div class="publishing">
                 <!--영역 뒤에 고정되어 있는 글씨들 -->
                 <!-- <p class="pb_text">Publishing</p> -->
@@ -236,21 +250,22 @@
         </section>
     </main>
     <footer>
-        <div class="foot_text">
-            <h3>Thank you for watching my portfolio</h3>
-            <p class="copyright">copyrightⓒ 2022. woominju All rights reserved</p>
-        </div>
-        <div class="memoji">
-            <img src="../img/index2/woozu's bye.png" class="woozu_bye" alt="우민주 미모티콘">
-            <img src="../img/index2/bye.png" class="memoji_bye" alt="bye 말풍선">
-        </div>
-        <div class="ft_cloud">
+        <div class="footer_cloud">
+            <div class="foot_text">
+                <h3>Thank you for watching my portfolio</h3>
+                <p class="copyright">copyrightⓒ 2022. woominju All rights reserved</p>
+            </div>
+            <div class="memoji">
+                <img src="../img/index2/woozu's bye.png" class="woozu_bye" alt="우민주 미모티콘">
+                <img src="../img/index2/bye.png" class="memoji_bye" alt="bye 말풍선">
+            </div>
             <img src="../img/index2/cloud.png" class= ft_cloud1 alt="구름 png">
-            <img src="../img/index2/cloude_ver2.png" class= ft_cloud2 alt="구름 png">
-        </div>
+        </div>    
     </footer>
     <script src="../js/jqery3.6.0.min.js"></script>
-    
+    <script> 
+        AOS.init();
+    </script>
     <script src="../js/portfoilo_2.js"></script>
 </body>
 </html>
