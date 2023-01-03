@@ -1,20 +1,40 @@
 $(function (){
-    var lastScroll = 0;
-    $(window).scroll(function(event){
+    //nav animation js
+    $(window).scroll(function( ){  
+
         var scroll = $(this).scrollTop();
+
         if(scroll > 690) {
             $("header").addClass("on");
-        }
-        else{
+
+        } else{
             $("header").removeClass("on");
         }
-        lastScroll = scroll;
+        
+
+        //section 이동 시 리모콘 클래스 추가 
+        $("section").each(function() {
+             
+            if (scroll >= $(this).offset().top) {
+                $("li[data-id=" + $(this).attr('class').split(' ')[0] + "]").addClass('on').siblings().removeClass('on');
+
+            } else if (scroll >= $('.page_3rd').offset().top + 700) {
+                $("li[data-id=page_3rd]").removeClass('on');
+                
+            }
+        });
+    });
+
+    // scroll js
+    $("ul.gnb li").each(function() {
+    
+        var thisOffset = $("." + $(this).data('id')).offset().top;
+    
+        $(this).click(function() {
+            $("html, body").animate({
+                scrollTop : thisOffset
+            },1000);
+            $(this).addClass('on').siblings().removeClass('on');
+        });
     });
 });
-
-
-// $(function () {
-// 	$('.gnb > li > a').click(function (){
-//     	$('html, body').animate({scrollTop: $(this.hash).offset.top}, 700);
-//     });
-// });
