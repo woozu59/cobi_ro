@@ -15,7 +15,7 @@ $(function (){
         //section 이동 시 리모콘 클래스 추가 
         $("section").each(function() {
              
-            if (scroll >= $(this).offset().top) {
+            if (scroll >= $(this).offset().top - 100) {
                 $("li[data-id=" + $(this).attr('class').split(' ')[0] + "]").addClass('on').siblings().removeClass('on');
 
             } else if (scroll >= $('.page_3rd').offset().top + 700) {
