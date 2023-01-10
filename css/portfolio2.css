@@ -277,7 +277,7 @@ img.minju{
     margin: 0 auto;
     z-index: 10;
     position: relative;
-    top: -135%;
+    top: -95%;
     
 
 }
@@ -393,18 +393,15 @@ h1.tt_empty {
     text-align: center;
     color: #8BB9DB;
 }
-.contact_1 p, .edu_1 p, .licen_1 p, .skill_1 p {
-    font-size: 1.2rem;
-}
-.contact_1 p, .edu_1 p, .licen_1 p{
-    margin: 0 0 10px 0;
-}
+.contact_1 p, .edu_1 p, .licen_1 p, .skill_1 p {font-size: 1.2rem;}
+.contact_1 p, .edu_1 p, .licen_1 p{margin: 0 0 10px 0;}
+
 .skill_1 {
     display: flex;
     width: 80%;
     justify-content: space-around;
 }
-
+.about_right button{display: none;}
 
 /*3rd_section*/
 #page_3rd {
@@ -451,9 +448,8 @@ p.pb_text {
     
     
 }
-.result {
-    width: 40%;
-}
+.result {width: 40%;}
+
 img.mobile {
     width: 200px;
     z-index: 2;
@@ -491,12 +487,9 @@ ul.inform_hashtag {
     margin: 30px 0 0 0;
 }
 
-.type h2, .page h2, .tool h2{
-    margin-right: 20px;
-}
-.type_1 p, .page_1 p, .tool_1 p{
-    font-size: 1.2rem;
-}
+.type h2, .page h2, .tool h2{margin-right: 20px;}
+.type_1 p, .page_1 p, .tool_1 p{font-size: 1.2rem;}
+
 .tool_1{
     display: flex;
     width: 100%;
@@ -519,13 +512,13 @@ ul.inform_hashtag {
    background: #ebebeb;
     cursor: pointer;
 }
-.inform .btn:active {
-    transform: scale(1.2);
-}
+.inform .btn:active {transform: scale(1.2);}
+
 .inform .btn_color {
     background: #fafafa;
     color: #8BB9DB;
 }
+.inform .more_bt{display: none;}
 /*page_4th*/
 
 #page_4th {
@@ -543,9 +536,8 @@ ul.inform_hashtag {
     text-align: right;
 }    
 
-#page_4th .bg {
-    background: rgba(0, 0, 0, 0.2);
-}
+#page_4th .bg {background: rgba(0, 0, 0, 0.2);}
+
 /*footer*/
 footer{
     width: 100%;
