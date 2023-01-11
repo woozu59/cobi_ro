@@ -5,10 +5,12 @@
     <meta charet="UTF-8">
     <title>Woozu's Portfolio</title>
     <link rel="shortcut icon" type="image/favicon" href="/icon/favicon_1.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <script src="https://kit.fontawesome.com/fb88773035.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <link rel="stylesheet" type="text/css" href="../css/portfolio2.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width:1200px)" href="../css/portfoiloflex.css">
 
 </head>
 <body>
@@ -33,35 +35,37 @@
     <main>
         <section id="page_1st" class="page_1st">
             <h2 hidden id="a11y-markup-headline">Home</h2>
-            <div class= "home">
-                <div class="cloud">
-                    <img src="../img/index2/cloud.png" alt="구름">
-                </div>
-                <!--타이핑 타이틀-->
-                <div class="text_wrap bar">
-                    <div class="text_typing">
-                        <h2 class="text">
-                          WELCOME TO
-                        </h2>
+            <div class="cloud_wrap">
+                <div>
+                    <div class= "home">
+                        <img src="../img/index2/cloud.png" alt="구름">
+                        <!--타이핑 타이틀-->
+                        <div class="text_wrap bar">
+                            <div class="text_typing">
+                                <h2 class="text">
+                                WELCOME TO
+                                </h2>
+                            </div>
+                            <div class="text_typing">
+                                <h2 class="text">
+                                    WOOZU'S PORTFOILO
+                                </h2>
+                            </div>
+                        </div>
+                        <!--말풍선 미모티콘-->
+                        <div class="memoji">
+                            <img src="../img/index2/Hi.png" class="memoji_hi" alt="hi 말풍선">
+                            <img src="../img/index2/woozu's hi.png" class="woozu_hi" alt="우민주 미모티콘">
+                        </div>
+                        <!--마우스모양 스크롤-->
+                        <div class="scroll_down">
+                            <div class="mouse">
+                                <div class="mouse_wheel"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text_typing">
-                        <h2 class="text">
-                            WOOZU'S PORTFOILO
-                        </h2>
-                    </div>
-                </div>
-                <!--말풍선 미모티콘-->
-                <div class="memoji">
-                    <img src="../img/index2/Hi.png" class="memoji_hi" alt="hi 말풍선">
-                    <img src="../img/index2/woozu's hi.png" class="woozu_hi" alt="우민주 미모티콘">
-                </div>
-                <!--마우스모양 스크롤-->
-                <div class="scroll_down">
-                    <div class="mouse">
-                        <div class="mouse_wheel"></div>
-                    </div>
-                </div>
-            </div>    
+                </div>    
+            </div>        
         </section>
         <section id="page_2nd" class="page_2nd">
             <h2 hidden id="a11y-markup-headline">About me</h2>
@@ -188,15 +192,52 @@
                                     <!--소스 파악해서 정확하게 뭐 사용했는데 작성하기-->
                                 </div>
                             </div>
-                            <button class="btn btn_color" type="button">
+                            <button class="btn btn_color"  type="button">
                                 PROTOTYPE
                             </button>
-                            <button class="btn btn_color" type="button">
+                            <button class="btn btn_color" onclick= "window.open('https://woozu59.github.io/cobi_ro/html/dokdo.html')" type="button">
                                 PUBLISHING
                             </button>
                         </div>
                     </div>
                 </div>    
+            </div>
+            <!--모바일 more 모달창-->
+            <div class="mb">
+                <div class="mb_title">
+                    <h3>외교부 독도 홈페이지</h4>
+                    <img src="../img/icon/xmark-black.svg" class="close_bt" alt="닫기">
+                </div>
+                <div class="mb_contents">
+                    <div class="type">
+                        <h4>Type</h4>
+                        <p>반응형 웹 + 크로스브라우징</p>
+                    </div>
+                    <div class="page">
+                        <h4>Page</h4>
+                        <p>main + sub(제작 중)</p>
+                    </div>    
+                    <div class="tool">
+                        <h4>Tool</h4>
+                        <ul class="tool_list">
+                            <li>photoshop</li>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>j-query</li>
+                            <li>javascript</li>
+                        </ul>    
+                    </div>
+                </div>
+                <div class="mb_bt">
+                    <div class="figma">
+                        <img src="../img/icon/figma.svg" class="figma_img" alt="피그마">
+                        <p>Figma</p>
+                    </div>
+                    <div class="mobile">
+                        <img src="../img/icon/mobile-screen-button-solid.svg" class="mobile_img" alt="모바일버전">
+                        <p>Publishing</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="page_4th">
@@ -245,30 +286,71 @@
                             <button class="btn btn_color" type="button">
                                 PROTOTYPE
                             </button>
-                            <button class="btn btn_color" type="button">
+                            <button class="btn btn_color" onclick="window.open('https://woozu59.github.io/cobi_ro/html/lush.html')" type="button">
                                 PUBLISHING
                             </button>
                         </div>
                     </div>
                 </div>    
             </div>
+            <!--모바일 more 모달창-->
+            <div class="mb">
+                <div class="mb_title">
+                    <h3>외교부 독도 홈페이지</h4>
+                    <img src="../img/icon/xmark-black.svg" class="close_bt" alt="닫기">
+                </div>
+                <div class="mb_contents">
+                    <div class="type">
+                        <h4>Type</h4>
+                        <p>반응형 웹 + 크로스브라우징</p>
+                    </div>
+                    <div class="page">
+                        <h4>Page</h4>
+                        <p>main + sub(제작 중)</p>
+                    </div>    
+                    <div class="tool">
+                        <h4>Tool</h4>
+                        <ul class="tool_list">
+                            <li>photoshop</li>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>j-query</li>
+                            <li>javascript</li>
+                        </ul>    
+                    </div>
+                </div>
+                <div class="mb_bt">
+                    <div class="figma">
+                        <img src="../img/icon/figma.svg" class="figma_img" alt="피그마">
+                        <p>Figma</p>
+                    </div>
+                    <div class="mobile">
+                        <img src="../img/icon/mobile-screen-button-solid.svg" class="mobile_img" alt="모바일버전">
+                        <p>Publishing</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="footer_cloud">
-            <div class="foot_text">
-                <h3>Thank you for watching my portfolio</h3>
-                <p class="copyright">copyrightⓒ 2022. woominju All rights reserved</p>
-            </div>
-            <div class="memoji">
-                <img src="../img/index2/woozu's bye.png" class="woozu_bye" alt="우민주 미모티콘">
-                <div class="speech_bubble">
-                    <img src="../img/index2/bye.png" class="memoji_bye" alt="bye 말풍선">
-                    <img src="../img/index2/waving-hand_1f44b.png" class="hand" alt="손 흔드는 이모티콘">
+        <div class="cloud_wrap">
+            <div>
+                <div class="footer_cloud">
+                    <div class="foot_text">
+                        <h3>Thank you for watching my portfolio</h3>
+                        <p class="copyright">copyrightⓒ 2022. woominju All rights reserved</p>
+                    </div>
+                    <div class="memoji">
+                        <img src="../img/index2/woozu's bye.png" class="woozu_bye" alt="우민주 미모티콘">
+                        <div class="speech_bubble">
+                            <img src="../img/index2/bye.png" class="memoji_bye" alt="bye 말풍선">
+                            <img src="../img/index2/waving-hand_1f44b.png" class="hand" alt="손 흔드는 이모티콘">
+                        </div>    
+                    </div>
+                    <img src="../img/index2/cloud.png" class= ft_cloud1 alt="구름 png">
                 </div>    
             </div>
-            <img src="../img/index2/cloud.png" class= ft_cloud1 alt="구름 png">
-        </div>    
+        </div>        
     </footer>
     <script src="../js/jqery3.6.0.min.js"></script>
     <script> 

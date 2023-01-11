@@ -3,11 +3,11 @@
 /* Roboto 폰트*/
 @keyframes move {
     0% {background-position: center bottom;}
-    100% {background-position: 250% bottom;}
+    100% {background-position: 650% bottom;}
 }
 @keyframes reversemove {
     0% {background-position: center bottom;}
-    100%{background-position: -250% bottom;}
+    100%{background-position: -550% bottom;}
 }
 @keyframes scroll {
     0% { opacity: 0; }
@@ -37,7 +37,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* outline: 1px solid skyblue; */
+    outline: 1px solid skyblue;
 
 }
 ul,li{list-style: none;}
@@ -138,16 +138,26 @@ main{
     height: 100vh;
     background: linear-gradient(180deg, #CCEAFF, #FFFFFF);
 }
-
-.home{
-    background: url(../img/index2/cloude_ver2.png) center bottom / auto repeat-x;
+.cloud_wrap{
+    max-width: 2000px;
     width: 100%;
     height: 100%;
-    animation: move 100s linear infinite;
+    position: relative;
+}
+.cloud_wrap > div {
+    height: 100%;
+    width: 100%;
+}
+
+.home{
+    background: url(../img/index2/cloude_ver2.png) center bottom / 120% repeat-x;
+    width: 100%;
+    height: 100%;
+    animation: move 50s linear infinite;
 }
 
 
-.cloud > img {
+.home > img {
     width: 450px;
     height: 300px;
     position: relative;
@@ -157,7 +167,7 @@ main{
 /*text-typing*/
 
 .text_wrap{
-    width: 1200px;
+    min-width: 1200px;
     height: 200px;
     margin: 20px auto;
     display: flex;
@@ -194,7 +204,7 @@ main{
     top: -55%;
     left: 60%;
     z-index: 1;
-    width: 450px;
+    width: 40%;
 }
 .memoji img.memoji_hi {
     width: 200px;
@@ -519,6 +529,10 @@ ul.inform_hashtag {
     color: #8BB9DB;
 }
 .inform .more_bt{display: none;}
+#page_3rd .mb,
+#page_4th .mb{display: none;}
+
+
 /*page_4th*/
 
 #page_4th {
@@ -546,10 +560,10 @@ footer{
 }
 
 .footer_cloud{
-    background: url(../img/index2/cloude_ver2.png) center bottom / auto repeat-x;
+    background: url(../img/index2/cloude_ver2.png) center bottom / 120% repeat-x;
     width: 100%;
     height: 100%;
-    animation: reversemove 100s linear infinite;
+    animation: reversemove 50s linear infinite;
 }
 
 footer img.ft_cloud1{

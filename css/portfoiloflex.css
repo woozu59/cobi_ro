@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{min-width: 640px;}
+
+header{height: 90px;}
+
+.gnb > li > a {line-height: 90px;}
+.logo {margin: 15px 25px;}
+
+.home > img {
+    /* width: 300px;
+    height: 200px; */
+    top: 50%;
+    left: 5%;
+}
+/*이미지 자동조절 방법 찾아보기*/
+.memoji {
+    top: -80%;
+    left: 30%;
+}
+
+.text_wrap.bar {
+    min-width: 640px;
+    margin: 20% auto;
+}
+.scroll_down{top: 25%;}
