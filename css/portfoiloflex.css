@@ -1,26 +1,121 @@
 @charset "UTF-8";
 
-body{min-width: 640px;}
+body{min-width: 630px;}
 
-header{height: 90px;}
-
-.gnb > li > a {line-height: 90px;}
-.logo {margin: 15px 25px;}
 
 .home > img {
-    /* width: 300px;
-    height: 200px; */
-    top: 50%;
+    width: 46%;
+    height: 22%;
+    top: 30%;
     left: 5%;
 }
-/*이미지 자동조절 방법 찾아보기*/
+
 .memoji {
-    top: -80%;
-    left: 30%;
+    left: 36%;
+    width: 59%;
 }
 
 .text_wrap.bar {
-    min-width: 640px;
+    min-width: 630px;
     margin: 20% auto;
+    top: 10%;
 }
-.scroll_down{top: 25%;}
+.scroll_down {
+    top: 0;
+    width: 5%;
+    height: 6%;
+}
+.mouse {
+    width: 30%;
+    height: 70%;
+    border: 3px solid #505050;
+}
+.mouse_wheel {margin: 0 auto;}
+
+.text_wrap h2{font-size: 3rem;}
+
+
+/*2nd_page*/
+
+.about {
+    flex-direction: column;
+    padding: 8% 0 0 0;
+}
+
+.about .about_left {
+    margin: 0 auto;
+    width: 80%;
+    height: 45%;
+}
+.line_box {height: 100%;}
+
+.about .about_left .profile,
+ .about .about_left .hashtag,
+ .about .about_left button {
+    display: none;
+}
+
+.about .about_right {
+    width: 100%;
+    margin: 0 auto;
+    height: 55%;
+}
+.title {margin-bottom: 4%;}
+.contact, .edu, .licen, .skill {margin-bottom: 5%;}
+.contact h2, .edu h2, .licen h2, .skill h2 {
+    font-size: 1.5rem;
+    margin-right: 2%;
+}
+.contact_1 p, .edu_1 p, .licen_1 p {font-size: 1.3rem;}
+img.minju {
+    top: -92%;
+    width: 50%;
+}
+/*3rd_page, 4th_page*/
+.bg {
+    top: -5%;
+    height: 80%;
+}
+.dokdo, .lush {flex-direction: column;}
+p.pb_text{top: 0;}
+.result {
+    width: 100%;
+    height: 40%;
+}
+img.mobile {
+    width: 22%;
+    top: 10%;
+    left: 18%;
+}
+img.pc {
+    width: 60%;
+    top: 10%;
+    left: 0;
+}
+.inform {
+    width: 100%;
+    margin: 5% 0 0 0;
+    height: 60%;
+}
+.inform h1 {font-size: 2.5rem;}
+ul.inform_hashtag {
+    font-size: 30px;
+    width: 80%;
+}
+.type h2, .page h2, .tool h2 {font-size: 2rem;}
+.type_1 p, .page_1 p, .tool_1 p {font-size: 1.5rem;}
+.inform .btn {left: 20%;}
+#page_4th p.pb_under {top: 82%;}
+
+
+
+/*footer*/
+footer .memoji {
+    top: 25%;
+    left: 5%;
+}
+footer img.ft_cloud1 {
+    width: 45%;
+    top: -35%;
+    left: 55%;
+}
