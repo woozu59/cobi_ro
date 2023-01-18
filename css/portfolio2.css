@@ -15,9 +15,9 @@
     100% { transform: translateY(15px); opacity: 0;}
 }
 @keyframes bounce {
-    0%{ transform: translateY(0px);}
-    50%{ transform: translateY(20px);}
-    100%{ transform: translateY(0px);}
+    0%{ transform: translateY(0%);}
+    50%{ transform: translateY(-7%);}
+    100%{ transform: translateY(0%);}
 }
 @keyframes typing {
     from {width: 0; }
@@ -90,6 +90,7 @@ header .inner{
 .logo > a{
     width: 60px;
     height: 60px;
+    display: block;
 }
 .logo > a > img {
     width: 100%;
