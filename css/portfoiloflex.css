@@ -71,6 +71,11 @@ img.minju {
     top: -92%;
     width: 50%;
 }
+.about_right button {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+}
 /*3rd_page, 4th_page*/
 .bg {
     top: -5%;
