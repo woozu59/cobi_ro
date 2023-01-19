@@ -51,12 +51,15 @@ i{font-size: 25px;}
 
 
 /*page_1st*/
-.home > img {top: 60%;}
+.home > img {top: 270px;}
 
 .text_wrap.bar {min-width: 320px;}
 .text_wrap h2{font-size: 1.5rem;}
 
-.memoji {top: 0; left: 40%;}
+.memoji {
+    top: -370px;
+    left: 40%;
+}
 .memoji img.memoji_hi,
 .memoji img.woozu_hi,
 .memoji img.woozu_bye{
@@ -116,19 +119,22 @@ ul.skill_1 li {
 
 /*page_3rd*/
 p.pb_text {font-size: 4rem;}
-.bg {height: 75%;}
+.bg {
+    height: 70%;
+    top: 5%;
+}
 
 .result {height: 60%;}
 img.mobile {
     width: 30%;
     height: 45%;
-    top: 45%;
+    top: 55%;
     left: 0;
 }
 img.pc {
     width: 90%;
     height: 75%;
-    top: -50%;
+    top: -75px;
     left: 10%;
 }
 
@@ -244,7 +250,7 @@ ul.tool_list li{font-size: 1rem;}
 /*footer*/
 footer {height: 300px;}
 footer .memoji{top: 15%;}
-footer img.ft_cloud1 {top: -60%;}
+footer img.ft_cloud1 {top: -160px;}
 .speech_bubble img.memoji_bye{
     width: 70%;
     height: 70%;

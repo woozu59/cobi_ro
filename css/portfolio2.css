@@ -37,7 +37,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* outline: 1px solid skyblue; */
+    outline: 1px solid skyblue;
 
 }
 ul,li{list-style: none;}
@@ -212,6 +212,9 @@ main{
     width: 200px;
     height: 220px;
     animation: bounce 1s linear infinite;
+    position: relative;
+    top: 0;
+    left: 10%;
 }
 .memoji img.woozu_hi {
     width: 240px;
@@ -584,7 +587,12 @@ footer .memoji {
     width: 240px;
     height: 240px;
 }
-.speech_bubble{display: flex;}
+.speech_bubble{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: -7%;
+}
 
 .speech_bubble img.memoji_bye {
     width: 200px;
