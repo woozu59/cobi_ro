@@ -33,7 +33,9 @@ a.gnb_toggle {
     height: 100%;
 }
 i{font-size: 25px;}
-
+.gnb_wrap {
+    display: none;
+}
 /* .gnb_menu {
     width: 90%;
     height: 100vh;
@@ -49,10 +51,12 @@ i{font-size: 25px;}
 
 
 /*page_1st*/
+.home > img {top: 60%;}
+
 .text_wrap.bar {min-width: 320px;}
 .text_wrap h2{font-size: 1.5rem;}
 
-.memoji {top: -50%;}
+.memoji {top: 0; left: 40%;}
 .memoji img.memoji_hi,
 .memoji img.woozu_hi,
 .memoji img.woozu_bye{
@@ -124,7 +128,7 @@ img.mobile {
 img.pc {
     width: 90%;
     height: 75%;
-    top: -30%;
+    top: -50%;
     left: 10%;
 }
 
