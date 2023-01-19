@@ -103,6 +103,7 @@ svg {display: none;}
 .contact h2, .edu h2, .licen h2, .skill h2 {
     font-size: 1.2rem;
     margin: 0 auto 2%;
+    width: 30%;
 }
 .contact_1 p, .edu_1 p, .licen_1 p {font-size: 1rem;}
 ul.skill_1 {
