@@ -43,18 +43,23 @@ $(function (){
 
     $("#dokdo_bt").click(function(){
         $("#dokdo_md").fadeIn(300);
+        document.body.style.overflow = "hidden";
     });
 
     $(".close_bt").click(function(){
         $("#dokdo_md, #lush_md").fadeOut(300);
+        document.body.style.overflow = "unset";
     });
-    
+
     $("#lush_bt").click(function(){
         $("#lush_md").fadeIn(300);
+        document.body.style.overflow = "hidden";
     });
     
 
+    
 });
+
 
 
 

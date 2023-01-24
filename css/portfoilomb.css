@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-body{min-width: 320px;}
+body{
+    min-width: 320px;
+}
 
 header {height: 50px;}
 header.on {height: 50px;}
@@ -54,7 +56,12 @@ i{font-size: 25px;}
 
 
 /*page_1st*/
-.home > img {top: 270px;}
+.home > img {
+    top: 270px;
+    width: 50%;
+    height: 20%;
+    left: 0;
+}
 
 .text_wrap.bar {min-width: 320px;}
 .text_wrap h2{font-size: 1.5rem;}
@@ -116,7 +123,7 @@ ul.skill_1 {
 }
 ul.skill_1 li {
     margin-bottom: 2%;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .about_right button {display: none;}
 
@@ -192,6 +199,7 @@ ul.inform_hashtag {
     font-family: var(--english-font);
     left: 50%;
     transform: translate(-50%,-50%);
+    color: #313131;
 }
 .md_title {
     width: 100%;
@@ -254,7 +262,7 @@ ul.tool_list li{font-size: 0.9rem;}
 .figma > p,
 .mobile > p {
     height: 100%;
-    line-height: 75px;
+    line-height: 70px;
     font-size: 18px;
     margin-left: 5%;
 }
@@ -274,10 +282,10 @@ footer img.ft_cloud1 {top: -160px;}
     height: 70%;
 }
 .speech_bubble img.hand {
-    width: 13%;
-    height: 13%;
-    top: 30%;
-    left: -29%;
+    width: 15%;
+    height: 15%;
+    top: 26%;
+    left: -30%;
 }
 .foot_text {
     font-size: 0.8rem;
