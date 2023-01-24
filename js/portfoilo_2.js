@@ -5,11 +5,14 @@ $(function (){
         var scroll = $(this).scrollTop();
 
         if(scroll > 690) {
-            $("header").addClass("on");
+            $("header, .gnb_menu").addClass("on");
 
         } else{
-            $("header").removeClass("on");
+            $("header, .gnb_menu").removeClass("on");
         }
+
+       
+
         
 
         //section 이동 시 리모콘 클래스 추가 
@@ -39,6 +42,19 @@ $(function (){
     });
 
 
+
+    //모바일 버전 gnb
+
+    $('.gnb_menu').slideUp(0);
+    $('.gnb_toggle > i').click(function(){
+        $('.gnb_menu').stop().slideDown('1000');
+    });
+
+    $('.gnb_menu > i').click(function(){
+        $('.gnb_menu').stop().slideUp('1000');
+    });
+    
+    
     //모바일 버전 모달창
 
     $("#dokdo_bt").click(function(){

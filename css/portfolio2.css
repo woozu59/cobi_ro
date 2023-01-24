@@ -134,7 +134,7 @@ ul.gnb > li {
 
 /*모바일 버전 메뉴 hidden*/
 .gnb_toggle{display: none;}
-.gnb_wrap {display: none;}
+.gnb_menu {display: none;}
 
 main{
     height: auto;
