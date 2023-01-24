@@ -48,7 +48,7 @@ a{
 
 body{
     min-width: 1280px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /* body::-webkit-scrollbar {display: none;} */
 
@@ -127,9 +127,10 @@ ul.gnb > li {
 .gnb > li.on > a:after{transform: scaleX(1);}
 
 
+
 /*모바일 버전 메뉴 hidden*/
 .gnb_toggle{display: none;}
-
+.gnb_wrap {display: none;}
 
 main{
     height: auto;
@@ -294,7 +295,7 @@ img.minju{
     margin: 0 auto;
     z-index: 10;
     position: relative;
-    top: -85%;
+    top: -95%;
     
 
 }
@@ -320,7 +321,8 @@ img.minju{
 
 /*2nd btn css*/
 .btn {
-    margin: 40px auto;
+    margin: 20px auto;
+    font-family: 'Lora', serif;
 }
 
 .btn-flip-down {
@@ -546,8 +548,7 @@ ul.inform_hashtag {
     color: #8BB9DB;
 }
 .inform .more_bt{display: none;}
-#page_3rd .mb,
-#page_4th .mb{display: none;}
+.mb_wrap{display: none;}
 
 
 /*page_4th*/

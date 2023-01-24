@@ -201,7 +201,7 @@ ul.inform_hashtag {
     height: 100%;
 }
 .mb_contents {
-    width: 93%;
+    width: 95%;
     height: 55%;
     margin: 0 auto;
 }
@@ -210,16 +210,16 @@ ul.inform_hashtag {
 .mb_contents .type h4, 
 .mb_contents .page h4, 
 .mb_contents .tool h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 4%;
 }
-.mb_contents .type p, .mb_contents .page p {font-size: 1rem;}
+.mb_contents .type p, .mb_contents .page p {font-size: 0.9rem;}
 ul.tool_list {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
-ul.tool_list li{font-size: 1rem;}
+ul.tool_list li{font-size: 0.9rem;}
 .mb_bt {
     width: 100%;
     height: 22.5%;
