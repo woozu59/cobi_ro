@@ -37,4 +37,25 @@ $(function (){
             $(this).addClass('on').siblings().removeClass('on');
         });
     });
+
+
+    //모바일 버전 모달창
+
+    $("#dokdo_bt").click(function(){
+        $("#dokdo_md").fadeIn(300);
+    });
+
+    $(".close_bt").click(function(){
+        $("#dokdo_md, #lush_md").fadeOut(300);
+    });
+    
+    $("#lush_bt").click(function(){
+        $("#lush_md").fadeIn(300);
+    });
+    
+
 });
+
+
+
+

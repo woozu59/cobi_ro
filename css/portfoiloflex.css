@@ -61,14 +61,14 @@ body{min-width: 630px;}
     height: 55%;
 }
 .title {margin-bottom: 4%;}
-.contact, .edu, .licen, .skill {margin-bottom: 5%;}
+.contact, .edu, .licen, .skill {margin-bottom: 4%;}
 .contact h2, .edu h2, .licen h2, .skill h2 {
     font-size: 1.5rem;
     margin-right: 2%;
 }
 .contact_1 p, .edu_1 p, .licen_1 p {font-size: 1.3rem;}
 img.minju {
-    top: -92%;
+    top: -85%;
     width: 50%;
 }
 .about_right button {

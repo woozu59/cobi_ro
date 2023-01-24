@@ -33,11 +33,15 @@
     50%{transform: rotate(30deg);}
     100%{transform: rotate(0deg);}
 }
+
+:root{
+    --english-font: 'Lora', serif;
+}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid skyblue;
+    /* outline: 1px solid skyblue; */
 
 }
 ul,li{list-style: none;}
@@ -98,7 +102,7 @@ header .inner{
     height: 100%;
 }
 ul.gnb {
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
     display: flex;
     height: 100%;
 }
@@ -171,7 +175,7 @@ main{
 /*text-typing*/
 
 .text_wrap{
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
     min-width: 1024px;
     height: 200px;
     margin: 20px auto;
@@ -306,7 +310,7 @@ img.minju{
     font-size: 1.5rem;
     color:#373737;
 }
-.profile .name{font-family: 'Lora', serif;}
+.profile .name{font-family: var(--english-font);}
 .hashtag{
     display: flex;
     width: 80%;
@@ -322,7 +326,7 @@ img.minju{
 /*2nd btn css*/
 .btn {
     margin: 20px auto;
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
 }
 
 .btn-flip-down {
@@ -409,7 +413,7 @@ h1.tt_empty {
     margin-bottom:40px;
 }
 .contact h2, .edu h2, .licen h2, .skill h2 {
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
     width: 20%;
     text-align: center;
     color: #8BB9DB;
@@ -418,7 +422,7 @@ h1.tt_empty {
 .contact_1 p, .edu_1 p, .licen_1 p{margin: 0 0 10px 0;}
 
 ul.skill_1 {
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
     display: flex;
     width: 80%;
     justify-content: space-around;
@@ -441,7 +445,7 @@ ul.skill_1 {
 }
 /*publishing text*/
 p.pb_text {
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
     color:  #FFFFFF;
     text-shadow: -2px 0 lightgray, 0 2px lightgray, 2px 0 lightgray, 0 -2px lightgray;
     font-size: 150px;
@@ -513,7 +517,7 @@ ul.inform_hashtag {
 
 .type h2, .page h2, .tool h2{
     margin-right: 20px;
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
 }
 .type_1 p, .page_1 p, .tool_1 p{font-size: 1.2rem;}
 
@@ -521,10 +525,10 @@ ul.inform_hashtag {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
 }
 .inform .btn {
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
     position: relative;
     border: none;
     display: inline-block;
@@ -548,7 +552,7 @@ ul.inform_hashtag {
     color: #8BB9DB;
 }
 .inform .more_bt{display: none;}
-.mb_wrap{display: none;}
+.md_wrap{display: none;}
 
 
 /*page_4th*/
@@ -559,7 +563,7 @@ ul.inform_hashtag {
 }
 #page_4th .publishing{background: linear-gradient(180deg, #FFFFFF, #CCEAFF);}
 
-#page_4th .inform h1 {font-family: 'Lora', serif;}  
+#page_4th .inform h1 {font-family: var(--english-font);}  
 #page_4th p.pb_under{
     color: #D1EBFF;
     position: relative;
@@ -624,7 +628,7 @@ footer .memoji {
 
 
 .foot_text {
-    font-family: 'Lora', serif;
+    font-family: var(--english-font);
     text-align: center;
     position: relative;
     top: 70%;

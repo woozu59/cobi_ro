@@ -31,6 +31,9 @@ a.gnb_toggle {
     display: block;
     width: 100%;
     height: 100%;
+    position: relative;
+    top: -3px;
+    left: 0;
 }
 i{font-size: 25px;}
 .gnb_wrap {
@@ -160,11 +163,12 @@ ul.inform_hashtag {
     padding: 3%;
     top: 20%;
     left: 0;
+    font-size: 1.2rem;
 }
 
 
 /*more bt클릭 시*/
-.mb_wrap {
+.md_wrap {
     position: fixed;
     top: 0;
     left: 0;
@@ -172,57 +176,70 @@ ul.inform_hashtag {
     height: 100vh;
     background: rgba(0,0,0,0.3);
     z-index: 1000;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
 }
-.mb_wrap.on{display: block;}
-#page_3rd .mb, #page_4th .mb {
+#page_3rd .md,
+#page_4th .md {
     width: 90%;
     height: 40%;
     background: #ffffff;
     position: absolute;
     border-radius: 10%;
+    top: 50%;
+    display: block;
+    font-family: var(--english-font);
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.mb_title {
+.md_title {
     width: 100%;
     height: 10%;
     display: flex;
     justify-content: space-around;
-    margin: 4% 0;
+    margin: 5% 0;
 }
-.mb_title h3 {
+.md_title h3 {
     font-size: 1.5rem;
     margin-left: 10%;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-.mb_title img.close_bt {
+.md_title img.close_bt {
     width: 10%;
     height: 100%;
 }
-.mb_contents {
+.md_contents {
     width: 95%;
     height: 55%;
     margin: 0 auto;
 }
-.mb_contents .type, .mb_contents .page, .mb_contents .tool {display: flex;}
-
-.mb_contents .type h4, 
-.mb_contents .page h4, 
-.mb_contents .tool h4 {
-    font-size: 1.3rem;
+.md_contents .type, .md_contents .page, .md_contents .tool {display: flex;}
+.md_contents span {display: flex;}
+.md_contents span .font{font-family: 'Noto Sans KR',sans-serif;}
+.md_contents .type h4, 
+.md_contents .page h4, 
+.md_contents .tool h4 {
+    font-size: 1.5rem;
     margin-right: 4%;
 }
-.mb_contents .type p, .mb_contents .page p {font-size: 0.9rem;}
+.md_contents .type p {font-family: 'Noto Sans KR', sans-serif;}
+.md_contents .type p, .md_contents .page p {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 600;
+}
 ul.tool_list {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    margin-top: 5px;
+    font-weight: 600;
 }
 ul.tool_list li{font-size: 0.9rem;}
-.mb_bt {
+.md_bt {
     width: 100%;
-    height: 22.5%;
+    height: 21.5%;
     display: flex;
     background: #8BB9DB;
     border-radius: 0 0 35px 35px;
@@ -241,8 +258,8 @@ ul.tool_list li{font-size: 0.9rem;}
     font-size: 18px;
     margin-left: 5%;
 }
-.mb_bt .figma .figma_img, 
-.mb_bt .mobile .mobile_img {
+.md_bt .figma .figma_img, 
+.md_bt .mobile .mobile_img {
     width: 15%;
 }
 
