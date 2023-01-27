@@ -61,21 +61,24 @@ $(function (){
     //모바일 버전 모달창
 
     var dokdoBt = $('#dokdo_bt');
-    var dokdoMd = $('#dokdo_md');
     
     dokdoBt.on('click',function(){
+        
+        var dokdoMd = $('#dokdo_md');
+
         dokdoMd.fadeIn(300);
         $('body').style.overflow = "hidden";
     });
 
     var lushBt = $('#lush_bt');
-    var lushMd = $('#lush_md');
-
+    
     lushBt.on('click',function(){
+
+        var lushMd = $('#lush_md');
+
         lushMd.fadeIn(300);
         $('body').style.overflow = "hidden";
     });
-
 
      var closeBt = $('.close_bt');
 
@@ -88,22 +91,6 @@ $(function (){
        
         
     });
-    // dokdoBt.click(function(){
-    //     $("#dokdo_md").fadeIn(300);
-    //     document.body.style.overflow = "hidden";
-    // });
-
-    // $(".close_bt").click(function(){
-    //     $("#dokdo_md, #lush_md").fadeOut(300);
-    //     document.body.style.overflow = "unset";
-    // });
-
-    // $("#lush_bt").click(function(){
-    //     $("#lush_md").fadeIn(300);
-    //     document.body.style.overflow = "hidden";
-    // });
-    
-
     
 });
 
