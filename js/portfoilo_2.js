@@ -51,32 +51,57 @@ $(function (){
         $(this).toggleClass('active');
 
         //햄버거 클릭 시 메뉴 슬라이드
-        
+
         $('.gnb_menu').slideToggle(500);
 
     });
 
 
-    
-
-    
 
     //모바일 버전 모달창
 
-    $("#dokdo_bt").click(function(){
-        $("#dokdo_md").fadeIn(300);
-        document.body.style.overflow = "hidden";
+    var dokdoBt = $('#dokdo_bt');
+    var dokdoMd = $('#dokdo_md');
+    
+    dokdoBt.on('click',function(){
+        dokdoMd.fadeIn(300);
+        $('body').style.overflow = "hidden";
     });
 
-    $(".close_bt").click(function(){
-        $("#dokdo_md, #lush_md").fadeOut(300);
-        document.body.style.overflow = "unset";
+    var lushBt = $('#lush_bt');
+    var lushMd = $('#lush_md');
+
+    lushBt.on('click',function(){
+        lushMd.fadeIn(300);
+        $('body').style.overflow = "hidden";
     });
 
-    $("#lush_bt").click(function(){
-        $("#lush_md").fadeIn(300);
-        document.body.style.overflow = "hidden";
+
+     var closeBt = $('.close_bt');
+
+    closeBt.on('click',function(){
+        dokdoMd.fadeOut(300);
+
+        lushMd.fadeOut(300);
+        $('body').style.overflow = "unset";
+
+       
+        
     });
+    // dokdoBt.click(function(){
+    //     $("#dokdo_md").fadeIn(300);
+    //     document.body.style.overflow = "hidden";
+    // });
+
+    // $(".close_bt").click(function(){
+    //     $("#dokdo_md, #lush_md").fadeOut(300);
+    //     document.body.style.overflow = "unset";
+    // });
+
+    // $("#lush_bt").click(function(){
+    //     $("#lush_md").fadeIn(300);
+    //     document.body.style.overflow = "hidden";
+    // });
     
 
     
