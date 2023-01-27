@@ -5,23 +5,21 @@ $(function (){
         var scroll = $(this).scrollTop();
 
         if(scroll > 690) {
-            $("header").addClass("on");
+            $('header').addClass("on");
 
         } else{
-            $("header").removeClass("on");
+            $('header').removeClass("on");
         }
 
        
 
-        
-
         //section 이동 시 리모콘 클래스 추가 
-        $("section").each(function() {
+        $('section').each(function() {
              
-            if (scroll >= $(this).offset().top - 100) {
-                $("li[data-id=" + $(this).attr('class').split(' ')[0] + "]").addClass('on').siblings().removeClass('on');
+            if (scroll >= $(this).offset().top) {
+                $("li[data-id=" + $(this).attr('id').split(' ')[0] + "]").addClass('on').siblings().removeClass('on');
 
-            } else if (scroll >= $('.page_3rd').offset().top + 700) {
+            } else if (scroll >= $('#page_3rd').offset().top + 700) {
                 $("li[data-id=page_3rd]").removeClass('on');
                 
             }
@@ -62,6 +60,7 @@ $(function (){
 
     //모바일 버전 모달창
 
+    //독도 모달
     var dokdoBt = $('#dokdo_bt');
     
     dokdoBt.on('click',function(){
@@ -69,9 +68,20 @@ $(function (){
         var dokdoMd = $('#dokdo_md');
 
         dokdoMd.fadeIn(300);
-        $('body').style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
     });
 
+    //독도 닫기 btn js
+    var closeBt = $('.close_bt');
+
+    closeBt.on('click',function(){
+
+       $('#dokdo_md').fadeOut(300);
+        document.body.style.overflow = "unset";
+    
+    });
+
+    //lush 모달
     var lushBt = $('#lush_bt');
     
     lushBt.on('click',function(){
@@ -79,21 +89,16 @@ $(function (){
         var lushMd = $('#lush_md');
 
         lushMd.fadeIn(300);
-        $('body').style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
     });
 
-     var closeBt = $('.close_bt');
-
+    //lush 닫기 btn js
     closeBt.on('click',function(){
-        dokdoMd.fadeOut(300);
-
-        lushMd.fadeOut(300);
-        $('body').style.overflow = "unset";
-
-       
-        
-    });
+       $('#lush_md').fadeOut(300);
+        document.body.style.overflow = "unset";
     
+    });
+
 });
 
 
