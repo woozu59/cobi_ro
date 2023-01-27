@@ -41,7 +41,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid skyblue;
+    /* outline: 1px solid skyblue; */
 
 }
 ul,li{list-style: none;}
@@ -54,7 +54,7 @@ body{
     min-width: 1280px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-/* body::-webkit-scrollbar {display: none;} */
+
 
 header{
     width: 90%;
