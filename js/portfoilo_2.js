@@ -33,12 +33,14 @@ $(function (){
     
         var thisOffset = $("." + $(this).data('id')).offset().top;
     
-        $(this).click(function() {
+        $(this).on('click',function(){
+
             $("html, body").animate({
                 scrollTop : thisOffset
             },1000);
             $(this).addClass('on').siblings().removeClass('on');
         });
+        
     });
 
 
