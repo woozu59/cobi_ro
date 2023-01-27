@@ -5,10 +5,10 @@ $(function (){
         var scroll = $(this).scrollTop();
 
         if(scroll > 690) {
-            $("header, .gnb_menu").addClass("on");
+            $("header").addClass("on");
 
         } else{
-            $("header, .gnb_menu").removeClass("on");
+            $("header").removeClass("on");
         }
 
        
@@ -42,19 +42,25 @@ $(function (){
     });
 
 
+    //모바일 버전 햄버거 gnb
 
-    //모바일 버전 gnb
+    var burger = $('.gnb_toggle');
 
-    $('.gnb_menu').slideUp(0);
-    $('.gnb_toggle > i').click(function(){
-        $('.gnb_menu').stop().slideDown('1000');
+    burger.on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+
+        //햄버거 클릭 시 메뉴 슬라이드
+        
+        $('.gnb_menu').slideToggle(500);
+
     });
 
-    $('.gnb_menu > i').click(function(){
-        $('.gnb_menu').stop().slideUp('1000');
-    });
+
     
+
     
+
     //모바일 버전 모달창
 
     $("#dokdo_bt").click(function(){
@@ -75,6 +81,8 @@ $(function (){
 
     
 });
+
+
 
 
 
