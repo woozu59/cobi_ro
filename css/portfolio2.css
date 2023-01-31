@@ -64,6 +64,7 @@ header{
     left: 5%;
     background: rgba(249, 253, 254, 0.5);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 1.8rem;
     z-index: 100;
     transition: all 0.4s;
