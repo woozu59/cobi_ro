@@ -4,14 +4,15 @@
 <head>
     <meta charet="UTF-8">
     <title>Woozu's Portfolio</title>
-    <link rel="shortcut icon" href="/icon/favicon_1.ico" type="image/favicon">
+    <link rel="shortcut icon" href="/icon/favicon_1.ico" type="image/x-icon">
+    <link rel="icon" href="/icon/favicon_1.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <script src="https://kit.fontawesome.com/fb88773035.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/portfolio2.css"> 
-    <link rel="stylesheet" type="text/css" media="all and (max-width:1024px)" href="../css/portfoiloflex.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="../css/portfoilomb.css">
+    <link rel="stylesheet" type="text/css" href="../css/portfolio_2.css"> 
+    <link rel="stylesheet" type="text/css" media="all and (max-width:1024px)" href="../css/portfoiloflex_2.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="../css/portfoilomb_2.css">
 
 
 </head>
@@ -27,16 +28,15 @@
                     <li data-id="page_2nd"><a href="#page_2nd">About me</a></li>
                     <li data-id="page_3rd"><a href="#page_3rd">My work</a></li>
                 </ul>
-                <!--모바일 햄버거 btn 시작-->
+                <!--모바일 햄버거 btn-->
                 <a href="#" class="gnb_toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                 </a>
-                <!--모바일 햄버거 btn 끝-->
             </nav>
         </div> 
-        <!--햄버거 btn 메뉴 시작--> 
+        <!--햄버거 btn 메뉴 start--> 
         <div class="gnb_menu">
             <ul class="gnb">
                 <li data-id="page_1st"><a href="#page_1st">Home</a></li>
@@ -44,7 +44,7 @@
                 <li data-id="page_3rd"><a href="#page_3rd">My work</a></li>
             </ul>
         </div>     
-        <!--햄버거 btn 메뉴 끝--> 
+        <!--햄버거 btn 메뉴 end--> 
     </header>
     <main>
         <section id="page_1st" class="page_1st">
@@ -53,7 +53,7 @@
                 <div>
                     <div class= "home">
                         <img src="../img/index2/cloud.png" alt="구름">
-                        <!--타이핑 타이틀-->
+                        <!--타이핑 title 영역-->
                         <div class="text_wrap bar">
                             <div class="text_typing">
                                 <h2 class="text">
@@ -66,12 +66,12 @@
                                 </h2>
                             </div>
                         </div>
-                        <!--말풍선 미모티콘-->
+                        <!--미모티콘 영역-->
                         <div class="memoji">
                             <img src="../img/index2/Hi.png" class="memoji_hi" alt="hi 말풍선">
                             <img src="../img/index2/woozu's hi.png" class="woozu_hi" alt="우민주 미모티콘">
                         </div>
-                        <!--마우스모양 스크롤-->
+                        <!--마우스모양 스크롤 영역-->
                         <div class="scroll_down">
                             <div class="mouse">
                                 <div class="mouse_wheel"></div>
@@ -81,10 +81,13 @@
                 </div>    
             </div>        
         </section>
+
         <section id="page_2nd" class="page_2nd">
             <h2 hidden id="a11y-markup-headline">About me</h2>
             <div class="about">
+                <!--about:L start-->
                 <div class="about_left">
+                    <!--이미지 영역-->
                     <div class="line_box">
                         <svg viewBox="0 0 450 360">
                             <rect class="rect_1" width="180" height="300" x="200" y="50"></rect>
@@ -93,6 +96,7 @@
                         </svg>
                         <img src="../img/index2/wmj.jpg" class="minju" alt="우민주 사진"> 
                     </div>
+                    <!--프로필 영역-->
                     <div class="profile">
                         <p>우민주</p>
                         <p class="name">MINJU WOO</p>
@@ -109,7 +113,11 @@
                         <div class="back">My Resume</div>
                     </button>
                 </div>
+                <!--about:L end-->
+
+                <!--about:R start-->
                 <div class="about_right">
+                    <!--title 영역-->
                     <div class="title">
                         <div class="title_1">
                             <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">배움에</h1>
@@ -120,6 +128,7 @@
                             <h1  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">우민주 입니다.</h1>
                         </div>
                     </div>
+                    <!--about 영역 start-->
                     <div class="contact">
                         <h2>Contact</h2>
                         <div class="contact_1">
@@ -153,26 +162,33 @@
                             <li>FIGMA</li>
                         </ul>    
                     </div>
-                    <!--모바일.ver btn-->
+                    <!--about 영역 end-->
+
+                    <!--flex.ver btn-->
                     <button class="btn btn-primary btn-ghost btn-flip-down">
                         My Resume
                         <div class="front">My Resume</div>
                         <div class="back">My Resume</div>
                     </button>
                 </div>
+                <!--about:R end-->
             </div>
         </section>
+
         <section id="page_3rd" class="page_3rd">
             <h2 hidden id="a11y-markup-headline">My work</h2>
             <div class="publishing">
-                <!--영역 뒤에 고정되어 있는 글씨들 -->
+                <!--섹션 background text -->
                 <p class="pb_text">Publishing</p>
+                <!--독도:pb start-->
                 <div class="bg">
                     <div class="dokdo">
-                            <div class="result">
+                        <!--pb 결과 영역-->
+                        <div class="result">
                             <img src="../img/index2/dokdo_mobile.png" class="mobile" alt="독도 모바일버전">
                             <img src="../img/index2/dokdo_pc.ver.png" class="pc" alt="독도 pc버전">
                         </div>
+                        <!--pb 설명 영역-->
                         <div class="inform">
                             <h1>외교부 독도 홈페이지</h1>
                             <ul class="inform_hashtag">
@@ -180,6 +196,7 @@
                                 <li>#편의성</li>
                                 <li>#생동감</li>
                             </ul>
+                            <!--모바일.ver 설명btn-->
                             <button id="dokdo_bt" class="btn btn_color more_bt" type="button">
                                 More
                             </button>
@@ -203,10 +220,9 @@
                                     <p>Html</p>
                                     <p>Css</p>
                                     <p>J-qeury</p>
-                                    <p>Javascript</p>
-                                    <!--소스 파악해서 정확하게 뭐 사용했는데 작성하기-->
                                 </div>
                             </div>
+                            <!--pc.ver btn-->
                             <button class="btn btn_color"  onclick="window.open('https://www.figma.com/file/dBQ8xh7YiocAA0Mwe5X9iM/dokdo-site?node-id=0%3A1&t=VPZsr9GXAxnfmwRx-0')" type="button">
                                 PROTOTYPE
                             </button>
@@ -215,9 +231,10 @@
                             </button>
                         </div>
                     </div>
-                </div>    
+                </div> 
+                <!--독도:pb end--> 
             </div>
-            <!--모바일 more 모달창-->
+            <!--모바일 설명btn 모달창 start-->
             <div id="dokdo_md" class="md_wrap">
                 <div class="md">
                     <div class="md_title">
@@ -247,6 +264,7 @@
                             </ul>    
                         </div>
                     </div>
+                    <!--모바일.ver btn-->
                     <div class="md_bt">
                         <a href="https://www.figma.com/file/dBQ8xh7YiocAA0Mwe5X9iM/dokdo-site?node-id=0%3A1&t=VPZsr9GXAxnfmwRx-0" class="figma" target="_blank">
                             <img src="../img/icon/figma.svg" class="figma_img" alt="피그마">
@@ -258,19 +276,24 @@
                         </a>
                     </div>
                 </div>
-            </div>    
+            </div>   
+            <!--모바일 설명btn 모달창 end--> 
         </section>
+
         <section id="page_4th">
             <h2 hidden id="a11y-markup-headline">publishing</h2>
             <div class="publishing">
-                <!--영역 뒤에 고정되어 있는 글씨들 -->
+                <!--섹션 background text -->
                 <p class="pb_text pb_under">Publishing</p>
+                <!--러쉬:pb start-->
                 <div class="bg">
                     <div class="lush">
+                        <!--pb 결과 영역-->
                         <div class="result">
                             <img src="../img/index2/lush_mobile.png" class="mobile" alt="lush 모바일버전">
                             <img src="../img/index2/lush_pc.ver.png" class="pc" alt="lush pc버전">
                         </div>
+                        <!--pb 설명 영역-->
                         <div class="inform">
                             <h1>Lush Charity Pot</h1>
                             <ul class="inform_hashtag">
@@ -278,6 +301,7 @@
                                 <li>#비주얼</li>
                                 <li>#자연친화적</li>
                             </ul>
+                            <!--모바일.ver 설명btn-->
                             <button id="lush_bt" class="btn btn_color more_bt" type="button">
                                 More
                             </button>
@@ -303,6 +327,7 @@
                                     <p>Javascript</p>
                                 </div>
                             </div>
+                            <!--pc.ver btn-->
                             <button class="btn btn_color" onclick="window.open('https://www.figma.com/file/J7OVs8a6AmSncxwCajcPnG/Untitled?t=VPZsr9GXAxnfmwRx-0')" type="button">
                                 PROTOTYPE
                             </button>
@@ -311,9 +336,10 @@
                             </button>
                         </div>
                     </div>
-                </div>    
+                </div>  
+                <!--러쉬:pb end-->  
             </div>
-            <!--모바일 more 모달창-->
+            <!--모바일 설명btn 모달창 start-->
             <div id="lush_md" class="md_wrap">
                 <div class="md">
                     <div class="md_title">
@@ -340,6 +366,7 @@
                             </ul>    
                         </div>
                     </div>
+                    <!--모바일.ver btn-->
                     <div class="md_bt">
                         <a href="https://www.figma.com/file/J7OVs8a6AmSncxwCajcPnG/Untitled?t=VPZsr9GXAxnfmwRx-0" class="figma" target="_blank">
                             <img src="../img/icon/figma.svg" class="figma_img" alt="피그마">
@@ -351,17 +378,21 @@
                         </a>
                     </div>
                 </div>
-            </div>    
+            </div> 
+            <!--모바일 설명btn 모달창 end-->    
         </section>
     </main>
+
     <footer>
         <div class="cloud_wrap">
             <div>
                 <div class="footer_cloud">
+                    <!--copyright 영역-->
                     <div class="foot_text">
                         <h3>Thank you for watching my portfolio</h3>
                         <p class="copyright">copyrightⓒ 2022. woominju All rights reserved</p>
                     </div>
+                    <!--미모티콘 영역-->
                     <div class="memoji">
                         <img src="../img/index2/woozu's bye.png" class="woozu_bye" alt="우민주 미모티콘">
                         <div class="speech_bubble">

@@ -1,33 +1,40 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* Lora 폰트, Noto sans kr폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*home 구름 keyframe*/
 @keyframes move {
     0% {background-position: center bottom;}
     100% {background-position: 650% bottom;}
 }
+/*footer 구름 keyframe*/
 @keyframes reversemove {
     0% {background-position: center bottom;}
     100%{background-position: -550% bottom;}
 }
+/*home 마우스 스크롤 keyframe*/
 @keyframes scroll {
     0% { opacity: 0; }
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
 }
+/*home 말풍선 keyframe*/
 @keyframes bounce {
     0%{ transform: translateY(0%);}
     50%{ transform: translateY(-7%);}
     100%{ transform: translateY(0%);}
 }
+/*home 타이핑 title keyframe*/
 @keyframes typing {
     from {width: 0; }
     to {width: 100%; }
 }
-/*text_typing cursor effect*/
+/*home 타이핑 title:cursor keyframe*/
 @keyframes blink-caret {
     from, to {border-color: transparent; }
     50% {border-color: #656565; }
 }
+/*footer 흔드는 손 keyframe*/
 @keyframes shake {
     0%{transform: rotate(0deg);}
     50%{transform: rotate(30deg);}
@@ -42,20 +49,17 @@
     padding: 0px;
     box-sizing: border-box;
     /* outline: 1px solid skyblue; */
-
 }
 ul,li{list-style: none;}
 a{
     text-decoration: none;
     color: #000000;
 }
-
 body{
     min-width: 1280px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-
+/*header start*/
 header{
     width: 90%;
     height: 70px;
@@ -69,7 +73,6 @@ header{
     z-index: 100;
     transition: all 0.4s;
 }
-
 header.on{
     width: 100%;
     top: 0;
@@ -86,13 +89,11 @@ header .inner{
     margin: 0 auto;
     position: relative;
 }
-
 .logo {
     width: 60px;
     height: 60px;
     margin: 5px 25px;
 }
-
 .logo > a{
     width: 60px;
     height: 60px;
@@ -118,7 +119,6 @@ ul.gnb > li {
     font-weight: 600;
     color: #505050;
 }
-
 .gnb > li > a:after{
     display: block;
     content: ' ';
@@ -131,17 +131,18 @@ ul.gnb > li {
 .gnb > li > a:hover:after,
 .gnb > li.on > a:after{transform: scaleX(1);}
 
-
-
-/*모바일 버전 메뉴 hidden*/
+/*모바일.ver 메뉴*/
 .gnb_toggle{display: none;}
 .gnb_menu {display: none;}
+
+/*header end*/
 
 main{
     height: auto;
     min-height: 100%;
 }
 
+/*첫번째 섹션 start*/
 #page_1st {
     width: 100%;
     height: 100vh;
@@ -157,15 +158,12 @@ main{
     height: 100%;
     width: 100%;
 }
-
 .home{
     background: url(../img/index2/cloude_ver2.png) center bottom / 120% repeat-x;
     width: 100%;
     height: 100%;
     animation: move 50s linear infinite;
 }
-
-
 .home > img {
     width: 450px;
     height: 300px;
@@ -173,8 +171,8 @@ main{
     top: 0;
     left: 10%;
 }
-/*text-typing*/
 
+/*타이핑 title 영역*/
 .text_wrap{
     font-family: var(--english-font);
     min-width: 1024px;
@@ -207,7 +205,8 @@ main{
     animation-delay: 2.7s;
 }
 
-/*page_1st memoji*/
+
+/*미모티콘 영역*/
 .memoji {
     display: flex;
     position: relative;
@@ -229,6 +228,7 @@ main{
     height: 240px;
 }
 
+/*마우스모양 스크롤 영역*/
 .scroll_down {
     position: relative;
     top: -25%;
@@ -253,8 +253,10 @@ main{
     background-color: #656565;
     animation: scroll 2.2s cubic-bezier(.15,.41,.69,.94) infinite;
 }
+/*첫번째 섹션 end*/
 
-/*2nd_section*/
+
+/*두번째 섹션 start*/
 #page_2nd {
     width: 100%;
     height: 100vh;
@@ -266,14 +268,14 @@ main{
     margin: 0 auto;
     padding: 5% 0 0 0;
 }
-
-/*about left*/
+/*about:L start*/
 .about .about_left{
     display: flex;
     flex-direction: column;
     width: 35%;
     margin: 20px 0 0 0;
 }
+/*이미지 영역*/
 .line_box{
     width: 100%;
     z-index: 1;
@@ -301,9 +303,9 @@ img.minju{
     z-index: 10;
     position: relative;
     top: -95%;
-    
-
 }
+
+/*프로필 영역*/
 .profile{
     text-align: center;
     margin: 7% 0;
@@ -324,12 +326,11 @@ img.minju{
     font-weight: 600;
 }
 
-/*2nd btn css*/
+/*about:btn 영역*/
 .btn {
     margin: 20px auto;
     font-family: var(--english-font);
 }
-
 .btn-flip-down {
 --flip-button-height: 40px;
 height: var(--flip-button-height);
@@ -379,16 +380,17 @@ transform: rotateX(0deg);
 letter-spacing: 2px;
 font-weight: 600;
 }
+/*about:L end*/
 
 
 
-/*about right*/
-
+/*about:R start*/
 .about .about_right{
     width: 65%;
     margin: 50px 0 0 20px;
 
 }
+/*title 영역*/
 .title {
     display: flex;
     flex-direction: column;
@@ -408,6 +410,7 @@ h1.tt_empty {
     margin: 0 15px 0 15px;
 
 }
+/*about 영역*/
 .contact, .edu, .licen, .skill{
     display: flex;
     width: 100%;
@@ -432,14 +435,17 @@ ul.skill_1 {
     justify-content: space-around;
     font-weight: 600;
 }
+/*flex.ver btn */
 .about_right button{display: none;}
 
-/*3rd_section*/
+/*두번째 섹션 end*/
+
+
+/*세번째 섹션 start*/
 #page_3rd {
     width: 100%;
     height: 100vh;
 }
-
 .publishing {
     background: #FFFFFF;
     width: 100%;
@@ -447,7 +453,7 @@ ul.skill_1 {
     padding: 5% 0 0 0;
     margin: 0 auto;
 }
-/*publishing text*/
+/*섹션 background text*/
 p.pb_text {
     font-family: var(--english-font);
     color:  #FFFFFF;
@@ -458,7 +464,7 @@ p.pb_text {
     left: 0;
     z-index: 1;
 }
-
+/* pb */
 .bg {
     width: 100%;
     height: 75%;
@@ -467,21 +473,15 @@ p.pb_text {
     z-index: 10;
     top: -15%;
     left: 0;
-   
 }
-
-
-
 .dokdo, .lush{
     display: flex;
     height: 100%;
     width: 85%;
     margin: 0 auto;
-    
-    
 }
+/*pb 결과 영역*/
 .result {width: 40%;}
-
 img.mobile {
     width: 200px;
     z-index: 2;
@@ -496,6 +496,7 @@ img.pc {
     top: -50%;
     left: 0;
 }
+/*pb 설명 영역*/
 .inform {
     width: 60%;
     margin-left: 2%;
@@ -519,8 +520,6 @@ ul.inform_hashtag {
     height: 12%;
     margin: 30px 0 0 0;
 }
-
-
 .type h2, .page h2, .tool h2{
     margin-right: 20px;
     font-family: var(--english-font);
@@ -530,16 +529,15 @@ ul.inform_hashtag {
     font-size: 1.2rem;
     font-weight: 600;
 }
-
 .page_1 p{font-family: var(--english-font);}
 .page_1 .font{font-family: 'Noto Sans KR', sans-serif;}
-
 .tool_1{
     display: flex;
     width: 100%;
     justify-content: space-around;
     font-family: var(--english-font);
 }
+/*pc.ver btn*/
 .inform .btn {
     font-family: var(--english-font);
     position: relative;
@@ -559,24 +557,24 @@ ul.inform_hashtag {
     cursor: pointer;
 }
 .inform .btn:active {transform: scale(1.2);}
-
 .inform .btn_color {
     background: #fafafa;
     color: #8BB9DB;
 }
+/*모바일 설명 btn, 모달창*/
 .inform .more_bt{display: none;}
 .md_wrap{display: none;}
 
+/*세번째 섹션 end*/
 
-/*page_4th*/
-
+/*네번째 섹션 start*/
 #page_4th {
     width: 100%;
     height: 100vh;
 }
 #page_4th .publishing{background: linear-gradient(180deg, #FFFFFF, #CCEAFF);}
-
 #page_4th .inform h1 {font-family: var(--english-font);}  
+/*섹션 background text*/
 #page_4th p.pb_under{
     color: #D1EBFF;
     position: relative;
@@ -584,31 +582,29 @@ ul.inform_hashtag {
     left: 0%;
     text-align: right;
 }    
-
 #page_4th .bg {background: rgba(0, 0, 0, 0.2);}
+/*네번째 섹션 end*/
 
-/*footer*/
+
+/*footer start*/
 footer{
     width: 100%;
     height: 700px;
     background: linear-gradient(180deg, #CDEAFF, #A6D9FF);
 }
-
 .footer_cloud{
     background: url(../img/index2/cloude_ver2.png) center bottom / 120% repeat-x;
     width: 100%;
     height: 100%;
     animation: reversemove 50s linear infinite;
 }
-
 footer img.ft_cloud1{
     width: 500px;
     position: relative;
     top: -40%;
     left: 60%;
-
 }
-
+/*미모티콘 영역*/
 footer .memoji {
     top: 15%;
     left: 10%;
@@ -623,11 +619,9 @@ footer .memoji {
     top: 0;
     left: -7%;
 }
-
 .speech_bubble img.memoji_bye {
     width: 200px;
-    height: 220px;
-    
+    height: 220px;   
 }
 .speech_bubble img.hand{
     width: 45px;
@@ -639,7 +633,7 @@ footer .memoji {
     animation: shake 1s 0.5s infinite;
 }
 
-
+/*copyright 영역*/
 .foot_text {
     font-family: var(--english-font);
     text-align: center;
