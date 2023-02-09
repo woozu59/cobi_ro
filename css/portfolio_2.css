@@ -331,9 +331,11 @@ img.minju{
     width: 150px;
     height: 40px;
     margin: 20px auto 0;
+    cursor: pointer;
 }
 .btn {
     font-family: var(--english-font);
+    cursor: pointer;
 }
 .btn-flip-down {
 --flip-button-height: 40px;
