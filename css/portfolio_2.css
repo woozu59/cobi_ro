@@ -327,8 +327,12 @@ img.minju{
 }
 
 /*about:btn 영역*/
+.about_left > a {
+    width: 150px;
+    height: 40px;
+    margin: 20px auto 0;
+}
 .btn {
-    margin: 20px auto;
     font-family: var(--english-font);
 }
 .btn-flip-down {
@@ -339,7 +343,7 @@ border: none;
 border-radius: 0;
 perspective: 500px;
 transition: 0.3s;
-width: 40%;
+width: 100%;
 height: 40px;
 }
 .btn-flip-down:hover {
