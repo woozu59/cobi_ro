@@ -1,35 +1,27 @@
 @charset "utf-8";
 *{margin: 0; padding: 0; box-sizing: border-box; outline: 1px solid #333;}
 
-.iphone{width: 370px; position:absolute;}
-.dokdo{width: 320px; position: absolute;}
-.all{position: relative; width: 80%; margin: 0 auto;}
-
-
-
-
-/* #page_4th {
-    width: 100%;
-    height: 100vh;
-}
-.clone {
-    background: linear-gradient(180deg, #FFFFFF, #CCEAFF);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
-}
-.cc_text {
-    color: #f0f9ff;
-    text-shadow: -2px 0 lightgrey, 0 2px lightgrey, 2px 0 lightgrey, 0 -2px lightgrey;
-    font-size: 150px;
+/*
+.pie-chart {
     position: relative;
-    top: 10%;
-    left: 58%;
-}
-.cc_under{
-    color: #D1EBFF;
-    position: relative;
-    top: 44%;
-    left: -14%;
-} */
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  span.center{
+    background: #fff;
+    display : block;
+    position: absolute;
+    top:50%; left:50%;
+    width:100px; height:100px;
+    border-radius: 50%;
+    text-align:center; 
+    line-height: 100px;
+    font-size:30px;
+     transform: translate(-50%, -50%);
+  }
+*/
+.chart {float: left; width: 33.33%; height: 230px; text-align: center;}
+.chart span.title{position: relative; display: block; width: 100%; text-align: center; top: 110px;}  

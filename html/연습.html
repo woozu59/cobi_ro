@@ -4,45 +4,23 @@
 <head>
     <meta charset="utf-8">
     <title>연습용 html</title>
-    <script>
-     window.onload = function(){
-        var frm = document.frm;
-        var date = new Date();
-        var year = date.getFullYear();
-        for(i = 1970; i <= year; i++) {
-            frm.y.add(new Option(i,i));
-        }
-        for(i = 1; i <= 12; i++) {
-            frm.m.add(new Option(i,i));
-        }
-        frm.sub.length = 3;
-     }
-    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easypiechart.js"></script>
+
+    <!--<link rel="stylesheet"type="text/css" href="/path/to/jquery.easy-pie-chart.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/연습용.css">
 </head>
 <body>
-    <div class="wrap">
-        <div class="layer_bg"></div>
-        <ul>
-            <li>
-                <a href="javascript:;" class="btn_layer" layer="1">팝업 열기 1번</a>
-            </li>
-        </ul>
-    </div>
+    <!--
+    <div class="pie-chart pie-chart1"><span class="center">80%</span></div>
+    <div class="pie-chart pie-chart2"><span class="center">50%</span></div>
+    <div class="pie-chart pie-chart3"><span class="center">30%</span></div>
+    -->
+    <div class="chart chart1" data-percent="80"><span class="title">chart1</span></div>
+    <div class="chart chart2" data-percent="55"><span class="title">chart2</span></div>
+    <div class="chart chart3" data-percent="35"><span class="title">chart3</span></div>
 </body>
+<script src="../js/연습용.js"></script>
 </html>
 
 
-<!--포트폴리오 섹션-->
-<!-- <section id="page_4th">
-            <div class="clone"> -->
-                <!--클론코딩 공부하면 영역에 채워넣어서 3th page처럼 슬라이드로 설정-->
-                <!-- <p class="cc_text">Clonecoding</p>
-                <p class="cc_text cc_under">Clonecoding</p>
-                <div class="bg">
-                    <div class="cc_result"></div>
-                    <div class="cc_inform">
-                        <p>클론코딩 추가 예정</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
