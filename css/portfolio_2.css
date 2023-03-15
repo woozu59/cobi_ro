@@ -48,7 +48,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid skyblue;
+    /* outline: 1px solid skyblue; */
 }
 ul,li{list-style: none;}
 a{
@@ -449,11 +449,12 @@ h1.tt_empty {
 #page_3rd h1 {
     margin: 7% 0 0 0;
     color: #8BB9DB;
+    font-family: var(--english-font);
 }
 /*도넛차트 css*/
 .skill {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 200px;
     justify-content: space-between;
     margin: 0 auto;
@@ -470,33 +471,63 @@ h1.tt_empty {
 .counting{
     position: relative;
     display: block;
-    top: 45%;
+    top: 50%;
     font-size: 1.2rem;
     font-weight: 600;
+}
+.counting:after{
+    content: '%';
+
 }
 .html > p, .css > p, .java > p, .j-query > p, .photoshop > p {
     text-align: center;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: var(--english-font);
 }
 /*하단 skill영역*/
 .skill2 {
-    width: 95%;
-    height: 400px;
+    width: 70%;
+    height: 410px;
     margin: 4% auto 0;
     box-shadow: 10px 7px 25px 2px lightgrey;
 }
 .skill2 > span {
     display: flex;
-    width: 30%;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 2% 0 0 0;
+    padding: 2% 0px 0px;
+    align-items: center;
+    justify-content: center;
 }
+.skill2 span > h2 {margin-right: 7px;}
 h2.tt_empty{
     color: rgba(256,256,256,100%);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+.skill_area {
+    width: 70%;
+    margin: 3% auto 0;
+}
+.area1, .area2, .area3 {
+    margin-top: 20px;
+}
+.check::before {
+    content: "";
+    background-image: url(../img/icon/check.png);
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.check{font-family: var(--english-font);}
+.area1 > p, .area2 > p, .area3 > p {
+    margin: 10px 45px 0;
+    word-break: break-word;
+}
+
+
+
+
+
 /*네번째 섹션 start*/
 #page_4th {
     width: 100%;

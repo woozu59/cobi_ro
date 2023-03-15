@@ -1,5 +1,5 @@
 $(function (){
-    //nav animation js
+    //nav animation
     $(window).scroll(function( ){  
 
         var scroll = $(this).scrollTop();
@@ -10,6 +10,8 @@ $(function (){
         } else{
             $('header').removeClass("on");
         }
+        
+       
 
        
 
@@ -26,7 +28,7 @@ $(function (){
         });
     });
 
-    // scroll js
+    // scroll 
     $("ul.gnb li").each(function() {
     
         var thisOffset = $("." + $(this).data('id')).offset().top;
@@ -40,6 +42,53 @@ $(function (){
         });
         
     });
+
+
+    //도넛 chart 
+    $('.chart').easyPieChart({
+    
+        barColor: '#8BB9DB',
+        trackColor: '#F2F2F2',
+        scaleColor: '#ffffff',
+        lineCap: 'butt',
+        lineWidth: 25,
+        size: 150,
+        animate: 3000,
+        
+    });
+    
+
+    //counting 
+    $('.counting').each(function(){
+        var $this = $(this),
+        countTo = $this.attr('data-count');
+
+        $({ countNum: $this.text()}).animate({
+            countNum: countTo
+        },
+        {
+            duration: 3000,
+            easing: 'linear',
+            step: function(){
+                $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+                $this.text(this.countNum);
+            }
+        });
+
+        
+    });
+    // $(window).scroll(function(){
+        
+    //     var start = $('.skill').offset().top;
+    //     var end = $('.skill').offset().top + 100
+    //         if (scrollTop > start && scrollTop < end) {
+    //             counting();
+    //         } else if(scrollTop < start) {
+    //             $(".counting").text('0');
+    //         }
+    // });
 
 
     //모바일 버전 햄버거 gnb
