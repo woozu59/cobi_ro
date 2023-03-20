@@ -48,7 +48,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* outline: 1px solid skyblue; */
+    outline: 1px solid skyblue;
 }
 ul,li{list-style: none;}
 a{
@@ -596,11 +596,12 @@ img.pc {
 ul.inform_hashtag {
     display: flex;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     width: 60%;
     justify-content: space-around;
     margin: 0 auto;
     color: #373737;
+    font-family: var(--english-font);
 }
 .type, .page, .tool{
     display: flex;
@@ -615,9 +616,10 @@ ul.inform_hashtag {
 .type_1 p, .page_1 p, .tool_1 p{
     font-size: 1.2rem;
     font-weight: 600;
+    font-family: var(--english-font);
 }
-.page_1 p{font-family: var(--english-font);}
-.page_1 .font{font-family: 'Noto Sans KR', sans-serif;}
+
+
 .tool_1{
     display: flex;
     width: 100%;
@@ -626,27 +628,53 @@ ul.inform_hashtag {
 }
 /*pc.ver btn*/
 .inform .btn {
-    font-family: var(--english-font);
     position: relative;
-    border: none;
     display: inline-block;
-    padding: 15px 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 10px -4px  rgba(0, 0, 0, 0.2);
-    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
     transition: 0.25s;
-    margin: 25px 30px;
-    left: 25%;
-    font-size: 15px;
+    margin: 20px 20px;
+    left: 28%;
+    font-size: 17px;
 }
 .inform .btn:hover {
-   background: #ebebeb;
+    background: none;
+    transition: 0.5s;
     cursor: pointer;
+    color: #fafafa;
+    
 }
-.inform .btn:active {transform: scale(1.2);}
+
 .inform .btn_color {
     background: #fafafa;
     color: #8BB9DB;
+    border: 2px solid #fafafa;
+}
+
+/*guidenote modal popup*/
+.guidenote {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
+.container{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: calc(100% - 50px);
+    background: #FFFFFF;
+    z-index: 1000;
+}
+.lush .guidenote{display: none;}
+img.logo_ls {
+    width: 150px;
 }
 /*모바일 설명 btn, 모달창*/
 .inform .more_bt{display: none;}
