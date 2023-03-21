@@ -79,16 +79,6 @@ $(function (){
 
         
     });
-    // $(window).scroll(function(){
-        
-    //     var start = $('.skill').offset().top;
-    //     var end = $('.skill').offset().top + 100
-    //         if (scrollTop > start && scrollTop < end) {
-    //             counting();
-    //         } else if(scrollTop < start) {
-    //             $(".counting").text('0');
-    //         }
-    // });
 
 
     //모바일 버전 햄버거 gnb

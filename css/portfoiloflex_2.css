@@ -24,9 +24,9 @@ body{min-width: 630px;}
 .text_wrap h2{font-size: 3rem;}
 
 .scroll_down {
-    top: 0;
-    width: 5%;
-    height: 6%;
+    top: -4%;
+    width: 2%;
+    height: 5%;
 }
 .mouse {
     width: 30%;
@@ -55,6 +55,7 @@ body{min-width: 630px;}
  .about .about_left button {
     display: none;
 }
+.about_left > a{display: none;}
 
 
 /*about:R*/
@@ -66,14 +67,14 @@ body{min-width: 630px;}
 
 .title {margin-bottom: 4%;}
 
-.contact, .edu, .licen, .skill {margin-bottom: 4%;}
-.contact h2, .edu h2, .licen h2, .skill h2 {
+.contact, .edu, .licen{margin-bottom: 4%;}
+.contact h2, .edu h2, .licen h2{
     font-size: 1.5rem;
     margin-right: 2%;
 }
 .contact_1 p, .edu_1 p, .licen_1 p {font-size: 1.3rem;}
 img.minju {
-    top: -85%;
+    top: -92%;
     width: 50%;
 }
 /*flex.ver btn*/
@@ -82,13 +83,29 @@ img.minju {
     width: 20%;
     margin: 0 auto;
 }
-
-
-/*세번째 네번째 섹션*/
+/*3rd section*/
+.skill {
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+.html, .css, .java, .j-query, .photoshop {
+    width: 33%;
+}
+.skill2 {
+    width: 90%;
+    height: 55%;
+    position: relative;
+    top: 18%;
+}
+.skill2 > span {padding: 5% 0 0 0;}
+.skill_area {width: 80%;}
+.area1, .area2, .area3 {margin-top: 7%;}
+/*4th section, 5th section*/
 
 .bg {
-    top: -5%;
-    height: 80%;
+    top: -10%;
+    height: 85%;
 }
 .dokdo, .lush {flex-direction: column;}
 
@@ -101,30 +118,52 @@ p.pb_text{top: 0;}
 }
 img.mobile {
     width: 22%;
-    top: 10%;
+    top: 15%;
     left: 18%;
 }
 img.pc {
     width: 60%;
-    top: 10%;
+    top: 15%;
     left: 0;
 }
 
 
 .inform {
     width: 100%;
-    margin: 5% 0 0 0;
+    margin: 0;
     height: 60%;
 }
 .inform h1 {font-size: 2.5rem;}
 ul.inform_hashtag {
-    font-size: 30px;
-    width: 80%;
+    font-size: 1.7rem;
+    width: 85%;
 }
 .type h2, .page h2, .tool h2 {font-size: 2rem;}
 .type_1 p, .page_1 p, .tool_1 p {font-size: 1.5rem;}
 
-.inform .btn {left: 20%;}
+.inform .color_btn {left: 20%;}
+
+
+.inform .color_btn:visited {
+    background: #fafafa;
+    color: #8BB9DB;
+}
+
+/*guidenote modal popup*/
+.container {
+    top: 10%;
+}
+.lush img.guidenote_logo {
+    width: 200px;
+}
+img.x_btn {
+    top: -12%;
+    left: 92%;
+}
+.lush img.x_btn {
+    top: -12%;
+    left: 92%;
+}
 
 #page_4th p.pb_under {top: 82%;}
 

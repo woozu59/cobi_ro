@@ -48,7 +48,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 1px solid skyblue;
+    /* outline: 1px solid skyblue; */
 }
 ul,li{list-style: none;}
 a{
@@ -87,7 +87,6 @@ header .inner{
     display:flex;
     justify-content: space-between;
     margin: 0 auto;
-    position: relative;
 }
 .logo {
     width: 60px;
@@ -281,6 +280,11 @@ main{
     z-index: 1;
     height: 57%;
 }
+svg {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
 .rect_1 {
     fill: none;
     stroke: #A5D9FF;
@@ -297,7 +301,7 @@ main{
     stroke-width: 2;
 }
 img.minju{
-    width: 220px;
+    width: 50%;
     display:block;
     margin: 0 auto;
     z-index: 10;
@@ -308,7 +312,7 @@ img.minju{
 /*프로필 영역*/
 .profile{
     text-align: center;
-    margin: 7% 0;
+    margin: 2% 0 7% 0;
     font-weight: 600;
     font-size: 1.5rem;
     color:#373737;
@@ -490,7 +494,7 @@ h1.tt_empty {
     width: 70%;
     height: 410px;
     margin: 4% auto 0;
-    box-shadow: 10px 7px 25px 2px lightgrey;
+    box-shadow: 10px 7px 25px 2px #ededed;
 }
 .skill2 > span {
     display: flex;
@@ -508,7 +512,7 @@ h2.tt_empty{
     margin: 3% auto 0;
 }
 .area1, .area2, .area3 {
-    margin-top: 20px;
+    margin-top: 3%;
 }
 .check::before {
     content: "";
@@ -520,7 +524,7 @@ h2.tt_empty{
 }
 .check{font-family: var(--english-font);}
 .area1 > p, .area2 > p, .area3 > p {
-    margin: 10px 45px 0;
+    margin: 2% 10% 0;
     word-break: break-word;
 }
 
@@ -549,7 +553,6 @@ p.pb_text {
     position: relative;
     top: -3%;
     left: 0;
-    z-index: 1;
 }
 /* pb */
 .bg {
@@ -557,11 +560,11 @@ p.pb_text {
     height: 75%;
     background: rgba(139, 185, 219, 0.4);
     position: relative;
-    z-index: 10;
     top: -15%;
     left: 0;
 }
 .dokdo, .lush{
+    position: relative;
     display: flex;
     height: 100%;
     width: 85%;
@@ -570,14 +573,14 @@ p.pb_text {
 /*pb 결과 영역*/
 .result {width: 40%;}
 img.mobile {
-    width: 200px;
+    width: 37%;
     z-index: 2;
     position: relative;
     top: 25%;
     left: -10%;
 }
 img.pc {
-    width: 500px;
+    width: 97%;
     z-index: 1;
     position: relative;
     top: -50%;
@@ -627,7 +630,9 @@ ul.inform_hashtag {
     font-family: var(--english-font);
 }
 /*pc.ver btn*/
-.inform .btn {
+.inform .color_btn {
+    font-family: var(--english-font);
+    cursor: pointer;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -637,22 +642,21 @@ ul.inform_hashtag {
     margin: 20px 20px;
     left: 28%;
     font-size: 17px;
-}
-.inform .btn:hover {
-    background: none;
-    transition: 0.5s;
-    cursor: pointer;
-    color: #fafafa;
-    
-}
-
-.inform .btn_color {
     background: #fafafa;
     color: #8BB9DB;
     border: 2px solid #fafafa;
 }
+.inform .color_btn:hover {
+    background: none;
+    transition: 0.5s;
+    color: #fafafa;
+    
+}
+
+
 
 /*guidenote modal popup*/
+
 .guidenote {
     position: fixed;
     width: 100%;
@@ -661,21 +665,48 @@ ul.inform_hashtag {
     top: 0;
     left: 0;
     z-index: 900;
+    display: none;
 }
 .container{
     position: fixed;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 85%;
     height: calc(100% - 50px);
     background: #FFFFFF;
-    z-index: 1000;
+}
+.guidenote_title {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0 0 0;
+}
+img.guidenote_logo {
+    width: 250px;
+    display: block;
+}
+.dokdo .guidenote_title h3{
+    position: relative;
+    top: -20px;
+}
+.guidenote_title h3 {
+    margin-left: 20%;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #1A1A1A;
+    color: #1A1A1A;
+}
+img.x_btn {
+    width: 20px;
+    display: block;
+    position: relative;
+    top: -19%;
+    left: 93%;
+    cursor: pointer;
 }
 .lush .guidenote{display: none;}
-img.logo_ls {
-    width: 150px;
-}
+
 /*모바일 설명 btn, 모달창*/
 .inform .more_bt{display: none;}
 .md_wrap{display: none;}
@@ -754,7 +785,6 @@ footer .memoji {
     text-align: center;
     position: relative;
     top: 70%;
-    z-index: 10;
 }
 .foot_text h3 {
     margin-bottom: 20px;
