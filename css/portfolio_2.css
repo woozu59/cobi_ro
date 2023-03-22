@@ -676,27 +676,7 @@ ul.inform_hashtag {
     height: calc(100% - 50px);
     background: #FFFFFF;
 }
-.guidenote_title {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 3% 0 0 0;
-}
-img.guidenote_logo {
-    width: 250px;
-    display: block;
-}
-.dokdo .guidenote_title h3{
-    position: relative;
-    top: -20px;
-}
-.guidenote_title h3 {
-    margin-left: 20%;
-    font-size: 1.5rem;
-    border-bottom: 2px solid #1A1A1A;
-    color: #1A1A1A;
-}
+
 img.x_btn {
     width: 20px;
     display: block;
