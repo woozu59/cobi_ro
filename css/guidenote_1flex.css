@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*1-points*/
+ul.points_list {padding: 0 10%;}
+/* 2-primary color*/
+.color_palette {padding: 0 5%;}
+.color_code {padding: 100px 2% 10px;}
+.hex > h3, .rgb > h3 {font-size: 1.1rem;}
+.hex > p, .rgb > p {font-size: 1rem;}
+/* 3-font*/
+.nanum {padding: 0 3%;}
+.nanum > h3 {
+    font-size: 1.3rem;
+    padding: 0 1% 0 0;
+}
+.regular_text, .bold_text, .extra_text {
+    font-size: 0.9rem;
+    padding: 2% 0;
+}
+/*contents3*/
+.width > h3, .tool > h3, .term > h3, .contribution > h3 {font-size: 0.9rem;}
+.element p {
+    font-size: 0.7rem;
+    line-height: 2;
+}
+.explan {font-size: 1rem;}
+/*btn*/
+a.btn {
+    width: 30%;
+    left: 70%;
+}
