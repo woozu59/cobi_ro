@@ -81,6 +81,7 @@ $(function (){
     });
     /*guidenote modal*/
 
+    //dokdo
     var ddguideBtn = $('#dd_btn');
 
     ddguideBtn.on('click',function(){
@@ -90,13 +91,26 @@ $(function (){
         guideNote1.fadeIn(300);
     });
 
-    
 
-    var xbtn = $('.x_btn');
-    xbtn.on('click',function(){
-        $('#dokdo_guide').fadeOut(300);
+    var xBtn = $('.x_btn');
+    xBtn.on('click',function(){
+
+       $('#dokdo_guide').fadeOut(300);
+    
     });
 
+    //lush
+    var lsguideBtn = $('#ls_btn');
+
+    lsguideBtn.on('click',function(){
+        var guideNote2 = $('#lush_guide');
+
+        guideNote2.fadeIn(300);
+    });
+
+    xbtn.on('click',function(){
+        $('#lush_guide').fadeOut(300);
+    });
 
 
     //모바일 버전 햄버거 gnb
