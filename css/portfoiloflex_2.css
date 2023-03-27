@@ -150,12 +150,7 @@ ul.inform_hashtag {
 }
 
 /*guidenote modal popup*/
-.container {
-    top: 10%;
-}
-.lush img.guidenote_logo {
-    width: 200px;
-}
+.container {top: 10%;}
 img.x_btn {
     top: -12%;
     left: 92%;

@@ -492,7 +492,7 @@ h1.tt_empty {
 /*하단 skill영역*/
 .skill2 {
     width: 70%;
-    height: 410px;
+    height: 450px;
     margin: 4% auto 0;
     box-shadow: 10px 7px 25px 2px #ededed;
 }
@@ -667,23 +667,28 @@ ul.inform_hashtag {
     z-index: 900;
     display: none;
 }
-.container{
+.container {
     position: fixed;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 85%;
-    height: calc(100% - 50px);
+    width: 80%;
+    height: calc(100% - 80px);
     background: #FFFFFF;
+    display: flex;
 }
 
 img.x_btn {
     width: 20px;
     display: block;
     position: relative;
-    top: -19%;
-    left: 93%;
+    top: 5%;
+    left: 95%;
     cursor: pointer;
+}
+div#guidenote1, div#guidenote2, iframe {
+    width: 100%;
+    height: 100%;
 }
 .lush .guidenote{display: none;}
 

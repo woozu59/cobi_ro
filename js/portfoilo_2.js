@@ -79,6 +79,24 @@ $(function (){
 
         
     });
+    /*guidenote modal*/
+
+    var ddguideBtn = $('#dd_btn');
+
+    ddguideBtn.on('click',function(){
+
+        var guideNote1 = $('#dokdo_guide');
+
+        guideNote1.fadeIn(300);
+    });
+
+    
+
+    var xbtn = $('.x_btn');
+    xbtn.on('click',function(){
+        $('#dokdo_guide').fadeOut(300);
+    });
+
 
 
     //모바일 버전 햄버거 gnb
