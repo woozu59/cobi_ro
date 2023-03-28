@@ -108,7 +108,7 @@ $(function (){
         guideNote2.fadeIn(300);
     });
 
-    xbtn.on('click',function(){
+    xBtn.on('click',function(){
         $('#lush_guide').fadeOut(300);
     });
 

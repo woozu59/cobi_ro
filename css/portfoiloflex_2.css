@@ -140,6 +140,7 @@ ul.inform_hashtag {
 }
 .type h2, .page h2, .tool h2 {font-size: 2rem;}
 .type_1 p, .page_1 p, .tool_1 p {font-size: 1.5rem;}
+.lush .tool_1 p {font-size: 1.3rem;}
 
 .inform .color_btn {left: 20%;}
 

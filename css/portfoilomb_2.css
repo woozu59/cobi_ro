@@ -234,6 +234,7 @@ ul.inform_hashtag {
     left: 0;
     font-size: 1.2rem;
 }
+.pc_btn {display: none;}
 
 
 /*모바일 설명btn 모달창 start*/

@@ -614,19 +614,21 @@ ul.inform_hashtag {
 .type h2, .page h2, .tool h2{
     margin-right: 20px;
     font-family: var(--english-font);
+    line-height: 2;
 }
 .page_1 {display: flex;}
 .type_1 p, .page_1 p, .tool_1 p{
     font-size: 1.2rem;
     font-weight: 600;
     font-family: var(--english-font);
+    line-height: 3;
 }
 
 
 .tool_1{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    gap: 5%;
     font-family: var(--english-font);
 }
 /*pc.ver btn*/
