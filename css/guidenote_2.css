@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/*Noto Sans KR*/
+@font-face{src: url("../fonts/Lush.ttf"); font-family: "Lush"; }
+/*LUSH ttf*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+}
+ul,li{list-style: none;}
+body{
+    min-width: 360px;
+    background: #ffffff;
+}
+a{text-decoration: none;}
+:root{
+    --sansKR: 'Noto Sans KR', sans-serif;
+    --lush: "Lush";
+}
+
+/*header start*/
+header{
+    width: min(70%, 1000px);
+    margin: 0 auto;
+    padding: 3% 0 0 0;
+}
+.title{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0 0 0;
+}
+img.guidenote_logo {
+    width: 250px;
+    display: block;
+}
+.title > h3{
+    position: relative;
+    top: -10px;
+    margin-left: 20%;
+    font-size: 1.7rem;
+    border-bottom: 2px solid #1A1A1A;
+    color: #1A1A1A;
+}
+/*main start*/
+main {
+    width: min(70%, 1000px);
+    margin: 0 auto;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--sansKR);
+}
+/*contents1*/
+.contents_wrap {margin-bottom: 10%;}
+.contents_wrap > h1{
+    color: #3A3A3A;
+    margin-bottom: 3%;
+}
+.overview {
+    display: flex;
+    flex-direction: column;
+    word-break: keep-all;
+}
+.overview p {
+    color: #151515;
+    font-size: 1.1rem;
+    word-spacing: 0.1rem;
+}
+
+/*contents2*/
+
+/* 1-points*/
+.points, .primary_color, .font{margin-bottom: 7%;}
+.points > h2, .primary_color > h2, .font > h2 {
+    color: #818181;
+    padding: 0 4%;
+    margin-bottom: 5%;
+}
+
+ul.points_list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20%;
+}
+
+ul.points_list li{
+    font-size: 1.5rem;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+/* 2-primary color*/
+
+.color_palette{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+    gap: 5%;
+}
+.color_code{
+    padding: 100px 15px 10px;
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+}
+.color1 {
+    background: #FEEDC3;
+    color: #6c6c6c;
+}
+.color2{
+    background: #93A953;
+    color: #ffffff;
+}
+.color3{
+    background: #F3F2EA;
+    color: #6c6c6c;
+}
+.hex, .rgb {
+    display: flex;
+    justify-content: space-between;
+}
+.hex > h3, .rgb > h3 {font-size: 1.3rem;}
+.hex > p, .rgb > p{font-size: 1.1rem;}
+
+/* 3-font*/
+.noto {
+    justify-content: space-between;
+    font-family: var(--sansKR);
+    margin: 0 auto 10%;
+    color: #3A3A3A;
+    display: flex;
+    padding: 0 5%;
+}
+.regular{font-weight: 400;}
+.bold{font-weight: 700;}
+.fft{
+    font-weight: 800;
+    justify-content: space-between;
+    font-family: var(--lush);
+    margin: 0 auto;
+    color: #3A3A3A;
+    display: flex;
+    padding: 0 5%;
+}
+.noto > h3{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.fft > h3 {
+    font-size: 2rem;
+    line-height: 2;
+}
+.regular_text, .bold_text, .fft_text {
+    display: flex;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 0.7;
+    flex-flow: column wrap;
+}
+.regular p, .bold p {letter-spacing: 0.2em;}
+.fft p {letter-spacing: 0.3em;}
+
+/*contents3*/
+.construction {
+    display: flex;
+    flex-direction: column;
+}
+.element{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    color: #3A3A3A;
+}
+.element p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.width, .tool, .term, .contribution {display: flex;}
+.width > h3, .tool > h3, .term > h3, .contribution > h3 {margin-right: 10px;}
+.tool p:nth-of-type(1) {margin-right: 10px;}
+
+.section{margin-bottom: 7%;}
+.section > h2 {
+    color: #818181;
+    margin-bottom: 3%;
+}
+.section_img{
+    width: 100%;
+    box-shadow: 5px 10px 20px -6px rgba(0,0,0,0.2);
+}
+.section1 .section_img{margin-bottom: 3%;}
+.function {
+    display: flex;
+    padding: 10px 0 15px 3%;
+}
+.function > h3{
+    margin-right: 10px;
+    color: #5B5B5B;
+}
+.function p{line-height: 30px;}
+.function p:nth-of-type(1) {
+    margin-right: 10px;
+}
+.explan {
+    color: #3E3E3E;
+    font-size: 1.1rem;
+    word-break: keep-all;
+    word-spacing: 0.1em;
+    line-height: 1;
+}
+.explan p {line-height: 1.6;}
+
+/*btn*/
+a.btn{
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    position: relative;
+    left: 80%;
+}
+a.publish_btn {
+    background: #FEEDC3;
+    color: #ffffff;
+    text-align: center;
+    border: 2px solid #FEEDC3;
+}
+a.publish_btn:hover {
+    color: #FEEDC3;
+    background: none;
+    transition: 0.5s;
+}
+
