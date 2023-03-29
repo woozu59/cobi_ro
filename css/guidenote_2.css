@@ -172,6 +172,7 @@ ul.points_list li{
 .element{
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
     margin-bottom: 5%;
     color: #3A3A3A;
 }
