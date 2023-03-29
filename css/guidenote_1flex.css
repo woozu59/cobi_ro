@@ -1,14 +1,22 @@
 @charset "UTF-8";
 
 /*1-points*/
-ul.points_list {padding: 0 10%;}
+ul.points_list {padding: 0 5%;}
+ul.points_list li{font-size: 1.3rem;}
 /* 2-primary color*/
 .color_palette {padding: 0 5%;}
 .color_code {padding: 100px 2% 10px;}
-.hex > h3, .rgb > h3 {font-size: 1.1rem;}
-.hex > p, .rgb > p {font-size: 1rem;}
+.hex > h3, .rgb > h3 {font-size: 0.9rem;}
+.hex > p, .rgb > p {
+    font-size: 0.7rem;
+    line-height: 2;
+}
 /* 3-font*/
-.nanum {padding: 0 3%;}
+.nanum {
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+}
 .nanum > h3 {
     font-size: 1.3rem;
     padding: 0 1% 0 0;
@@ -18,14 +26,14 @@ ul.points_list {padding: 0 10%;}
     padding: 2% 0;
 }
 /*contents3*/
-.width > h3, .tool > h3, .term > h3, .contribution > h3 {font-size: 0.9rem;}
+.width > h3, .tool > h3, .term > h3, .contribution > h3 {font-size: 1rem;}
 .element p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 2;
 }
 .explan {font-size: 1rem;}
 /*btn*/
 a.btn {
-    width: 30%;
-    left: 70%;
+    width: 40%;
+    left: 60%;
 }

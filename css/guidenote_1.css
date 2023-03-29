@@ -159,6 +159,7 @@ ul.points_list li{
 .element{
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
     margin-bottom: 5%;
     color: #3A3A3A;
 }
@@ -166,9 +167,12 @@ ul.points_list li{
     font-size: 1.1rem;
     font-weight: 500;
 }
-.width, .tool, .term, .contribution {display: flex;}
-.width > h3, .tool > h3, .term > h3, .contribution > h3 {margin-right: 10px;}
-.tool p:nth-of-type(1) {margin-right: 10px;}
+.width, .tool, .term, .contribution {
+    display: flex;
+    gap: 10px;
+}
+/* .width > h3, .tool > h3, .term > h3, .contribution > h3 {margin-right: 10px;} */
+.tool p:nth-of-type(1) {margin-right: 5px;}
 
 .section{margin-bottom: 7%;}
 .section > h2 {
