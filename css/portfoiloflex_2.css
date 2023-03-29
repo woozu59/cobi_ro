@@ -78,7 +78,7 @@ img.minju {
     width: 50%;
 }
 /*flex.ver btn*/
-.about_right button {
+.about_right a.btn {
     display: block;
     width: 20%;
     margin: 0 auto;
@@ -151,16 +151,11 @@ ul.inform_hashtag {
 }
 
 /*guidenote modal popup*/
-.container {top: 10%;}
+.container {top: 5%;}
 img.x_btn {
-    top: -12%;
+    top: 2%;
     left: 92%;
 }
-.lush img.x_btn {
-    top: -12%;
-    left: 92%;
-}
-
 #page_4th p.pb_under {top: 82%;}
 
 

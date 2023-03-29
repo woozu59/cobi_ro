@@ -132,7 +132,7 @@ $(function (){
     //모바일 버전 모달창
 
     //독도 모달
-    var dokdoBt = $('#dokdo_bt');
+    var dokdoBt = $('#dokdomb_bt');
     
     dokdoBt.on('click',function(){
         
@@ -153,7 +153,7 @@ $(function (){
     });
 
     //lush 모달
-    var lushBt = $('#lush_bt');
+    var lushBt = $('#lushmb_bt');
     
     lushBt.on('click',function(){
 

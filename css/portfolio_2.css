@@ -331,7 +331,7 @@ img.minju{
 }
 
 /*about:btn 영역*/
-.about_left > a {
+.about_left > .btn {
     width: 150px;
     height: 40px;
     margin: 20px auto 0;
@@ -340,6 +340,7 @@ img.minju{
 .btn {
     font-family: var(--english-font);
     cursor: pointer;
+    display: block;
 }
 .btn-flip-down {
 --flip-button-height: 40px;
@@ -440,7 +441,7 @@ h1.tt_empty {
 }
 
 /*flex.ver btn */
-.about_right button{display: none;}
+.about_right a.btn {display: none;}
 
 /*두번째 섹션 end*/
 
@@ -606,6 +607,7 @@ ul.inform_hashtag {
     color: #373737;
     font-family: var(--english-font);
 }
+
 .type, .page, .tool{
     display: flex;
     height: 12%;
@@ -706,7 +708,7 @@ div#guidenote1, div#guidenote2, iframe {
     height: 100vh;
 }
 #page_5th .publishing{background: linear-gradient(180deg, #FFFFFF, #CCEAFF);}
-#page_5th .inform h1 {font-family: var(--english-font);}  
+
 /*섹션 background text*/
 #page_5th p.pb_under{
     color: #D1EBFF;
