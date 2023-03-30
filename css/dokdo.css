@@ -4,34 +4,34 @@
 /*나눔고딕*/
 
 *{
-    padding: 0; margin: 0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    /* outline: 1px solid purple; */
+    outline: 1px solid purple;
 }
 body{
-    min-width: 1200px; min-height: 950px;
+    min-width: 1200px;
+    min-height: 950px;
     font-family: 'Nanum Gothic', sans-serif;
 }
-a, a:link{
-    text-decoration: none;
-}
+a, a:link{text-decoration: none;}
 .inner{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 /*header css start*/
 header{
-    width:100%; height: 38px;
+    width:100%; 
+    height: 38px;
     background: #424242;
-    
+    position: relative;
+    z-index: 10;
 }
-
 header .top{
     width: 100%;
     display: flex;
     justify-content: space-between; 
-    padding: 0 15px;
-   
+    padding: 0 2%;
 }
 header .top .left{
     margin: 11px 1px;
@@ -40,27 +40,23 @@ header .top .left h6{
     color: white;
     letter-spacing: 1px;
 }
-
 header .right button{
     background: none;
     border: 1px solid #fff;
     padding: 3px;
     margin: 9px;
 }
-
 header .right .search{
     margin: auto 0;
     width: 150px;
     height: 22px;
 }
-
 header .right i{
     content:"\f002";
     display: inline-block;
     margin: 0px 0 0 10px;
     padding: 10px 10px 0 0;
     color: #ffff;
- 
 }
 header .right a{
     text-indent: -100px;
@@ -68,9 +64,7 @@ header .right a{
     color: #fff;
     font-size: 10px;
 }
-header .top .right{
-    display: flex;
-}
+header .top .right{display: flex;}
 
 /*header2 css start*/
 .header2{
@@ -83,42 +77,21 @@ header .top .right{
     background: none;
     height: 90px;
 }
-
 .header2 nav .inner{
     display: flex;
     width: 80%;
     margin: 0 auto;
 }
 a.logo{
-    width: 149px;
-    height: 61px;
+    width: 250px;
     display: block;
     background: url(../img/dokdo/foregin_white.ver.png) no-repeat 50% 50% / contain;
     text-indent: -235px;
     overflow: hidden;
     margin: 29px 0 0 0;
 }
-a.logo2{
-    background: url(../img/dokdo/dokdo_bold\ ver.png) no-repeat 50% 50% / contain;
-    width: 73px;
-    height: 44px;
-    display: block;
-    text-indent: -340px;
-    overflow: hidden;
-    margin-top: 39px;
-
-}
-nav .inner .foregin{
-    display:flex;
-}
-
-
-
-
+nav .inner .foregin {display: flex;}
 /*nav 탑형*/
-
-
-
 .inner .nav{
     width: 100%;
 }
@@ -143,8 +116,6 @@ ul.menu{
     cursor: pointer;
     list-style: none;
     width: 191px;
-    
-    
 }
 .nav .menu > li > a{
     display: block;
@@ -157,54 +128,37 @@ ul.menu{
     color: #fff;
     font-weight: bold;
 }
-.nav .menu > li:hover > a{
-    color:#3480AA;
-}
 .nav .menu > li > ul{
     list-style: none;
     background: rgba(255, 255, 255, 0.7);
     
 }
-
 .nav .menu > li > ul > span{
     width: 100%;
     height: 40px;
 }
-/* .nav.menu > li > ul > li:hover{
-    
-} */
 .nav .menu > li > ul > li{
     height: 40px;
     line-height: 40px;
     padding: 0px 8px;
-    font-size: 0.9em;
-    
+    font-size: 0.9em;   
 }
 .nav .menu > li > ul > li a{
     color: #242424;
 }
-
-
 .nav .menu > li > ul > li:hover > a{
     color:#555555;
 }
-
-
-
-
-
-
 
 /*sec1 css start*/
 .sec1{
     overflow: hidden;
     margin: -127px 0 0 0;
     height: 100vh;
-   
 }
-
 .sec1 .vd{
     width:100%;
+    height: 100%;
 }
 .sec1 video{
     position: fixed;
@@ -213,16 +167,11 @@ ul.menu{
 .bg {
     background: rgba(0,0,0,0.3);
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    position: relative;
+    top: -100%;
 }
-.sec1 .dokdo{
-    width: 160px;
-    height: 170px;
-    background: url(../img/dokdo/logo_korean.png) no-repeat 50% 50% / contain;
-    text-indent: -100px;
-    overflow: hidden;
-    margin: 128px auto;
-}
+.sec1 .dokdo{display: none;}
 
 /*sec2 css start*/
 
@@ -231,26 +180,20 @@ ul.menu{
     padding: 20px 0 4px 0;
     border-bottom: 2px solid #242424;
     width: 150px;
-
 }
-
 .sec2{
-    height: 307px;
     width: 66%;
     margin: 0 auto;
     border-radius: 20px 20px 0 0;
-    /* background: url(../img/dokdo/날씨영역bg.jpg) no-repeat 50% 100% / cover; */
     background-color: rgba(255, 255, 255, 0.7);
     background-blend-mode: soft-light;
     transform: translateY(-100%);
 }
-
 .sec2 .content{
     display: flex;
     height: 307px;
     width: 100%;
 }
-
 .sec2 .content .line{
     width: 1px;
     height: 200px;
@@ -262,20 +205,15 @@ ul.menu{
     width: 50%;
     padding: 0 0 0 20px;
 }
-.left .title h2 {
-    width: 125px;
-}
-
-
+.left .title h2 {width: 125px;}
 
 /*날씨 css*/ 
 .sec2 .left .wrap{
-    width: 420px;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
-    
 }
 .sec2 .left .wrap .weather{
     width: 292px;
@@ -287,8 +225,6 @@ ul.menu{
     color: #242424;
     margin: 0 auto;
 }
-
-
 .wrap .weather > .temp{
     font-size: 1.8rem;
     position: relative;
@@ -299,15 +235,12 @@ ul.menu{
     position: relative;
     left: -100px;
 }
-
 .wrap .coment{
     margin: 0 31px;
     text-align: center;
     position: relative;
     top: 30px;
-
 }
-
 .wrap span{
     position: relative;
     top: -38px;
@@ -315,6 +248,7 @@ ul.menu{
     padding: 5px;
 }
 /*날씨 css 끝*/
+
 div#guide {
     height: 230px;
     overflow: auto;
@@ -332,14 +266,18 @@ div#guide {
     height: 15px;
     display: inline-block;
 }
-
 .arrow_wrap {
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translate(0, -50%);
 }
-.que .minus {display: none; background: url(../img/icon/minus-solid.svg) no-repeat 50% 50% / contain; width:23px; height: 13px;}
+.que .minus {
+    display: none;
+    background: url(../img/icon/minus-solid.svg) no-repeat 50% 50% / contain;
+    width:23px;
+    height: 13px;
+}
 .que .plus {display: block;}
 .que.on .minus{display: block; }
 .que.on .plus{display:none;}
@@ -347,12 +285,10 @@ div#guide {
 .anw img{
     width: 100%;
     border-radius: 10px;
-   
 }
 
 
 /*table css*/
-
 
 table{
     width: 98%;
@@ -373,9 +309,7 @@ thead th{
     padding: 3px;
     text-align: center;
 }
-thead th:first-child{
-    border-left: none;
-}
+thead th:first-child{border-left: none;}
 table td:first-child{
     border-left: none;
     border-right: 1px solid #4444;
@@ -383,7 +317,6 @@ table td:first-child{
 
 
 .sec2 .note{
-    /* background-color: rgba(36, 36, 36, 0.2); */
     padding-bottom: 7px;
     border-radius: 10px;
     margin-right: 10px;
@@ -393,12 +326,8 @@ table td:first-child{
     margin: 0 25px;
     text-indent: 6px;
 }
-.sec2 .note li{
-    margin: 11px 0;
-}
-.sec2 .note li span{
-    font-weight: bold;
-}
+.sec2 .note li{margin: 11px 0;}
+.sec2 .note li span{font-weight: bold;}
 /*버튼 css*/
 
 .sec2 .site{
@@ -419,9 +348,7 @@ table td:first-child{
     background: none;
 }
 
-.site .bt:hover{
-    color: #fff;
-}
+.site .bt:hover{color: #fff;}
 .site .bt:before{
     content:"";
     z-index: -1;
@@ -429,7 +356,6 @@ table td:first-child{
     background:#225ea7;
     transition: all 1s;
 }
-
 .site button:before{
     left: 0;
     top: 0;
@@ -438,29 +364,76 @@ table td:first-child{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
-.site button:hover:before{
-    height: 200%;
-}
+.site button:hover:before{height: 200%;}
 /*sec3 start*/
 
 .sec3{
-    margin-top: -307px;
+    margin-top: -20%;
     background: white;
-    height:auto;
     position: relative;
 }
 .sec3 .cardgroup{
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
-    margin: 1px auto;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+.sec3 .cardgroup .card{
+    margin: 4% 2% 0 0;
+    z-index: 20;
+    width: 45%;
+}
+.sec3 .card .cardti{
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+    z-index: 5;
+}
+.sec3 .card .cardti h4{
+    padding: 0 0px 0 5%;
+    color: white;
+}
+.sec3 .card img{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 5px 5px 7px rgb(36,36,36,0.3);
+}
+.sec3 .card .inform {
+    background-color: rgba(36, 36, 36, 0.7);
+    box-shadow: 5px 5px 7px rgb(36,36,36,0.3);
+    width: 100%;
+    height: 40%;
+    color: white;
+    position: relative;
+    left: 0;
+    top: -20%;
+    padding: 5% 5% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+.inform p {
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.sec3 .card .inform .source{font-size: 0.7em;}
+.cardgroup .card:nth-child(even) {
+    position: relative;
+    top: 60px;
+    margin: 0;
+}
+.cardgroup .card:nth-child(even) .inform{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1c1c1c;
 }
 
-.sec3 .cardgroup .card{
-    margin: 50px 0;
-    z-index: 20;
-}
+
 .sec3 .cardgroup .back_1{
     width: 940px;
     height: 276px;
@@ -480,65 +453,15 @@ table td:first-child{
     background: #3480AA
 }
 
-.sec3 .card .cardti{
-    position: relative;
-    top: 62px;
-    z-index: 5;
-}
-.sec3 .card .cardti h4{
-    margin: 0 0px 0 37px;
-    color: white;
-    font-size: 2.2vh;
-}
-.sec3 .card img{
-    width: 480px;
-    height: 325px;
-    position: relative;
-    box-shadow: 5px 5px 7px rgb(36,36,36,0.3);
-    /* border-radius: 18px; */
-}
-
-.sec3 .card .inform{
-    background-color: rgba(36, 36, 36, 0.7);
-    color: white;
-    width: 393px;
-    height: 187px;
-    margin: -130px 0 0 -32px;
-    font-size: 15px;
-    position: absolute;
-    padding: 20px;
-    box-shadow: 5px 5px 7px rgb(36,36,36,0.3);
-    /* border-radius: 18px; */
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-.sec3 .card .inform .source{
-    font-size: 0.7em;
-    margin-top: 5px;
-}
-.cardgroup .card:nth-child(even) img{
-    margin: 67px 0 0 0;
-}
-.cardgroup .card:nth-child(even) .inform{
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
-    margin-left: 120px;
-    margin-top: -138px;
-    border: 1px solid #EDEEEE;
-}
-.sec3 .card:nth-child(even) .cardti{
-    top: 133px;
-}
-
 /*sec4 start*/
 .sec4{
+    width: 100%;
     background: url(../img/dokdo/dokdo_banner.jpg) no-repeat 50% 50% / cover;
     background-color:rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
     height: 618px;
     position: relative;
 }
-
 .sec4 .inner .title h2{
     color: #ffffff;
     width: 247px;
@@ -549,13 +472,10 @@ table td:first-child{
     height: 490px;
     margin-top: 20px;
 }
-
-
 .sec4 .slidecard .slideinner{
     color: #ffffff;
     width: 100%;
 }
-
 .sec4 .year{
     font-size: 20px;
     text-align: center;
@@ -572,22 +492,21 @@ table td:first-child{
     margin: 0 auto;
     width: 220px;
 }
-.sec4 .copy{
-    
-    font-size: 17px;
-    padding: 0px 20px;
-    margin: 15px 30px;
-    word-break: keep-all;
-    letter-spacing: 3px;
-}
-.sec4 .copy > span{
-    font-size: 13px;
+.sec4 .copy {
+    width: 100%;
+    font-size: 1rem;
+    padding: 2% 5% 0;
+    word-wrap: break-word;
+    word-spacing: 2px;
+    letter-spacing: 1px;
     display: flex;
-    margin-top: 12px;
+    flex-direction: column;
+    line-height: 0.9;
 }
-.sec4 .slidecard:nth-child(n+4) p.copy{
-    margin-top: 28px;
-}
+.copy p {line-height: 1.5;}
+.sec4 .copy > .star{font-size: 0.7rem;}
+.slide7 .copy {font-size: 0.9rem;}
+
 
 /*슬라이드 마지막에 설정*/
 
@@ -600,17 +519,14 @@ footer .inner{
     display: flex;
     color: #9d9d9d;
     height: 146px;
-    width: 70%;
+    width: 80%;
     padding-top: 25px;
-
 }
 footer .inner .logo{
     background: url(../img/dokdo/foregin_gray.ver.png) no-repeat 50% 50% / contain;
-    width: 149px;
-    height:61px;
+    width: 20%;
     display: block;
-    text-indent: -46px;
-    overflow: hidden;
+    margin: 0;
 }
 footer address{
     font-style: normal;
@@ -618,19 +534,14 @@ footer address{
     flex-direction: column;
     padding: 2% 0;
     font-size: 12px;
-    margin: 13px 0 0 50px;
-    width: 56%;
+    margin: 2% 0 0 2%;
+    width: 100%;
 }
-footer address > span{
-    margin-bottom: 10px;
-}
+footer address > span{margin-bottom: 10px;}
 footer .snsicon{
-    height: 39px;
-    margin-left: 18%;
-    margin-top: 15px;
-    width: 150px;
+    margin: 2% 0 0 0;
+    display: flex;
 }
-
 a.fa-brands{
     display: inline-block;
     width: 44px;
@@ -640,6 +551,5 @@ a.fa-brands{
     text-indent: -30px;
     color: white;
     padding: 20px 0px 0 45px;
-    
 }
 
