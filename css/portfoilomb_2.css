@@ -199,12 +199,12 @@ p.pb_text {font-size: 4rem;}
 img.mobile {
     width: 35%;
     height: 60%;
-    top: -48%;
+    top: 0;
     left: 0;
 }
 img.pc {
     width: 85%;
-    top: -40%;
+    top: -60%;
     left: 15%;
 }
 
