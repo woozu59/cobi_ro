@@ -99,7 +99,7 @@ nav .inner .foregin {display: flex;}
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 3%;
 }
 .inner > span {display: none;}
 .nav > span{display: none;}
