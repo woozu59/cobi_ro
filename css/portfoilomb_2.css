@@ -162,8 +162,9 @@ header.on .gnb_menu {background: rgba(139, 185, 219, 0.4);}
 }
 .contact_1 p, .edu_1 p, .licen_1 p {font-size: 1rem;}
 
+
 /*flex.ver btn*/
-.about_right button {width: 30%;}
+.about_right a.btn {width: 30%;}
 
 /*3rd section*/
 .skill{width: 100%;}
@@ -171,7 +172,7 @@ header.on .gnb_menu {background: rgba(139, 185, 219, 0.4);}
 
 .skill2 {
     width: 100%;
-    height: 30%;
+    height: 35%;
     top: 40%;
 }
 .skill2 > span {padding: 2% 0 0 0;}
@@ -196,15 +197,15 @@ p.pb_text {font-size: 4rem;}
 .dokdo, .lush{width: 90%;}
 .result {height: 50%;}
 img.mobile {
-    width: 30%;
-    height: 50%;
-    top: 48%;
+    width: 35%;
+    height: 60%;
+    top: -48%;
     left: 0;
 }
 img.pc {
-    width: 100%;
+    width: 85%;
     top: -40%;
-    left: 0;
+    left: 15%;
 }
 
 .inform{
@@ -250,8 +251,8 @@ ul.inform_hashtag {
     align-items: center;
     display: none;
 }
-#page_3rd .md,
-#page_4th .md {
+#page_4th .md,
+#page_5th .md {
     width: 90%;
     height: 40%;
     background: #ffffff;
