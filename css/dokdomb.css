@@ -24,76 +24,76 @@ a.logo {
     margin: 0;
 }
 .header2 nav .inner{
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     height: 100%;
 }
 
-.inner .nav{
-    position: relative;
-}
-.nav > .navIcon{
-    background: url(../img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
-    display:block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 30px;
-    right: 0;
-    cursor: pointer;
-}
-nav .inner .foregin{width: 60%;}
-.nav > .menu1.on{
-    transform: translateX(0%); 
-    transition: all 0.5s;
-}
-.nav > .menu1{
+.inner .nav {
     width: 80%;
     height: 100vh;
     background: rgba(0,0,0,0.7);
-    position: fixed;
-    z-index: 1000;
-    overflow: hidden;
-    /* display: none; */
+    transform: translate(0%, 0);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 0 0;
+    position: absolute;
+    z-index: 900;
+    left: 100%;
     margin: 0;
-    justify-content: flex-start;
-    transform: translateX(-101%);
+}
+.inner .nav.on{
+    transform: translate(-100%, 0);
     transition: all 0.5s;
 }
-.menu1 .closeBt{
+.inner .navIcon {
+    background: url(../img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    z-index: 100;
+    top: 3%;
+    left: 85%;
+    cursor: pointer;
+}
+.nav .closeBt{
     background: url(../img/icon/xmark-solid.png) no-repeat 50% 50% / contain;
     width: 25px;
     height: 25px;
     display: block;
-    position: relative;
+    position: fixed;
+    z-index: 900;
     left: 86%;
     top: 34px;
     cursor: pointer;
 }
-.inner .menu{
+nav .inner .foregin {
+    width: 40%;
+    position: relative;
+    z-index: 100;
+}
+.nav > ul.menu{
+    width: 90%;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 10%;
-    left: 5%;
-    width: 60%;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    font-size: 14px;
+    font-size: 1.3em;
 }
 .nav .menu > li{
     width: 100%;
 }
-.nav .menu > li > a {
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.0em;
-}
-.nav .menu > li > ul{
+.snb{
     background: none;
     border: 1px solid #eee;
 }
-.nav .menu > li > ul > li a{
+.snb li a{
     color: #fff;
 }
 

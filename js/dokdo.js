@@ -1,11 +1,24 @@
 //weather js
 
 $(document).ready(function(){
-  //top nav js
-  $(".menu > li > ul").hide();
-  $(".menu").hover(function(){
-    $(".menu ul").stop().slideToggle();
-  });    
+
+    if($(window).width() > 640){
+        $(".nav > ul > li").off().hover(function(){
+            $(this).children('.snb').slideToggle();    
+        });
+    }
+    $(".nav > ul > li > a").off().click(function(){
+        $(this).addClass('on').next().slideToggle(300);
+        $(".nav > ul > li > a").not(this).removeClass('on').next().slideUp(300);
+        return false;
+    });
+    $(".navIcon").click(function(){
+        $(".nav").toggleClass('on');
+    });
+    
+    $(".closeBt").click(function(){
+      $(".nav").toggleClass('on');
+    });
   
   
   $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=4e406371c47d543546a019fee8fe058d&units=metric',function(result){

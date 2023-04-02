@@ -12,10 +12,10 @@ a.logo2{
     width: 60px;
     margin-top: 46px;
 }
-ul.menu {width: 433px;}
+.nav > ul.menu {width: 433px;}
 .nav .menu > li {width: 144px;}
 .nav .menu > li > a{font-size: 0.9em;}
-.nav .menu > li > ul > li {padding: 0;}
+.snb li {padding: 0;}
 .sec1 .dokdo {
     position: absolute;
     top: 25%;
