@@ -132,14 +132,15 @@ ul.points_list li{
     display: flex;
     padding: 0 5%;
 }
-.regular{font-weight: 400;}
-.bold{font-weight: 700;}
-.extra{font-weight: 800;}
+.regular {font-weight: 400;}
+.bold {font-weight: 700;}
+.extra {font-weight: 800;}
 .nanum.extra {margin: 0 auto;}
 .nanum > h3 {
     font-size: 1.6rem;
     line-height: 2;
 }
+
 .regular_text, .bold_text, .extra_text {
     display: flex;
     font-size: 1rem;
@@ -147,9 +148,7 @@ ul.points_list li{
     line-height: 0.7;
     flex-flow: column wrap;
 }
-.regular p, .bold p, .extra p {
-    letter-spacing: 0.2em;
-}
+.regular p, .bold p, .extra p {letter-spacing: 0.2em;}
 
 /*contents3*/
 .construction {
