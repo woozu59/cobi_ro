@@ -197,15 +197,15 @@ p.pb_text {font-size: 4rem;}
 .dokdo, .lush{width: 90%;}
 .result {height: 50%;}
 img.mobile {
-    width: 35%;
+   width: 30%;
     height: 60%;
-    top: 30%;
+    top: 35%;
     left: 0;
 }
 img.pc {
     width: 85%;
-    top: -145px;
-    left: 15%;
+    top: -125px;
+    left: 10%;
 }
 
 .inform{
