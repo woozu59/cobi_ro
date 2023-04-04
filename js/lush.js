@@ -78,20 +78,5 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-// $(document).scroll(function(){
-
-//   $(".scroll").hide();
-//   var scrolltop = $("window").scrollTop();
-
-
-//   var start = $(".section2").offset().top;
-//   var end = $(".section2").offset().top + 100
-//     if(scrolltop > start && scrolltop < end) {
-//       console.log("scroll 나타남");
-//       $(".scroll").show();
-//      } else if(scrolltop < start) {
-//       $(".scroll").hide();
-//     }
-// });
 
   
