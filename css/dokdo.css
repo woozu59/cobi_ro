@@ -58,6 +58,7 @@ header .right i{
     margin: 0px 0 0 10px;
     padding: 10px 10px 0 0;
     color: #ffff;
+    cursor: pointer;
 }
 header .right a{
     text-indent: -100px;
@@ -96,54 +97,84 @@ nav .inner .foregin {display: flex;}
 .inner .nav {
     width: 100%;
     height: 60px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-top: 3%;
-}
-.inner > span {display: none;}
-.nav > span{display: none;}
-.nav > ul.menu {
-    width: 85%;
-    height: 100%;
-    z-index: 100;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-.nav .menu > li {width: 180px;}
-.nav .menu > li > a {
     display: block;
-    width: 100%;
+    margin-top: 3%;
+    position: relative;
+}
+
+.nav .menu {
+    width: 600px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav .menu .depth {
     height: 60px;
     line-height: 60px;
+    display: inline-flex;
+    position: relative;
+    z-index: 50;
+}
+.nav .menu .depth::after{
+    width: 0%;
+    height: 3px;
+    background: #3480AA;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    z-index: 10;
+}
+.nav .menu .depth > a {
+    display: block;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: #fff;
 }
-.snb{
+.sub{
+    min-width: 180px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid #ddd;
+    position: absolute;
+    top: 61px;
+    left: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+    display: none;
+}
+.sub > span{
     width: 100%;
     height: auto;
-    background: rgba(255, 255, 255, 0.7);
 }
-.snb > span{
-    width: 100%;
-    height: auto;
-}
-.snb li{
+.sub li{
     width: 100%;
     height: 40px;
     line-height: 40px;
     padding: 0px 10px;
-       
 }
-.snb li a{
-    color: #3b3b3b;
-    font-size: 1em;
+.sub li a{
+    color: #333;
+    font-size: 0.9rem;
     display: block;
     text-align: center;
 }
-.nav .menu > li > ul > li:hover > a{color:#6d6d6d;}
+.nav .menu .depth:hover::after{
+    width: 110%;
+    transition: width 0.5s;
+}
+.nav .menu .depth:hover .sub{display: block;}
+.nav .menu .depth .sub li:hover{background: #3480AA;}
+.nav .menu .depth .sub li:hover a{color: #fff;}
+
+
+
+.mb_nav{display: none;}
 
 /*sec1 css start*/
 .sec1{
@@ -166,6 +197,7 @@ nav .inner .foregin {display: flex;}
     position: relative;
     top: -100%;
 }
+.nav > span{display: none;}
 .sec1 .dokdo{display: none;}
 
 /*sec2 css start*/
@@ -364,7 +396,7 @@ table td:first-child{
 /*sec3 start*/
 
 .sec3{
-    margin-top: -20%;
+    margin-top: -21%;
     background: white;
     position: relative;
 }
@@ -429,25 +461,6 @@ table td:first-child{
     color: #1c1c1c;
 }
 
-
-.sec3 .cardgroup .back_1{
-    width: 940px;
-    height: 276px;
-    position: absolute;
-    left: 0;
-    z-index: 2;
-    top: 20%;
-    background: #89BDDA;
-}
-.sec3 .cardgroup .back_2{
-    width: 900px;
-    height: 295px;
-    position: absolute;
-    right: 0%;
-    z-index: 2;
-    top: 56%;
-    background: #3480AA
-}
 
 /*sec4 start*/
 .sec4{

@@ -1,26 +1,22 @@
 //weather js
 
 $(document).ready(function(){
-
-    if($(window).width() > 640){
-        $(".nav > ul > li").off().hover(function(){
-            $(this).children('.snb').slideToggle();    
-        });
-    }
-    $(".nav > ul > li > a").off().click(function(){
-        $(this).addClass('on').next().slideToggle(300);
-        $(".nav > ul > li > a").not(this).removeClass('on').next().slideUp(300);
-        return false;
+      
+    $(".mb_nav > ul > li > a").click(function(){
+      $(this).next('.mb_depth').slideToggle(400);
     });
+
     $(".navIcon").click(function(){
-        $(".nav").toggleClass('on');
+        $(".mb_nav").toggleClass('on');
+        $(".closeBt").css('display','block');
     });
     
     $(".closeBt").click(function(){
-      $(".nav").toggleClass('on');
+      $(".mb_nav").toggleClass('on');
+      $(".closeBt").css('display','none');
     });
   
-  
+  //sec2 weather
   $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=4e406371c47d543546a019fee8fe058d&units=metric',function(result){
           let icon = `<img src="../img/weather/${result.weather[0].icon}.svg" alt="${result.weather[0].description}">`
           let temp = result.main.temp.toFixed(1)
@@ -58,14 +54,14 @@ $(document).ready(function(){
 
 
 });
-
+//sec2 accordion menu
 $(".que").click(function(){
   $(this).next(".anw").stop().slideToggle(300);
   $(this).toggleClass("on").siblings().removeClass("on");
   $(this).next(".anw").siblings(".anw").slideup(300);
 });
 
-//swiper 
+//sec4 swiper 
  var swiper = new Swiper(".slide", {
     navigation: {
      nextEl: ".swiper-button-next",

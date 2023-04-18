@@ -19,6 +19,11 @@ header.header2{
     height: 100%;
     padding: 0;
 }
+nav .inner .foregin {
+    width: 40%;
+    position: relative;
+    z-index: 100;
+}
 a.logo {
     width: 100%;
     margin: 0;
@@ -28,74 +33,86 @@ a.logo {
     justify-content: space-between;
     height: 100%;
 }
-
-.inner .nav {
-    width: 80%;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
-    transform: translate(0%, 0);
-    transition: all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0 0 0;
-    position: absolute;
-    z-index: 900;
-    left: 100%;
-    margin: 0;
-}
-.inner .nav.on{
-    transform: translate(-100%, 0);
-    transition: all 0.5s;
-}
-.inner .navIcon {
+/*pc & flex 버전 display none*/
+.nav .menu{display: none;}
+.nav .navIcon {
     background: url(../img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
     display: block;
     width: 30px;
     height: 30px;
-    position: fixed;
+    position: relative;
     z-index: 100;
-    top: 3%;
-    left: 85%;
+    top: 20%;
+    left: 80%;
     cursor: pointer;
 }
 .nav .closeBt{
     background: url(../img/icon/xmark-solid.png) no-repeat 50% 50% / contain;
-    width: 25px;
-    height: 25px;
-    display: block;
+    width: 30px;
+    height: 30px;
+    display: none;
     position: fixed;
-    z-index: 900;
-    left: 86%;
-    top: 34px;
+    z-index: 1000;
+    left: 85%;
+    top: 3%;
     cursor: pointer;
 }
-nav .inner .foregin {
-    width: 40%;
-    position: relative;
-    z-index: 100;
+.mb_nav{
+    display: block;
+    width: 80%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    transform: translate(100%, 0);
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 900;
+    left: 20%;
+    top: 0;
+    padding: 100px 0 0 0;
 }
-.nav > ul.menu{
-    width: 90%;
+.mb_nav.on{
+    transform: translate(0%, 0);
+    transition: all 0.5s;
+}
+
+
+.mb_nav ul.menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    font-size: 1.3em;
-}
-.nav .menu > li{
     width: 100%;
 }
-.snb{
-    background: none;
-    border: 1px solid #eee;
+.mb_nav .menu .depth {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
 }
-.snb li a{
+.mb_nav .menu .depth > a {
+    color: #fff;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+.mb_nav .menu .depth .sub {
+    width: 90%;
+    display: none;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    background: none;
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
+.mb_nav .sub li > a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
     color: #fff;
 }
+.mb_nav .sub li > a.on{background: #3480AA;}
+
 
 .sec1 .dokdo {
     width: 13%;
@@ -162,7 +179,7 @@ table td{padding: 2px;}
     width: 146px;
     font-size: 12px;
 }
-.sec3{margin-top: -130%;}
+.sec3{margin-top: -137%;}
 .inner{width: 90%;}
 .sec3 .cardgroup{
     width: 100%;
@@ -170,12 +187,7 @@ table td{padding: 2px;}
     position: relative;
     z-index: 0;
 }
-.sec3 .cardgroup .back_1 {
-    display: none;
-}
-.sec3 .cardgroup .back_2 {
-    display: none;
-}
+
 .sec3 .cardgroup .card{width: 80%;}
 .sec3 .card .inform {font-size: 12px;}
 .cardgroup .card:nth-child(even){top: 0;}

@@ -12,10 +12,11 @@ a.logo2{
     width: 60px;
     margin-top: 46px;
 }
-.nav > ul.menu {width: 433px;}
-.nav .menu > li {width: 144px;}
-.nav .menu > li > a{font-size: 0.9em;}
-.snb li {padding: 0;}
+.inner .nav{margin-top: 4%;}
+.nav .menu {width: 440px;}
+.nav .menu .depth {width: 144px;}
+.nav .menu .depth > a{font-size: 0.9em;}
+.sub li {padding: 0;}
 .sec1 .dokdo {
     position: absolute;
     top: 25%;
@@ -44,16 +45,6 @@ a.logo2{
    padding: 10% 5% 0;
 }
 .inform p {font-size: 0.8rem;}
-.sec3 .cardgroup .back_1{
-    width: 80%;
-    height: 250px;
-    
-}
-.sec3 .cardgroup .back_2{
-    width: 80%;
-    height: 250px;
-    top: 60%;
-}
 footer .inner{
     width: 90%;
     padding: 0;
