@@ -3,13 +3,14 @@
 
 <head><!--모바일, 태블릿 css만들때 뷰포트 선언문 작성하기-->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"> 
     <meta name="format-detection" content="telephone=no"/>
     <title>외교부 독도</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/dokdo.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 1200px)" href="../css/dokdoflex.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="../css/dokdomb.css">
+    <link rel="stylesheet" type="text/css" href="/cobi_ro/css/dokdo.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1200px)" href="/cobi_ro/css/dokdoflex.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="/cobi_ro/css/dokdomb.css">
     <link rel="stylesheet" type="text/css" href="../css/ex_dokdo.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -23,16 +24,14 @@
                 </h6>
             </div>
             <div class="right">
-                <button id="english"><a href="#">ENGLISH</a></button>
+                <button id="english">ENGLISH</button>
                 <input type="search" class="search" >
                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                <a href="#">searchicon</a>
-                
             </div>
         </div>
     </header>
-    <header class="header2">
-        <nav class="top">
+    <div class="header2">
+        <nav class="top_2">
             <div class="inner">
                 <div class="foregin">
                   <a href="#" class="logo">외교부 로고</a>
@@ -105,18 +104,18 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </div>
     <!--sec1 시작-->
     <section class="sec1">
         <div class="vd">
             <video muted autoplay loop playsinline id="vd1">
-                <source src="../img/dokdo/울릉도, 독도로 가는 길(Journey to Ulleungdo & Dokdo).mp4" type="video/mp4">
+                <source src="/cobi_ro/img/dokdo/울릉도, 독도로 가는 길(Journey to Ulleungdo & Dokdo).mp4" type="video/mp4">
             </video>
         </div>
         <div class="bg"></div>
         <div class="dokdo">
             <!--flex, mobile.ver-->
-            <img src="../img/dokdo/logo_korean.png">
+            <img src="/cobi_ro/img/dokdo/logo_korean.png">
         </div>
     </section>
     <!--sec2 시작-->
@@ -140,17 +139,17 @@
                 </div>
                 <div id="guide"><!--아코디언 메뉴-->
                     <div class="que">
-                        <span><img src="../img/icon/caret-right-solid.svg" alt="방향 아이콘">입도절차</span><!--1번 메뉴-->
+                        <span><img src="/cobi_ro/img/icon/caret-right-solid.svg" alt="방향 아이콘">입도절차</span><!--1번 메뉴-->
                         <div class="arrow_wrap">
                             <span class="plus">+</span>
                             <span class="minus"></span>
                         </div>
                     </div>
                     <div class="anw">
-                        <span><img src="../img/dokdo/step.jpg" alt="입도절차안내"></span>
+                        <span><img src="/cobi_ro/img/dokdo/step.jpg" alt="입도절차안내"></span>
                     </div>
                     <div class="que">
-                        <span><img src="../img/icon/caret-right-solid.svg" alt="방향 아이콘">여객선정보</span><!--2번 메뉴-->
+                        <span><img src="/cobi_ro/img/icon/caret-right-solid.svg" alt="방향 아이콘">여객선정보</span><!--2번 메뉴-->
                         <div class="arrow_wrap">
                             <span class="plus">+</span>
                             <span class="minus"></span>
@@ -217,7 +216,7 @@
                         <span>2022년 1월기준</span>    
                     </div>
                     <div class="que">
-                        <span><img src="../img/icon/caret-right-solid.svg" alt="방향 아이콘">유의사항</span><!--3번 메뉴-->
+                        <span><img src="/cobi_ro/img/icon/caret-right-solid.svg" alt="방향 아이콘">유의사항</span><!--3번 메뉴-->
                         <div class="arrow_wrap">
                             <span class="plus">+</span>
                             <span class="minus"></span>
@@ -225,7 +224,7 @@
                     </div>
                     <div class="anw">
                         <div class="note">
-                            <img src="../img/dokdo/dokdo.jpg" alt="독도 입도 유의사항">
+                            <img src="/cobi_ro/img/dokdo/dokdo.jpg" alt="독도 입도 유의사항">
                             <ul>
                                 <li>독도는 울릉도를 거쳐야 오실 수 있습니다.</li>
                                 <li>선박 운행시간, 요금, 선착장 등은 변동 될 수 있으니 각 선사를 통하여 미리 확인바랍니다.</li>
@@ -236,7 +235,7 @@
                         </div>
                     </div>    
                     <div class="que">
-                        <span><img src="../img/icon/caret-right-solid.svg" alt="방향 아이콘">독도입도종합안내 바로가기</span><!--4번 메뉴-->
+                        <span><img src="/cobi_ro/img/icon/caret-right-solid.svg" alt="방향 아이콘">독도입도종합안내 바로가기</span><!--4번 메뉴-->
                         <div class="arrow_wrap">
                             <span class="plus">+</span>
                             <span class="minus"></span>
@@ -262,7 +261,7 @@
                     <div class="cardti">
                         <h4>동도</h4>
                     </div>
-                    <img src="../img/dokdo/동도.jpg" alt="동도 이미지">
+                    <img src="/cobi_ro/img/dokdo/동도.jpg" alt="동도 이미지">
                     <div class="inform" data-aos="fade-up" data-aos-duration="2000">
                         <p>높이 98.6m, 둘레 2.8km 면적 73,297m² 7필지. 서도에 비해 높이가 낮고 면적이 좁지만, 둘레가 크고 완만해 필지가 많은 편이다.</p>
                         <p>날씨가 좋으면 울릉도 동쪽 해안에서 육안으로 이 섬을 볼 수 있다.</p>
@@ -274,7 +273,7 @@
                     <div class="cardti">
                         <h4>서도</h4>
                     </div>
-                    <img src="../img/dokdo/서도.jpg" alt="서도 이미지">
+                    <img src="/cobi_ro/img/dokdo/서도.jpg" alt="서도 이미지">
                     <div class="inform" data-aos="fade-up" data-aos-duration="2000">
                         <p>높이 168.5m, 둘레 2.6km, 면적 88,740m² 5필지, 동도에 비해 높이가 높고 면적이 넓지만,</p>
                         <p>경사가 급한 편이라 필지가 적은 편이다.</p>
@@ -284,7 +283,7 @@
                     <div class="cardti">
                         <h4>괭이갈매기</h4>
                     </div>
-                    <img src="../img/dokdo/괭이갈매기.jpg" alt="괭이갈매기 이미지">
+                    <img src="/cobi_ro/img/dokdo/괭이갈매기.jpg" alt="괭이갈매기 이미지">
                     <div class="inform" data-aos="fade-up" data-aos-duration="2000">
                         <p>괭이갈매기의 한국 번식지로는  난도, 홍도, 독도가 있다.</p>
                         <p>독도는 철새 이동경로의 중간 피난처 및 휴식처로 우리나라 생물의 기원과 분포를 연구할 수 있어 섬 생물지리학적(island biogeography)으로 중요하다.</p>
@@ -294,7 +293,7 @@
                     <div class="cardti">
                         <h4>섬기린초</h4>
                     </div>
-                    <img src="../img/dokdo/섬기린초 (Sedum takesimense).jpg" alt="섬기린초 이미지">
+                    <img src="/cobi_ro/img/dokdo/섬기린초 (Sedum takesimense).jpg" alt="섬기린초 이미지">
                     <div class="inform" data-aos="fade-up" data-aos-duration="2000">
                         <p>한국 토종의 야상화로 동해의 두 한국 섬 울릉도와 독도에서 자란다.</p>
                         <p>뿔을 가진 상상의 동물 기린의 모습과 닮아 섬기린초라는 이름을 갖게 되었다.</p>
@@ -305,7 +304,7 @@
                     <div class="cardti">
                         <h4>파랑돔</h4>
                     </div>
-                    <img src="../img/dokdo/파랑돔 (Pomacentrus coelestis).jpg" alt="파랑돔 이미지">
+                    <img src="/cobi_ro/img/dokdo/파랑돔 (Pomacentrus coelestis).jpg" alt="파랑돔 이미지">
                     <div class="inform" data-aos="fade-up" data-aos-duration="2000">
                         <p>몸길이 5~8㎝이다. 몸은 파란색이고 배와 뒷지느러미, 꼬리지느러미는 노란색을 띤다.</p>
                         <p>울릉군 주변 해수온이 15℃ 이상으로 올라가는 6~10월 말에 집단적으로 서식한다. 특히 한류와 난류가 교차하는 독도에서 많이 관찰된다.</p>
@@ -317,7 +316,7 @@
                     <div class="cardti">
                         <h4>섬패랭이꽃</h4>
                     </div>
-                    <img src="../img/dokdo/섬패랭이꽃 (Dianthus littorosus Makino ex Nakai).jpg" alt="섬패랭이꽃 이미지">
+                    <img src="/cobi_ro/img/dokdo/섬패랭이꽃 (Dianthus littorosus Makino ex Nakai).jpg" alt="섬패랭이꽃 이미지">
                     <div class="inform" data-aos="fade-up" data-aos-duration="2000">
                         <p>섬패랭이 꽃은 울릉도지역과 부근인 독도에서 난다.</p>
                         <p>꽃잎이 덜 갈라진다.</p> 
@@ -341,7 +340,7 @@
                         <!--첫번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">500년</div>
-                            <img class="img" src="../img/dokdo/삼국사기.jpg" alt="삼국사기 이미지">
+                            <img class="img" src="/cobi_ro/mg/dokdo/삼국사기.jpg" alt="삼국사기 이미지">
                             <p class="source">삼국사기</p>
                             <div class="copy">
                                 <p class="copy_title">우산국 복속</p>
@@ -354,7 +353,7 @@
                         <!--두번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">1454년</div>
-                            <img class="img" src="../img/dokdo/세종실록 지리지.jpg" alt="세종실록 지리지 이미지">
+                            <img class="img" src="/cobi_ro/img/dokdo/세종실록 지리지.jpg" alt="세종실록 지리지 이미지">
                             <p class="source">세종실록 지리지</p>
                             <div class="copy">
                                 <p class="">『세종실록』「지리지」</p>
@@ -368,7 +367,7 @@
                         <!--세번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">1693년</div>
-                            <img class="img" src="../img/dokdo/울릉도.jpg" alt="울릉도 이미지">
+                            <img class="img" src="/cobi_ro/img/dokdo/울릉도.jpg" alt="울릉도 이미지">
                             <p class="source">울릉도 전경 [출처] 위키백과</p>
                             <div class="copy">
                                 <p>울릉도 수토제도 시행결정</p>
@@ -384,7 +383,7 @@
                         <!--네번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">1696년</div>
-                            <img class="img" src="../img/dokdo/도해금지령.jpg" alt="도해금지령 이미지">
+                            <img class="img" src="/cobi_ro/img/dokdo/도해금지령.jpg" alt="도해금지령 이미지">
                             <div class="copy">
                                 <p>1월. 다케시마(울릉도) 도해금지령</p>
                                 <br>
@@ -397,7 +396,7 @@
                         <!--다섯번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">1770년</div>
-                            <img class="img" src="../img/dokdo/동국문헌비고.jpg" alt="동국문헌비고 이미지">
+                            <img class="img" src="/cobi_ro/img/dokdo/동국문헌비고.jpg" alt="동국문헌비고 이미지">
                             <div class="copy">
                                 <p>『동국문헌비고』「여지고」</p>
                                 <br>
@@ -410,7 +409,7 @@
                         <!--여섯번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">1877년</div>
-                            <img class="img" src="../img/dokdo/태정관지령.jpg" alt="태정관지령 이미지">
+                            <img class="img" src="/cobi_ro/img/dokdo/태정관지령.jpg" alt="태정관지령 이미지">
                             <div class="copy">
                                 <p>「태정관(太政官)지령」</p>
                                 <br>
@@ -423,7 +422,7 @@
                         <!--일곱번째 슬라이드-->
                         <div class="slideinner">
                             <div class="year">1946년</div>
-                            <img class="img" src="../img/dokdo/연합국최고사령관 각서.jpg" alt="연합국최고사령관각서 이미지">
+                            <img class="img" src="/cobi_ro/img/dokdo/연합국최고사령관 각서.jpg" alt="연합국최고사령관각서 이미지">
                             <div class="copy">
                             <p>1월 29일. 연합국최고사령관</p>
                             <br>
@@ -456,8 +455,8 @@
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/jqery3.6.0.min.js"></script>
-    <script src="../js/dokdo.js"></script>
+    <script src="/cobi_ro/js/jqery3.6.0.min.js"></script>
+    <script src="/cobi_ro/js/dokdo.js"></script>
     <script>
         AOS.init();
       </script>

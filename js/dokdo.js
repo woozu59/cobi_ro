@@ -18,7 +18,7 @@ $(document).ready(function(){
   
   //sec2 weather
   $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat=37&lon=131&appid=4e406371c47d543546a019fee8fe058d&units=metric',function(result){
-          let icon = `<img src="../img/weather/${result.weather[0].icon}.svg" alt="${result.weather[0].description}">`
+          let icon = `<img src="/cobi_ro/img/weather/${result.weather[0].icon}.svg" alt="${result.weather[0].description}">`
           let temp = result.main.temp.toFixed(1)
           $('.weather').append(icon);
           $('.temp').append(`${temp}℃`);

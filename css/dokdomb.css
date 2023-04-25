@@ -36,7 +36,7 @@ a.logo {
 /*pc & flex 버전 display none*/
 .nav .menu{display: none;}
 .nav .navIcon {
-    background: url(../img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
+    background: url(/cobi_ro/img/dokdo/bars-solid.png) no-repeat 50% 50% / contain;
     display: block;
     width: 30px;
     height: 30px;
@@ -47,7 +47,7 @@ a.logo {
     cursor: pointer;
 }
 .nav .closeBt{
-    background: url(../img/icon/xmark-solid.png) no-repeat 50% 50% / contain;
+    background: url(/cobi_ro/img/icon/xmark-solid.png) no-repeat 50% 50% / contain;
     width: 30px;
     height: 30px;
     display: none;

@@ -41,14 +41,9 @@ header .top .left h6{
     color: white;
     letter-spacing: 1px;
 }
-header .right button{
-    background: none;
-    border: 1px solid #fff;
-    padding: 3px;
-    margin: 9px;
-}
+
 header .right .search{
-    margin: auto 0;
+    margin: 3% 0;
     width: 150px;
     height: 22px;
 }
@@ -60,11 +55,14 @@ header .right i{
     color: #ffff;
     cursor: pointer;
 }
-header .right a{
-    text-indent: -100px;
-    overflow: hidden;
+header .right > button{
     color: #fff;
     font-size: 10px;
+    padding: 5px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #fff;
+    margin: 9px;
 }
 header .top .right{display: flex;}
 
@@ -78,6 +76,8 @@ header .top .right{display: flex;}
 .header2 nav{
     background: none;
     height: 90px;
+    width: 100%;
+    padding: 0 2%;
 }
 .header2 nav .inner{
     display: flex;
@@ -87,7 +87,7 @@ header .top .right{display: flex;}
 a.logo{
     width: 250px;
     display: block;
-    background: url(../img/dokdo/foregin_white.ver.png) no-repeat 50% 50% / contain;
+    background: url(/cobi_ro/img/dokdo/foregin_white.ver.png) no-repeat 50% 50% / contain;
     text-indent: -235px;
     overflow: hidden;
     margin: 29px 0 0 0;
@@ -302,7 +302,7 @@ div#guide {
 }
 .que .minus {
     display: none;
-    background: url(../img/icon/minus-solid.svg) no-repeat 50% 50% / contain;
+    background: url(/cobi_ro/img/icon/minus-solid.svg) no-repeat 50% 50% / contain;
     width:23px;
     height: 13px;
 }
@@ -465,7 +465,7 @@ table td:first-child{
 /*sec4 start*/
 .sec4{
     width: 100%;
-    background: url(../img/dokdo/dokdo_banner.jpg) no-repeat 50% 50% / cover;
+    background: url(/cobi_ro/img/dokdo/dokdo_banner.jpg) no-repeat 50% 50% / cover;
     background-color:rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
     height: 618px;
@@ -532,7 +532,7 @@ footer .inner{
     padding-top: 25px;
 }
 footer .inner .logo{
-    background: url(../img/dokdo/foregin_gray.ver.png) no-repeat 50% 50% / contain;
+    background: url(/cobi_ro/img/dokdo/foregin_gray.ver.png) no-repeat 50% 50% / contain;
     width: 20%;
     display: block;
     margin: 0;
