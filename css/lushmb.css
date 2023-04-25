@@ -9,7 +9,7 @@ body{
 }
 header{
     height: 137px;
-    background: url(../img/lush/ec1557ebbe8dc637.jpg) no-repeat 50% 50% /cover;
+    background: url(/cobi_ro/img/lush/ec1557ebbe8dc637.jpg) no-repeat 50% 50% /cover;
     background-color: rgba(0,0,0,0.3);
     
 }
@@ -72,7 +72,7 @@ button.bt1 {
     margin: 20% 0 20% 0;
 }
 .section4 .suport{
-    background: url(../img/lush/charity_pot_bg.jpg) no-repeat 25% 22% / cover;
+    background: url(/cobi_ro/img/lush/charity_pot_bg.jpg) no-repeat 25% 22% / cover;
     height: 150px;
 }
 .suport > h3{

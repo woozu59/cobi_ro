@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 /*Noto Sans KR 폰트*/
-@font-face{src: url("../fonts/Lush.ttf"); font-family: "Lush"; }
+@font-face{src: url("/cobi_ro/fonts/Lush.ttf"); font-family: "Lush"; }
 *{margin: 0; padding: 0; box-sizing: border-box; 
     /* outline:1px solid green; */
 }
@@ -13,7 +13,7 @@ a, a:active{
 .logo{ 
     width: 153px;
     height: 43px;
-    background: url(../img/lush/kisspng-lush_logo2.png) no-repeat 50% 50% / contain;
+    background: url(/cobi_ro/img/lush/kisspng-lush_logo2.png) no-repeat 50% 50% / contain;
     display: block;
     margin: 0 auto 10px;
 }
@@ -41,7 +41,7 @@ body{
 header{
     width: 100%; 
     height:320px; 
-    background:url(../img/lush/7\ Sunscreen\ Products\ You\ Should\ be\ Using\ _\ Her\ Campus.jpg) no-repeat 50% 50% / cover; 
+    background:url(/cobi_ro/img/lush/7\ Sunscreen\ Products\ You\ Should\ be\ Using\ _\ Her\ Campus.jpg) no-repeat 50% 50% / cover; 
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: darken;
 }
@@ -132,7 +132,7 @@ header .inner {
 
 
 .coin1{
-    background: url(../img/lush/charity\ potcoin-green.png) no-repeat 50% 50% /contain;
+    background: url(/cobi_ro/img/lush/charity\ potcoin-green.png) no-repeat 50% 50% /contain;
     position: absolute;
     top: -29%;
     left: -19%;
@@ -142,7 +142,7 @@ header .inner {
 }
 
 .coin2{
-    background: url(../img/lush/LUSH\ Charity\ Pot\ _naked\ body\ lotion.png) no-repeat 50% 50% /contain;
+    background: url(/cobi_ro/img/lush/LUSH\ Charity\ Pot\ _naked\ body\ lotion.png) no-repeat 50% 50% /contain;
     width: 370px;
     height: 370px;
     filter: drop-shadow(-11px -3px 10px rgba(0,0,0,0.2));
@@ -152,7 +152,7 @@ header .inner {
     z-index: 100;
 }
 .coin3{
-    background: url(../img/lush/Charity\ Pot\ Coin\ _\ Body\ Lotions\ _\ Lush\ Cosmetics.png) no-repeat 50% 50% /contain;
+    background: url(/cobi_ro/img/lush/Charity\ Pot\ Coin\ _\ Body\ Lotions\ _\ Lush\ Cosmetics.png) no-repeat 50% 50% /contain;
     width: 250px;
     height: 250px;
     position: absolute;
@@ -162,7 +162,7 @@ header .inner {
     filter: drop-shadow(-2px -4px 10px rgba(0,0,0,0.2));
 }
 .lotion{
-    background: url(../img/lush/charity\ pot\ donation.png) no-repeat 50% 50% /contain;
+    background: url(/cobi_ro/img/lush/charity\ pot\ donation.png) no-repeat 50% 50% /contain;
     z-index: 100;
     position: absolute;
     top: 54%;
@@ -278,7 +278,7 @@ button.bt1 {
     display: block;
 }
 .section4 .suport{
-    background: url(../img/lush/charity_pot_bg.jpg) no-repeat 50% 50% / cover;
+    background: url(/cobi_ro/img/lush/charity_pot_bg.jpg) no-repeat 50% 50% / cover;
     width: 100%;
     height: 408px;
     display: block;
@@ -323,7 +323,7 @@ button.bt1 {
     justify-content: flex-start;
 }
 .contents1{
-    background: url(../img/lush/charity_pot_ayr_pic_2019.jpg) no-repeat 50% 50% /cover;  
+    background: url(/cobi_ro/img/lush/charity_pot_ayr_pic_2019.jpg) no-repeat 50% 50% /cover;  
     width: 640px;
     height: 380px;
     z-index: 1;
@@ -332,7 +332,7 @@ button.bt1 {
     
 }
 .contents2{
-    background: url(../img/lush/Charity\ Pot\ _\ Lush\ Fresh\ Handmade\ Cosmetics.jpg) no-repeat 50% 50%/ cover;
+    background: url(/cobi_ro/img/lush/Charity\ Pot\ _\ Lush\ Fresh\ Handmade\ Cosmetics.jpg) no-repeat 50% 50%/ cover;
     width: 640px;
     height: 380px;
     z-index: 1;
@@ -341,7 +341,7 @@ button.bt1 {
     
 }
 .contents3{
-    background: url(../img/lush/aticle_blackpot.jpg) no-repeat 50% 50% / cover;
+    background: url(/cobi_ro/img/lush/aticle_blackpot.jpg) no-repeat 50% 50% / cover;
     width: 640px;
     height: 380px;
     z-index: 1;
@@ -421,7 +421,7 @@ ul.productsinform {
 .section7{
     width: 100%;
     height: 150px;
-    background: url(../img/lush/footer-icons.svg) no-repeat 50% 50% /contain;
+    background: url(/cobi_ro/img/lush/footer-icons.svg) no-repeat 50% 50% /contain;
     background-color: #F0EFEF;
 }
 /*footer*/
@@ -449,7 +449,7 @@ footer > .inner {
     margin: 0 0 20px 0;
     width: 153px;
     height: 43px;
-    background: url(../img/lush/kisspng-lush-cosmetics-shampoo-soap-bath-bomb-sign.white.png) no-repeat 50% 50% / contain;
+    background: url(/cobi_ro/img/lush/kisspng-lush-cosmetics-shampoo-soap-bath-bomb-sign.white.png) no-repeat 50% 50% / contain;
     display: block;
 }
 dt {
