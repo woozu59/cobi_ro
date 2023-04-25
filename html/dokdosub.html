@@ -3,52 +3,50 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"> 
     <title>독도에 대한 우리 입장</title>
-    <link rel="stylesheet" type="text/css" href="../css/dokdosub.css">
+    <link rel="stylesheet" type="text/css" href="/cobi_ro/css/dokdosub.css">
+    <script src="https://kit.fontawesome.com/fb88773035.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header><!--header display: flex-->
         <div class="top">
             <div class="left">
                 <h6>독도는 역사적, 지리적, 국제법적으로 명백한 우리 고유의 영토입니다.</h6>
             </div>
             <div class="right">
                 <button id="english">ENGLISH</button>
-                <input type="search" class="search">
-                <img src="../img/icon/magnifying-glass-solid.png" alt="돋보기">
+                <input type="search" name="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
-        <div class="header"><!--헤더 배경으로 이미지 깔기-->
-            <div class="logo">
-                <img src="../img/dokdo/foregin_white.ver.png" class="logo1" alt="외교부로고">
-                <img src="../img/dokdo/dokdo_bold ver.png" class="logo2" alt="독도로고">
-            </div>
-            <nav class="gnb">
-                <div class="gnbIcon"></div><!--모바일 메뉴bt-->
-                <div class="menu">
-                    <div class="closeBt"></div><!--모바일 닫기bt-->
-                    <ul class="nav">
-                        <li>
+        <div class="header_2"><!--헤더 배경으로 이미지 깔기-->
+            <div class="header_inner">
+                <img src="/cobi_ro/img/dokdo/foregin_white.ver.png" class="logo" alt="외교부독도">
+                <nav class="nav"><!--nav 영역-->
+                    <ul class="menu">
+                        <li class="depth">
                             <a href="#">독도에 대한 우리입장</a>
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="#">정부의 기본입장</a></li>
                                 <li><a href="#">독도에 관한 일문일답</a></li>
                                 <li><a href="#">정부 발표문</a></li>
                                 <li><a href="#">독도 관련 법정</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="depth">
                             <a href="#">독도둘러보기</a>
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="#">독도는 지금</a></li>
                                 <li><a href="#">독도 둘러보기</a></li>
                                 <li><a href="#">독도가 우리영토인 근거</a></li>
                                 <li><span></span></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="depth">
                             <a href="#">자료실</a>
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="#">독도로고</a></li>
                                 <li><a href="#">독도 관련 문서</a></li>
                                 <li><a href="#">사진 및 동영상</a></li>
@@ -56,18 +54,132 @@
                             </ul>
                         </li>
                     </ul>
+                    <!--모바일 메뉴탭-->
+                    <span class="navIcon Icon"></span>
+                    <span class="closeBt Icon"></span> 
+                </nav>   
+            </div><!--header_inner end--> 
+            <!--모바일.ver nav-->
+            <div class="mb_nav">
+                <ul class="menu">
+                    <li class="depth">
+                        <a href="#">독도에 대한 우리입장</a>
+                        <ul class="sub mb_depth">
+                            <li><a href="#">정부의 기본입장</a></li>
+                            <li><a href="#">독도에 관한 일문일답</a></li>
+                            <li><a href="#">정부 발표문</a></li>
+                            <li><a href="#">독도 관련 법정</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth" >
+                        <a href="#">독도둘러보기</a>
+                        <ul class="sub mb_depth">
+                            <li><a href="#">독도는 지금</a></li>
+                            <li><a href="#">독도 둘러보기</a></li>
+                            <li><a href="#">독도가 우리영토인 근거</a></li>
+                            <li><span></span></li>
+                        </ul>
+                    </li>
+                    <li class="depth">
+                        <a href="#">자료실</a>
+                        <ul class="sub mb_depth">
+                            <li><a href="#">독도로고</a></li>
+                            <li><a href="#">독도 관련 문서</a></li>
+                            <li><a href="#">사진 및 동영상</a></li>
+                            <li><a href="#">민원실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+    </header>  
+    <main>
+        <section class="sec1">
+            <h3 class="sec_title">독도에 대한 정부의 기본 입장</h3>
+            <img src="/cobi_ro/img/dokdo/독도에 대한 정부의 입장.jpg" class="sec1_img" alt="입장문.img">
+            <svg>
+                <rect width="980" height="230"></rect>
+            </svg>
+        </section>
+        <section class="sec2">
+            <h3 class="sec_title">독도에 관한 일문일답</h3>
+            <div class="sec2_1">
+                <i class="fa-solid fa-book-open"></i>
+                <span>
+                    <p>15가지 일문일답을 통해서 독도가 역사적, 지리적, 국제법적으로 우리영토인 이유를 정확하고 체계적으로 이해할 수 있습니다.</p>
+                </span>
+            </div>
+            <div class="sec2_2">
+                <div class="question1">
+                    <h4>한국의 관찬문헌은 독도에 관해 어떻게 기록하고 있나요?</h4>
+                    <br>
+                    <p>우리나라의 많은 관찬(官撰)문헌이 독도에 관해 기록하고 있어, 우리나라가 옛날부터 독도를 우리 영토로 인정하고 통치해온 사실을 알수 있습니다.</p>
                 </div>
-            </nav>
+                <div class="question2">
+                    <h4>독도와 관련하여 안용복의 활동은 어떤 의미가 있나요?</h4>
+                    <br>
+                    <p>안용복은 조선 숙정 때의 인물로서, 1693년 울릉도에서 일본인들에 의해 피랍되는 등 두차례에 거쳐 일본으로 건너갔습니다.</p>
+                    <p>1693년 안용복의 피랍은 한 일 간 울릉도의 소속에 관한 분쟁(울릉도쟁계)이 발생하는 계기가 되었고, 이 과정에서 울릉도와 독도의 소속이 밝혀지게 되었다는 점에서 의미가 있습니다.</p>
+                </div>
+                <svg>
+                    <rect width="980" height="230"><!--독도 사진 넣기--></rect>
+                </svg>
+            </div>
+            <a href="#" class="more">일문일답 더보기</a>
+            <!--::after로 화살표 모양 만들기-->
+        </section>
+        <section class="sec3">
+            <h3 class="sec_title">정부 발표문 및 독도 관련 법령</h3>
+            <div class="box tab">
+                <ul class="tabcon"><!--탭버튼 영역-->
+                    <li data-id="tab1" class="on"><a href="#">정부 발표문</li>
+                    <li data-id="tab2"><a href="#">독도 관련 법령</a></li>
+                </ul>
+                <div id="tab1" class="tabBox on"><!--정부발표문 탭영역-->
+                    <ul class="box_1">
+                        <li>
+                            <a href="#" class="text">일본 시마네현의 소위 「독도의 날」 행사 관련 외교부 대변인 성명</a>
+                            <a href="#" class="date">2022.02.22</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text">2021년 일본 방위백서에 대한 외교부 대변인 논평</a>
+                            <a href="#" class="date">2021.07.13</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text">일본 2021년 외교청서에 대한 외교부 대변인 논평</a>
+                            <a href="#" class="date">2021.04.27</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text">일본 교과서 검정 결과에 관한 외교부 대변인 성명</a>
+                            <a href="#" class="date">2021.03.30</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab2" class="tabBox"><!--독도관련 법령 탭영역-->
+                    <ul class="box_2">
+                        <li><a href="#" class="text">독도의용수비대 지원법 시행령</a></li>
+                        <li><a href="#" class="text">문화재위원회 규정</a></li>
+                        <li><a href="#" class="text">해저광물자원 개발법</a></li>
+                        <li><a href="#" class="text">해양과학조사법 시행규칙</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>    
+    <footer>
+        <div class="inner">
+            <img src="/cobi_ro/img/dokdo/foregin_gray.ver.png" class="logo" alt="외교부">
+            <address>(03172) 서울시 종로구 사직로8길 60 전화: 02-2100-2114 팩스: 02-2100-7999</address>
+            &copy; 본 홈페이지의 모든 권리는 외교부에 귀속됩니다. COPYRIGHT (c) 2013 MOFA ALL RIGHTS RESERVED.
+            <div class="sns"><!--a태그로 수정?-->
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            </div>
         </div>
-        <div class="sec1">
-            <p class="title">독도에 대한 정부의 기본 입장</p>
-            <div class="underBar"></div>
-            <img src="../img/dokdo/독도에 대한 정부의 입장.jpg" class="입장문" alt="기본 입장문">
-        </div>
-        <div class="sec2">
-            <p class="title">독도에 관한 일문일답</p>
-            <얖
-        </div>
-    </header>
+    </footer>   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/cobi_ro/js/jqery3.6.0.min.js"></script>
+    <script src="/cobi_ro/js/dokdosub.js"></script>
 </body>
 </html>
