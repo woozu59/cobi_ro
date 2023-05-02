@@ -101,3 +101,100 @@ nav .menu .depth::after{
 
 }
 .mb_nav{display: none;}
+
+
+svg{display: none;}
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+section {
+    width: 100%;
+    padding: 5% 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+h3.sec_title {
+    color: #3480AA;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #3480AA;
+    width: 23%;
+    padding-bottom: 5px;
+}
+img.sec1_img {
+    width: 55%;
+    margin: 5% auto;
+    box-shadow: 8px 6px 15px rgba(0,0,0,15%);
+}
+.sec2_1 {
+    display: flex;
+    padding: 0 15%;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.sec2_1 > i {
+    font-size: 94px;
+    color: #3480AA;
+}
+.sec2_1 span > p {
+    color: #424242;
+    font-size: 0.9rem;
+    font-weight: 600;
+    height: 96px;
+    line-height: 96px;
+    white-space: nowrap;
+    word-spacing: 0.1rem;
+}
+.question1, .question2 {
+    padding-bottom: 5%;
+}
+.sec2_2 .question1 > h4,
+.sec2_2 .question2 > h4{
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+}
+
+.sec2_2 .question1 > h4::before,
+.sec2_2 .question2 > h4::before{
+    display: inline-block;
+    content: '\51';
+    font-size: 25px;
+    color: #3480AA;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+}
+.sec2_2 .question1 p{
+   padding: 0 0 0 5%;
+   word-spacing: 0.1rem;
+}
+/*footer*/
+footer{background: #424242;}
+footer .inner{
+    padding: 3% 0;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+footer .innner .logo {
+    width: 15%;
+}
+.copyright {
+    height: 100%;
+    color: #9d9d9d;
+    font-size: 12px;
+    margin: 1% 0 0 2%;
+    width: 100%;
+}
+address {
+    font-style: normal;
+    margin: 0 0 10px 0;
+}
+.sns {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: 10px;
+}
+.sns > i {
+    font-size: 20px;
+}
