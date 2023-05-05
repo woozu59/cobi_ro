@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+body{min-width: 1280px;}
+#container{width: 100%;}
+.content {
+    width: 1020px;
+    margin: 0 auto;
+}
+/*---------------------spi_area----------------------*/
+#spi_area {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+ul.spi_list {display: flex;}
+ul.spi_list .spi_btn {
+    width: 29px;
+    height: 29px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+ul.spi_list .spi_icon{
+    background-image: url(/cobi_ro/img/test1/sp_spi_pc.png);
+    display: inline-block;
+    text-indent: -999px;
+    width: 29px;
+    height: 29px;
+}
+ul.spi_list .spi_blog > .spi_icon{background-position: -132px -152px;}
+ul.spi_list .spi_cafe > .spi_icon{background-position: 0px -152px;}
+ul.spi_list .spi_keep > .spi_icon{background-position: -66px -152px;}
+ul.spi_list .spi_release > .spi_icon{
+    background-position: -182px -278px;
+    width: 19px;
+    height: 20px;
+}
+ul.spi_list .spi_release {
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+/*-----------------------------------------------------*/
+.nav_area {
+    display: flex;
+    font-size: 12px;
+    line-height: 29px;
+}
+ul.nav{display: flex;}
+ul.nav .navli{vertical-align: top;}
+ul.nav .navli > a {color: #8f8f8f;}
+ul.nav li.nav_homecafe > a::before,
+ul.nav li.nav_mugcup > a::before{
+    content: "＞";
+    display:inline-block;
+    color: #ddd;
+    margin: 0 6px;
+    cursor: default;
+}
+ul.nav .nav_more button .blind{display: none;}
+ul.nav .nav_more button::after{
+    display:inline-block;
+    content:"";
+    border: 4px solid transparent;
+    border-top-color: #5f5f5f;
+    margin: 7px 0 0 4px;
+}
+li.nav_homecafe,
+li.nav_mugcup {display: flex;}
+.nav_mugcup .mug,
+.nav_mugcup .mug_st > strong {
+    color: #5f5f5f;
+    font-weight: 900;
+}
+.other_more:before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    color: #000;
+    margin: 5px 7px 0 4px;
+}
+.other_more > button {
+    font-size: 11px;
+    line-height: 29px;
+    color: #8f8f8f;
+    letter-spacing: -1px;
+}
+.other_more > button:after{
+    content: "";
+    display:inline-block;
+    border: 3.7px solid transparent;
+    border-top-color: #8f8f8f;
+    margin: 7px 0 0 3px;
+}
+/*---------------------------goods_area----------------*/
+div#goods_area {
+    display: flex;
+    border: 1px solid #ededed;
+    width: 100%;
+}
+/*-------------------goods_left-------------------------*/
+.goods_left,
+.goods_right {width: 50%;}
+.goods {
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+}
+.goods_imgs img.finder_mug {
+    display: block;
+    width: 510px;
+    height: 510px;
+}
+
+ul.list_mini {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+.mini_img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 0 0;
+}
+a.mug_list {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mug_list > img {
+    width: 100%;
+    height: 100%;
+}
+/*-----------------------------------------------------*/
+.goods_lbt {
+    display: flex;
+    font-size: 12px;
+    color: #555;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0 0 0 25px;
+}
+.goods_lbt .lbt > a {display: inline-block;}
+.goods_lbt .lbt strong {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0 5px;
+    letter-spacing: -2px;
+}
+.goods_lbt .com::before{
+    display:inline-block;
+    content: "ㆍ";
+    color: #555;
+    font-size: 20px;
+}
+.goods_lbt .lbt > span {
+    vertical-align: top;
+    line-height: 23px;
+}
+.goods_lbt .com .slash {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ddd;
+    margin: 0 5px;
+}
+/*------------goods_right----------------------------------*/
+.goods_right {
+    border-left: 1px solid #ededed;
+    padding: 30px 40px;
+}
+.goods_price1 {margin-bottom: 15px;}
+.goods_title {line-height: 28px;}
+.goods_title h3 {
+    font-size: 20px;
+    color: #222;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+/*-----------------------------------------------------*/
+.price_area {
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.sale_pg .pg3 {
+    line-height: 28px;
+    height: 100%;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #6b90dc;
+}
+.fn_prc del{
+    display: inline-block;
+    color: #a6a6a6;
+    vertical-align: top;
+    position: relative;
+    font-weight: 900;
+}
+.fn_prc del span{
+    font-size: 16px;
+    text-decoration: line-through;
+    display: inline-block;
+}
+.fn_prc del > .won {
+    margin-left: -3px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.fn_prc strong{
+    display:inline-block;
+    color: #000;
+    vertical-align: top;
+    margin: 0 0 0 7px;
+    letter-spacing: -1px;
+}
+.fn_prc strong span {
+    font-size: 24px;
+    font-weight: 900;
+}
+.fn_prc strong .won {
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+}
+/*-----------------------------------------------------*/
+.goods_price2 {
+    border: 1px solid #989aa5;
+    padding-bottom: 20px;
+}
+.goods_price2 .price2_1 {
+    border-bottom: 1px solid #f4f4f4;
+    padding: 13px 16px;
+}
+.price2_1 .customer_benefits strong {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    color: #000;
+    display: inline-block;
+}
+.customer_benefits strong span {display: inline-block;}
+/*-------------------------------------------------------*/
+.price2_2 {padding: 18px 16px 0;}
+.price2_2 .point {
+    display: flex;
+    justify-content: space-between;
+}
+.price2_2 .point strong {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+}
+.price2_2 .point .point_score {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+}
+.price2_2 .point .point_score > span {
+    font-weight: 900;
+}
+.qicon {
+    display: inline-block;
+    margin-left: 3px;
+}
+.qicon button{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    cursor:pointer;
+}
+.qicon button > span{display:none;}
+.qicon button::before{
+    background-image: url(/cobi_ro/img/test1/spIcon.png);
+    background-position: -613px -367px;
+    height: 8px;
+    width: 6px;
+    display: block;
+    content: "";
+    margin: 0 auto;
+}
+ul.point_list {margin-top: 3px;}
+ul.point_list li.point1 {
+    position: relative;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 17px;
+    color: #999;
+}
+ul.point_list li.point1::before{
+    content:"";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 7px;
+    height: 6px;
+    box-sizing: border-box;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+ul.point_list li.point1 .pt {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------------------------------------*/
+.price2_3 {
+    background: #f7f8fa;
+    border: 1px solid #dce0e3;
+    margin: 15px 16px 0;
+    padding: 14px 16px;
+}
+.price2_3 .tip_area {
+    display: flex;
+    justify-content: space-between;
+}
+.price2_3 .tip_area .pt_tip {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #333;
+}
+.price2_3 .tip_area .pt_tip::before{
+    content:"";
+    background-image: url(/cobi_ro/img/test1/spText.png);
+    background-position: -453px -246px;
+    width: 28px;
+    height: 11px;
+    display:inline-block;
+    margin: 2px 3px 0 0;
+
+}
+.price2_3 .tip_area .pt_tip1 {
+    font-size: 12px;
+    line-height: 15px;
+}
+.pt_tip1 span {
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.pt_tip1 strong{
+    font-size: 13px;
+    display:inline-block;
+    font-weight: 900;
+}
+.price2_3 .pt_tplist {
+    font-size: 12px;
+    margin-top: 3px;
+    line-height: 14px;
+    color: #999;
+}
+.price2_3 .pt_tplist .tp_list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.pt_tplist .tp_list .tp_n::before{
+    content: "";
+    display: inline-block;
+    background-image: url(/cobi_ro/img/test1/spIcon.png);
+    background-position: -661px -546px;
+    width: 57px;
+    height: 14px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+.pt_tplist .tp_list .navp::before{
+    content: "";
+    display: inline-block;
+    background-image: url(/cobi_ro/img/test1/spIcon.png);
+    background-position: -371px -468px;
+    width: 34px;
+    height: 14px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+.tp_n > a,
+.navp > a {
+    text-decoration: underline;
+    color: #999;
+}
+.pt_tplist .tp_list .tp_n > a::after,
+.pt_tplist .tp_list .navp > a::after{
+    content: "";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spArrow_svg.png);
+    background-position: -212px -164px;
+    width: 5px;
+    height: 8px;
+    margin: 4px 0 0 4px;
+
+}
+/*----------------------------------------------------*/
+.banner, .banner > img {
+    height: 42px;
+    display: block;
+    width: 366px;
+}
+
+/*-------------------review_area---------------------*/
+ul.review_list {
+    display: flex;
+    flex-flow: row wrap;
+}

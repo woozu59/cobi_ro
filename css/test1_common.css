@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*nanum gothic*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style:normal;
+    outline: 1px solid burlywood;
+
+}
+
+ul,li{list-style: none;}
+a, a:hover, a:active, a:focus{text-decoration: none; color: #000;}
+button{cursor:pointer; background: none; border: 0;}
+fieldset{border: 0;}
+legend{display:none;}
