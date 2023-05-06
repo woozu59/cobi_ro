@@ -54,6 +54,7 @@ ul.nav li.nav_mugcup > a::before{
     color: #ddd;
     margin: 0 6px;
     cursor: default;
+    font-size: 10px;
 }
 ul.nav .nav_more button .blind{display: none;}
 ul.nav .nav_more button::after{
@@ -72,11 +73,11 @@ li.nav_mugcup {display: flex;}
 }
 .other_more:before {
     display: inline-block;
-    content: "";
-    width: 1px;
-    height: 10px;
-    color: #000;
-    margin: 5px 7px 0 4px;
+    content: "|";
+    color: #ddd;
+    margin: 1px 7px -1px 4px;
+    vertical-align: top;
+    font-size: 12px;
 }
 .other_more > button {
     font-size: 11px;
@@ -184,14 +185,24 @@ a.mug_list {
     justify-content: space-between;
     margin-top: 15px;
 }
-.sale_pg .pg3 {
-    line-height: 28px;
-    height: 100%;
+
+.sale_pg{display:block;}
+.sale_pg .pg{
+    background-image: url(/cobi_ro/img/test1/spText.png);
+    background-position: -387px -381px;
+    background-color: #6b90dc;
     display: inline-block;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    color: #6b90dc;
+    width: 17px;
+    height: 24px;
+    margin: 0 -4px 0 0;
+}
+.sale_pg .pg5{
+    background-position: -439px -381px;
+    width: 16px;
+}
+.sale_pg .per{
+    background-position: -79px -416px;
+    width: 24px;
 }
 .fn_prc del{
     display: inline-block;
@@ -399,12 +410,298 @@ ul.point_list li.point1 .pt {
 
 }
 /*----------------------------------------------------*/
+a.banner {
+    padding: 0 0 0 17px;
+    margin-top: 11px;
+    background: #192346;
+    position: relative;
+}
 .banner, .banner > img {
     height: 42px;
     display: block;
-    width: 366px;
+}
+a.banner::after {
+    content:"";
+    display:inline-block;
+    position:absolute;
+    background-image: url(/cobi_ro/img/test1/spArrow_svg.png);
+    background-position: -226px -74px;
+    width: 6px;
+    height: 10px;
+    top: 17px;
+    right: 16px;
+}
+/*---------------------------------------------------*/
+ul.install {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+li.benefits {
+    display: flex;
+    border-bottom: 1px solid #ededed;
+    margin-top: 13px;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+li.benefits .card {margin-right: 5px;}
+li.benefits .card::before{
+    display: inline-block;
+    content: "|";
+    color: #ededed;
+    margin: 1px 7px 0px 4px;
+    vertical-align: top;
+    font-size: 14px;
+}
+/*---------------------------------------------------*/
+.delivery_area {
+    padding-bottom: 16px;
+    margin-top: 12px;
+    font-size: 13px;
+    border-bottom: 1px solid #ededed;
+}
+.delivery_area .del1 {
+    color: #333;
+    line-height: 20px;
+}
+.delivery_area .del1 .card,
+.delivery_area .del1 .com{display:inline-block;}
+.delivery_area .del1 .card::before{
+    content:"|";
+    display:inline-block;
+    vertical-align: top;
+    color: #e9e9e9;
+    margin: 1px 7px 0 4px;
+    font-size: 13px;
+}
+.delivery_area .del1 .com::before{
+    content:"ㆍ";
+    display:inline-block;
+    font-size: 13px;
+    color: #333;
+}
+.delivery_area > p {
+    margin-top: 3px;
+    color: #999;
+    line-height: 18px;
+    word-break: break-all;
+}
+.del2 {
+    margin-top: 3px;
+    line-height: 18px;
+}
+.del2 > a {
+    display: block;
+    text-decoration: underline;
+    color: #333;
+}
+.del2 > a::after{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spIcon.png);
+    background-position: -802px -473px;
+    background-color: #2f2f2f;
+    vertical-align: top;
+    width: 14px;
+    height: 14px;
+}
+/*---------------------------------------------------*/
+.select_area {
+    margin: 16px 0;
+    font-size: 13px;
+}
+.select_area .select > .color{
+    display: block;
+    line-height: 36px;
+    height: 34px;
+    padding: 0 35px 0 15px;
+    border: 1px solid #d2d6dd;
+    color: #333;
+    background: #fff;
+    position: relative;
+}
+.select_area .select > .color.on{border-bottom: 0;}
+.select_area .select > .color::after{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spArrow_svg.png);
+    background-position: -694px -130px;
+    width: 17px;
+    height: 11px;
+    vertical-align: top;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+}
+ul.select_list {
+    display: block;
+    background: #fff;
+    border: 1px solid #9ca3ab;
+    margin-top: -1px;
 }
 
+li.selectbox {border-top: 1px solid #9ca3ab;}
+li.selectbox > a {
+    display: block;
+    line-height: 36px;
+    height: 36px;
+    padding: 0 15px;
+    color: #666;
+}
+li.selectbox > a:hover{background: #ededed;}
+/*----------------------------------------------------*/
+.total_area {
+    display: flex;
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 26px;
+    position:relative;
+}
+.total_area > .qicon {margin-left:5px;}
+.total_quanti {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.total_quanti em {
+    display: inline-block;
+    padding-right: 15px;
+    color: #999;
+    vertical-align: top;
+}
+.total_quanti em::after{
+    content: "|";
+    display: inline-block;
+    vertical-align: top;
+    color: #e9e9e9;
+    margin: 0 7px 0 4px;
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+    left: 8px;
+}
+.total_quanti strong {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    vertical-align: top;
+    margin-top: 0px;
+    color: #6b90dc;
+}
+.total_quanti strong > span {
+    font-size: 24px;
+    position: relative;
+    top: 2px;
+}
+/*---------------------------------------------------*/
+.buy_area {
+    padding-top: 16px;
+}
+.buy1 {
+    width: 100%;
+    padding: 2px;
+}
+.buy1 > a {
+    display: block;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #03c75a;
+    position:relative;
+}
+.buy > a::before{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spText.png);
+    background-position: -236px -133px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 84px;
+    height: 22px;
+}
+.buy2 {
+    display: flex;
+    gap: 5px;
+}
+.buy2 .steam,
+.buy2 .basket {
+    padding: 2px;
+    width: 100%;
+}
+.buy2 .steam > a,
+.buy2 .basket > a{
+    display:block;
+    border-radius: 3px;
+    border: 1px solid #dcdee0;
+    background-color: #fff;
+    height: 50px;
+    text-align: center;
+}
+.steam > a::before{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spIcon.png);
+    background-position: -744px -503px;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 15px;
+}
+.steam > a::after{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spText.png);
+    background-position: -82px -300px;
+    width: 40px;
+    height: 14px;
+    vertical-align: top;
+    margin: 16px 0 0 6px;
+}
+.basket > a::before{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spText.png);
+    background-position: -96px -164px;
+    width: 80px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 15px;
+}
+.buy_area .blind{display: none;}
+/*---------------------------------------------------*/
+.essen {
+    margin-top: 14px;
+    line-height: 15px;
+    font-size: 12px;
+}
+.essen1 {margin-top: 8px;}
+.essen > span{color: #999;}
+.essen::before{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spIcon_png.png);
+    background-position: -158px -67px;
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+    margin-right: 4px;
+}
+.essen > a{
+    margin-left: 5px;
+    color: #00c73c;
+    font-weight: 600;
+}
+.essen::after{
+    content:"";
+    display:inline-block;
+    background-image: url(/cobi_ro/img/test1/spIcon_png.png);
+    background-position: -206px -67px;
+    width: 5px;
+    height: 7px;
+    margin-left: 2px;
+    vertical-align: middle;
+}
 /*-------------------review_area---------------------*/
 ul.review_list {
     display: flex;
