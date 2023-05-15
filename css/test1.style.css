@@ -538,7 +538,8 @@ li.benefits .card::before{
     top: 11px;
     right: 15px;
 }
-.select_area .select > .color.on::after{background-position: -694px -130px;}
+/*addclass on 했을 시 방향아이콘 변경*/
+.select_area .select > .color.on::after {background-position: -639px -130px;}
 ul.select_list {
     display: none;
     background: #fff;
@@ -550,6 +551,7 @@ ul.select_list {
     left: 0;
     z-index: 100;
 }
+/*addclass on 했을 시 컬러리스트 보이기*/
 ul.select_list.on{display:block;}
 li.selectbox {border-top: 1px solid #9ca3ab;}
 li.selectbox:first-child {border-top: 0;}
@@ -562,7 +564,7 @@ li.selectbox > a {
 }
 li.selectbox > a:hover{background: #ededed;}
 /*----------------------------------------------------*/
-.purquanti {display: none;}
+/*.purquanti {display: none;}*/
 ul.quanti_list {
     border: 1px solid #c7c7c7;
     border-left: 0;
@@ -572,7 +574,10 @@ li.quanti_area {
     padding: 15px 14px 15px 0;
     border-top: 1px solid #ededed;
     position: relative;
+    display: none;
 }
+/*컬러 선택 시 컬러항목에 맞는 장바구니영역 나타남*/
+li.quanti_area.on{display: block;}
 li.quanti_area:first-child {border-top: 0;}
 .quanti > p {
     font-size: 13px;

@@ -46,16 +46,16 @@
                 <div id="goods_area"><!--메인 구매 영역-->
                     <div class="goods_left"><!--상품 이미지 영역-->
                         <div class="goods">
-                            <div class="goods_imgs"><!--img에 data-srcset태그 관련 정보 찾아보고 적용해보기-->
+                            <div class="goods_imgs" id="big"><!--img에 data-srcset태그 관련 정보 찾아보고 적용해보기-->
                                 <img src="/cobi_ro/img/test1/mug1.jpg" class="finder_mug" alt="대표이미지">
                             </div>            
                         </div>
-                        <ul class="list_mini"><!--img에 data-src태그 관련정보 찾아보기-->
-                            <li class="mini_img"><a href="#" class="mug_list"><img src="/cobi_ro/img/test1/mug1.jpg" alt="추가이미지0"></a></li>
-                            <li class="mini_img"><a href="#" class="mug_list"><img src="/cobi_ro/img/test1/mug2.jpg" alt="추가이미지1"></a></li>
-                            <li class="mini_img"><a href="#" class="mug_list"><img src="/cobi_ro/img/test1/mug_checkboard.jpg" alt="추가이미지2"></a></li>
-                            <li class="mini_img"><a href="#" class="mug_list"><img src="/cobi_ro/img/test1/mug_cream.jpg" alt="추가이미지3"></a></li>
-                            <li class="mini_img"><a href="#" class="mug_list"><img src="/cobi_ro/img/test1/mug_inksplash.jpg" alt="추가이미지4"></a></li>
+                        <ul class="list_mini" id="small"><!--img에 data-src태그 관련정보 찾아보기-->
+                            <li class="mini_img"><a href="javascript:;" role="button" class="mug_list"><img src="/cobi_ro/img/test1/mug1.jpg" class="mini" alt="추가이미지0"></a></li>
+                            <li class="mini_img"><a href="javascript:;" role="button" class="mug_list"><img src="/cobi_ro/img/test1/mug2.jpg" class="mini" alt="추가이미지1"></a></li>
+                            <li class="mini_img"><a href="javascript:;" role="button" class="mug_list"><img src="/cobi_ro/img/test1/mug_checkboard.jpg" class="mini" alt="추가이미지2"></a></li>
+                            <li class="mini_img"><a href="javascript:;" role="button" class="mug_list"><img src="/cobi_ro/img/test1/mug_cream.jpg" class="mini" alt="추가이미지3"></a></li>
+                            <li class="mini_img"><a href="javascript:;" role="button" class="mug_list"><img src="/cobi_ro/img/test1/mug_inksplash.jpg" class="mini" alt="추가이미지4"></a></li>
                         </ul>
                         <div class="goods_lbt"><!--리뷰수 & 평점 영역-->
                             <div class="lbt">
@@ -182,17 +182,17 @@
                             </div>
                             <div class="select_area"><!--연보라색 영역-->
                                 <div class="select">
-                                    <a href="#" class="color">색상</a>
+                                    <a href="javascript:;" class="color">색상</a>
                                     <ul class="select_list">
-                                        <li class="selectbox"><a href="#">체크보드</a></li>
-                                        <li class="selectbox"><a href="#">크림</a></li>
-                                        <li class="selectbox"><a href="#">잉크</a></li>
+                                        <li class="selectbox" data-id="check"><a href="javascript:;">체크보드</a></li>
+                                        <li class="selectbox" data-id="cream"><a href="javascript:;">크림</a></li>
+                                        <li class="selectbox" data-id="ink"><a href="javascript:;">잉크</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="purquanti"><!--담아둔 상품 수량 체크 영역-->
                                 <ul class="quanti_list">
-                                    <li class="quanti_area">
+                                    <li class="quanti_area" id="check">
                                         <div class="quanti">
                                             <p>체크보드</p>
                                             <div class="qt1">
@@ -209,7 +209,7 @@
                                         </div>
                                         <button class="xmark"></button>
                                     </li>
-                                    <li class="quanti_area">
+                                    <li class="quanti_area on" id="cream">
                                         <div class="quanti">
                                             <p>크림</p>
                                             <div class="qt1">
@@ -226,7 +226,7 @@
                                         </div>
                                         <button class="xmark"></button>
                                     </li>
-                                    <li class="quanti_area">
+                                    <li class="quanti_area" id="ink">
                                         <div class="quanti">
                                             <p>잉크</p>
                                             <div class="qt1">
@@ -255,7 +255,7 @@
                                 <div class="total_quanti">
                                     <em>총 수량 0개</em>
                                     <strong>
-                                        <span>0</span>
+                                        <span class="total">0</span>
                                         원
                                     </strong>
                                 </div>
@@ -392,5 +392,7 @@
                 </div><!--소비자 리뷰 영역 끝-->
             </div><!--컨텐츠 영역 끝-->
         </div><!--컨테이너 영역 끝-->
+        <script src="/cobi_ro/js/jqery3.6.0.min.js"></script>
+        <script src="/cobi_ro/js/test1.js"></script>
     </body>
 </html>
