@@ -5,15 +5,134 @@ body{max-width: 1920px;}
 
 header {
     height: 130px;
-    background: yellow;
-    display: none;
+    background: none;
+    position: absolute;
+    width: 100%;
+    z-index: 30;
+}
+.header_wrap {
+    display: flex;
     flex-direction: column;
 }
-header .head_top {
-    height: 30px;
+.header_wrap .head_top {border-bottom: 1px solid #eee;}
+header .head_wrap {
+    padding: 0 7%;
+    height: 100%;
 }
+header .head_wrap .head_top_inner {
+    display: flex;
+    justify-content: right;
+    padding: 5px 0;
+}
+button.english > span {
+    color: #fff;
+    line-height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 5px 0;
+}
+button.english:after {
+    content: "";
+    display: inline-block;
+    margin: 6px 10px;
+    background: #e6e6e6;
+    vertical-align: top;
+    width: 1px;
+    height: 65%;
+}
+.head_top_inner ul.sns_list{
+    display: flex;
+    gap: 5px;
+}
+li.sns_btn {
+    width: 40px;
+    height: 35px;
+    margin: auto 0;
+}
+ul.sns_list .sns_btn .sns{
+    width: 100%;
+    height: 100%;
+    display:block;
+    background-image: url(/cobi_ro/img/sns/sns07.png);
+    background-position: 273px 386px;
+    background-size: 280px;
+}
+ul.sns_list .blog .sns{background-position: 139px 386px;}
+ul.sns_list .insta .sns{background-position: 93px 386px;}
+/*---------------header_under--------------------*/
 header .head_under {
-    height: 100px;
+    height: 80px;
+    border-bottom: 1px solid #eee;
+}
+.head_under .head_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.head_under .head_wrap .header_logo_area {height: 100%;}
+.head_under .header_logo_area > a{
+    display: block;
+    padding: 15px 0;
+}
+.gnb_wrap{display: flex;}
+.gnb_wrap ul.gnb{
+    display: flex;
+    margin-right: 50px;
+}
+
+li.depth1 {
+    height: 80px;
+}
+li.depth1 > a {
+    font-size: 1.2rem;
+    display: block;
+    height: 100%;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    line-height: 80px;
+}
+
+ul.gnb > li.all {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    display: flex;
+    top: 130px;
+    left: 0;
+    justify-content: right;
+    align-items: flex-start;
+    overflow-y: hidden;
+    padding-right: 11%;
+}
+ul.gnb > li.all > ul.depth2 {
+    width: 181px;
+    font-size: 1.2rem;
+    padding: 20px 0 0 0;
+}
+ul.gnb > li.all > ul.depth2 li > a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
+    color: #00519b;
+    font-weight: 600;
+}
+ul.gnb li:hover ~ li.all,
+ul.gnb li.all:hover,
+ul.gnb li.all.on{
+    height: 400px;
+    transition: height 0.5s;
+}
+.view_btn_area {padding: 25px 0;}
+.view_btn_area button.view_btn {
+    background-image: url(/cobi_ro/img/dokdo/bars-solid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
 }
 /*-------------------------svisual_area-------------------------------------------------*/
 #svisual_area {
@@ -54,73 +173,116 @@ header .head_under {
 /*----------------------------------------nav_area--------------------------------------------*/
 nav {
     height: 70px;
-    background: skyblue;
+    border-bottom: 1px solid #9a9a9a;
 }
+.nav_wrap {padding: 0 4%;}
 nav ul.nav_list {
     display: flex;
     text-align: center;
-}
-nav ul.nav_list li.navi{
-    width:350px;
-    height: 70px;
-    background: #eee;
+    justify-content: center;
     position: relative;
 }
+nav ul.nav_list li.navi{
+    width: 20%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background: #eee;
+    /* border-right: 1px solid #9a9a9a; */
+}
 nav ul.nav_list li.navi > a {
-    width: 350px;
     display: block;
     height: 100%;
-    line-height: 70px;
+    line-height: 67px;
+}
+
+nav ul.nav_list li.nav1{
+    background: #00519B;
+    border-left: 1px solid #9a9a9a;
+}
+ul.nav_list > li.nav1 ul.nav_depth {background: #1e63a5;}
+nav ul.nav_list li.navi.nav1 > a{color: #fff;}
+nav ul.nav_list li.navi > a{
+    color: #888888;
+    border-right: 1px solid #9a9a9a;
+}
+nav ul.nav_list li.navi > a span {font-size: 1.4em;}
+li.navi button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+}
+li.navi button > img.arrow {
+    width: 100%;
+    height: 100%;
+}
+li.navi ul.nav_depth {
+    background: #d5d5d5;
+    display: none;
+}
+li.navi ul.nav_depth.on {
+    display: block;
 }
 ul.nav_list li.navi ul.nav_depth li > a {
     height: 70px;
     line-height: 70px;
     display: block;
+    font-size: 1.3rem;
+    color: #7c7c7c;
 }
-nav ul.nav_list li.nav1{background: #00519B;}
-nav ul.nav_list li.navi.nav1 > a{color: #fff;}
-nav ul.nav_list li.navi > a{color: #888888;}
-nav ul.nav_list li.navi > a span {
-    font-size: 1.2em;
-    font-weight: 600;
-}
-li.navi button {
-    width: 35px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url(/cobi_ro/img/icon/under_arrow_white.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/*방향 이미지가 안뜸 - 수정하기*/
-ul.nav_depth {
-    display: none;
-}
+ul.nav_list li.nav1 ul.nav_depth li > a {color: #fff;}
+
 
 /*----------------------------------------------------------------*/
 .container_wrap {
-    padding: 0 200px;
+    padding: 0 10%;
+    margin-bottom: 5%;
 }
 
 
 /*------------------------------------------------------------------*/
 .title_area {
-    display: flex;
-    justify-content: space-between;
+    height: 100px;
+    position: relative;
+    margin-bottom: 4%;
 }
-ul.subnav_list {
-    display: flex;
+.title_area > h3 {
+    font-size: 2rem;
+    line-height: 50px;
+    border-bottom: 2px solid #3a3a3a;
+    color: #3a3a3a;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
-img.home {
+.subnav_area {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.subnav_area ul.subnav_list {
+    display: flex;
+    color: #8f8f8f;
+}
+ul.subnav_list > li img.home {
     width: 20px;
     height: 20px;
+}
+ul.subnav_list > li.icon:after{
+    content:">";
+    display:inline-block;
+    font-size:1.2rem;
+    margin: 0 10px;
 }
 /*-------------------------------------------------------------------------------------*/
 section h4 {
     text-align: center;
     color: #00519b;
+    font-size: 1.8rem;
+    margin-bottom: 3%;
 }
 
 
@@ -128,16 +290,95 @@ section h4 {
     background-color: #00519b;
     height: 157px;
     border-radius: 100px;
+    margin: 3% 0 5% 0;
 }
 .establish_info_content {
     color: #fff;
     text-align: center;
-    padding: 55px 0;
+    padding: 45px 0;
 }
 .establish_info_content > p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+.purposecard_area {
+    position: relative;
+    height: 1050px;
+    margin-bottom: 10%;
+}
+.purposecard_area .purpose1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.purpose1 .citybrand_img{
+    width: 500px;
+    height: 400px;
+    background-image: url(/cobi_ro/img/test2/purpose_1.jpg);   
+}
+.purpose1 .purpose,
+.purpose2 .purpose,
+.purpose3 .purpose{
+    margin-right: 5%;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.purpose1 .citybrand_info {
+    width: 750px;
+    margin: auto 0;
+}
+.purpose_info strong {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.purpose_info > p {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    line-height: 35px;
+}
+.purposecard_area .purpose2 {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+.purpose2 .local_eco_img{
+    width: 450px;
+    height: 400px;
+    margin-right: 20px;
+    background-image: url(/cobi_ro/img/test2/purpose_2.jpg);
 }
 
+.purpose2 .local_eco_info {
+    width: 430px;
+    margin: auto 0;
+}
+.purpose2 .purpose_info strong {text-align: left;}
+.purposecard_area .purpose3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.purpose3 .local_culture_img{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 5%;
+    margin-right: 0;
+    background-image: url(/cobi_ro/img/test2/purpose_3.jpg);
+}
+.purpose3 .local_culture_info {
+    width: 600px;
+    margin: 0 auto;
+}
 
 
 
@@ -148,9 +389,64 @@ section h4 {
     height: 450px;
 }
 .major_info_content {
-    padding: 10px 30px;
+    padding: 2.5% 5% 0;
 }
 ul.bussiness_list {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
+li.bussiness {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2% 4% 2%;
+    text-align: center;
+    align-items: center;
+}
+.bussiness > span {
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+/*----------------------------------footer------------------------------------------*/
+footer {
+    height: 200px;
+    background: #fff;
+    border-top: 1px solid #888;
+}
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 160px;
+    /*padding 영역 나중에 지정해주기*/
+}
+
+.footer_area {
+    display: flex;
+    gap: 25px;
+}
+.footer_logo_area {
+    margin-right: 40px;
+}
+.footer_logo_area > img.footer_logo {
+    width: 200px;
+    height: 55px;
+}
+
+ul.footer_nav {
+    display: flex;
+    gap: 25px;
+   
+}
+.footer_nav li > a em {font-weight: 600;}
+address {
+    color: #7d7d7d;
+    margin-top: 25px;
+}
+address > p {margin-bottom: 3px;}
+p.copyright {margin: 25px 0 0 0;}

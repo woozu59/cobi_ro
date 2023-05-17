@@ -4,9 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
     font-style: normal;
-    outline: 1px solid pink;
+    /* outline: 1px solid pink; */
+    word-break: keep-all;
 }
 
 ul,li{list-style: none;}
