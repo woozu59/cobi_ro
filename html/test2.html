@@ -7,7 +7,7 @@
         <title>대전관광공사 설립목적 및 배경</title>
         <link rel="stylesheet" type="text/css" href="/cobi_ro/css/test2_common.css">
         <link rel="stylesheet" type="text/css" href="/cobi_ro/css/test2_sub_style.css">
-        <link rel="stylesheet" type="text/css" media="all and (max-width: 393px)" href="/cobi_ro/css/test2_submb_style.css">
+        <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="/cobi_ro/css/test2_submb_style.css">
     </head>
     <body>
         <div class="wrap">
@@ -18,7 +18,7 @@
                             <div class="head_top_inner">
                                 <button type="button" class="english"><span>English</span></button>
                                 <ul class="sns_list"><!--sns 리스트-->
-                                    <li class="sns_btn facebook"><a href="#" class="sns" title="페이스북"></a></li><!--background-position으로 잡기-->
+                                    <li class="sns_btn facebook"><a href="#" class="sns" title="페이스북"></a></li>
                                     <li class="sns_btn blog"><a href="#" class="sns" title="블로그"></a></li>
                                     <li class="sns_btn insta"><a href="#" class="sns" title="인스타그램"></a></li>
                                 </ul>
@@ -87,14 +87,89 @@
                                     </li>
                                 </ul>
                                 <div class="view_btn_area">
-                                    <button type="button" class="view_btn"><!--햄버거 모양 bg 넣기-->
+                                    <button type="button" class="view_btn mb_btn">
                                         <span class="sp_hidden">전체 메뉴</span>
                                     </button>
                                 </div>
                             </div><!--header gnb_wrap 영역 끝-->
                         </div><!--로고 및 gnb 영역_wrap-- 끝-->
                     </div><!--로고 및 gnb 영역 끝-->
-                    <div class="mb_gnb"></div><!--모바일 버전 & 전체 메뉴 gnb 창영역 & 닫기 btn-->
+                    <div class="mb_gnb_bg"></div>
+                    <div class="mb_nav">
+                        <div class="mb_nav_inner">
+                            <div class="mb_nav_up">
+                                <div class="mb_nav_logo"><img src="/cobi_ro/img/test2/daejeon_logo.svg" alt="대전관광공사"></div>
+                                <button type="button" class="mb_btn">
+                                    <span class="sp_hidden">메뉴 창 닫기</span>
+                                </button>
+                            </div>
+                            <ul class="gnb_mb">
+                                <li class="depth1_mb">
+                                    <a href="#">대전관광</a>
+                                    <ul class="depth2_mb">
+                                        <li><a href="#">관광명소</a></li>
+                                        <li><a href="#">추천여행</a></li>
+                                        <li><a href="#">축제&행사</a></li>
+                                        <li><a href="#">대전이야기</a></li>
+                                        <li><a href="#">여행도우미</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1_mb">
+                                    <a href="#">엑스포과학공원</a>
+                                    <ul class="depth2_mb">
+                                        <li><a href="#">시설 안내</a></li>
+                                        <li><a href="#">주변 시설</a></li>
+                                        <li><a href="#">대전엑스포93 소개</a></li>
+                                        <li><a href="#">다시 보는 엑스포</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1_mb">
+                                    <a href="#">정보공개</a>
+                                    <ul class="depth2_mb">
+                                        <li><a href="#">정보공개업무</a></li>
+                                        <li><a href="#">사전정보공표</a></li>
+                                        <li><a href="#">정보목록</a></li>
+                                        <li><a href="#">공공데이터</a></li>
+                                        <li><a href="#">경영 공시</a></li>
+                                        <li><a href="#">공사 사규</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1_mb">
+                                    <a href="#">알림마당</a>
+                                    <ul class="depth2_mb">
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">입찰정보</a></li>
+                                        <li><a href="#">채용마당</a></li>
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                        <li><a href="#">동영상 게시판</a></li>
+                                        <li><a href="#">포토갤러리</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1_mb">
+                                    <a href="#">고객광장</a>
+                                    <ul class="depth2_mb">
+                                        <li><a href="#">자주 묻는 질문</a></li>
+                                        <li><a href="#">공사에 바란다</a></li>
+                                        <li><a href="#">고객 문의</a></li>
+                                        <li><a href="#">부패(갑질) 신고센터</a></li>
+                                        <li><a href="#">공익신고센터</a></li>
+                                        <li><a href="#">국민권익위원회</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1_mb">
+                                    <a href="#">대전광광공사</a>
+                                    <ul class="depth2_mb">
+                                        <li><a href="#">공사소개</a></li>
+                                        <li><a href="#">주요사업</a></li>
+                                        <li><a href="#">윤리ㆍ인권경영</a></li>
+                                        <li><a href="#">CS 경영</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div><!--모바일 버전 gnb & 닫기 btn-->
                 </div>    
             </header>
             <div class="main_content_wrap">
@@ -266,5 +341,7 @@
                 </div><!--footer_inner 끝-->
             </footer>
         </div>
+        <script src="/cobi_ro/js/jqery3.6.0.min.js"></script>
+        <script src="/cobi_ro/js/test2_sub.js"></script>
     </body>
 </html>

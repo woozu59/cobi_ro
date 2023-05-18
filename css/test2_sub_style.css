@@ -134,6 +134,8 @@ ul.gnb li.all.on{
     width: 30px;
     height: 30px;
 }
+.header_wrap .mb_nav{display: none;}
+.mb_gnb_bg{display: none;}
 /*-------------------------svisual_area-------------------------------------------------*/
 #svisual_area {
     height: 300px;
@@ -419,34 +421,33 @@ footer {
     background: #fff;
     border-top: 1px solid #888;
 }
-.footer_inner {
+footer .footer_inner {
     display: flex;
     justify-content: space-between;
     padding: 35px 160px;
     /*padding 영역 나중에 지정해주기*/
 }
 
-.footer_area {
+footer .footer_inner .footer_area {
     display: flex;
     gap: 25px;
 }
-.footer_logo_area {
+footer .footer_inner .footer_area .footer_logo_area {
     margin-right: 40px;
 }
-.footer_logo_area > img.footer_logo {
+footer .footer_inner .footer_area .footer_logo_area > img.footer_logo {
     width: 200px;
     height: 55px;
 }
 
-ul.footer_nav {
+.footer_inner .footer_area .footer_theme ul.footer_nav {
     display: flex;
     gap: 25px;
-   
 }
-.footer_nav li > a em {font-weight: 600;}
-address {
+.footer_inner .footer_area .footer_theme ul.footer_nav li > a em {font-weight: 600;}
+.footer_area .footer_theme > address {
     color: #7d7d7d;
     margin-top: 25px;
 }
-address > p {margin-bottom: 3px;}
-p.copyright {margin: 25px 0 0 0;}
+.footer_area .footer_theme > address > p {margin-bottom: 3px;}
+.footer_area .footer_theme > address .copyright {margin: 25px 0 0 0;}
