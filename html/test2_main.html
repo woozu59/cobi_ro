@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <title>대전관광공사</title>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/cobi_ro/css/test2_common.css">
         <link rel="stylesheet" type="text/css" href="/cobi_ro/css/test2_style.css">
         <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="/cobi_ro/css/test2_mstyle.css">
@@ -174,12 +176,321 @@
             </header>
             <div class="container">
                 <main>
-                    <div><!--main_visual--></div>
-                    <section><!--대전소식 영역--></section>
-                    <section><!--대전광광 영역--></section>
-                    <section><!--대전운영시설 영역--></section>
-                    <section><!--조달청입찰정보 영역--></section>
-                    <section><!--대관 및 허가관련 영역--></section>
+                    <div class="main_visual"><!--main_visual-->
+                        <div class=" visual_slide">
+                            <div class="slide_inner">
+                                <div class="main"><a href="#"><img src="/cobi_ro/img/test2/visual_pc.jpg" alt="첫번째 슬라이드"></a></div>
+                                <div class="main"><a href="#"><img src="/cobi_ro/img/test2/main_slide.png" alt="두번째 슬라이드"></a></div>
+                                <div class="main"><a href="#"><img src="/cobi_ro/img/test2/visual2-2.jpg" alt="세번째 슬라이드"></a></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <section id="info_area"><!--대전소식 영역-->
+                        <div class="info_inner">
+                            <div class="title_area">
+                                <div class="title_inner">
+                                    <p>공지사항, 보도자료 등 대전관광공사의 소식</p>
+                                    <h3>대전 소식 한 눈에 보기</h3>
+                                </div>
+                            </div>
+                            <div class="info_wrap"><!--소식카드 영역-->
+                                <div class="info_card info1"><!--첫번째 소식-->
+                                    <a href="#" class="info"><!--card_inner-->
+                                        <div class="infocard_title">
+                                            <p>공지사항</p>
+                                            <span class="sp_hidden">더보기</span>
+                                        </div>
+                                        <div class="infocard_content">
+                                            <h4>"2023 한빛맥주출제" 5월 5일(어린이날) 공연 라인업 일정 변경 공지</h4>    
+                                            <p class="detail">자세히 보기</p>
+                                            <p>2023-05-04</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="info_card info2"><!--두번째 소식-->
+                                    <a href="#" class="info"><!--card_inner-->
+                                        <div class="infocard_title">
+                                            <p>채용마당</p>
+                                            <span class="sp_hidden">더보기</span><!--:after로 화살표모양 넣기-->
+                                        </div>
+                                        <div class="infocard_content">
+                                            <h4>대전 국제 와인 EXPO 2023 체험형 인턴(재공고) 최종합격자 공고</h4>    
+                                            <p class="detail">자세히 보기</p>
+                                            <p>2023-05-04</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="info_card info3"><!--세번째 소식-->
+                                    <a href="#" class="info"><!--card_inner-->
+                                        <div class="infocard_title">
+                                            <p>사전정보공표</p>
+                                            <span class="sp_hidden">더보기</span>
+                                        </div>
+                                        <div class="infocard_content">
+                                            <h4>2023년 4월 수의계약 공개</h4>    
+                                            <p class="detail">자세히 보기</p>
+                                            <p>2023-05-02</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="info_card info4"><!--네번째 소식-->
+                                    <a href="#" class="info"><!--card_inner-->
+                                        <div class="infocard_title">
+                                            <p>보도자료</p>
+                                            <span class="sp_hidden">더보기</span>
+                                        </div>
+                                        <div class="infocard_content">
+                                            <h4>대전관광공사, DTO 앰배서더 프로그램 운영 성료</h4>    
+                                            <p class="detail">자세히 보기</p>
+                                            <p>2023-05-09</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="tour_area"><!--대전관광 영역-->
+                        <div class="tour_inner">
+                            <div class="title_area">
+                                <div class="title_inner">
+                                    <p>축제, 문화, 관광 등 다양한 관광정보</p>
+                                    <h3>대전관광 둘러보기</h3>
+                                </div>
+                            </div>
+                            <div class="tour_wrap">
+                                <div class="tour_slide">
+                                    <div class="wrapper">
+                                        <div class="tour tour1">
+                                            <div class="move_btn"></div>
+                                            <div class="tour_text">
+                                                <strong>유성온천 문화축제</strong>
+                                                <p>2023.05.12 ~ 05.14</p>
+                                                <a href="#">자세히 보기</a>
+                                            </div>
+                                            <img src="/cobi_ro/img/test2/대전축제 및 관광지_유성온천축제.jpg" alt="유성온천">
+                                        </div>
+                                        <div class="tour tour2">
+                                            <div class="move_btn"></div>
+                                            <div class="tour_text">
+                                                <strong>한빛맥주축제</strong>
+                                                <p>2023.05.03 ~ 05.28</p>
+                                                <a href="#">자세히 보기</a>
+                                            </div>
+                                            <img src="/cobi_ro/img/test2/대전축제 및 관광지_한빛맥주축제.png" alt="한빛맥주축제">
+                                        </div>
+                                        <div class="tour tour3">
+                                            <div class="move_btn"></div>
+                                            <div class="tour_text">
+                                                <strong>한빛탑물빛광장</strong>
+                                                <p>물빛광장 음악분수 & 미디어파사드 공연</p>
+                                                <a href="#">자세히 보기</a>
+                                            </div>
+                                            <img src="/cobi_ro/img/test2/대전축제 및 관광지_한빛탑.jpg" alt="한빛물빛광장">
+                                        </div>
+                                        <div class="tour tour4">
+                                            <div class="move_btn"></div>
+                                            <div class="tour_text">
+                                                <strong>한밭수목원</strong>
+                                                <p>정부대전청사와 엑스포과학공원 사이에 위치한 도심 속 전국 최대의 인공수목원</p>
+                                                <a href="#">자세히 보기</a>
+                                            </div>
+                                            <img src="/cobi_ro/img/test2/대전축제 및 관광지_한밭수목원.jpg" alt="한밭수목원">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--대전관광 영역 끝-->
+                    </section>
+                    <section id="operate_area"><!--대전운영시설 영역-->
+                        <div class="operate_bg">
+                            <div class="operate_inner">
+                                <div class="title_area">
+                                    <div class="title_inner">
+                                        <p>대전의 미래가치를 창조, 실현하는 글로벌마케팅 공기업</p>
+                                        <h3>대전관광공사 운영시설</h3>
+                                    </div>
+                                </div>
+                                <div class="operate_wrap">
+                                    <div class="wrapper"><!--운영시설 슬라이드wrapper-->
+                                        <div class="operate operate1"><!--첫번째 운영시설-->
+                                            <a href="#">
+                                                <div class="con_title">
+                                                    <img src="/cobi_ro/img/test2/science park.png" alt="엑스포과학공원운영">
+                                                    <span>엑스포과학공원운영</span>
+                                                </div>
+                                                <div class="con_text">
+                                                    <p>과학체험 프로그램 운영 및 각종 이벤트 개최를 통한 볼거리 확대 등으로 고객유치 증대 및 고객만족도 제고</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="operate operate2"><!--두번째 운영시설-->
+                                            <a href="#">
+                                                <div class="con_title">
+                                                    <img src="/cobi_ro/img/test2/convention center.png" alt="대전컨벤션센터">
+                                                    <span>대전컨벤션센터</span>
+                                                </div>
+                                                <div class="con_text">
+                                                    <p>국내.외 컨벤션 유치와 지원, 홍보활동, 신성장 동력산업인 MICE산업 육성과 도시이미지 및 지역경제 기여</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="operate operate3"><!--세번째 운영시설-->
+                                            <a href="#">
+                                                <div class="con_title">
+                                                    <img src="/cobi_ro/img/test2/medical tourism.png" alt="대전의료관광산업">
+                                                    <span>대전의료관광산업</span>
+                                                </div>
+                                                <div class="con_text">
+                                                    <p>의료서비스와 관광을 결합한 의료관광 활성화로 대전의 도시브랜드 제고 및 지역경제 활성화 도모</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="operate operate4"><!--네번째 운영시설-->
+                                            <a href="#">
+                                                <div class="con_title">
+                                                    <img src="/cobi_ro/img/test2/Daecheong Lake.png" alt="대청호 오백리길">
+                                                    <span>대청호 이백리길</span>
+                                                </div>
+                                                <div class="con_text">
+                                                    <p>대전.충청권 지역의 대청호 주변 자연부락과 소하천을 포함하는 약 200km 의 도보길 임도, 예길 등을 포함</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="operate operate5"><!--다섯번째 운영시설-->
+                                            <a href="#">
+                                                <div class="con_title">
+                                                    <img src="/cobi_ro/img/test2/Expo.png" alt="대전엑스포시민광장">
+                                                    <span>대전엑스포시민광장</span>
+                                                </div>
+                                                <div class="con_text">
+                                                    <p>무화와 체육, 여가를 함께 즐길 수 있는 신개념의 복합문화공간으로 야외공연장과 광장 및 엑스포다리 운영</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="operate operate6"><!--여섯번째 운영시설-->
+                                            <a href="#">
+                                                <div class="con_title">
+                                                    <img src="/cobi_ro/img/test2/Sky road.png" alt="대전스카이로드">
+                                                    <span>대전스카이로드</span>
+                                                </div>
+                                                <div class="con_text">
+                                                    <p>스카이로드의 성공적인 운영을 통하여 원도심 활성화 도모 및 랜드마크 조성을 위한 수탁 운영</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="operate operate7"><!--일곱번째 운영시설-->
+                                            <a href="#">
+                                                <div class="con_title">
+                                                    <img src="/cobi_ro/img/test2/traffic culture.png" alt="대전교통문화연수원">
+                                                    <span>대전교통문화연수원</span>
+                                                </div>
+                                                <div class="con_text">
+                                                    <p>교통안전 교육 및 운수종사자의 교통질서의식 향상을 위해 과학공원내 건립하여 공사에서 수탁 운영</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!--swiper 영역-->
+                            </div><!--대전운영시설 영역 끝-->
+                        </div>    
+                    </section>
+                    <section id="bidinfo_area"><!--조달청입찰정보 영역-->
+                        <div class="bidinfo_inner">
+                            <div class="title_area">
+                                <div class="title_inner">
+                                    <p>대전관광공사 및 소속기관의 입찰정보</p>
+                                    <h3>조달청 입찰정보</h3>
+                                </div>
+                            </div>
+                            <div class="bidinfo_wrap">
+                                <div class="bidinfo1"><!--첫번째 메뉴-->
+                                    <a href="#">
+                                        <div class="bidicon"><!--border-radius 사용해서 동그랗게 만들기 / 아이콘 넣기-->
+                                            <img src="/cobi_ro/img/icon/search_white.png" class="search" alt="조달청 바로가기">
+                                        </div>
+                                        <div class="bidinfo">
+                                            <p>
+                                                <em>조달청 발주정보</em>
+                                                대전관광공사 관련 전체 발주계획 현황
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="bidinfo2"><!--두번째 메뉴-->
+                                    <a href="#">
+                                        <div class="bidicon"><!--border-radius 사용해서 동그랗게 만들기-->
+                                            <img src="/cobi_ro/img/icon/list_white.png" class="list" alt="조달청 바로가기">
+                                        </div>
+                                        <div class="bidinfo">
+                                            <p>
+                                                <em>조달청 입찰정보</em>
+                                                대전관광공사 및 소속기관 게시 목록
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="bidinfo3"><!--세번째 메뉴-->
+                                    <a href="#">
+                                        <div class="bidicon"><!--border-radius 사용해서 동그랗게 만들기-->
+                                            <img src="/cobi_ro/img/icon/space_white.png" class="space" alt="조달청 바로가기">
+                                        </div>
+                                        <div class="bidinfo">
+                                            <p>
+                                                <em>조달청 사전규격공고</em>
+                                                물품 및 용역 사전규격 검색
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="bidinfo4"><!--네번째 메뉴-->
+                                    <a href="#">
+                                        <div class="bidicon"><!--border-radius 사용해서 동그랗게 만들기-->
+                                            <img src="/cobi_ro/img/icon/result_white.png" class="result" alt="조달청 바로가기">
+                                        </div>
+                                        <div class="bidinfo">
+                                            <p>
+                                                <em>조달청 개찰결과</em>
+                                                대전관광공사 게시/개찰처리한 공고 목록
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!--조달청입찰정보 영역 끝-->
+                    </section>
+                    <section id="survey_area"><!--대관 및 허가관련 영역-->
+                        <div class="survey_inner">
+                            <div class="title_area title_hidden"><!--pc버전 시 타이틀 숨기기-->
+                                <div class="title_inner">
+                                    <h3>주요 공지사항</h3>
+                                </div>
+                            </div>
+                            <div class="survey_wrap">
+                                <ul class="survey_list">
+                                    <li class="survey survey_1">
+                                        <a href="#"><img src="/cobi_ro/img/test2/djto_camera.jpg" alt="촬영 허가 신청"></a>
+                                        <span>ㆍ촬영 허가 신청</span>
+                                    </li>
+                                    <li class="survey survey_2">
+                                        <a href="#"><img src="/cobi_ro/img/test2/djto_ip.jpg" alt="꿈돌이 IP 사용신청"></a>
+                                        <span>ㆍ꿈돌이 IP 사용신청</span>
+                                    </li>
+                                    <li class="survey survey_3">
+                                        <a href="#"><img src="/cobi_ro/img/test2/kkumdori_shinsaegae.jpg" alt="대전홍보관(신세계백화점) 전시ㆍ대관 신청안내"></a>
+                                        <span>ㆍ대전홍보관(신세계백화점) 전시ㆍ대관 신청안내</span>
+                                    </li>
+                                    <li class="survey survey_4">
+                                        <a href="#"><img src="/cobi_ro/img/test2/djto_pink.jpg" alt="엑스포과학공원(한빛광장) 대관 신청안내"></a>
+                                        <span>ㆍ엑스포과학공원(한빛광장) 대관 신청안내</span>
+                                    </li>
+                                    <li class="survey survey_5">
+                                        <a href="#"><img src="/cobi_ro/img/test2/djto_planers_02.jpg" alt="대전 미팅 플래너스 가이드북"></a>
+                                        <span>ㆍ대전 미팅 플래너스 가이드북</span>
+                                    </li>
+                                </ul>
+                            </div><!--survey_wrap 끝-->
+                        </div><!--survey inner 끝-->
+                    </section>
                 </main>
             </div>
             <footer>

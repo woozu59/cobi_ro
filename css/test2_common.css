@@ -1,11 +1,13 @@
 @charset "UTF-8";
-/*font 추가히기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*noto sans kr*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: normal;
-    /* outline: 1px solid pink; */
+    font-family: 'Noto Sans KR', sans-serif;
+    outline: 1px solid pink;
     word-break: keep-all;
 }
 

@@ -425,7 +425,6 @@ footer .footer_inner {
     display: flex;
     justify-content: space-between;
     padding: 35px 160px;
-    /*padding 영역 나중에 지정해주기*/
 }
 
 footer .footer_inner .footer_area {

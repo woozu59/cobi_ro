@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+body{max-width: 1920px;}
+
+
+
+
+/*----------------------------------header----------------------------------------*/
+header {
+    height: 130px;
+    background: none;
+    position: absolute;
+    width: 100%;
+    z-index: 30;
+}
+.header_wrap {
+    display: flex;
+    flex-direction: column;
+}
+.header_wrap .head_top {border-bottom: 1px solid #eee;}
+header .head_wrap {
+    padding: 0 7%;
+    height: 100%;
+}
+header .head_wrap .head_top_inner {
+    display: flex;
+    justify-content: right;
+    padding: 5px 0;
+}
+button.english > span {
+    color: #fff;
+    line-height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 5px 0;
+}
+button.english:after {
+    content: "";
+    display: inline-block;
+    margin: 6px 10px;
+    background: #e6e6e6;
+    vertical-align: top;
+    width: 1px;
+    height: 65%;
+}
+.head_top_inner ul.sns_list{
+    display: flex;
+    gap: 5px;
+}
+li.sns_btn {
+    width: 40px;
+    height: 35px;
+    margin: auto 0;
+}
+ul.sns_list .sns_btn .sns{
+    width: 100%;
+    height: 100%;
+    display:block;
+    background-image: url(/cobi_ro/img/sns/sns07.png);
+    background-position: 273px 386px;
+    background-size: 280px;
+}
+ul.sns_list .blog .sns{background-position: 139px 386px;}
+ul.sns_list .insta .sns{background-position: 93px 386px;}
+/*---------------header_under--------------------*/
+header .head_under {
+    height: 80px;
+    border-bottom: 1px solid #eee;
+}
+.head_under .head_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.head_under .head_wrap .header_logo_area {height: 100%;}
+.head_under .header_logo_area > a{
+    display: block;
+    padding: 15px 0;
+}
+.gnb_wrap{display: flex;}
+.gnb_wrap ul.gnb{
+    display: flex;
+    margin-right: 50px;
+}
+
+li.depth1 {
+    height: 80px;
+}
+li.depth1 > a {
+    font-size: 1.2rem;
+    display: block;
+    height: 100%;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    line-height: 80px;
+}
+
+ul.gnb > li.all {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    display: flex;
+    top: 130px;
+    left: 0;
+    justify-content: right;
+    align-items: flex-start;
+    overflow-y: hidden;
+    padding-right: 11%;
+}
+ul.gnb > li.all > ul.depth2 {
+    width: 181px;
+    font-size: 1.2rem;
+    padding: 20px 0 0 0;
+}
+ul.gnb > li.all > ul.depth2 li > a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
+    color: #00519b;
+    font-weight: 600;
+}
+ul.gnb li:hover ~ li.all,
+ul.gnb li.all:hover,
+ul.gnb li.all.on{
+    height: 400px;
+    transition: height 0.5s;
+}
+.view_btn_area {padding: 25px 0;}
+.view_btn_area button.view_btn {
+    background-image: url(/cobi_ro/img/dokdo/bars-solid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.header_wrap .mb_nav{display: none;}
+.mb_gnb_bg{display: none;}
+/*-----------------visual_slide-------------------------------------------*/
+.visual_slide {
+    height: 670px;
+    position: relative;
+    background: #000;
+}
+.slide_inner {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.slide_inner .main > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slide_inner .main img {
+    position: absolute;
+    width: 100vw;
+}
+/*--------------------------------------------------------------------------------------------*/
+section{margin-bottom: 5%;}
+.info_inner{padding: 0 10%;}
+.title_inner {
+    padding: 5% 0;
+}
+.title_inner > p {
+    font-size: 25px;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.title_inner > h3 {
+    font-size: 40px;
+    color: #2f2f2f;
+    /* margin-top: 2%; */
+}
+.info_wrap{
+    display: flex;
+    flex-flow: row wrap;
+    height: 890px;
+    position: relative;
+    margin: 0 2%;
+}
+.info_card {
+    width: 650px;
+    height: 400px;
+    background: #00519b;
+    border-radius: 25px;
+    position: absolute;
+}
+.info1{
+    top: 0;
+    left: 0;
+}
+.info2{
+    top: 5%;
+    right: 5%;
+}
+.info3 {
+    bottom: 5%;
+    left: 5%;
+}
+.info4{
+    bottom: 0;
+    right: 0;
+}
+.info1:hover, .info4:hover {
+    box-shadow: 8px 9px 20px rgba(0,0,0,0.3);
+    background: #0160b6;
+}
+.info2:hover, .info3:hover {
+    background: #eee;
+    box-shadow: 8px 9px 20px rgba(0,0,0,0.2);
+}
+.info_card a.info {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 10% 15%;
+}
+.infocard_title {position: relative;}
+.infocard_title > p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.infocard_title > p:after{
+    content:"+";
+    display: inline-block;
+    font-size: 40px;
+    vertical-align: top;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+.infocard_content > h4 {
+    font-size: 25px;
+    margin: 10% 0;
+}
+.infocard_content > p {
+    color: #f2f2f2;
+    margin-top: 3%;
+}
+
+
+.info2, .info3 {
+    background: #fff;
+    border: 2px solid #e1e1e1;
+}
+.info2 .infocard_title > p,
+.info3 .infocard_title > p {color: #00519b;}
+.info2 .infocard_content > h4,
+.info3 .infocard_content > h4 {color: #2f2f2f;}
+.info2 .infocard_content > p,
+.info3 .infocard_content > p {color: #3f3f3f;}
+/*---------tour_area-----------------------------------------------------------*/
+#tour_area {
+    height: 870px;
+    background: #eee;
+    margin-bottom: 0;
+}
+
+
+
+.wrapper {
+    display: flex;
+}
+.tour {
+    height: 450px;
+    width: 1000px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 30;
+}
+.tour_text {
+    position: relative;
+    z-index: 30;
+    color: #fff;
+}
+.tour_text > strong {
+    font-size: 40px;
+}
+.tour_text > a {
+    display: block;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 100px;
+}
+.tour > img {
+    height: 450px;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+/*-----------------------operate_areas---------------------------------------*/
+#operate_area {
+    height: 660px;
+    margin-bottom: 0;
+    background-image: url(/cobi_ro/img/test2/엑스포\ 다리_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#operate_area .operate_bg{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+}
+.operate_inner{padding: 0 0 0 10%;}
+.operate_inner .title_inner {padding: 4% 0;}
+#operate_area .title_inner > p,
+#operate_area .title_inner > h3 {
+    color: #fff;
+}
+
+
+.wrapper {
+    display: flex;
+    gap: 40px;
+}
+.operate  {
+    width: 300px;
+    height: 310px;
+    background: rgba(265,265,265,0.8);
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+}
+.operate > a {
+    display: block;
+    width: 300px;
+    height: 310px;
+}
+.operate .con_title {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.con_text {
+    border-top: 1px solid #666;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+/*---------------------bidinfo--------------------------------------------------*/
+
+.bidinfo_inner {
+    padding: 0 10%;
+}
+.bidinfo_wrap {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.bidicon {
+    width: 100px;
+    height: 100px;
+    background: #00519b;
+    border-radius: 100px;
+}
+.bidicon > img {
+    width: 50%;
+    height: 50%;
+    margin: 25px;
+}
+.bidinfo1, .bidinfo2 {padding-bottom: 5%;}
+
+.bidinfo1 > a, .bidinfo2 > a, 
+.bidinfo3 > a, .bidinfo4 > a {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.bidinfo > p {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #666;
+}
+.bidinfo > p > em {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3a3a3a;
+    padding-bottom: 5px;
+}
+.bidinfo > p > em:after {
+    content: "";
+    display: inline-block;
+    width: 280px;
+    height: 30px;
+    background-image: url(/cobi_ro/img/icon/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 15px;
+    left: -28%;
+}
+/*----------------------------------------survey_area-------------------------------------------*/
+#survey_area {
+    height: 330px;
+    background: #00519b;
+    margin-bottom: 0;
+}
+.title_hidden {display: none;}
+.survey_wrap {padding: 2% 10%;}
+ul.survey_list {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+}
+.survey > a {display: block;}
+.survey > a > img {height: 250px;}
+.survey > span {display: none;}
+
+
+
+/*----------------------------------footer------------------------------------------*/
+footer {
+    height: 200px;
+    background: #fff;
+    border-top: 1px solid #888;
+}
+footer .footer_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 160px;
+}
+
+footer .footer_inner .footer_area {
+    display: flex;
+    gap: 25px;
+}
+footer .footer_inner .footer_area .footer_logo_area {
+    margin-right: 40px;
+}
+footer .footer_inner .footer_area .footer_logo_area > img.footer_logo {
+    width: 200px;
+    height: 55px;
+}
+
+.footer_inner .footer_area .footer_theme ul.footer_nav {
+    display: flex;
+    gap: 25px;
+}
+.footer_inner .footer_area .footer_theme ul.footer_nav li > a em {font-weight: 600;}
+.footer_area .footer_theme > address {
+    color: #7d7d7d;
+    margin-top: 25px;
+}
+.footer_area .footer_theme > address > p {margin-bottom: 3px;}
+.footer_area .footer_theme > address .copyright {margin: 25px 0 0 0;}
