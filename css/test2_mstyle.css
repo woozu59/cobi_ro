@@ -111,25 +111,83 @@ ul.depth2_mb > li > a {
     padding: 0 20px;
     font-size: 16px;
 }
-
-/*-----------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+.title_inner{padding: 50px 0;}
+.info_inner {
+    padding: 0 6%;
+}
+.info_wrap {
+    margin: 0;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.info_card {
+    width: 340px;
+    height: 250px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.infocard_title > p {font-size: 16px;}
+.infocard_content > h4 {font-size: 18px;}
+.infocard_content > p{font-size: 12px;}
+/*------------------------------------------------------------------------------------------*/
+#tour_area {
+    height: auto;
+}
+/*----------------------------operate_area-------------------------------------------*/
+#operate_area {
+    height: auto;
+}
+.operate_inner {padding: 0 6%;}
+.operate_inner .title_inner {padding: 50px 0;}
 .title_inner > p {
     font-size: 13px;
 }
 .title_inner > h3 {font-size: 15px;}
+.operate_wrap {padding-bottom: 25%;}
+.operate_wrap .wrapper {
+    flex-flow: row wrap;
+    gap: 25px;
+    justify-content: space-between;
+}
+.operate {
+    width: 160px;
+    height: 240px;
+}
+.operate > a {
+    width: 160px;
+    height: 240px;
+}
+.con_title > img {
+    width: 35px;
+    height: 35px;
+}
+.operate .con_title > span{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.con_text {
+    font-size: 12px;
+    margin: 0 15px;
+    padding: 15px 0;
+    line-height: 20px;
+}
 
 
 /*-----bidinfo_area----------------------------------------------------------*/
-
-.bidinfo3, .bidinfo4 {padding-bottom: 5%;}
+.bidinfo_inner{padding: 0 6%;}
+.bidinfo1, .bidinfo2, .bidinfo3, .bidinfo4 {padding-bottom: 7%;}
 .bidinfo1 > a, .bidinfo2 > a, .bidinfo3 > a, .bidinfo4 > a {
     gap: 0;
 }
-.bidicon {
+.bidicon {margin-right: 15px;}
+.bidicon > .icon {
     width: 70px;
     height: 70px;
 }
-.bidicon > img {margin: 17px;}
+.bidicon .icon > img {margin: 17px;}
 .bidinfo > p {font-size: 12px;}
 .bidinfo > p > em {
     font-size: 15px;
@@ -149,11 +207,16 @@ ul.depth2_mb > li > a {
 /*---------------------------------------------------------------------------------*/
 #survey_area {height: auto;}
 .title_hidden {display: block;}
+.survey_inner .title_inner {padding: 15px 0 0 0;}
+.survey_wrap {padding: 4% 10%;}
+.survey_1, .survey_2 {
+    width: 40%;
+}
 .survey > a > img {display: none;}
 .survey > span {
     display: block;
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
 }
 #survey_area .title_inner > h3{color: #fff;}
 

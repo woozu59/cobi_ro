@@ -32,7 +32,6 @@ button.english > span {
     line-height: 30px;
     line-height: 30px;
     display: inline-block;
-    padding: 5px 0;
 }
 button.english:after {
     content: "";
@@ -48,8 +47,8 @@ button.english:after {
     gap: 5px;
 }
 li.sns_btn {
-    width: 40px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin: auto 0;
 }
 ul.sns_list .sns_btn .sns{
@@ -57,11 +56,11 @@ ul.sns_list .sns_btn .sns{
     height: 100%;
     display:block;
     background-image: url(/cobi_ro/img/sns/sns07.png);
-    background-position: 273px 386px;
-    background-size: 280px;
+    background-position: 214px 473px;
+    background-size: 220px;
 }
-ul.sns_list .blog .sns{background-position: 139px 386px;}
-ul.sns_list .insta .sns{background-position: 93px 386px;}
+ul.sns_list .blog .sns{background-position: 110px 473px;}
+ul.sns_list .insta .sns{background-position: 73px 473px;}
 /*---------------header_under--------------------*/
 header .head_under {
     height: 80px;
@@ -110,7 +109,7 @@ ul.gnb > li.all {
 }
 ul.gnb > li.all > ul.depth2 {
     width: 181px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 20px 0 0 0;
 }
 ul.gnb > li.all > ul.depth2 li > a {
@@ -166,95 +165,83 @@ section{margin-bottom: 5%;}
     padding: 5% 0;
 }
 .title_inner > p {
-    font-size: 25px;
+    font-size: 1.4em;
     color: #444;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .title_inner > h3 {
-    font-size: 40px;
+    font-size: 2em;
     color: #2f2f2f;
-    /* margin-top: 2%; */
 }
 .info_wrap{
     display: flex;
     flex-flow: row wrap;
-    height: 890px;
-    position: relative;
-    margin: 0 2%;
+    justify-content: space-between;
+    margin: 0 7%;
 }
 .info_card {
-    width: 650px;
-    height: 400px;
-    background: #00519b;
+    width: 45%;
+    height: 25%;
+    margin-bottom: 5%;
     border-radius: 25px;
-    position: absolute;
-}
-.info1{
-    top: 0;
-    left: 0;
-}
-.info2{
-    top: 5%;
-    right: 5%;
-}
-.info3 {
-    bottom: 5%;
-    left: 5%;
-}
-.info4{
-    bottom: 0;
-    right: 0;
-}
-.info1:hover, .info4:hover {
-    box-shadow: 8px 9px 20px rgba(0,0,0,0.3);
-    background: #0160b6;
-}
-.info2:hover, .info3:hover {
-    background: #eee;
-    box-shadow: 8px 9px 20px rgba(0,0,0,0.2);
+    background: #fff;
+    border: 2px solid #e1e1e1;
 }
 .info_card a.info {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff;
-    padding: 10% 15%;
+    padding: 10%;
 }
 .infocard_title {position: relative;}
 .infocard_title > p {
-    font-size: 20px;
+    color: #00519b;
+    font-size: 1rem;
     font-weight: 600;
 }
 .infocard_title > p:after{
     content:"+";
     display: inline-block;
-    font-size: 40px;
+    font-size: 30px;
+    line-height: 20px;
     vertical-align: top;
     position: absolute;
-    top: -20px;
+    top: 0;
     right: 0;
 }
 .infocard_content > h4 {
-    font-size: 25px;
-    margin: 10% 0;
+    color: #2f2f2f;
+    font-size: 1.3rem;
+    margin: 7% 2% 10% 0;
+    font-weight: 400;
 }
 .infocard_content > p {
-    color: #f2f2f2;
+    color: #3f3f3f;
     margin-top: 3%;
 }
-
-
-.info2, .info3 {
-    background: #fff;
-    border: 2px solid #e1e1e1;
+.infocard_content .detail:after{
+    content:"→";
+    display:inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+    vertical-align: top;
 }
-.info2 .infocard_title > p,
-.info3 .infocard_title > p {color: #00519b;}
-.info2 .infocard_content > h4,
-.info3 .infocard_content > h4 {color: #2f2f2f;}
-.info2 .infocard_content > p,
-.info3 .infocard_content > p {color: #3f3f3f;}
+.info_card:hover {
+    background: #00519b;
+    border: none;
+    transition: all 0.4s;
+    box-shadow: 7px 5px 10px rgba(0,0,0,0.2);
+}
+.info_card:hover .infocard_title > p,
+.info_card:hover .infocard_title > p:after,
+.info_card:hover .infocard_content > p,
+.info_card:hover .infocard_content > h4 {color: #f2f2f2;}
+
+
+
+
 /*---------tour_area-----------------------------------------------------------*/
 #tour_area {
     height: 870px;
@@ -303,7 +290,7 @@ section{margin-bottom: 5%;}
 }
 /*-----------------------operate_areas---------------------------------------*/
 #operate_area {
-    height: 660px;
+    /* height: 660px; */
     margin-bottom: 0;
     background-image: url(/cobi_ro/img/test2/엑스포\ 다리_bg.jpg);
     background-repeat: no-repeat;
@@ -312,7 +299,7 @@ section{margin-bottom: 5%;}
 }
 #operate_area .operate_bg{
     background-color: rgba(0,0,0,0.5);
-    height: 100%;
+    padding: 0 0 5% 0;
 }
 .operate_inner{padding: 0 0 0 10%;}
 .operate_inner .title_inner {padding: 4% 0;}
@@ -328,15 +315,15 @@ section{margin-bottom: 5%;}
 }
 .operate  {
     width: 300px;
-    height: 310px;
-    background: rgba(265,265,265,0.8);
+    height: 300px;
+    background: rgba(265,265,265,0.75);
     border-radius: 25px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 .operate > a {
     display: block;
     width: 300px;
-    height: 310px;
+    height: 300px;
 }
 .operate .con_title {
     text-align: center;
@@ -344,11 +331,13 @@ section{margin-bottom: 5%;}
     display: flex;
     flex-direction: column;
     padding: 20px;
+    gap: 10px;
 }
 .con_text {
     border-top: 1px solid #666;
     padding: 20px 0;
     margin: 0 20px;
+    font-size: 0.95rem;
 }
 /*---------------------bidinfo--------------------------------------------------*/
 
@@ -356,22 +345,33 @@ section{margin-bottom: 5%;}
     padding: 0 10%;
 }
 .bidinfo_wrap {
+    gap: 40px;
     flex-flow: row wrap;
     display: flex;
     justify-content: space-around;
+
 }
 .bidicon {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bidicon > .icon {
+    width: 90px;
+    height: 90px;
     background: #00519b;
     border-radius: 100px;
 }
-.bidicon > img {
+.bidicon .icon > img {
     width: 50%;
     height: 50%;
-    margin: 25px;
+    margin: 23px;
 }
-.bidinfo1, .bidinfo2 {padding-bottom: 5%;}
+.bidinfo1, .bidinfo2, .bidinfo3, .bidinfo4 {
+    width: 400px;
+    height: 100px;
+    margin-right: 6%;
+}
 
 .bidinfo1 > a, .bidinfo2 > a, 
 .bidinfo3 > a, .bidinfo4 > a {
@@ -385,70 +385,81 @@ section{margin-bottom: 5%;}
     display: flex;
     flex-direction: column;
     font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0;
     color: #666;
 }
 .bidinfo > p > em {
     font-size: 20px;
     font-weight: 600;
     color: #3a3a3a;
-    padding-bottom: 5px;
+    line-height: 20px;
 }
 .bidinfo > p > em:after {
     content: "";
     display: inline-block;
-    width: 280px;
+    width: 270px;
     height: 30px;
     background-image: url(/cobi_ro/img/icon/arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
-    top: 15px;
-    left: -28%;
+    margin-top: -20px;
+
 }
 /*----------------------------------------survey_area-------------------------------------------*/
 #survey_area {
-    height: 330px;
+    /* height: 330px; */
     background: #00519b;
     margin-bottom: 0;
 }
 .title_hidden {display: none;}
-.survey_wrap {padding: 2% 10%;}
+.survey_wrap {
+    padding: 2% 0;
+    margin: 0 10%;
+}
 ul.survey_list {
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
     align-items: center;
 }
-.survey > a {display: block;}
-.survey > a > img {height: 250px;}
+.survey > a {
+    display: block;
+    height: 200px;
+}
+.survey > a > img {height: 100%;}
 .survey > span {display: none;}
 
 
 
 /*----------------------------------footer------------------------------------------*/
 footer {
-    height: 200px;
+    height: 130px;
+    font-size: 0.9rem;
     background: #fff;
     border-top: 1px solid #888;
 }
 footer .footer_inner {
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 35px 160px;
+    padding:0 5%;
+    margin: 15px 0;
 }
 
 footer .footer_inner .footer_area {
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
-footer .footer_inner .footer_area .footer_logo_area {
-    margin-right: 40px;
-}
+/* footer .footer_inner .footer_area .footer_logo_area {
+    margin-right: 15px;
+} */
 footer .footer_inner .footer_area .footer_logo_area > img.footer_logo {
-    width: 200px;
-    height: 55px;
+    width: 160px;
 }
-
+.footer_inner .footer_area .footer_theme {
+    padding: 10px 0 0 0;
+}
 .footer_inner .footer_area .footer_theme ul.footer_nav {
     display: flex;
     gap: 25px;
@@ -456,7 +467,9 @@ footer .footer_inner .footer_area .footer_logo_area > img.footer_logo {
 .footer_inner .footer_area .footer_theme ul.footer_nav li > a em {font-weight: 600;}
 .footer_area .footer_theme > address {
     color: #7d7d7d;
-    margin-top: 25px;
+    margin-top: 2%;
+    font-weight: 300;
 }
-.footer_area .footer_theme > address > p {margin-bottom: 3px;}
-.footer_area .footer_theme > address .copyright {margin: 25px 0 0 0;}
+
+.footer_area .footer_theme > address .copyright {margin: 2% 0 0 0;}
+.footer_logo_area {padding: 5% 0;}
