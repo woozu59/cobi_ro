@@ -11,18 +11,33 @@ $(function(){
         allNav.toggleClass('on');
     });
     
-    new Swiper('.swiper', {
-        // 다양한 옵션 설정, 
-        // 아래에서 설명하는 옵션들은 해당 위치에 들어갑니다!!
-        slidesPerView : 'auto',
-        spaceBetween : 2, 
+    var swiper = new Swiper(".main_visual_section .mySwiper", {
+        spaceBetween: 30,
         autoplay: {
             // 자동재생 여부
-            delay: 3000, // 시작시간 설정
-          },
-        loop: true, // 반복재생 여부
+            delay: 5500, // 시작시간 설정
+        },
+        
+        loop: true,
+        effect: "fade",
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper = new Swiper("#operate_area .mySwiper", {
         slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
-        spaceBetween: 3, // 슬라이드 사이 여백
-        centeredSlides: false, // 1번 슬라이드가 가운데 보이기
-    })
+        centeredSlides: false,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 })
