@@ -4,11 +4,10 @@
 body{max-width: 1920px;}
 
 header {
-    height: 130px;
     background: none;
     position: absolute;
     width: 100%;
-    z-index: 30;
+    z-index: 90;
 }
 .header_wrap {
     display: flex;
@@ -29,7 +28,6 @@ button.english > span {
     line-height: 30px;
     line-height: 30px;
     display: inline-block;
-    padding: 5px 0;
 }
 button.english:after {
     content: "";
@@ -45,8 +43,8 @@ button.english:after {
     gap: 5px;
 }
 li.sns_btn {
-    width: 40px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin: auto 0;
 }
 ul.sns_list .sns_btn .sns{
@@ -54,66 +52,60 @@ ul.sns_list .sns_btn .sns{
     height: 100%;
     display:block;
     background-image: url(/cobi_ro/img/sns/sns07.png);
-    background-position: 273px 386px;
-    background-size: 280px;
+    background-position: 214px 473px;
+    background-size: 220px;
 }
-ul.sns_list .blog .sns{background-position: 139px 386px;}
-ul.sns_list .insta .sns{background-position: 93px 386px;}
+ul.sns_list .blog .sns{background-position: 110px 473px;}
+ul.sns_list .insta .sns{background-position: 73px 473px;}
 /*---------------header_under--------------------*/
-header .head_under {
-    height: 80px;
-    border-bottom: 1px solid #eee;
-}
+header .head_under {border-bottom: 1px solid #eee;}
 .head_under .head_wrap {
     display: flex;
     justify-content: space-between;
+    padding: 0 7%;
 }
-.head_under .head_wrap .header_logo_area {height: 100%;}
-.head_under .header_logo_area > a{
-    display: block;
-    padding: 15px 0;
+.head_under .head_wrap .header_logo_area {
+    height: 100%;
+    padding: 7px 0;
 }
+.head_under .header_logo_area > a{display: block;}
 .gnb_wrap{display: flex;}
 .gnb_wrap ul.gnb{
     display: flex;
     margin-right: 50px;
 }
-
-li.depth1 {
-    height: 80px;
-}
+li.depth1 {width: 10rem;}
 li.depth1 > a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: block;
+    width: 100%;
     height: 100%;
-    width: 180px;
     text-align: center;
     color: #fff;
-    line-height: 80px;
+    line-height: 60px;
 }
-
 ul.gnb > li.all {
     background-color: #f5f5f5;
     width: 100%;
     height: 0;
     position: absolute;
     display: flex;
-    top: 130px;
+    top: 105px;
     left: 0;
     justify-content: right;
     align-items: flex-start;
     overflow-y: hidden;
-    padding-right: 11%;
+    padding-right: 11.5%;
 }
 ul.gnb > li.all > ul.depth2 {
-    width: 181px;
-    font-size: 1.2rem;
+    width: 10rem;
     padding: 20px 0 0 0;
 }
 ul.gnb > li.all > ul.depth2 li > a {
     display: block;
-    height: 60px;
-    line-height: 60px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
     text-align: center;
 }
 ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
@@ -123,16 +115,16 @@ ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
 ul.gnb li:hover ~ li.all,
 ul.gnb li.all:hover,
 ul.gnb li.all.on{
-    height: 400px;
+    height: 340px;
     transition: height 0.5s;
 }
-.view_btn_area {padding: 25px 0;}
+.view_btn_area {padding: 16px 0;}
 .view_btn_area button.view_btn {
     background-image: url(/cobi_ro/img/dokdo/bars-solid.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 .header_wrap .mb_nav{display: none;}
 .mb_gnb_bg{display: none;}
@@ -164,7 +156,7 @@ ul.gnb li.all.on{
 }
 #svisual_area .svisual_wrap .svisual_content {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -208,12 +200,12 @@ nav ul.nav_list li.navi > a{
     color: #888888;
     border-right: 1px solid #9a9a9a;
 }
-nav ul.nav_list li.navi > a span {font-size: 1.4em;}
+nav ul.nav_list li.navi > a span {font-size: 1.1em;}
 li.navi button {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 35px;
 }
 li.navi button > img.arrow {
@@ -246,7 +238,7 @@ ul.nav_list li.nav1 ul.nav_depth li > a {color: #fff;}
 
 /*------------------------------------------------------------------*/
 .title_area {
-    height: 100px;
+    padding: 7%;
     position: relative;
     margin-bottom: 4%;
 }
@@ -255,7 +247,7 @@ ul.nav_list li.nav1 ul.nav_depth li > a {color: #fff;}
     line-height: 50px;
     border-bottom: 2px solid #3a3a3a;
     color: #3a3a3a;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -273,26 +265,31 @@ ul.subnav_list > li img.home {
     width: 20px;
     height: 20px;
 }
+ul.subnav_list li > a {
+    font-size: 0.85rem;
+    display: inline-block;
+    vertical-align: top;
+}
 ul.subnav_list > li.icon:after{
     content:">";
     display:inline-block;
-    font-size:1.2rem;
+    font-size:1rem;
     margin: 0 10px;
 }
 /*-------------------------------------------------------------------------------------*/
 section h4 {
     text-align: center;
     color: #00519b;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 3%;
 }
 
 
 .establish_info {
     background-color: #00519b;
-    height: 157px;
     border-radius: 100px;
     margin: 3% 0 5% 0;
+    box-shadow: 5px 5px 10px #eee;
 }
 .establish_info_content {
     color: #fff;
@@ -300,85 +297,85 @@ section h4 {
     padding: 45px 0;
 }
 .establish_info_content > p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 35px;
 }
 .purposecard_area {
     position: relative;
-    height: 1050px;
+    /* height: 1050px; */
     margin-bottom: 10%;
 }
 .purposecard_area .purpose1{
     display: flex;
     justify-content: center;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 .purpose1 .citybrand_img{
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    height: 300px;
     background-image: url(/cobi_ro/img/test2/purpose_1.jpg);   
 }
 .purpose1 .purpose,
 .purpose2 .purpose,
 .purpose3 .purpose{
-    margin-right: 5%;
-    border-radius: 25px;
+    /* margin-right: 5%; */
+    border-radius: 15px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .purpose1 .citybrand_info {
-    width: 750px;
+    /* width: 750px; */
     margin: auto 0;
 }
 .purpose_info strong {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     width: 100%;
     text-align: center;
     display: inline-block;
 }
 .purpose_info > p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-top: 30px;
-    line-height: 35px;
+    line-height: 25px;
 }
 .purposecard_area .purpose2 {
     display: flex;
-    position: absolute;
+    /* position: absolute;
     top: 40%;
-    right: 0;
+    right: 0; */
 }
 .purpose2 .local_eco_img{
-    width: 450px;
-    height: 400px;
-    margin-right: 20px;
+    width: 350px;
+    height: 300px;
+    /* margin-right: 20px; */
     background-image: url(/cobi_ro/img/test2/purpose_2.jpg);
 }
 
 .purpose2 .local_eco_info {
-    width: 430px;
+    /* width: 430px; */
     margin: auto 0;
 }
 .purpose2 .purpose_info strong {text-align: left;}
 .purposecard_area .purpose3 {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
 }
 .purpose3 .local_culture_img{
-    width: 600px;
-    height: 400px;
+    width: 550px;
+    height: 300px;
     margin-bottom: 5%;
     margin-right: 0;
     background-image: url(/cobi_ro/img/test2/purpose_3.jpg);
 }
 .purpose3 .local_culture_info {
-    width: 600px;
+    /* width: 600px; */
     margin: 0 auto;
 }
 
@@ -388,11 +385,8 @@ section h4 {
 .major_info {
     border: 2px dashed #000;
     border-radius: 50px;
-    height: 450px;
 }
-.major_info_content {
-    padding: 2.5% 5% 0;
-}
+.major_info_content {padding: 5%;}
 ul.bussiness_list {
     display: flex;
     flex-flow: row wrap;
@@ -402,13 +396,17 @@ li.bussiness {
     width: 33%;
     display: flex;
     flex-direction: column;
-    padding: 0 2% 4% 2%;
+    padding: 2%;
     text-align: center;
     align-items: center;
 }
+li.bussiness > img {
+    width: 130px;
+    height: auto;
+}
 .bussiness > span {
     margin-top: 5%;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 
@@ -417,28 +415,28 @@ li.bussiness {
 
 /*----------------------------------footer------------------------------------------*/
 footer {
-    height: 200px;
+    font-size: 0.9rem;
     background: #fff;
     border-top: 1px solid #888;
 }
 footer .footer_inner {
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 35px 160px;
+    padding:0 5%;
+    margin: 15px 0;
 }
 
 footer .footer_inner .footer_area {
     display: flex;
-    gap: 25px;
-}
-footer .footer_inner .footer_area .footer_logo_area {
-    margin-right: 40px;
+    gap: 35px;
 }
 footer .footer_inner .footer_area .footer_logo_area > img.footer_logo {
-    width: 200px;
-    height: 55px;
+    width: 160px;
 }
-
+.footer_inner .footer_area .footer_theme {
+    padding: 10px 0 0 0;
+}
 .footer_inner .footer_area .footer_theme ul.footer_nav {
     display: flex;
     gap: 25px;
@@ -446,7 +444,9 @@ footer .footer_inner .footer_area .footer_logo_area > img.footer_logo {
 .footer_inner .footer_area .footer_theme ul.footer_nav li > a em {font-weight: 600;}
 .footer_area .footer_theme > address {
     color: #7d7d7d;
-    margin-top: 25px;
+    margin-top: 2%;
+    font-weight: 300;
 }
-.footer_area .footer_theme > address > p {margin-bottom: 3px;}
-.footer_area .footer_theme > address .copyright {margin: 25px 0 0 0;}
+
+.footer_area .footer_theme > address .copyright {margin: 2% 0 0 0;}
+.footer_logo_area {padding: 5% 0;}

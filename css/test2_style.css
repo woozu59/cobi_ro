@@ -489,7 +489,6 @@ ul.survey_list {
 
 /*----------------------------------footer------------------------------------------*/
 footer {
-    /* height: 130px; */
     font-size: 0.9rem;
     background: #fff;
     border-top: 1px solid #888;
@@ -506,9 +505,6 @@ footer .footer_inner .footer_area {
     display: flex;
     gap: 35px;
 }
-/* footer .footer_inner .footer_area .footer_logo_area {
-    margin-right: 15px;
-} */
 footer .footer_inner .footer_area .footer_logo_area > img.footer_logo {
     width: 160px;
 }
