@@ -28,16 +28,13 @@ $(function(){
       });
 
       var swiper = new Swiper("#operate_area .mySwiper", {
-        slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
+        slidesPerView: 4, // 한번에 보여줄 슬라이드 개수
+        spaceBetween: 30,
         centeredSlides: false,
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
         },
         loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
       });
 })

@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-style: normal;
     font-family: 'Noto Sans KR', sans-serif;
-    outline: 1px solid pink;
+    /* outline: 1px solid pink; */
     word-break: keep-all;
 }
 
