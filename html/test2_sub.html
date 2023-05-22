@@ -187,6 +187,7 @@
                 <div class="nav_wrap">
                     <ul class="nav_list">
                         <li class="navi nav1"><!--첫번째 메뉴-->
+                            <div></div>
                             <a href="#"><span>공사소개</span></a>
                             <button type="button"><img src="/cobi_ro/img/icon/under_arrow_white.png" class="arrow" alt="메뉴열기"><span class="sp_hidden">메뉴열기</span></button>
                             <ul class="nav_depth"><!--첫번째 메뉴 리스트-->
@@ -196,7 +197,7 @@
                                 <li><a href="#">조직 및 부서</a></li>
                             </ul>
                         </li>
-                        <li class="navi nav2"><!--두번째 메뉴-->
+                        <li class="navi nav2" ><!--두번째 메뉴-->
                             <a href="#"><span>주요사업</span></a>
                             <button type="button"><img src="/cobi_ro/img/icon/under_arrow_gray.png" class="arrow" alt="메뉴열기"><span class="sp_hidden">메뉴열기</span></button>
                             <ul class="nav_depth"><!--두번째 메뉴 리스트-->
@@ -257,25 +258,27 @@
                                 </div>
                             </div>
                             <div class="purposecard_area">
-                                <div class="purpose1"><!--설립목적1-->
+                                <div class="purpose1" data-aos="fade-down" data-aos-duration="900"><!--설립목적1-->
                                     <div class="citybrand_img purpose"></div>
                                     <div class="purpose_info citybrand_info">
                                         <strong>도시브랜드 확립</strong>
-                                        <p>다른 지역과는 구분되는 이미지를 구축하여 문화도시, 고나광도시 등으로 차별화하여 도시마케팅을 통하여 지역 주민의 정서적 안정을 도모하고 지역주민들에게 지역에 대한 소속감과 자긍심을 통한 정체성 확립</p>
+                                        <p>다른 지역과는 구분되는 이미지를 구축하여 문화도시, 관광도시 등으로 차별화하여 도시마케팅을 통하여 지역 주민의 정서적 안정을 도모하고 지역주민들에게 지역에 대한 소속감과 자긍심을 통한 정체성 확립</p>
                                     </div>
                                 </div>
-                                <div class="purpose2"><!--설립목적2-->
-                                    <div class="local_eco_img purpose"></div>
-                                    <div class="purpose_info local_eco_info">
-                                        <strong>지역경제 활성화</strong>
-                                        <p>지역경제 장의 중요한 통로인 문화상품의 생산과 유통을 잘 활용하여 지역의 고용창출과 소증대에 이바지</p>
+                                <div class="purposecard_area2">
+                                    <div class="purpose2" data-aos="fade-left" data-aos-duration="1500"><!--설립목적2-->
+                                        <div class="local_eco_img purpose"></div>
+                                        <div class="purpose_info local_eco_info">
+                                            <strong>지역경제 활성화</strong>
+                                            <p>지역경제 장의 중요한 통로인 문화상품의 생산과 유통을 잘 활용하여 지역의 고용창출과 소증대에 이바지</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="purpose3"><!--설립목적3-->
-                                    <div class="local_culture_img purpose"></div>
-                                    <div class="purpose_info local_culture_info">
-                                        <strong>지역문화 활성화</strong>
-                                        <p>각종 이벤트, 문화행사, 역사자원개발 등 지역문화 활성화의 정책수단으로 활용</p>
+                                    <div class="purpose3" data-aos="fade-up" data-aos-duration="3000"><!--설립목적3-->
+                                        <div class="local_culture_img purpose"></div>
+                                        <div class="purpose_info local_culture_info">
+                                            <strong>지역문화 활성화</strong>
+                                            <p>각종 이벤트, 문화행사, 역사자원개발 등 지역문화 활성화의 정책수단으로 활용</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div><!--설립목적 카드_area 끝-->    
@@ -343,7 +346,12 @@
             </footer>
         </div>
         <script> 
-            AOS.init();
+             AOS.init({
+                disable: function(){
+                    var maxWidth = 641;
+                    return window.innerWidth < maxWidth;
+                }, 
+            });
         </script>
         <script src="/cobi_ro/js/jqery3.6.0.min.js"></script>
         <script src="/cobi_ro/js/test2_sub.js"></script>
