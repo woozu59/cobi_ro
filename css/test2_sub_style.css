@@ -297,7 +297,7 @@ section h4 {
 .establish_info {
     background-color: #00519b;
     border-radius: 100px;
-    margin: 3% 0 5% 0;
+    margin: 3% 4% 5% 4%;
     box-shadow: 5px 5px 10px #eee;
 }
 .establish_info_content {
@@ -306,7 +306,7 @@ section h4 {
     padding: 45px 0;
 }
 .establish_info_content > p {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 35px;
 }
 .purposecard_area {

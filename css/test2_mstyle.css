@@ -26,9 +26,10 @@ nav {display: none;}
     position: fixed;
     z-index: 90;
 }
+.header_wrap .mb_gnb_bg.on{display: block;}
 .header_wrap .mb_nav {
     display: block;
-    width: 85%;
+    width: 75%;
     height: 100vh;
     background: #00519b;
     position: fixed;
@@ -42,6 +43,7 @@ nav {display: none;}
     transform: translate(0%,0);
     transition: all 0.5s;
 }
+
 .mb_nav .mb_nav_inner {
     display: flex;
     flex-direction: column;
@@ -114,6 +116,23 @@ ul.depth2_mb > li > a {
     color: #fff;
     padding: 0 20px;
     font-size: 16px;
+}
+/*------------------------------------------------------------------------------------------*/
+
+.visual_inner {padding: 0 5%;}
+.visual_text {font-size: 1.4rem;}
+.visual_text > span:first-child{
+    padding: 0 0 5px 0;
+    font-weight: 600;
+}
+.main{position: relative;}
+.main > img{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: -50%;
+    right: -22%;
+    transform: translate(30%, 50%);
 }
 /*--------------------------------------------------------------------------------------------*/
 .title_inner{padding: 50px 0;}

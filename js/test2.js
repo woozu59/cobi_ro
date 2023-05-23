@@ -33,7 +33,7 @@ $(function(){
     if (ww >= 641) {
     mySwiper = new Swiper("#operate_area .mySwiper", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 20,
     centeredSlides: false,
     autoplay: {
       delay: 2500,
@@ -54,6 +54,9 @@ $(function(){
     navBtn.click(function(){
         var mbNav = $('.mb_nav');
         mbNav.toggleClass('on');
+        var navBg = $('.mb_gnb_bg');
+        navBg.toggleClass('on')
+      
     });
 
     //모바일 nav li 클릭 시 창 slide 되도록 & 방향아이콘 바뀌는 js
