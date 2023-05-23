@@ -1,13 +1,13 @@
 $(function(){
   //리사이징 시 새로고침 js
-  var lastWidth = $(window).width();
-    $(window).resize(function(){
-    if($(window).width()!=lastWidth){
-      location.reload();
-      lastWidth = $(window).width();
-      return false;
-    }
-  });
+  // var lastWidth = $(window).width();
+  //   $(window).resize(function(){
+  //   if($(window).width()!=lastWidth){
+  //     location.reload();
+  //     lastWidth = $(window).width();
+  //     return false;
+  //   }
+  // });
 
   //햄버거 메뉴 클릭 시 서브메뉴 펼쳐짐 js
   var navBtn = $('.view_btn');
