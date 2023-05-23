@@ -102,8 +102,10 @@ ul.gnb > li.all {
 }
 .depth1_inner {
     background: #2a3eb9;
-    /* transition: none;
-    transform: none; */
+    /* -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important; */
     height: 100%;
     padding: 2% 3%;
     border-bottom-right-radius: 55px;

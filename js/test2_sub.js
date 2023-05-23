@@ -4,23 +4,13 @@ $(function(){
         var allNav = $('li.all');
         allNav.toggleClass('on');
     });
+
     //pc일시 nav > li > a 클릭시 해당 메뉴창 뜨기 js
     //수정
-    var nav_List = $('li.navi > a');
+    var nav_List = $('li.navi');
     nav_List.click(function(){
-        var navDepth = $('ul.nav_depth');
-        navDepth.addClass('on').siblings().removeClass('on');
-    });
-
-
-    
-    //pc일 시 nav 클릭 시 버튼 변경 js
-    //수정
-    var arrowBtn = $('.navi button');
-    arrowBtn.each(function(){
-        arrowBtn.click(function(){
-            arrowBtn.toggleClass('on');
-        });
+        $(this).toggleClass('on').not(this).removeClass('on');
+        $(this).children('.nav_depth').slideToggle();
     });
 
 

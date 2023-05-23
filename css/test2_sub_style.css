@@ -97,6 +97,42 @@ ul.gnb > li.all {
     overflow-y: hidden;
     padding-right: 11.5%;
 }
+.depth1_inner {
+    background: #2a3eb9;
+    /* -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important; */
+    height: 100%;
+    padding: 2% 3%;
+    border-bottom-right-radius: 55px;
+    /* position: relative;
+    left: 0; */
+}
+span.depth1_text {
+    color: #fff;
+    text-align: right;
+    padding: 20px 0;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+span.depth1_text > p {
+    line-height: 25px;
+}
+.depth1_text p:nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.daejeon_icon {
+    width: 100%;
+    height: 96%;
+    padding-top: 20px;
+}
+.daejeon_icon > img {
+    width: 100%;
+    height: 90%;
+}
+
 ul.gnb > li.all > ul.depth2 {
     width: 10rem;
     padding: 20px 0 0 0;
@@ -105,7 +141,7 @@ ul.gnb > li.all > ul.depth2 li > a {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 10px 15px;
+    padding: 10px;
     text-align: center;
 }
 ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
@@ -178,9 +214,11 @@ nav ul.nav_list li.navi{
     width: 17%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     z-index: 10;
     background: #eee;
     border-right: 1px solid #9a9a9a;
+    position: relative;
 }
 nav ul.nav_list li.navi > a {
     display: block;
@@ -193,49 +231,72 @@ nav ul.nav_list li.navi.nav5 > a{text-align: center; padding: 0;}
 nav ul.nav_list li.nav1{
     background: #00519B;
     border-left: 1px solid #9a9a9a;
+    position: relative;
 }
 ul.nav_list > li.nav1 ul.nav_depth {background: #1e63a5;}
 nav ul.nav_list li.navi.nav1 > a{color: #fff;}
-nav ul.nav_list li.navi > a{
+nav ul.nav_list li.navi > a {
     color: #888888;
-    padding: 0px 15%;
+    text-align: center;
 }
-nav ul.nav_list li.nav3 > a {padding: 0 10%;}
+
 nav ul.nav_list li.navi > a span {
     font-size: 1.1em;
     width: 100%;
     display: block;
 }
-li.navi button {margin-right: 15%;}
-li.navi button > img.arrow {
+nav ul.nav_list li.navi > a::after{
+    content:"";
+    display:inline-block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
     width: 20px;
     height: 20px;
+    background-image: url(/cobi_ro/img/icon/under_arrow_gray.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-li.nav1 button.on > img.arrow{
-    content: url(/cobi_ro/img/icon/top_arrow_white.png);
-    width: 19px;
-    height: 10px;
+nav ul.nav_list li.navi.on > a::after{
+    background-image: url(/cobi_ro/img/icon/top_arrow_gray.png);
+    background-size: 17px;
+    top: 17px;
 }
-li.navi button.on > img.arrow{
-    content: url(/cobi_ro/img/icon/top_arrow_gray.png);
-    width: 19px;
-    height: 10px;
-}
+nav ul.nav_list li.nav5 > a::after{display: none;}
 li.navi ul.nav_depth {
-    background: #d5d5d5;
+    width: 100%;
+    height: auto;
+    background: #e5e5e5;
+    border: 1px solid #bdbdbd;
     display: none;
+    position: absolute;
+    z-index: 100;
+    top: 50px;
 }
-li.navi ul.nav_depth.on {
-    display: block;
+/* li.navi.on{background: #00519B;}
+li.navi.on > a{color: #fff;} */
+/* li.navi ul.nav_depth.on {display: block;} */
+.nav_depth li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
 }
 ul.nav_list li.navi ul.nav_depth li > a {
-    height: 70px;
-    line-height: 70px;
+    height: 100%;
+    line-height: 40px;
     display: block;
-    font-size: 1.3rem;
-    color: #7c7c7c;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #696969;
+}
+ul.nav_list li.navi ul.nav_depth li:hover > a {
+    color: #464646;
+    font-weight: 400;
 }
 ul.nav_list li.nav1 ul.nav_depth li > a {color: #fff;}
+ul.nav_list li.nav1 ul.nav_depth li:hover > a{color: #fff;}
+
 
 
 /*----------------------------------------------------------------*/
