@@ -20,7 +20,7 @@ $(function(){
   var swiper = new Swiper(".main_visual_section .mySwiper", {
       spaceBetween: 30,
       autoplay: {        
-          delay: 5500,
+          delay: 4000,
       },
       loop: true,
       effect: "fade",
