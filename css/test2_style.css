@@ -72,12 +72,17 @@ header .head_under {border-bottom: 1px solid #eee;}
     padding: 7px 0;
 }
 .head_under .header_logo_area > a{display: block;}
-.gnb_wrap{display: flex;}
+.gnb_wrap{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
 .gnb_wrap ul.gnb{
     display: flex;
-    margin-right: 50px;
+    margin-right: 5%;
+    width: 80%;
 }
-li.depth1 {width: 10rem;}
+li.depth1 {width: 17%;}
 li.depth1 > a {
     font-size: 1rem;
     display: block;
@@ -137,15 +142,18 @@ span.depth1_text > p {
 }
 
 ul.gnb > li.all > ul.depth2 {
-    width: 10rem;
+    width: 12%;
     padding: 20px 0 0 0;
 }
 ul.gnb > li.all > ul.depth2 li > a {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 7% 0;
     text-align: center;
+    font-weight: 400;
+    color: #232323;
+    font-size: 0.9rem;
 }
 ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
     color: #00519b;
@@ -264,6 +272,7 @@ section{margin-bottom: 5%;}
     top: 0;
     right: 0;
 }
+
 .infocard_content > h4 {
     color: #2f2f2f;
     font-size: 1.3rem;
@@ -291,56 +300,114 @@ section{margin-bottom: 5%;}
 .info_card:hover .infocard_title > p:after,
 .info_card:hover .infocard_content > p,
 .info_card:hover .infocard_content > h4 {color: #f2f2f2;}
+/* .info_card:hover .infocard_title > p:after{
+    transform: rotate(360deg);
+    transform-origin: center;
+} */
 
 
 
 
 /*---------tour_area-----------------------------------------------------------*/
 #tour_area {
-    height: 870px;
+    padding: 0 0 7% 0;
     background: #eee;
     margin-bottom: 0;
 }
-
-
-
-.wrapper {
+.tour_inner {
+    padding: 0 10%;
+    width: 100%;
+}
+.tour_accordian {
+    width: 100%;
+}
+.accordian_inner {
     display: flex;
+    gap: 10px;
 }
 .tour {
-    height: 450px;
-    width: 1000px;
-    border-radius: 25px;
+    width: 10%;
+    height: 28.5rem;
     position: relative;
-    z-index: 30;
+    overflow: hidden;
+    border-radius: 15px;
+    
 }
-.tour_text {
+.tour.opening{width: 67%;}
+.tour_bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tour_bg img {
+    width: auto;
+    height: 100%;
+    max-width: 1000%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tour .tour_title {
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
     position: relative;
-    z-index: 30;
+    top: -75%;
+    left: 0;
+    z-index: 10;
+}
+.tour.opening .tour_title > a {writing-mode: initial;}
+.tour .tour_title > a {
+    writing-mode: vertical-lr;
+    margin: 0 auto;
+    display: block;
     color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 1.1px;
+    text-align: center;
 }
-.tour_text > strong {
-    font-size: 40px;
+.tour.opening .tour_text {
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+    position: relative;
+    display: block;
+    top: -70%;
+    left: 0;
+    z-index: 10;
+}
+
+.tour .tour_text{display:none;}
+.tour_text > p {
+    text-align: center;
+    color: #Fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 5%;
 }
 .tour_text > a {
     display: block;
-    width: 160px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 50px;
-    height: 50px;
+    width: 25%;
+    margin: 0 auto;
+    padding: 2% 5%;
     text-align: center;
-    border: 1px solid #eee;
-    border-radius: 100px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
 }
-.tour > img {
-    height: 450px;
+.tour .tour_layerbg {
+    width: 100%;
+    height: 100%;
     display: block;
     position: absolute;
     top: 0;
-    z-index: 10;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
 }
+
+
+
 /*-----------------------operate_areas---------------------------------------*/
 #operate_area {
     /* height: 660px; */
@@ -362,9 +429,8 @@ section{margin-bottom: 5%;}
 }
 
 
-.swiper-wrapper {
+.operate_inner .swiper-wrapper {
     display: flex;
-    /* gap: 40px; */
 }
 .operate_wrap .swiper-pagination {
     position: relative;

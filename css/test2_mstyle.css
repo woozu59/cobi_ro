@@ -129,10 +129,11 @@ ul.depth2_mb > li > a {
 .main > img{
     height: 100%;
     width: auto;
+    max-width: 1000%;
+    min-width: 100%;
     position: absolute;
-    top: -50%;
-    right: -22%;
-    transform: translate(30%, 50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 /*--------------------------------------------------------------------------------------------*/
 .title_inner{padding: 50px 0;}
@@ -156,8 +157,42 @@ ul.depth2_mb > li > a {
 .infocard_content > h4 {font-size: 18px;}
 .infocard_content > p{font-size: 12px;}
 /*------------------------------------------------------------------------------------------*/
-#tour_area {
-    height: auto;
+#tour_area {padding: 0 0 10% 0;}
+.tour_inner {padding: 0 6%;}
+.accordian_inner{gap:0;}
+.tour{
+    width: 65%;
+    height: 20rem;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tour.opening {
+    width: 65%;
+}
+.tour .tour_title {top: -40%;}
+.tour .tour_title > a {
+    writing-mode: initial;
+    font-size: 1.3rem;
+}
+.tour .tour_text {
+    display: block;
+    position: relative;
+    top: -65%;
+    z-index: 10;
+}
+.tour.opening .tour_text{top: -35%;}
+.tour_text > p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+.tour_text > a {
+    width: 60%;
+    font-size: 0.8rem;
+    padding: 2%;
 }
 /*----------------------------operate_area-------------------------------------------*/
 #operate_area {
@@ -165,24 +200,25 @@ ul.depth2_mb > li > a {
 }
 .operate_inner {padding: 0 6%;}
 .operate_inner .title_inner {padding: 50px 0;}
-.title_inner > p {
-    font-size: 13px;
-}
-.title_inner > h3 {font-size: 15px;}
+.title_inner > p {font-size: 0.8rem;}
+.title_inner > h3 {font-size: 1rem;}
 .operate_wrap {padding-bottom: 25%;}
 .operate_wrap .wrapper {
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 0;
+    justify-content: space-between;
 }
 .operate {
     width: 47%;
     height: 240px;
+    margin-bottom: 5%;
+
 }
 .operate > a {
     width: 100%;
     height: 240px;
 }
-.operate a > button{display: none;}
+.operate a > button{padding: 5px 7px;}
 .operate .con_title{
     padding: 15px;
     gap: 0;
@@ -216,9 +252,9 @@ ul.depth2_mb > li > a {
     height: 70px;
 }
 .bidicon .icon > img {margin: 17px;}
-.bidinfo > p {font-size: 12px;}
+.bidinfo > p {font-size: 0.8rem;}
 .bidinfo > p > em {
-    font-size: 15px;
+    font-size: 0.95rem;
     line-height: 15px;
 }
 .bidinfo > p > em:after {

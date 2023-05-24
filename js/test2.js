@@ -1,13 +1,13 @@
 $(function(){
   //리사이징 시 새로고침 js
-  // var lastWidth = $(window).width();
-  //   $(window).resize(function(){
-  //   if($(window).width()!=lastWidth){
-  //     location.reload();
-  //     lastWidth = $(window).width();
-  //     return false;
-  //   }
-  // });
+  var lastWidth = $(window).width();
+    $(window).resize(function(){
+    if($(window).width()!=lastWidth){
+      location.reload();
+      lastWidth = $(window).width();
+      return false;
+    }
+  });
 
   //햄버거 메뉴 클릭 시 서브메뉴 펼쳐짐 js
   var navBtn = $('.view_btn');
@@ -24,14 +24,33 @@ $(function(){
       },
       loop: true,
       effect: "fade",
-    });
+  });
 
 
-  //운영시설 auto swiper js
+  //대전관광 가로 아코디언 js
+  $('.accordian_inner .tour').click(function(){
+    $('.accordian_inner .tour').stop().animate({width:"10%"},400,'linear').removeClass('opening');
+    $(this).stop().animate({width:"67%"},400,'linear').addClass('opening');
+  });
+ 
 
-  var ww = $(window).width();
-    if (ww >= 641) {
-    mySwiper = new Swiper("#operate_area .mySwiper", {
+
+  var now = $(window).width();
+    if (now < 641) {
+      //대전관광 swiper js
+    mySwiper = new Swiper("#tour_area .mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: false,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    loop: true,
+  });
+  } else if (now >= 641) {
+  // 운영시설 auto swiper js 
+  mySwiper = new Swiper("#operate_area .mySwiper", {
     slidesPerView: 4,
     spaceBetween: 20,
     centeredSlides: false,
@@ -45,9 +64,15 @@ $(function(){
     },
     loop: true,
   });
-  } else if (ww < 641) {
-  // swiper 호출 안함
   }
+
+  //운영시설 auto swiper js
+
+  //   if (now >= 641) {
+    
+  // } else if (now < 641) {
+  // // swiper 호출 안함
+  // }
 
   //모바일 nav js
   var navBtn = $('.mb_btn');
