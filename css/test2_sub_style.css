@@ -202,7 +202,7 @@ ul.gnb li.all.on{
 }
 /*----------------------------------------nav_area--------------------------------------------*/
 nav {
-    border-bottom: 1px solid #9a9a9a;
+    border-bottom: 1px solid #ddd;
 }
 .nav_wrap {padding: 0 4%;}
 nav ul.nav_list {
@@ -217,7 +217,7 @@ nav ul.nav_list li.navi{
     flex-direction: column;
     z-index: 10;
     background: #eee;
-    border-right: 1px solid #9a9a9a;
+    border-right: 1px solid #ddd;
     position: relative;
 }
 nav ul.nav_list li.navi > a {
