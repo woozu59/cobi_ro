@@ -21,6 +21,9 @@ $(function(){
     navBtn.click(function(){
         var mbNav = $('.mb_nav');
         mbNav.toggleClass('on');
+        var navBg = $('.mb_gnb_bg');
+        navBg.toggleClass('on')
+      
     });
 
     //모바일 nav li 클릭 시 창 slide 되도록 & 방향아이콘 바뀌는 js

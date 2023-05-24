@@ -24,6 +24,7 @@ nav {display: none;}
     position: fixed;
     z-index: 90;
 }
+.header_wrap .mb_gnb_bg.on{display: block;}
 .header_wrap .mb_nav {
     display: block;
     width: 85%;

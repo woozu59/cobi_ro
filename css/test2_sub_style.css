@@ -414,11 +414,8 @@ section h4 {
 }
 .purposecard_area2 .purpose2 {
     display: flex;
-    align-items: center;
     gap: 25px;
-    /* width: 55%;
-    position: relative;
-    left: 45%; */
+    height: 80%;
 }
 .purpose2 .local_eco_img{
     width: 50%;
