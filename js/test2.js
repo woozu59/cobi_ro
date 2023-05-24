@@ -38,19 +38,20 @@ $(function(){
   var now = $(window).width();
     if (now < 641) {
       //대전관광 swiper js
-    mySwiper = new Swiper("#tour_area .mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
+    mySwiper1 = new Swiper(".tour_accordian", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
     centeredSlides: false,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     loop: true,
+    
   });
   } else if (now >= 641) {
   // 운영시설 auto swiper js 
-  mySwiper = new Swiper("#operate_area .mySwiper", {
+  mySwiper2 = new Swiper(".operate_wrap", {
     slidesPerView: 4,
     spaceBetween: 20,
     centeredSlides: false,
@@ -65,14 +66,6 @@ $(function(){
     loop: true,
   });
   }
-
-  //운영시설 auto swiper js
-
-  //   if (now >= 641) {
-    
-  // } else if (now < 641) {
-  // // swiper 호출 안함
-  // }
 
   //모바일 nav js
   var navBtn = $('.mb_btn');
@@ -101,4 +94,13 @@ $(function(){
         disableOnInteraction: false,
       },
     });
-})
+
+    //scroll js
+    $(".scroll").click(function() {
+      $('html, body').animate({
+          scrollTop : 0
+      }, 1000);
+      return false;
+  });
+
+});
