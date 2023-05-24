@@ -205,7 +205,7 @@ ul.depth2_mb > li > a {
 /*----------------------------operate_area-------------------------------------------*/
 #operate_area {
     height: auto;
-    background-position: center;
+    /* background-position: center; */
 }
 .operate_inner {padding: 0 6%;}
 .operate_inner .title_inner {padding: 50px 0;}
