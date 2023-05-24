@@ -43,7 +43,7 @@ $(function(){
     spaceBetween: 20,
     centeredSlides: false,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     loop: true,
@@ -56,7 +56,7 @@ $(function(){
     spaceBetween: 20,
     centeredSlides: false,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {

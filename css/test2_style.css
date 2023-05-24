@@ -530,7 +530,10 @@ section{margin-bottom: 5%;}
     border-radius: 100px;
     transition: 0.8s;
 }
-.bidicon > .icon:hover {transform: rotateY(180deg);}
+.bidinfo1:hover .bidicon > .icon,
+.bidinfo2:hover .bidicon > .icon,
+.bidinfo3:hover .bidicon > .icon,
+.bidinfo4:hover .bidicon > .icon {transform: rotateY(180deg);}
 .bidicon .icon > img {
     width: 50%;
     height: 50%;
