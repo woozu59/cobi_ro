@@ -69,12 +69,17 @@ header .head_under {border-bottom: 1px solid #eee;}
     padding: 7px 0;
 }
 .head_under .header_logo_area > a{display: block;}
-.gnb_wrap{display: flex;}
+.gnb_wrap{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
 .gnb_wrap ul.gnb{
     display: flex;
-    margin-right: 50px;
+    margin-right: 5%;
+    width: 80%;
 }
-li.depth1 {width: 10rem;}
+li.depth1 {width: 17%;}
 li.depth1 > a {
     font-size: 1rem;
     display: block;
@@ -85,7 +90,7 @@ li.depth1 > a {
     line-height: 60px;
 }
 ul.gnb > li.all {
-    background-color: #f5f5f5;
+    background-color: #fff;
     width: 100%;
     height: 0;
     position: absolute;
@@ -95,19 +100,14 @@ ul.gnb > li.all {
     justify-content: right;
     align-items: flex-start;
     overflow-y: hidden;
-    padding-right: 11.5%;
+    padding-right: 12%;
+    border-bottom: 1px solid #eee;
 }
 .depth1_inner {
     background: #2a3eb9;
-    /* -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important; */
     height: 100%;
     padding: 2% 3%;
     border-bottom-right-radius: 55px;
-    /* position: relative;
-    left: 0; */
 }
 span.depth1_text {
     color: #fff;
@@ -130,19 +130,22 @@ span.depth1_text > p {
 }
 .daejeon_icon > img {
     width: 100%;
-    height: 90%;
+    height: 85%;
 }
 
 ul.gnb > li.all > ul.depth2 {
-    width: 10rem;
+    width: 12%;
     padding: 20px 0 0 0;
 }
 ul.gnb > li.all > ul.depth2 li > a {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 7% 0;
     text-align: center;
+    font-weight: 400;
+    color: #232323;
+    font-size: 0.9rem;
 }
 ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
     color: #00519b;
@@ -151,8 +154,19 @@ ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
 ul.gnb li:hover ~ li.all,
 ul.gnb li.all:hover,
 ul.gnb li.all.on{
-    height: 340px;
+    height: 355px;
     transition: height 0.5s;
+}
+li.depth1.all:before {
+    z-index: 100;
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    background: #2a3eb9;
+    position: absolute;
+    top: 0;
+    left: -115px;
 }
 .view_btn_area {padding: 16px 0;}
 .view_btn_area button.view_btn {

@@ -104,18 +104,13 @@ ul.gnb > li.all {
     align-items: flex-start;
     overflow-y: hidden;
     padding-right: 12%;
+    border-bottom: 1px solid #eee;
 }
 .depth1_inner {
     background: #2a3eb9;
-    /* -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important; */
     height: 100%;
     padding: 2% 3%;
     border-bottom-right-radius: 55px;
-    /* position: relative;
-    left: 0; */
 }
 span.depth1_text {
     color: #fff;
@@ -162,7 +157,7 @@ ul.gnb > li.depth1 > ul.depth2 > li:hover > a{
 ul.gnb li:hover ~ li.all,
 ul.gnb li.all:hover,
 ul.gnb li.all.on{
-    height: 340px;
+    height: 355px;
     transition: height 0.5s;
 }
 li.depth1.all:before {
@@ -174,7 +169,7 @@ li.depth1.all:before {
     background: #2a3eb9;
     position: absolute;
     top: 0;
-    left: -100px;
+    left: -115px;
 }
 .view_btn_area {padding: 16px 0;}
 .view_btn_area button.view_btn {
